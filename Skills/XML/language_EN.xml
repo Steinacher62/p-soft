@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE map SYSTEM "../../XML/dtd/language.dtd" >
+<map>
+    <!-- ä &#228; ö &#246; ü &#252; Ä &#196; Ö &#214; Ü &#220; <b> &lt;b&gt; </b> &lt;/b&gt; -->
+    <local scope="ModuleNames">
+        <prop mnemo="skills">SKILLS</prop>
+    </local>
+    <local scope="skills">
+        <prop mnemo="bcJobSkills">Stellenskills</prop>
+        <prop mnemo="bcEditJobSkills">Stellenskills bearbeiten</prop>
+        <prop mnemo="bcActualSkills">Ist-Skills</prop>
+        <prop mnemo="bcEditActualSkills">Ist-Skills bearbeiten</prop>
+        <prop mnemo="bcSkillsAppraisal">Skillsbewertung</prop>
+        <prop mnemo="bcSkillsCatalog">Skillskatalog</prop>
+        <prop mnemo="bcAddSkillLevel">Neuer Skill aus Katalog</prop>
+        <prop mnemo="bcAddSkillLevelFree">Neuer Skill frei</prop>
+        <prop mnemo="bcEditSkillLevel">Skill bearbeiten</prop>
+        <prop mnemo="bcEditSkillFree">Freier Skill bearbeiten</prop>
+
+        <prop mnemo="ctSkillGroupTree">Skillsgruppen</prop>
+        <prop mnemo="ctSkillTree">Skillskatalog</prop>
+        <prop mnemo="ctDemandLevelList">Skills</prop>
+        <prop mnemo="ctDemandLevel">Anspruchsniveau (zeitabhängig)</prop>
+        <prop mnemo="ctSLVList">Anspruchsniveaus (zeitabhängig) für Skill '#1':</prop>
+        <prop mnemo="ctAppraisalList">Liste der Skillsbewertungen:</prop>
+        <prop mnemo="ctSkillRatingList">Skillbewertung:</prop>
+        <prop mnemo="ctSkillsCatalogSkillDetail">Skill</prop>
+        <prop mnemo="ctSkill">Skill</prop>
+
+        <prop mnemo="cmEditJobSkills">Stellenskills bearbeiten</prop>
+        <prop mnemo="cmEditActualSkills">Ist-Skills bearbeiten</prop>
+        <prop mnemo="cmNewSkillLevel">Neues Anspruchsniveau (zeitabhängig)</prop>
+        <prop mnemo="cmEditSkillsAppraisal">Skillsbewertung bearbeiten</prop>
+        <prop mnemo="cmNewSkillsAppraisal">Neue Skillsbewertung</prop>
+        <prop mnemo="cmAddSkillLevel">Neuer Skill aus Katalog</prop>
+        <prop mnemo="cmAddSkillLevelFree">Neuer Skill frei</prop>
+        <prop mnemo="cmEditSkillFree">Freier Skill bearbeiten</prop>
+
+        <prop mnemo="cmtJobSkills">Stellenskills</prop>
+        <prop mnemo="cmtActualSkills">Ist-Skills</prop>
+        <prop mnemo="cmtSkillsAppraisal">Skillsbewertung</prop>
+        <prop mnemo="cmtSkillsAppraisals">Skillsbewertung</prop>
+        <prop mnemo="cmtNewSkillsAppraisal">Neue Skillsbewertung</prop>
+
+        <prop mnemo="repJobSkills">Stellenskills</prop>
+        <prop mnemo="repPersonSkills">Ist-Skills</prop>
+        <prop mnemo="repDemandLevel">Anspruchsniveau</prop>
+        <prop mnemo="repSkill">Skill</prop>
+        <prop mnemo="repSkillsAppraisal">Skillsbewertung - #1</prop>
+        <prop mnemo="repRatingLevel">Erreichungsgrad</prop>
+        <prop mnemo="repAverage">Durchschnitt</prop>
+        <prop mnemo="repSkillsRating">Skillsbewertung</prop>
+        <prop mnemo="repJobOwner">StelleninhaberIn</prop>
+        <prop mnemo="repPerson">Name</prop>
+        <prop mnemo="repOverallRating">Gesamterreichungsgrad</prop>
+        <prop mnemo="repSkillsCatalog">Skillskatalog</prop>
+        <prop mnemo="repSkillGroupFree">Freie Skills</prop>
+
+        <prop mnemo="cbShowValidOnly">Nur gültige Skills anzeigen</prop>
+       
+    </local>
+    <local scope="SKILL_VALIDITY" alias="SKILL_VALIDITY_V"></local>
+    <local scope="SKILL_VALIDITY_V">
+ 		<prop mnemo="NUMBER">Nummer</prop>
+ 		<prop mnemo="TITLE_DE">Bezeichnung</prop>
+ 		<prop mnemo="DESCRIPTION_DE" size="80,8">Beschreibung</prop>
+	 	<prop mnemo="VALID_FROM">Gültig ab</prop>
+	 	<prop mnemo="VALID_TO">Gültig bis</prop>
+    </local>
+    <local scope="SKILL_LEVEL__SKILL_VALIDITY_V" alias="SKILL_LEVEL_VALIDITY"></local>
+    <local scope="SKILL_LEVEL_VALIDITY">
+        <prop mnemo="VALID_FROM">Gültig ab</prop>
+        <prop mnemo="VALID_TO">Gültig bis</prop>
+        <prop mnemo="DEMAND_LEVEL_ID">Anspruchsniveau</prop>
+    </local>
+    <local scope="SKILLS_APPRAISAL">
+        <prop mnemo="APPRAISALDATE">Bewertungsdatum</prop>
+    </local>
+</map>

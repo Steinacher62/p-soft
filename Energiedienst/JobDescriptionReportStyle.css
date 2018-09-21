@@ -1,0 +1,66 @@
+﻿.detailName {
+   font-weight:bold;
+   vertical-align:top; 
+}
+
+.detailValue {
+   vertical-align:top;   
+}
+
+* {
+    font-family:Verdana;
+    font-size:10px;
+}
+
+table {
+    width:100%;
+    border-bottom: 1px solid black;
+    padding-bottom:10px;
+    padding-top:5px;
+}
+
+div {
+    width:595px;
+}
+
+h1 {
+    font-size:16px;
+    font-weight:bold;
+    margin-bottom:0px;
+    padding-bottom:0px;
+    padding-top:30px;
+}
+
+h2 {
+    font-weight:bold;
+}
+
+.FooterTable {
+    width:400px;
+    border-bottom:none;
+  
+    border-collapse:collapse;
+}
+
+.FooterContentRow td {
+    border:1px solid black;
+    border-collapse:collapse;
+    font-size:8px;
+    padding:3px;
+}
+
+.FooterDiv {
+    padding-top:10px;
+    border-top: 1px solid black;
+}
+
+.FooterTextDiv {
+    padding-top:10px;
+    font-size:8px;
+}
+
+.Logo {
+   float:right;
+   width:100px;
+   height:48px;
+}

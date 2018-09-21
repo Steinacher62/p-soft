@@ -1,0 +1,734 @@
+/* ----------------------------------------------------------------------------------------- */
+/* Psoft v_02 global style definitions */
+/* PSOFT engineering, knowledge management tool */
+/* version: v_02, 4q 03 */
+/* © PSOFT engineering ag, info@PSOFT.ch */
+/* ----------------------------------------------------------------------------------------- */
+
+/******************************************************************************/
+/* Element definitions ********************************************************/
+
+
+
+
+/* font overall, color, size, family ******************************************/
+a,span,p,h1,h2,h3,h4,h5,h6,h7,ul,ol,li,div,td,th,address,blockquote,nobr,b,i
+{
+	font-size: 12px;
+}
+
+th.rgHeader {
+    font-size: 12px;
+}
+
+
+/* header definitions *********************************************************/
+h1
+{
+       font-size: 14px;
+}
+
+h2
+{ 
+	font-size:14px;
+}
+
+h3
+{
+	font-size:13px;
+}
+
+h4 
+{ 
+	font-size:12px; 
+}
+
+/* link element ***************************************************************/
+
+a
+{
+    font-size: 12px;
+}
+
+a:link
+{
+	font-size:12px;
+}
+
+a:visited
+{
+	font-size:12px;
+}
+
+a:active
+{
+	font-size:12px;
+}
+
+a:hover
+{
+	font-size:12px;
+}
+
+.linkButton
+{
+    font-size: 12px;
+}
+
+.linkButton:link 
+{
+	font-size:12px;
+}
+
+.linkButton:visited 
+{
+	font-size:12px;
+}
+
+.linkButton:active
+{
+	font-size:12px;
+}
+
+.linkButton:hover
+{
+	font-size:12px;
+}
+
+a.bold
+{
+    font-size: 12px;
+}
+
+a.bold:link 
+{
+	font-size:12px;
+}
+
+a.bold:visited 
+{
+	font-size:12px;
+}
+
+a.bold:active
+{
+	font-size:12px;
+}
+
+a.bold:hover 
+{
+	font-size:12px;
+}
+
+a.selected
+{
+    font-size: 12px;
+}
+
+a.selected:link 
+{
+	font-size:12px;
+}
+
+a.selected:visited 
+{
+	font-size:12px;
+}
+
+a.selected:active
+{
+	font-size:12px;
+}
+
+a.selected:hover 
+{
+	font-size:12px;
+}
+
+/* input controls *************************************************************/
+input, textarea, select
+{
+	font-size:12px;
+}
+
+/******************************************************************************/
+
+/******************************************************************************/
+/* Class definitions **********************************************************/
+
+/* login screen ***************************************************************/
+.login
+{
+	font-size:13px;
+}
+
+.loginHeader
+{
+	font-size:14px;
+}
+
+/* error message definitions **************************************************/
+.error 
+{
+	font-size:12px;
+}
+
+/* message definitions **************************************************/
+.message
+{
+	font-size:12px;
+}
+
+/* Button *********************************************************************/
+input.Button
+{
+    font-size: 11px;
+}
+
+input.ButtonL
+{
+    font-size: 11px;
+}
+
+input.ButtonXL
+{
+    font-size: 11px;
+}
+
+/* section ********************************************************************/
+.section_title
+{
+	font-size:13px;
+}
+
+.section_subTitle
+{
+	font-size:12px;
+}
+
+/* page ***********************************************************************/
+.page_title
+{
+    font-size: 14px;
+}
+
+/* common *********************************************************************/
+span.common_radio
+{	
+	font-size: 11px;
+}
+
+/* header *********************************************************************/
+a.header
+{
+    font-size: 11px;
+}
+
+a.header:link 
+{
+	font-size:11px;
+}
+
+a.header:visited 
+{
+	font-size:11px;
+}
+
+a.header:active
+{
+	font-size:11px;
+}
+
+a.header:hover
+{
+    font-size: 11px;
+}
+
+.header
+{
+    font-size: 11px;
+}
+
+a.header_selected
+{
+    font-size: 11px;
+}
+
+a.header_selected:link 
+{
+	font-size:11px;
+}
+
+a.header_selected:visited 
+{
+	font-size:11px;
+}
+
+a.header_selected:active
+{
+	font-size:11px;
+}
+
+a.header_selected:hover
+{
+    font-size: 11px;
+}
+
+.header_selected
+{
+    font-size: 11px;
+}
+
+.header_inactive
+{
+    font-size: 11px;
+}
+
+a.header_language
+{
+    font-size: 11px;
+}
+
+a.header_language:link 
+{
+	font-size:11px;
+}
+
+a.header_language:visited 
+{
+	font-size:11px;
+}
+
+a.header_language:active
+{
+	font-size:11px;
+}
+
+a.header_language:hover
+{
+    font-size: 11px;
+}
+
+.header_language
+{
+    font-size: 11px;
+}
+
+a.header_language_selected
+{
+    font-size: 11px;
+}
+
+a.header_language_selected:link 
+{
+	font-size:11px;
+}
+
+a.header_language_selected:visited 
+{
+	font-size:11px;
+}
+
+a.header_language_selected:active
+{
+	font-size:11px;
+}
+
+a.header_language_selected:hover
+{
+    font-size: 11px;
+}
+
+.header_language_selected
+{
+    font-size: 11px;
+}
+
+/* InputMask ******************************************************************/
+table.InputMask 
+{
+	font-size:9px;
+}
+
+input.InputMask_DateSelector
+{
+	font-size:11px;
+}
+
+/* Detail *********************************************************************/
+
+input.detail_small
+{
+	font-size:11px;
+}
+a.button
+{
+	font-size:11px;
+}
+
+a.detail_link
+{
+    font-size: 12px;
+}
+
+a.detail_link:link 
+{
+	font-size:12px;
+}
+
+a.detail_link:visited 
+{
+	font-size:12px;
+}
+
+a.detail_link:active
+{
+	font-size:12px;
+}
+
+a.detail_link:hover
+{
+    font-size: 12px;
+}
+
+A.detail_link_small 
+{
+	font-size:11px;
+}
+
+a.detail_link_small:link 
+{
+	font-size:11px;
+}
+
+a.detail_link_small:visited 
+{
+	font-size:11px;
+}
+
+a.detail_link_small:active
+{
+	font-size:11px;
+}
+
+a.detail_link_small:hover 
+{
+	font-size:11px;
+}
+
+A.detail_link_mail 
+{
+	font-size:12px;
+}
+
+a.detail_link_mail:link 
+{
+	font-size:12px;
+}
+
+a.detail_link_mail:visited 
+{
+	font-size:12px;
+}
+
+a.detail_link_mail:active
+{
+	font-size:12px;
+}
+
+a.detail_link_mail:hover 
+{
+	font-size:12px;
+}
+
+body.detail_body
+{
+	font-size:12px;
+}
+
+table.Detail
+{
+	font-size:11px;
+}
+
+tr.Detail
+{
+	font-size:11px;
+}
+
+tr.Detail_mainTitle
+{
+	font-size:15px;
+}
+
+span.Detail_mainTitle
+{
+	font-size:15px;
+}
+
+span.detail_header
+{
+	font-size:13px;
+}
+
+td.Detail_instruction
+{
+	font-size:11px;
+}
+
+td.detail_summary_label
+{
+	font-size:11px;
+}
+
+td.detail_summary_data
+{
+	font-size:9px;
+}
+
+span.detail_data
+{
+	font-size:12px;
+}
+
+
+/* subNav Menu ****************************************************************/
+
+.subNavTitle
+{
+    font-size:14px;
+}
+
+a.subNavTitle
+{
+    font-size:14px;
+}
+
+a.subNavTitle:link
+{
+    font-size:14px;
+}
+
+a.subNavTitle:visited
+{
+    font-size:14px;
+}
+
+a.subNavTitle:active
+{
+    font-size:14px;
+}
+
+a.subNavTitle:hover
+{
+    font-size: 14px;
+}
+
+a.subNavGroup
+{
+   font-size:12px;
+}
+
+a.subNavGroup:link
+{
+   font-size:12px;
+}
+
+a.subNavGroup:visited
+{
+   font-size:12px;
+}
+
+a.subNavGroup:active
+{
+   font-size:12px;
+}
+
+a.subNavGroup:hover
+{
+    font-size: 12px;
+}
+
+a.subNavGroup_selected
+{
+   font-size:12px;
+}
+
+a.subNavGroup_selected:link
+{
+   font-size:12px;
+}
+
+a.subNavGroup_selected:visited
+{
+   font-size:12px;
+}
+
+a.subNavGroup_selected:active
+{
+   font-size:12px;
+}
+
+a.subNavGroup_selected:hover
+{
+    font-size: 12px;
+}
+
+a.subNavItem
+{
+   font-size:12px;
+}
+
+a.subNavItem:link
+{
+   font-size:12px;
+}
+
+a.subNavItem:visited
+{
+   font-size:12px;
+}
+
+a.subNavItem:active
+{
+   font-size:12px;
+}
+
+a.subNavItem:hover
+{
+   font-size:12px;
+}
+
+a.subNavItem_selected
+{
+   font-size:12px;
+}
+
+a.subNavItem_selected:link
+{
+   font-size:12px;
+}
+
+a.subNavItem_selected:visited
+{
+   font-size:12px;
+}
+
+a.subNavItem_selected:active
+{
+   font-size:12px;
+}
+
+a.subNavItem_selected:hover
+{
+   font-size:12px;
+}
+/* Tree ***********************************************************************/
+
+table.Tree 
+{
+	font-size:9px;
+}
+
+/* List ***********************************************************************/
+
+table.List
+{
+    font-size: 9px;
+}
+
+/* PropertyBox ****************************************************************/
+td.PropertyBox_Label
+{
+	font-size:12px;
+}
+
+td.PropertyBox_Value 
+{
+	font-size:12px;
+}
+
+/* Survey *********************************************************************/
+.surveyStepTitle
+{
+    font-size: 14px;
+}
+
+.surveyQuestionNr
+{
+    font-size: 13px;
+}
+
+.surveyQuestion
+{
+    font-size: 13px;
+}
+
+.surveyHint
+{
+    font-size: 12px;
+}
+
+/* Suggestion *********************************************************************/
+.suggestionTitle
+{
+    font-size: 17px;
+}
+.suggestionDescription
+{
+    font-size: 13px;
+}
+.suggestionStepTitle
+{
+    font-size: 14px;
+}
+
+.suggestionQuestionNr
+{
+    font-size: 13px;
+}
+
+.suggestionQuestion
+{ 
+   font-size: 13px;
+}
+
+.suggestionHint
+{
+    font-size: 12px;
+}
+.suggestionInfo
+{
+    font-size: 14px;
+}
+/* Knowledge ******************************************************************/
+span.themeTitle
+{
+   font-size: 14px;
+}
+
+span.themeText
+{
+       font-size: 12px;
+}
+
+/* Wiki **********************************************************************/
+
+td.Characteristic
+{   	
+    font-size: 14px;
+}
+a.Characteristic
+{   	
+    font-size: 14px;     
+}
+a:hover.Characteristic
+{   	
+    font-size: 14px;     
+}
+
+a:visited.Characteristic
+{   	
+    font-size: 14px;     
+}
+

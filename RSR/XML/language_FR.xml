@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE map SYSTEM "../../XML/dtd/language.dtd" >
+<map>
+    <!-- ä &#228; ö &#246; ü &#252; Ä &#196; Ö &#214; Ü &#220; <b> &lt;b&gt; </b> &lt;/b&gt; -->
+    <local scope="ModuleNames">
+        <prop mnemo="rsr">RÉMUNÉRATION</prop>
+    </local>
+    <local scope="rsr">
+        <prop mnemo="salaryChangePercentage">Augmentation salaire %</prop>
+        <prop mnemo="salaryPercentageOfProposed">% d'atteinte fonction clé</prop>
+        <prop mnemo="proposedSalaryDifference">Diff. réel et fonction en Frs</prop>
+        <prop mnemo="proposedSalaryPercentageDifference">Diff. réel et fonction en %</prop>
+        <prop mnemo="salaireBudgetAllocation">Budget pour modification des salaires</prop>
+        <prop mnemo="primeBudgetAllocation">Budget pour primes</prop>
+        <prop mnemo="salaireadjustment">Modification des salaires</prop>
+        <prop mnemo="primeadjustment">Entrer des primes</prop>
+        <prop mnemo="salaireApprovement">Approuvement des salaires</prop>
+        <prop mnemo="primeApprovement">Approuvement des primes</prop>
+        <prop mnemo="salaireBudgetCheck">Contrôle de budget pour salaire</prop>
+        <prop mnemo="primeBudgetCheck">Contrôle de budget pour prime</prop>
+        <prop mnemo="salaireoverview">Aperçu des salaires</prop>
+        <prop mnemo="primeoverview">Aperçu des primes</prop>
+        <prop mnemo="salaireExport">Exportation des salaires</prop>
+        <prop mnemo="primeExport">Exportation des primes</prop>
+        <prop mnemo="salarySituation">Situation salariale #1</prop>
+        <prop mnemo="situation">Situation #1</prop>
+        <prop mnemo="salaireLink">Modification d. salaires</prop>
+        <prop mnemo="primeLink">Primes</prop>
+        <prop mnemo="prime">Prime</prop>
+    </local>
+    <local scope="PERSON">
+        <prop mnemo="AGE">Age</prop>
+    </local>
+    <local scope="FUNKTION">
+        <prop mnemo="TITLE_FR_REP">Fonction indemnisée</prop>
+    </local>
+    <local scope="EMPLOYMENT">
+        <prop mnemo="EMPLOYMENTTYP">Statut de salariés</prop>
+        <prop mnemo="EMPLOYMENTKIND">Type de contrat</prop>
+        <prop mnemo="COSTCENTER_NUMBER">Centre de coût</prop>
+        <prop mnemo="COSTCENTER_DESCRIPTION">Centre de coût</prop>
+        <prop mnemo="SUPERIOR">Supérieur hiérarchique</prop>
+    </local>
+    <local scope="RSR_LOHNDATEN_V" alias="LOHN">
+        <prop mnemo="PNAME">Nom</prop>
+        <prop mnemo="FIRSTNAME">Prénom</prop>
+        <prop mnemo="ENTRY">Date d'entrée RSR</prop>
+        <prop mnemo="AGE">Age</prop>
+        <prop mnemo="TITLE_DE">Emploi</prop>
+        <prop mnemo="ENGAGEMENT">Temps de travail</prop>
+        <prop mnemo="EMPLOYMENTTYP">Statut de salariés</prop>
+        <prop mnemo="EMPLOYMENTKIND">Type de contrat</prop>
+        <prop mnemo="COSTCENTER_NUMBER">Centre de coût</prop>
+        <prop mnemo="COSTCENTER_DESCRIPTION">Centre de coût</prop>
+        <prop mnemo="SUPERIOR">Supérieur hiérarchique</prop>
+        <prop mnemo="SALAIRE">Augmentation salaire Frs</prop>
+        <prop mnemo="PRIME">Prime</prop>
+        <prop mnemo="INDEMNITE_DE_FONCTION">Indemnité de fonction</prop>
+        <prop mnemo="FORFAIT_B">Forfaits B</prop>
+        <prop mnemo="ISTLOHN">Salaire réel</prop>
+        <prop mnemo="LOHNVORSCHLAG">Salaire fonction</prop>
+    	<prop mnemo="NEUER_LOHN">Nouveau salaire</prop>
+        <prop mnemo="KOMMENTARS">Commentaire salaire</prop>
+        <prop mnemo="KOMMENTARP">Commentaire Prime</prop>
+        <prop mnemo="INFORMATIONP">Information Prime</prop>
+        <prop mnemo="INFORMATIONS">Kommentar salaire</prop>
+        <prop mnemo="REPRICHTLOHN">salaire de référence fct indemnisée</prop>
+   </local>
+    <local scope="RSR_LISTE_V" alias="PERSON">
+        <prop mnemo="TITLE_FR">Fonction</prop>
+        <prop mnemo="BUDGETTYP_ID">Budget</prop>
+        <prop mnemo="EMPLOYMENTTYP">Statut de salariés</prop>
+        <prop mnemo="EMPLOYMENTKIND">Type de contrat</prop>
+        <prop mnemo="COSTCENTER_NUMBER">Centre de coût</prop>
+        <prop mnemo="COSTCENTER_DESCRIPTION">Centre de coût</prop>
+        <prop mnemo="SUPERIOR">Supérieur hiérarchique</prop>
+    	<prop mnemo="ISTLOHN">Salaire réel</prop>
+    	<prop mnemo="NEUER_LOHN">Nouveau salaire année</prop>
+    	<prop mnemo="RICHTLOHN">Salaire fonction</prop>
+    	<prop mnemo="LOHNVORSCHLAG">Salaire fonction</prop>
+    	<prop mnemo="ZUNAHME_PROZENT">% d'augmen-tation</prop>
+    	<prop mnemo="VARIANTE_ID">Variante</prop>
+        <prop mnemo="BEARBEITUNGSSTATUS">Statut</prop>
+        <prop mnemo="BETRAG">Mesure salariale Année Frs</prop>
+        <prop mnemo="BETRAG_PRO_STUNDE">Mesure salariale Horaire Frs</prop>
+        <prop mnemo="ISTLOHN_PROZENT">% d'atteinte du salaire de fonction</prop>
+    	<prop mnemo="NEUER_LOHN_PRO_ISTLOHN">%</prop>
+    	<prop mnemo="NEUER_STUNDENLOHN">Nouveau salaire horaire</prop>
+    	<prop mnemo="NEUER_LOHN_PROZENT">% d'atteinte fonction clé</prop>
+        <prop mnemo="KOMMENTARS">Commentaire</prop>
+        <prop mnemo="KOMMENTARP">Commentaire</prop>
+        <prop mnemo="ENGAGEMENT">Temps de travail</prop>
+        <prop mnemo="VERGLEICH">Comparatif salaire horaire</prop>
+    </local>
+    <local scope="SALAIRE" alias="RSR_LISTE_V">
+    </local>
+    <local scope="PRIME" alias="RSR_LISTE_V">
+    </local>
+    <local scope="OVERVIEW_SALAIRE" alias="RSR_LISTE_V">
+    </local>
+    <local scope="OVERVIEW_PRIME" alias="RSR_LISTE_V">
+    </local>
+</map>

@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE map SYSTEM "../../XML/dtd/language.dtd" >
+<map>
+    <!-- ä &#228; ö &#246; ü &#252; Ä &#196; Ö &#214; Ü &#220; <b> &lt;b&gt; </b> &lt;/b&gt; -->
+    <local scope="ModuleNames">
+        <prop mnemo="project">PROJEKTE</prop>
+    </local>
+    <local scope="tableName">
+ 		<prop mnemo="PROJECT">Projekt</prop>
+ 		<prop mnemo="PHASE">Phase</prop>
+    </local>
+
+	<local scope="PROJECT_SPEC" alias="PROJECT"></local>
+  <local scope="PROJECT">
+ 		    <prop mnemo="PARENT_ID">&#220;bergeordnet</prop>
+        <prop mnemo="TEMPLATE_PROJECT_ID">Vorlage</prop>
+ 		    <prop mnemo="TITLE">Titel</prop>
+ 		    <prop mnemo="NUMBER">Nummer</prop>
+ 		    <prop mnemo="CRITICALDAYS">Kritische Tage</prop>
+ 		    <prop mnemo="DESCRIPTION" size="80,8">Beschreibung</prop>
+        <prop mnemo="DUEDATE">F&#228;llig am</prop>
+        <prop mnemo="CREATIONDATE">Er&#246;ffnet am</prop>
+        <prop mnemo="STARTDATE">Start am</prop>
+        <prop mnemo="STATE">Status</prop>
+        <prop mnemo="COST_EXTERNAL_NOMINAL">Sollkosten Extern</prop>
+        <prop mnemo="COST_INTERNAL_NOMINAL">Sollkosten Intern</prop>
+        <prop mnemo="COST_EXTERNAL_ACTUAL">Istkosten Extern</prop>
+        <prop mnemo="COST_INTERNAL_ACTUAL">Istkosten Intern</prop>
+        <prop mnemo="CHANCES" size="80,4">Chancen</prop>
+        <prop mnemo="RISKS" size="80,4">Risiken</prop>
+        <prop mnemo="SPEC_PROBLEM" size="80,8">Problemfelder</prop>
+        <prop mnemo="SPEC_COMMENT" size="80,8">Kommentare / weitere Ziele</prop>
+        <prop mnemo="SPEC_MODIFY_DATE">Nachf&#252;hrungsdatum</prop>
+        <prop mnemo="PROJECT_TYPE_ID">Projekttyp</prop>
+        <prop mnemo="IS_MAIN_OBJECTIVE">Legislaturziel</prop>
+    </local>
+    <local scope="PHASE">
+ 		    <prop mnemo="PROJECT_ID">Projekt</prop>
+        <prop mnemo="LEADER_PERSON_ID">Verantwortlicher</prop>
+ 		    <prop mnemo="TITLE">Titel</prop>
+ 		    <prop mnemo="DESCRIPTION" size="80,8">Beschreibung</prop>
+        <prop mnemo="DUEDATE">F&#228;llig am</prop>
+        <prop mnemo="CREATIONDATE">Er&#246;ffnet am</prop>
+        <prop mnemo="STARTDATE">Start am</prop>
+        <prop mnemo="STATE">Status</prop>
+        <prop mnemo="EFFORT_ESTIMATED">Gesch&#228;tzter Aufwand</prop>
+        <prop mnemo="ACHIEVED">Erreicht</prop>
+        <prop mnemo="HAS_MILESTONE">Hat Meilenstein</prop>
+        <prop mnemo="MILESTONE_DESCRIPTION">Meilensteinbeschreibung</prop>
+    </local>
+    <local scope="PHASEDEPENDENCYV" alias="PHASE_DEPENDENCY"></local>
+    <local scope="PHASE_DEPENDENCY">
+ 	    	<prop mnemo="ID">Phase</prop>
+        <prop mnemo="MASTER_PHASE_ID">Vorangehende Phase</prop>
+        <prop mnemo="MASTER_TITLE">Vorangehende Phase</prop>
+ 		    <prop mnemo="MASTER_STARTDATE">Start</prop>
+ 		    <prop mnemo="MASTER_DUEDATE">Ende</prop>
+ 		    <prop mnemo="MASTER_STATE">Phasenstatus</prop>
+ 		    <prop mnemo="MASTER_PROJECT_ID">Projekt</prop>
+ 		    <prop mnemo="MASTER_PROJECT_TITLE">Projekt</prop>
+ 		    <prop mnemo="MASTER_PROJECT_STATE">Projektstatus</prop>
+ 		    <prop mnemo="MASTER_PROJECT_ROOT_ID">Rootprojekt</prop>
+ 		    <prop mnemo="SLAVE_PHASE_ID">Nachfolgende Phase</prop>
+ 		    <prop mnemo="SLAVE_TITLE">Nachfolgende Phase</prop>
+ 		    <prop mnemo="SLAVE_STARTDATE">Start</prop>
+ 		    <prop mnemo="SLAVE_DUEDATE">Ende</prop>
+ 		    <prop mnemo="SLAVE_STATE">Phasenstatus</prop>
+ 		    <prop mnemo="SLAVE_PROJECT_ID">Projekt</prop>
+ 		    <prop mnemo="SLAVE_PROJECT_TITLE">Projekt</prop>
+ 		    <prop mnemo="SLAVE_PROJECT_STATE">Projektstatus</prop>
+ 		    <prop mnemo="SLAVE_PROJECT_ROOT_ID">Rootprojekt</prop>
+    </local>
+    <local scope="JOB_PERS_FUNC_V">
+ 		<prop mnemo="PERSON_DE">Person</prop>
+ 		<prop mnemo="PERSON_ID">Person</prop>
+        <prop mnemo="FUNKTION_TITLE">Funktion</prop>
+        <prop mnemo="FUNKTION_ID">Funktion</prop>
+ 		<prop mnemo="ORGENTITY_ID">Stufe</prop>
+    </local>
+  
+    <local scope="PROJECT_BILLING">
+      <prop mnemo="PROJECT_ID">Projekt</prop>
+      <prop mnemo="DATE">Rechnungsdatum</prop>
+      <prop mnemo="BILL_NUMBER">Rechnungsnummer</prop>
+      <prop mnemo="DESCRIPTION">Text</prop>
+      <prop mnemo="CREDIT_VALUE">Kredit (inkl.)</prop>
+      <prop mnemo="CREDITOR_VALUE">Kreditor  (inkl.)</prop>
+      <prop mnemo="DEBITOR_VALUE">Debitor (inkl.)</prop>
+      <prop mnemo="VAT_VALUE">MWST</prop>
+    </local>
+  
+    <local scope="project">
+        <prop mnemo="project">Projekt</prop>
+        <prop mnemo="phase">Phase</prop>
+        <prop mnemo="phaseRed">Status 'offen' bei verstrichenem F&#228;lligkeitsdatum.</prop>
+        <prop mnemo="phaseOrange">Status 'offen' und in kritischer Phase: ab #1 Tage vor F&#228;lligkeitsdatum.</prop>
+        <prop mnemo="phaseGreen">Status 'offen' aber nicht in kritischer Phase: ab #1 Tage vor F&#228;lligkeitsdatum.</prop>
+        <prop mnemo="phaseDone">Status 'erledigt'.</prop>
+        <prop mnemo="projectRed">Mindestens 1 Phase oder Teilprojekt mir roter Ampel.</prop>
+        <prop mnemo="projectOrange">Keine Phase/Teilprojekt mit roter, aber mindestens 1 Phase/Teilprojekt in kritischer Phase: ab #1 Tage vor F&#228;lligkeitsdatum.</prop>
+        <prop mnemo="projectGreen">Alle offenen Phasen/Teilprojekte nicht in kritischer Phase: ab #1 Tage vor F&#228;lligkeitsdatum.</prop>
+        <prop mnemo="projectDone">Projekt wurde 'abgelehnt', 'suspendiert', 'abgebrochen' oder 'abgeschlossen'.</prop>
+        <prop mnemo="projectBlue">Projekt mit Status 'in Antrag'.</prop>
+        <prop mnemo="semaphore">Ampel</prop>
+        <prop mnemo="semaphoreAll">Alle</prop>
+        <prop mnemo="projectCommitee">Projektausschuss</prop>
+        <prop mnemo="projectLeaders">Projektleitung</prop>
+        <prop mnemo="projectMembers">Projektmitarbeiter</prop>
+        <prop mnemo="leaders">Leitung</prop>
+        <prop mnemo="cost">Kosten</prop>
+        <prop mnemo="costNominal">Soll</prop>
+        <prop mnemo="costActual">Ist</prop>
+        <prop mnemo="costDifference">Differenz</prop>
+        <prop mnemo="costInternal">Intern</prop>
+        <prop mnemo="costExternal">Extern</prop>
+        <prop mnemo="projectState">Projektstatus</prop>
+        <prop mnemo="reportHeader">Projektreport</prop>
+        <prop mnemo="reportPhases">Phasen</prop>
+        <prop mnemo="subNavTitle">Projekte</prop>
+        <prop mnemo="subNavSearchProject">Projekte suchen</prop>
+        <prop mnemo="subNavNewProject">Neues Projekt</prop>
+        <prop mnemo="bcAddProject">Projekt hinzuf&#252;gen</prop>
+        <prop mnemo="bcSearchProject">Projekte suchen</prop>
+        <prop mnemo="bcEditProject">Projekt bearbeiten</prop>
+        <prop mnemo="bcAddPhase">Phase hinzuf&#252;gen</prop>
+        <prop mnemo="bcEditPhase">Phase bearbeiten</prop>
+        <prop mnemo="bcAddPhaseDependency">Phasenabhängigkeit hinzufügen</prop>
+        <prop mnemo="bcProjectSummary">Projektauswertung</prop>
+        <prop mnemo="bcProjectTeam">Projekteam von #1</prop>
+        <prop mnemo="bcAddTeamMember">Teammitglied hinzuf&#252;gen</prop>
+        <prop mnemo="bcEditTeamMember">Teammitglied bearbeiten</prop>
+        <prop mnemo="bcSpec">Problemfelder/Kommentar bearbeiten</prop>
+        <prop mnemo="bcScoreCard">Score Card</prop>
+        <prop mnemo="bcAddBilling">Rechnung hinzuf&#252;gen</prop>       
+        <prop mnemo="bcEditBilling">Rechnung bearbeiten</prop>       
+        <prop mnemo="ctPhaseList">Phasen innerhalb Projekt '#1':</prop>
+        <prop mnemo="ctProjectSearchresult">Folgende Projekte wurden in der Datenbank gefunden:</prop>
+        <prop mnemo="ctProjectSelection">Projekte gem&#228;ss Selektion:</prop>
+        <prop mnemo="ctInvolvedProjects">Involvierte Projekte von #1:</prop>
+        <prop mnemo="ctProjectGroup">Projekte in Gruppe #1:</prop>
+        <prop mnemo="cmAddPhase">Neue Phase</prop>
+        <prop mnemo="cmAddProject">Neues Teilprojekt</prop>
+        <prop mnemo="cmDeleteProject">Projekt l&#246;schen</prop>
+        <prop mnemo="cmEditProject">Projekt bearbeiten</prop>
+        <prop mnemo="cmEditPhase">Phase bearbeiten</prop>
+        <prop mnemo="cmOpenTasklist">Pendenzenliste &#246;ffnen</prop>
+        <prop mnemo="cmCreateTasklist">Pendenzenliste erstellen</prop>
+        <prop mnemo="cmProjectSummary">Projektauswertung</prop>
+        <prop mnemo="cmProjectOrganisation">Projektorganisation</prop>
+        <prop mnemo="cmManageTeam">Projektteam verwalten</prop>
+        <prop mnemo="cmShowTeam">Projektteam</prop>
+        <prop mnemo="cmAddTeamMember">Teammitglied hinzuf&#252;gen</prop>
+        <prop mnemo="cmScoreCard">Score Card</prop>
+        <prop mnemo="cmSpec">Problemfelder/Kommentar bearbeiten</prop>
+        <prop mnemo="cmDeletePhase">Phase l&#246;schen</prop>
+        <prop mnemo="cmPhaseDependency">Phasenabh&#228;ngigkeit</prop>
+        <prop mnemo="cmPhaseDependencies">Phasenabh&#228;ngigkeiten</prop>
+        <prop mnemo="cmPhaseDependencyList">Übersicht der Phasenabh&#228;ngigkeiten</prop>
+        <prop mnemo="cmExportProjectOverview">Projektübersicht exportieren</prop>
+        <prop mnemo="cmtSelectedProject">Projekt</prop>
+        <prop mnemo="cmtSelectedPhase">Phase</prop>
+        <prop mnemo="cmtTasklist">Pendenzenliste</prop>
+        <prop mnemo="cmtListedProjects">Projekte in Liste</prop>
+        <prop mnemo="cmtOrganigrams">Organigramme</prop>
+        <prop mnemo="cmtProjectTeam">Projektteam</prop>
+        <prop mnemo="oeAssignProjectGroup">Zuordnung zu den Abteilungen</prop>
+        <prop mnemo="deleteProjectConfirm">Projekt l&#246;schen ?</prop>
+        <prop mnemo="deletePhaseConfirm">Phase l&#246;schen ?</prop>
+        <prop mnemo="showInactiveProjects">Inaktive Projekte anzeigen</prop>
+        <prop mnemo="cmProjectCostsControl">Rechnungen bearbeiten</prop>
+        <prop mnemo="cmNewBilling">Neue Rechnung</prop>
+        <prop mnemo="ctBillingList">Übersicht aller Rechnungen (Kostenkontrolle)</prop>
+        <prop mnemo="btPrintBillingReport">Ausdrucken</prop>
+        <prop mnemo="cbPrintSubprojects">Inklusive Teilprojekten</prop>
+        <prop mnemo="ttCreditBalance">Saldo Kredit (inkl.)</prop>
+        <prop mnemo="ttCreditorBalance">Saldo Kreditor (inkl.)</prop>
+        <prop mnemo="ttDebitorBalance">Saldo Debitor (inkl.)</prop>
+        <prop mnemo="ttSurplus">Unterschreitung (inkl.)</prop>
+        <prop mnemo="ttDefinit">Überschreitung (inkl.)</prop>
+        <prop mnemo="ttDepartment">Abteilung</prop>
+        <prop mnemo="ttCreditExclusiveVat">Kredit (exkl.)</prop>
+        <prop mnemo="ttCreditorExclusiveVat">Kreditor (exkl.)</prop>
+        <prop mnemo="ttDebitorExclusiveVat">Debitor (exkl.)</prop>
+        <enum name="stateEnumProject">
+            <prop mnemo="0">in Antrag</prop>
+            <prop mnemo="1">genehmigt</prop>
+            <prop mnemo="2">abgelehnt</prop>
+            <prop mnemo="3">suspendiert</prop>
+            <prop mnemo="4">abgebrochen</prop>
+            <prop mnemo="5">abgeschlossen</prop>
+        </enum>
+        <enum name="stateEnumPhase">
+            <prop mnemo="0">Offen</prop>
+            <prop mnemo="1">Erledigt</prop>
+        </enum>
+        <enum name="isMainObjective">
+          <prop mnemo="0">Nein</prop>
+          <prop mnemo="1">Ja</prop>
+        </enum>
+    </local>
+    <local scope="phase">
+      <enum name="hasMilestone">
+        <prop mnemo="0">Nein</prop>
+        <prop mnemo="1">Ja</prop>
+      </enum>
+    </local>
+    <local scope="reportLayout">
+        <prop mnemo="TaskListMeasureProjMod">Pendenzenliste</prop>
+        <prop mnemo="TaskListMeasureProjModHeader">Pendenzen ($2)</prop>
+        <prop mnemo="TaskListMeasureProjModColumnTaskList">Projekt / Phase</prop>
+        <prop mnemo="TaskListMeasureProjModColumnTitle">Pendenz</prop>
+        <prop mnemo="TaskListMeasureProjModColumnNummer">Nummer</prop>
+        <prop mnemo="TaskListMeasureProjModColumnDescription">Beschreibung</prop>
+        <prop mnemo="TaskListMeasureProjModColumnAuthorPerson">Verfasser</prop>
+        <prop mnemo="TaskListMeasureProjModColumnResponsiblePerson">Verantwortlich</prop>
+        <prop mnemo="TaskListMeasureProjModColumnDuedate">Fällig am</prop>
+        <prop mnemo="TaskListMeasureProjModColumnCreationdate">Eröffnet am</prop>
+        <prop mnemo="TaskListMeasureProjModColumnState">Status</prop>
+        <prop mnemo="TaskListMeasureProjModEXCEL">Pendenzenliste</prop>
+        <prop mnemo="TaskListMeasureProjModHeaderEXCEL">Pendenzen ($2)</prop>
+        <prop mnemo="TaskListMeasureProjModColumnTaskListEXCEL">Projekt / Phase</prop>
+        <prop mnemo="TaskListMeasureProjModColumnTitleEXCEL">Pendenz</prop>
+        <prop mnemo="TaskListMeasureProjModColumnNummerEXCEL">Nummer</prop>
+        <prop mnemo="TaskListMeasureProjModColumnDescriptionEXCEL">Beschreibung</prop>
+        <prop mnemo="TaskListMeasureProjModColumnAuthorPersonEXCEL">Verfasser</prop>
+        <prop mnemo="TaskListMeasureProjModColumnResponsiblePersonEXCEL">Verantwortlich</prop>
+        <prop mnemo="TaskListMeasureProjModColumnDuedateEXCEL">Fällig am</prop>
+        <prop mnemo="TaskListMeasureProjModColumnCreationdateEXCEL">Eröffnet am</prop>
+        <prop mnemo="TaskListMeasureProjModColumnStateEXCEL">Status</prop>
+    </local>
+
+  <local scope="billing">
+   
+  </local>
+  </map>

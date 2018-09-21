@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE map SYSTEM "../../XML/dtd/language.dtd" >
+<map>
+    <!-- ä &#228; ö &#246; ü &#252; Ä &#196; Ö &#214; Ü &#220; <b> &lt;b&gt; </b> &lt;/b&gt; -->
+    <local scope="ModuleNames">
+        <prop mnemo="habasit">HABASIT</prop>
+    </local>    
+    <local scope="habasit">
+        <prop mnemo="reportAveragePerformance">Performance rating</prop>
+        <prop mnemo="reportDate">Date</prop>
+        <prop mnemo="reportSign">Abbrev./Visum</prop>
+        <prop mnemo="reportSupervisor">Superior manager</prop>
+        <prop mnemo="reportClerk">Employee</prop>
+        <prop mnemo="reportSupervisorRating">Performance rating</prop>
+        <prop mnemo="reportClerkRating">Selbstbewertung</prop>
+        <prop mnemo="reportRatingDate">Date of performance rating</prop>
+        <prop mnemo="reportHigherSupervisor">Higher manager</prop>
+        <prop mnemo="reportEmplRemarks">Remarks of the employee</prop>
+    </local>   
+</map>

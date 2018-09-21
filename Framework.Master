@@ -1,0 +1,271 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Framework.master.cs" Inherits="ch.appl.psoft.Framework" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- <script src="../Scripts/jquery-3.3.1.min.js" type="text/javascript"></script> -->
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <title>.: p-soft :.</title>
+    <asp:Label ID="lblJS" runat="server" Text=""></asp:Label>
+    <!-- copyrightFrame -->
+    <!-- headerFrame -->
+
+    <link id="cssLink" rel="stylesheet" type="text/css" runat="server" />
+    <link id="cssFontHeight" rel="stylesheet" type="text/css" runat="server" />
+    <link id="cssLayoutLink" type="text/css" rel="stylesheet" media="screen" runat="server" />
+    <link href="Style/leftMenu.css" rel="stylesheet" />
+<%--    <script type='text/javascript'>
+    
+    <!-- if (window != top) top.location.href = location.href;  -->
+    </script>--%>
+    <script type='text/javascript'>
+        window.onresize = setSize;
+
+        function initPage() {
+            setSize();
+        }
+
+        function setSize() {
+            var ele = document.getElementById('content');
+            var newWidth = document.documentElement.clientWidth - 10;
+            var newHeight = document.documentElement.clientHeight - 141;
+            ele.style.width = newWidth + 'px';
+
+            // browser selection, do not execute for IE7 (causes problems)
+            if (!isIE7()) {
+                ele.style.height = newHeight + 'px';
+            }
+            else {
+                ele.style.minheight = '600px';
+                //ele.style.height = newHeight + 'px';
+            }
+
+            //var eleDiv = document.getElementById('contentDiv');
+            //var newWidthDiv = document.body.offsetWidth - 200;
+            //var newHeightDiv = document.body.offsetHeight - 200;
+            //eleDiv.style.width = newWidthDiv + 'px';
+            //eleDiv.style.height = newHeightDiv + 'px';
+        }
+
+        function isIE7() {
+            var browserName = navigator.appName;
+            var browserVersion = parseInt(navigator.appVersion);
+            if (browserName == "Microsoft Internet Explorer" && browserVersion == 4 && navigator.appVersion.indexOf("MSIE 7.0") != -1) {
+                return true;
+            }
+            else {
+                return false;
+            }
+        }
+
+        function switchMenuDelay() {
+            var oMenu = igmenu_getMenuByItemId('ctl00leftMenu_1');
+
+            var actDelay = oMenu.ExpandEffects.RemovalDelay;
+
+            if (actDelay == 5000) {
+                oMenu.ExpandEffects.RemovalDelay = 500;
+            }
+            else {
+                oMenu.ExpandEffects.RemovalDelay = 5000;
+            }
+        }
+
+        function redirectToLogin() {
+
+        }
+
+        function breadCrumpSelected(sender, args) {
+            window.location.href = args.get_item()._properties._data.value
+        }
+
+    </script>
+    <style type="text/css">
+        .style1 {
+            width: 76px;
+        }
+
+        .ig_7dca7495_r1 {
+        }
+    </style>
+</head>
+<body onload="initPage()">
+    <form id="form1" runat="server">
+
+        <telerik:RadScriptManager ID="WebScriptManager1" runat="server"></telerik:RadScriptManager>
+        <div style="display: table; width: 100%">
+            <div style="display: table-row; width: 100%;">
+                <div id="banner" style="background-image: url(<%=_backgroundImage%>); height: 79px; width: 782px; display: table-cell;">
+                    <!--<img src="" alt="" style="border: 0px" />-->
+                </div>
+                <div id="bannerBackground" style="background-image: url(<%=_banner_backgroundImage%>); height: 79px; width: auto; background-repeat: repeat; display: table-cell;">
+                    <!--<img src="" alt="" style="border: 0px" />-->
+                </div>
+            </div>
+        </div>
+        <div id="logo">
+            <img alt="" src="<%=Logo%>" style="border: 0px" />
+        </div>
+        <div id="mainnavi">
+            <!-- Language Selection and Logout Link -->
+            <asp:Table ID="headerTable" runat="server" BorderWidth="0" CellPadding="0" CellSpacing="0" Width="100%">
+                <asp:TableRow VerticalAlign="Middle" runat="server" ID="Tablerow1">
+                    <asp:TableCell ID="Tablecell1" runat="server" BorderWidth="0" VerticalAlign="Middle" HorizontalAlign="Left">
+                        <div style="display: none">
+                            <asp:Table ID="Table2" runat="server" BorderWidth="0" CellPadding="0" CellSpacing="0">
+                                <asp:TableRow ID="headerRow" VerticalAlign="Middle" runat="server" Height="16">
+                                    <asp:TableCell ID="spacerCell" runat="server" BorderWidth="0" VerticalAlign="Middle"> </asp:TableCell>
+                                </asp:TableRow>
+                            </asp:Table>
+                        </div>
+                    </asp:TableCell>
+                    <asp:TableCell ID="loginCell" runat="server" BorderWidth="0" VerticalAlign="Middle">
+                        <table cellpadding="0" cellspacing="2" border="0">
+                            <tr>
+                                <td style="width: auto;">
+                                    <telerik:RadMenu ID="leftMenu" Style="z-index: 2900" runat="server" EnableScreenBoundaryDetection="true" EnableEmbeddedSkins="true" EnableAutoScroll="true" DefaultGroupSettings-ExpandDirection="Auto" EnableRoundedCorners="true" Flow="Horizontal"></telerik:RadMenu>
+                                </td>
+                                <td>
+                                    <telerik:RadComboBox ID="breadcrumbDd" runat="server" DropDownAutoWidth="Enabled" OnClientSelectedIndexChanged="breadCrumpSelected">
+                                    </telerik:RadComboBox>
+                                </td>
+                                <td valign="middle" class="header">&nbsp;<asp:HyperLink ID="orderLink" runat="server"></asp:HyperLink>&nbsp;
+                                </td>
+
+                                <td id="chooseFontsize" runat="server" valign="middle" class="header" height="16">
+                                    <asp:ImageButton ID="ImageButtonMore" runat="server" />
+                                    <asp:ImageButton ID="ImageButtonLess" runat="server" />
+
+
+                                </td>
+                                <td id="languageSelector" runat="server" valign="middle" class="header" height="16">
+                                    <asp:LinkButton ID="langGerman" runat="server">DE</asp:LinkButton>
+                                    <asp:LinkButton ID="langFrench" runat="server">FR</asp:LinkButton>
+                                    <asp:LinkButton ID="langItalian" runat="server">IT</asp:LinkButton>
+                                    <asp:LinkButton ID="langEnglish" runat="server">EN</asp:LinkButton>
+                                </td>
+                                <td valign="middle" class="header">&nbsp;<%=LoginInfoLink%><asp:HyperLink ID="logoutLink" runat="server"></asp:HyperLink>&nbsp;
+                                </td>
+                                <td valign="middle" align="right" class="header">&nbsp;<asp:HyperLink ID="HelpFileLink" runat="server"></asp:HyperLink>&nbsp;
+                                </td>
+
+                            </tr>
+                        </table>
+                    </asp:TableCell>
+                </asp:TableRow>
+            </asp:Table>
+        </div>
+        <div>
+            <telerik:RadWindow ID="TimeoutWindow" runat="server" Width="350px" Height="220px" VisibleOnPageLoad="false" Modal="true" Title="Achtung!">
+                <ContentTemplate>
+                    <asp:Literal ID="Literal1" runat="server"><br />Timeout erreicht!<br /></asp:Literal>
+                    <asp:Literal ID="Literal2" runat="server">Sie werden zur Anmeldeseite weitergeleitet.<br /><br /></asp:Literal>
+                    <div>
+                        <telerik:RadButton ID="RadButton1" runat="server" Text="OK" OnClientClicked="redirectToLogin" AutoPostBack="false"></telerik:RadButton>
+                    </div>
+                </ContentTemplate>
+            </telerik:RadWindow>
+        </div>
+        <div>
+            <telerik:RadWindowManager ID="MainWindowManager" runat="server">
+                <Windows>
+                    <telerik:RadWindow ID="ErrorWindow" runat="server" AutoSize="true" Modal="true">
+                        <ContentTemplate>
+                        <div style="display: table; width: 100%;" class="ErrorTable">
+                            <div style="display: table-row;" class="titleRow">
+                                <div style="display: table-cell;" class="errorTitleCell">
+                                    <asp:Label ID="ErrorTitle" runat="server" Text="Label" Font-Bold="true" ForeColor="#ff0000"></asp:Label>
+                                </div>
+                                <div style="display: table-cell;">
+                                </div>
+                            </div>
+                            <div style="display: table-row;" class="dataRow">
+                                <div style="display: table-cell;" class="titleLabelCell">
+                                    <asp:Label ID="ErrorMessageShort" runat="server" Text="Label" Font-Bold="true"></asp:Label>
+                                </div>
+                                <div style="display: table-cell;" class="dataLabelCell">
+                                   
+                                </div>
+                            </div>
+                            <div style="display: table-row; visibility:collapse" class="dataRow dataRowErrorMessage">
+                                <div style="display: table-cell;" class="titleLabelCell">
+                                    <asp:Label ID="ErrorMessage" runat="server" Text="Label"></asp:Label>
+                                </div>
+                                <div style="display: table-cell;" class="dataLabelCell">
+                                   
+                                </div>
+                            </div>
+                            <div style="display: table-row;" class="dataRow">
+                                <div style="display: table-cell;" class="titleLabelCell">
+                                   <telerik:RadButton ID="ErrorWindowButton" runat="server" Text="ok" AutoPostBack="false" OnClientClicked="function(){$find('ctl00_ErrorWindow').close();}"></telerik:RadButton>
+                                    <telerik:RadButton ID="ShowDetailButton" runat="server" Text="Details" AutoPostBack="false" OnClientClicked="function(){$('.dataRowErrorMessage').css('visibility', 'visible');}"></telerik:RadButton>
+                                </div>
+                                <div style="display: table-cell;" class="dataLabelCell">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        </ContentTemplate>
+                    </telerik:RadWindow>
+
+                    <telerik:RadWindow ID="ProgressWindow" runat="server" AutoSize="true" Modal="true">
+                        <ContentTemplate>
+                        <div style="display: table; width: 100%;" class="ProgressTable">
+                            <div style="display: table-row;" class="titleRow">
+                                <div style="display: table-cell;" class="progressTitleCell">
+                                    <asp:Label ID="progressTitle" runat="server" Text="Daten werden verarbeitet. Bitte warten."></asp:Label>
+                                </div>
+                                <div style="display: table-cell;">
+                                </div>
+                            </div>
+                            <div style="display: table-row;" class="dataRow">
+                                <div style="display: table-cell;" class="titleLabelCell">
+                                   <telerik:RadProgressBar RenderMode="Lightweight" runat="server" ID="IndeterminateProgressBar" BarType="Chunk" Indeterminate="true"></telerik:RadProgressBar>
+                                </div>
+                                <div style="display: table-cell;" class="dataLabelCell">
+                                   
+                                </div>
+                            </div>
+                        </div>
+                        </ContentTemplate>
+                    </telerik:RadWindow>
+                </Windows>
+            </telerik:RadWindowManager>
+        </div>
+        <div id="container">
+            <div id="content">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <br />
+            <div id="footer" style="vertical-align:bottom">
+                <a href="http://www.p-soft.ch" target="_blank" style="font-size: xx-small; color: GrayText; vertical-align: top;">&copy; p-soft</a>
+                <%--<a href="javascript:popup(300,200,'
+	                <html>
+		                <head>
+			                <title>About p-soft</title>
+		                </head>
+		                <body style=background-color: #FFF scroll=no >
+			                <br />
+			                <p align=justify style=font-family:verdana,arial;font-size:13px>
+				                <img src=<%=_vDir%>/images/p-softSmall.gif border=0 />
+				                <b>p-soft v5</b>
+				                <br /><br />
+				                Release: <a href=releaseinfo.html target=_blank>5.1.232</a>
+				                <br /><br />
+				                Releasedate: 01.01.2017
+				                <br /><br />
+				                &copy; 1995 - 2017 by p-soft
+			                </p>
+		                </body>
+	                </html>')">
+                <img src="<%=_vDir%>/images/rectangles.png" alt="About p-soft" height="16" border="0">
+                </a>--%>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

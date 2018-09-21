@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!ELEMENT map (global?, local*)>
+<!ELEMENT global (prop | enum)*>
+<!ELEMENT local (prop | enum)*>
+<!ELEMENT enum (prop+)>
+<!ELEMENT prop (#PCDATA)>
+<!ATTLIST local 
+    scope CDATA #REQUIRED
+    alias CDATA #IMPLIED
+>
+<!ATTLIST prop 
+   mnemo CDATA #REQUIRED
+   size CDATA "-1,-1"
+>
+<!ATTLIST enum name CDATA #REQUIRED>

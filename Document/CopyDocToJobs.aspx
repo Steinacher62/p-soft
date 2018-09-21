@@ -1,0 +1,1 @@
+﻿<%@ Page MasterPageFile="~/Framework.Master" language="c#" CodeBehind="CopyDocToJobs.aspx.cs"  AutoEventWireup="True" Inherits="ch.appl.psoft.Document.CopyDocToJobs" %>

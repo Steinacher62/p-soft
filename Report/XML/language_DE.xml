@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE map SYSTEM "../../XML/dtd/language.dtd" >
+<map>
+    <!-- ä &#228; ö &#246; ü &#252; Ä &#196; Ö &#214; Ü &#220; <b> &lt;b&gt; </b> &lt;/b&gt; -->
+    <local scope="ModuleNames">
+        <prop mnemo="report">REPORT</prop>
+    </local>
+    <local scope="reportLayout">
+        <prop mnemo="selectBreadcrumb">Listenvorlagen</prop>
+        <prop mnemo="stand">Stand</prop>
+        <prop mnemo="page">Seite</prop>
+        <prop mnemo="pageFrom">von</prop>
+        <prop mnemo="total">Total</prop>
+        <prop mnemo="selectTitle">Bitte wählen Sie eine Listenvorlage:</prop>
+        <prop mnemo="PhoneListAll">Mitarbeiterliste (alle erfassten Mitarbeiter)</prop>
+        <prop mnemo="PhoneListAllHeader">Liste aller Mitarbeiter</prop>
+        <prop mnemo="PhoneListColumnSurname">Name</prop>
+        <prop mnemo="PhoneListColumnFirstname">Vorname</prop>
+        <prop mnemo="PhoneListColumnNames">Nachname, Vorname</prop>
+        <prop mnemo="PhoneListColumnPhone">Telefon</prop>
+        <prop mnemo="PhoneListColumnMobile">Mobile</prop>
+        <prop mnemo="PhoneListColumnEmail">E-Mail</prop>
+        <prop mnemo="PhoneListColumnMnemo">Kürzel</prop>
+        <prop mnemo="PhoneListColumnOrgentity">Abteilung</prop>
+        <prop mnemo="PhoneListOE">Mitarbeiterliste (Abteilung)</prop>
+        <prop mnemo="PhoneListOEHeader1">Mitarbeiterliste, lookup[title;orgentity;id=$0;false]</prop>
+        <prop mnemo="PhoneListOEHeader2">Aufgelistet werden alle Mitarbeiter in der Abteilung lookup[title;orgentity;id=$0;false]</prop>
+        <prop mnemo="PhoneListSearchResult">Mitarbeiterliste (aus Suchresultat)</prop>
+        <prop mnemo="PhoneListSearchResultHeader">Mitarbeiterliste gemäss Selektion</prop>
+        <prop mnemo="PersonObjectiveHeader">Persönliche Ziele</prop>
+        <prop mnemo="SerialEmailAccessor">Serienmail an alle Berechtigte</prop>
+    </local>
+    <local scope="REPORTLAYOUT">
+        <prop mnemo="TITLE_MNEMO">Liste</prop>
+    </local>
+    <local scope="ACCESSOR_PERSON_MAILINGV">
+        <prop mnemo="NAME">Name</prop>
+        <prop mnemo="FIRSTNAME">Vorname</prop>
+        <prop mnemo="EMAIL">E-Mail</prop>
+    </local>
+  <local scope="Lohnsimulation">
+    <prop mnemo="paramSim">Parameter Lohnsimulation</prop>
+    <prop mnemo="stdSim">Standard Simulation</prop>
+    <prop mnemo="valPoint">Wert/Punkt</prop>
+    <prop mnemo="Unit">CHF</prop>
+    <prop mnemo="totalSumCorr">Gesamtlohnsummenkorrektur</prop>
+    <prop mnemo="abs">Absolut</prop>
+    <prop mnemo="rel">Relativ</prop>
+    <prop mnemo="fixChange">Fixe Lohnänderung</prop>
+    <prop mnemo="diffNomAct">Abweichung Soll-/Istlohn</prop>
+    <prop mnemo="changePercent">Änderung</prop>
+    <prop mnemo="incBaseSalary">Erhöhung Basislohn</prop>
+    <prop mnemo="showReport">Anzeigen</prop>
+    <prop mnemo="subOEs">inkl. untergeordneten Organisationseinheiten</prop>
+    <prop mnemo="jobDescription">Stellenbezeichnung</prop>
+    <prop mnemo="titleEinstelllohn">Simulation Einstelllohn</prop>
+    <prop mnemo="nameLabel">Nachname</prop>
+    <prop mnemo="vornameLabel">Vorname</prop>
+    <prop mnemo="lohnvorstellungLabel">Lohnvorstellung</prop>
+    <prop mnemo="leistungsanteilLabel">Leistungsanteil</prop>
+    <prop mnemo="alterLabel">Alter</prop>
+    <prop mnemo="exportOptions">Exportoptionen</prop>
+    <prop mnemo="correctionExport">Solllohnkorrekturen exportieren</prop>
+    <prop mnemo="addressExport">Adressdaten Serienbrief exportieren</prop>
+    <prop mnemo="maxIncrease">Maximale individuelle Erhöhung</prop>
+    <prop mnemo="round">Lohnerhöhung aufrunden</prop>  
+  </local>
+  <local scope="ApplRights">
+    <prop mnemo="selPerson">Bericht erstellen für</prop>
+    <prop mnemo="ShowFor">Berechtigungen anzeigen für</prop>
+    <prop mnemo="OR">oder</prop>
+    <prop mnemo="OE">Organisation</prop>
+    <prop mnemo="Person">Person</prop>
+    <prop mnemo="showReport">Report anzeigen</prop>
+  </local>
+  <local scope="SelectNameOE">
+    <prop mnemo="Title">Auswahl für Bericht "Eigeneinschätzung"</prop>
+    <prop mnemo="OR">oder</prop>
+    <prop mnemo="OE">Organisation</prop>
+    <prop mnemo="SubOEs">auch untergeordnete OEs auflisten</prop>
+    <prop mnemo="Person">Person</prop>
+    <prop mnemo="showReport">Report anzeigen</prop>
+    <prop mnemo="NotFound">keine Person ausgewählt oder keine Personen in gewählter OE vorhanden!</prop>
+  </local>
+  <local scope="SelectOrgentityMbo">
+    <prop mnemo="Title">Datenauswahl</prop>
+    <prop mnemo="OE">Abteilung</prop>
+    <prop mnemo="CompanyObjective">Unternehmensziel</prop>  
+    <prop mnemo="SubOEs">auch untergeordnete Abteilungen auflisten</prop>
+    <prop mnemo="showReport">Report anzeigen</prop>
+    <prop mnemo="NotFound">keine Abteilung wurde selektiert!</prop>
+    <prop mnemo="Turn">Zielrunde</prop>
+      
+  </local>
+  <local scope="LBUnterdurchschn">
+    <prop mnemo="title">Unterduchschnittliche Leistungsbewertungen</prop>
+  </local>
+  <local scope="LBNegVeraenderung">
+    <prop mnemo="title">Personen mit negativer Leistungsentwicklung</prop>
+    <prop mnemo="datarange">Nur Abweichungen grösser</prop>  
+  </local>
+  <local scope="SelectOEDateRange">
+    <prop mnemo="selOE">OE wählen</prop>
+    <prop mnemo="selDateRange">Zeitraum wählen</prop>
+    <prop mnemo="selDateRangeBonus">Zeitraum der Leistungsbewertungen wählen</prop>
+    <prop mnemo="from">von</prop>
+    <prop mnemo="to">bis</prop>
+    <prop mnemo="SubOEs">auch untergeordnete OEs auflisten</prop>
+    <prop mnemo="showReport">Report anzeigen</prop>
+    <prop mnemo="searchTitle">Personen ohne Leistungsbewertung suchen</prop>
+  </local>
+  <local scope="SearchPersonIncompletePerformanceRating">
+    <prop mnemo="selOE">OE wählen</prop>
+    <prop mnemo="selDateRange">Zeitraum wählen</prop>
+    <prop mnemo="from">von</prop>
+    <prop mnemo="to">bis</prop>
+    <prop mnemo="SubOEs">auch untergeordnete OEs auflisten</prop>
+    <prop mnemo="showReport">Report anzeigen</prop>
+    <prop mnemo="searchTitle">Personen mit unvollständigen Leistungsbewertung suchen</prop>
+  </local>
+  <local scope="WageTable">
+    <prop mnemo="OrgentityTitle">Abteilung</prop>
+    <prop mnemo="PERSONNELNUMBER">P-Nr.</prop>
+    <prop mnemo="PNAME">Name</prop>
+    <prop mnemo="FIRSTNAME">Vorname</prop>
+    <prop mnemo="JobTitle">Stellenbezeichnung</prop>
+    <prop mnemo="TARIFLOEHNER">Im Tariflohn</prop>
+    <prop mnemo="TARIFLOHN">Tariflohn</prop>
+    <prop mnemo="AUSSERTARIFLOHN">Aussertariflicher Lohn</prop>
+    <prop mnemo="AUSSCHLUSSLOHN">Ausschluss Lohn</prop>
+    <prop mnemo="AUSSCHLUSS">Ausschluss von Simulation</prop>
+    <prop mnemo="AUSSCHLUSSBIS">Ausschluss bis</prop>
+    <prop mnemo="WAGE">Lohn</prop>
+    <prop mnemo="WAGELIST">Lohnliste</prop>
+  </local>
+  <local scope="SelectKnowledge">
+    <prop mnemo="selectKnowledgeElement">Wissenselemt auswählen</prop>
+    <prop mnemo="searchTitle">Wissenselemnet selektieren</prop>
+  </local>
+</map>

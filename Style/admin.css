@@ -1,0 +1,215 @@
+﻿
+
+html, body, form {
+    font-size: 11px;
+    font-weight: normal;
+    color: #000000;
+    text-decoration: none;
+    line-height: 18px;
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+}
+
+#container {
+    height:82%;
+}
+
+.AdminOrganisationContent {
+    height: 100%;
+}
+
+.AdminContent {
+    height: 100%;
+}
+
+span.FieldValidator[style*="inline"] {
+    display: block !important;
+    color: orangered;
+    font-weight: bold;
+}
+
+.MainContainerTitle {
+    font-weight: bold;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.adminTitleCell {
+    font-weight: bold;
+    height: 20px;
+}
+
+.OrganiationTable {
+    display: none;
+    overflow: auto;
+}
+
+.JobTable {
+    display: none;
+}
+
+.RadSplitter {
+}
+
+.SplitterAdmin, .Splitter {
+    height: 100%;
+    width: 97%;
+}
+
+.SplitterRight {
+}
+
+.PaneLeft {
+}
+
+.PaneCenter {
+}
+
+.PaneRight {
+}
+
+.PaneRightBottom{
+
+}
+
+#PageViewPersonTree {
+    overflow:auto;
+}
+
+.titleLabelCell, .adminTitleCell {
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    min-width: 100px;
+    vertical-align: middle;
+    overflow: auto;
+}
+
+.Tree .rtLI {
+    padding-bottom: 0px;
+}
+
+.Tree .rtUL .rtLi {
+    margin-top: 0px;
+}
+
+.RadTreeView .rtLast {
+    padding-bottom: 0; /* prevent double-spacing */
+}
+
+.Tree {
+    font-size: 50%;
+}
+
+/*.RadMultiPage .rmpView {
+    height: 100%;
+    box-sizing: border-box;
+}*/
+
+.dataLabelCell {
+    vertical-align: middle;
+    min-width: 100px;
+    height: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left:20px;
+    /*overflow:auto;*/
+}
+
+.permissionCell{
+    height: 10px;
+}
+.Textbox {
+    min-width: 240px;
+    margin-top: 5px !important;
+    margin-bottom: 5px !important;
+}
+
+.NumericTextBox {
+    text-align: right;
+}
+
+.TextboxMultiLine {
+    margin-top: 10px !important;
+    height: 150px !important;
+    min-width: 250px !important;
+    word-wrap: normal;
+}
+
+.DropDown {
+    min-width: 400px;
+}
+
+.DescriptionField {
+    min-width: 400px;
+    height: 100px;
+    word-wrap: normal;
+}
+
+.searchCommandCell {
+    border-bottom: 1px solid #999999;
+    height: 1px;
+    padding: 2px;
+}
+
+.CommandCell {
+    padding: 5px;
+}
+
+.searchLabelCell {
+    padding-top: 10px !important;
+    padding-left: 10px !important;
+    padding-bottom: 10px !important;
+    /*display:block;
+    float:left;*/
+    width: 100px;
+    overflow:auto;
+    vertical-align: middle;
+}
+
+.searchLabelCellData {
+    padding-top: 10px !important;
+    padding-left:10px !important;
+    padding-bottom:10px !important;
+    /*display:block;
+    float:left;*/
+    width: 200px;
+    vertical-align: middle;
+}
+
+.searchLabelCellTitle {
+    padding-left: 10px;
+    font-weight: bold;
+    overflow: visible;
+}
+
+.searchData {
+    vertical-align: middle;
+    width: 100px;
+    height: 20px;
+}
+
+.CommandRow {
+    height: 20px;
+    border-bottom: 1px solid #999999;
+    padding-bottom: 5px;
+    background-color: #ede9e9;
+}
+
+.JobImageButton {
+    min-width: 180px !important;
+}
+
+.RadWindow .rwContent {
+    overflow: hidden !important;
+}
+
+div.noWrapRadListBox .rlbText {
+     white-space: nowrap;
+}
+
+.GridChartLink .rgDataDiv {
+    height: auto !important;
+}

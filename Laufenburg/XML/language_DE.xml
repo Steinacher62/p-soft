@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE map SYSTEM "../../XML/dtd/language.dtd" >
+<map>
+    <local scope="ModuleNames">
+        <prop mnemo="laufenburg">Laufenburg</prop>
+    </local>
+    <local scope="laufenburg">
+        <prop mnemo="Title">Stellenbeschreibung</prop>
+        <prop mnemo="JobDescription">Stellenbeschreibung</prop>
+        <prop mnemo="JobOwner">StelleninhaberIn</prop>
+        <prop mnemo="DateOfBirth">Geburtsdatum</prop>
+        <prop mnemo="Representation">Stellvertretung</prop>
+        <prop mnemo="Engagement">Beschäftigungsgrad</prop>
+        <prop mnemo="Function">Funktionbezeichnung</prop>
+        <prop mnemo="OE">Bereich</prop>
+        <prop mnemo="LeaderFunction">Vorgesetzte Stelle</prop>
+        <prop mnemo="SubOEs"> Unterstellte Bereiche</prop>
+        <prop mnemo="Overview">Ziele der Stelle</prop>
+        <prop mnemo="Competences">Verantwortlichkeiten</prop>
+        <prop mnemo="CompetencesRules">Regelung Verantwortlichkeit</prop>
+        <prop mnemo="DutyCatalog">Aufgabenkatalog</prop>
+        <prop mnemo="Skills">Kernkompetenzen</prop>
+        <prop mnemo="reportDate">Erstellungsdatum:</prop>
+        <prop mnemo="printDate">Druckdatum:</prop>
+        <prop mnemo="remark"></prop>
+    </local>
+    <local scope="fbs">
+      	<prop mnemo="bcJobDescription">Stellenbeschreibung</prop>
+	<prop mnemo="bcEditJobDescription">Stellenbeschreibung bearbeiten</prop>
+	<prop mnemo="cmEditJobDescription">Stellenbeschreibung bearbeiten</prop>
+	<prop mnemo="cmtJobDescription">Stellenbeschreibung</prop>
+	<prop mnemo="repJobDescription">Stellenbeschreibung</prop>   
+        <prop mnemo="ctCompetences">Verantwortlichkeiten (zeitabhängig)</prop>
+        <prop mnemo="ctDCVList">Verantwortlichkeiten (zeitabhängig) für Aufgabe '#1':</prop>
+        <prop mnemo="cmNewDutyCompetence">Neue Verantwortlichkeit (zeitabhängig)</prop>
+        <prop mnemo="repCompetences">Verantwortlichkeiten</prop>
+        <prop mnemo="repCompetencesRules">Regelung Verantwortlichkeit</prop>
+        <prop mnemo="bcEditDutyCompetence">Verantwortlichkeit bearbeiten</prop>
+        <prop mnemo="cbShowValidOnly">Nur gültige Verantwortlichkeiten anzeigen</prop>
+    </local>
+</map>

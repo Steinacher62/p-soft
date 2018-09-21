@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!ELEMENT config (language, db, ftp, www, organisation, display, authentication, cms, commonsettings, modules?)>
+<!ELEMENT language EMPTY>
+<!ATTLIST language 
+    LanguageCode (en | de | it | fr) "de"
+    RegionCode CDATA "CH"
+>
+<!ELEMENT db EMPTY>
+<!ATTLIST db 
+    Server CDATA "(local)"
+    LanguageCode (en | de | it | fr) "en"
+    RegionCode CDATA "US"
+    Name CDATA "Psoft"
+    User CDATA "PsoftuserDev"
+    Password CDATA "Psoft"
+    DriverClass CDATA "ch.psoft.db.MSSqlDriver"
+    MultiLanguage (enable | disable) "disable"
+    Port CDATA "1433"
+>
+<!ELEMENT ftp EMPTY>
+<!ATTLIST ftp     
+    FtpDocumentServer CDATA "localhost"
+    FtpDocumentTempDirectory CDATA #REQUIRED
+    FtpDocumentSaveDirectory CDATA #REQUIRED
+    FtpDocumentHistoryDirectory CDATA #REQUIRED
+    DocumentSaveURL CDATA #REQUIRED
+    DocumentHistoryURL CDATA #REQUIRED
+    DocumentSaveDirectory CDATA #REQUIRED
+    DocumentTempDirectory CDATA #REQUIRED
+    DocumentHistoryDirectory CDATA #REQUIRED
+    IndexingCatalogName CDATA "SEEK_Documents"
+    NumberOfDocumentVersions CDATA #REQUIRED
+    FtpUser CDATA #REQUIRED
+    FtpPassword CDATA #REQUIRED
+>
+<!ELEMENT www EMPTY>
+<!ATTLIST www 
+    BaseURL CDATA "/Psoft"
+    Domain CDATA "localhost"
+    EMail CDATA #REQUIRED
+>
+<!ELEMENT organisation EMPTY>
+<!ATTLIST organisation 
+    ShortPhoneNumber CDATA "4"
+    PersonPhotoDirectory CDATA ""
+    ModuleVisible (0 | 1) "1"
+    OrganisationImageDirectory CDATA #REQUIRED
+    LogoImageDirectory CDATA ""
+    showMainJobOnly (0 | 1) "0"
+    showEngagement (0 | 1) "0"
+    showReportPersonData (0 | 1) "0"
+    enableVisio (0 | 1) "0"
+    showVageField (0 | 1) "0"
+    showJournalOnlyCreator (0 | 1) "0"
+    shopActive  (0 | 1) "0"
+>
+<!ELEMENT display EMPTY> 
+<!ATTLIST display 
+    RowsPerListPage CDATA "15"
+    MaxTreeCaptionLength CDATA "25"
+    StartUpURL CDATA ""
+    ShowPartnerLogos (0 | 1) "1"
+    HeaderLogo CDATA ""
+    HeaderLogoURL CDATA ""
+    ShowDocumentSearch (0 | 1) "1"
+    HighlightColor CDATA ""
+    ShowLanguageSelector (0 | 1) "1"
+    MaxBreadcrumbItems CDATA "5"
+    ShowNews (0 | 1) "0"
+    AvailableLanguages CDATA "de"
+    ShowHelpFile  (0 | 1) "0"
+    SelectFontSize (0 | 1) "0"
+    ApplicationName CDATA ""
+    ShowPasswordrecovery  (0 | 1) "1"
+    ShowPasswordChange (0 | 1) "1"
+    ShowNewAccount (0 | 1) "1"
+    BackgroundStartpage CDATA ""
+    ShowAdmin (0 | 1) "0"
+>
+<!ELEMENT authentication EMPTY>
+<!ATTLIST authentication 
+  mode (login | anonymous | windows | windowsConfirm) #REQUIRED
+  anonymousAccount CDATA "anony"
+  anonymousPassword CDATA ""
+>
+<!ELEMENT cms EMPTY>
+<!ATTLIST cms 
+    CMSRootURL CDATA "/Psoft/CMSRoot"
+>
+<!ELEMENT commonsettings (param*) >
+<!ELEMENT modules (module+) >
+<!ELEMENT module (param*)>
+<!ATTLIST module 
+  name CDATA #REQUIRED
+  enabled (0 | 1) '1'
+  assemblyName CDATA #IMPLIED
+  className CDATA #IMPLIED
+>
+<!ELEMENT param (#PCDATA)>
+<!ATTLIST param 
+  name CDATA #REQUIRED
+>

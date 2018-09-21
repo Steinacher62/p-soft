@@ -1,0 +1,17 @@
+.Fonts
+{
+	font-family: Tahoma; 
+	font-size:8pt;
+}
+
+.BackgroundTab
+{
+	background-color:#C3DAF9;
+}
+
+.FormBackground
+{
+	background-color:#9abeee;
+}
+.inputHeight0 { height: 16px !important; }
+.inputHeight1 { height: 18px !important; border: 1px solid #7f9db9; padding: 0px; }

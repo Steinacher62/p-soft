@@ -1,0 +1,138 @@
+﻿#ContentPlaceHolder1__pl__cl__erev_levelTable{
+    margin-top:30px;
+    margin-bottom:30px;
+}
+
+#ContentPlaceHolder1__pl__cl__erev_levelTable tr:first-child {
+    font-weight:bold;
+}
+
+
+#ContentPlaceHolder1__pl__cl__erev_MainTable {
+    width: 850px;
+    border-spacing: 4px;
+    border-collapse:separate;
+    table-layout:fixed;
+}
+
+#ContentPlaceHolder1__pl__cl__erev_MainTable > tbody > tr{
+     height:100%;   
+}
+
+#ContentPlaceHolder1__pl__cl__erev_MainTable tr:first-child {
+    font-weight:bold;
+}
+
+#ContentPlaceHolder1__pl__cl__erev_criteriaTableHead {
+    width: 60%;
+}
+
+#ContentPlaceHolder1__pl__cl__erev_criteriaTableHead table {
+    width: 100%;
+}
+
+.RatingHeadCell {
+    font-weight: bold;
+    height: 30px;
+    text-align: center;
+    width: 30px;
+    font-size: large;
+}
+
+.criteriaTable {
+    width:100%;
+    border: 2px solid black;
+    border-collapse:collapse;
+}
+
+.criteriaTable tr {
+    border-top: 2px solid black;
+}
+
+.criteriaTable td {
+    height: 30px;
+}
+
+.criteriaTable td:nth-child(2) , .criteriaTable td:first-child{
+    border:2px solid black;
+}
+
+.CriteriaHeadCell {
+    background-color:  #80ff00;
+    border:2px solid black;
+    font-weight:bold;
+}
+
+.criteriaTable tr td:first-child {
+    width:30px;
+    text-align:center;
+}
+
+.criteriaTable td:not(.CriteriaHeadCell):not(:nth-child(2)):not(:first-child)  {
+    text-align:center;
+}
+
+.TotalBoxCriteria, .TotalBoxCriteriaTotal {
+    font-weight: bold;
+    width: 30px;
+    text-align: center;
+     border:2px solid black;
+}
+.Active {
+    font-weight:bold;
+    background-color: #80ff00;
+}
+
+.criteriaTable row td:first-child {
+    width: 30px;
+}
+
+.CommentCell {
+    height:100%;
+}
+
+textarea {
+    width: 98%;
+    resize:none;
+    overflow:auto;
+    border:2px solid black;
+    height:135px;
+}
+/*note: textarea height is hardcoded because of ie
+    */
+
+.BottomCommentTable {
+    width:100%;
+    height:150px;
+}
+
+.BottomCommentTable tr:first-child {
+    font-weight:bold;
+    height: 15px;
+}
+
+.InfoIcon {
+    margin-left:2px;
+    margin-right:2px;
+}
+
+td>span {
+    display: block;
+}
+
+.Yearspan textarea {
+    width:50px;
+    height:15px;
+    border:1px solid #D6D3CE;
+    overflow:hidden;
+    vertical-align:middle;
+    
+    
+}
+
+.descDiv {
+    position:absolute;
+    background-color:white;
+    border: 2px solid black;
+
+}

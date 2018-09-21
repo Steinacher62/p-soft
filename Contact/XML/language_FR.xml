@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE map SYSTEM "../../XML/dtd/language.dtd" >
+<map>
+    <!-- ä &#228; ö &#246; ü &#252; Ä &#196; Ö &#214; Ü &#220; <b> &lt;b&gt; </b> &lt;/b&gt; -->
+    <local scope="ModuleNames">
+        <prop mnemo="contact">KONTAKTE</prop>
+    </local>
+    <local scope="home">
+        <prop mnemo="myContacts">Kontaktgruppen</prop>
+    </local>
+    <local scope="reportLayout">
+        <prop mnemo="contactGroupLetter">Wählen Sie eine Vorlage für den Serienbrief:</prop>
+        <prop mnemo="contactGroupEmail">Wählen Sie eine Vorlage für das Serien-Email:</prop>
+        <prop mnemo="contactsLetter">Wählen Sie eine Vorlage für das Serienbrief:</prop>
+        <prop mnemo="contactsEmail">Wählen Sie eine Vorlage für das Serien-Email:</prop>
+        <prop mnemo="firmLetter">Wählen Sie eine Vorlage für das Serienbrief:</prop>
+        <prop mnemo="firmEmail">Wählen Sie eine Vorlage für das Serien-Email:</prop>
+
+        <prop mnemo="SerialLetterContactGroup">Serienbrief an alle Kontakte innerhalb Kontaktgruppe</prop>
+        <prop mnemo="SerialEmailContactGroup">Serien - E-Mail an alle Kontakte innerhalb Kontaktgruppe</prop>
+        <prop mnemo="SerialLetterContactSelection">Serienbrief an alle selektierten Kontakte</prop>
+        <prop mnemo="SerialEmailContactSelection">Serien - E-Mail an alle selektierten Kontakte</prop>
+        <prop mnemo="SerialLetterContactFirm">Serienbrief an alle Kontaktpersonen der gewählten Firma</prop>
+        <prop mnemo="SerialEmailContactFirm">Serien - E-Mail an alle Kontaktpersonen der gewählten Firma</prop>
+    </local>
+    <local scope="CONTACT_PERSON" alias="PERSON"></local>
+    <local scope="PERSON">
+        <prop mnemo="CONTACT_TYPE_ID">Kontakttyp</prop>
+        <prop mnemo="CONTACT_ROLE_ID">Kontaktrolle</prop>
+    </local>
+    <local scope="CONTACT_FIRM" alias="FIRM"></local>
+    <local scope="FIRM">
+        <prop mnemo="CONTACT_TYPE_ID">Kontakttyp</prop>
+    </local>
+    <local scope="CONTACT_GROUP_CONTACT_V" alias="CONTACTV"></local>
+    <local scope="CONTACTV">
+        <prop mnemo="NAME" size="50">Kontaktname</prop>
+        <prop mnemo="TABLENAME">Kontaktart</prop>
+        <prop mnemo="COUNTRY">Land</prop>
+        <prop mnemo="ZIP">PLZ</prop>
+        <prop mnemo="CITY">Ort</prop>
+        <prop mnemo="PHONE">Telefon</prop>
+        <prop mnemo="MOBILE">Mobil</prop>
+        <prop mnemo="EMAIL">Email</prop>
+        <prop mnemo="FIRM_ID">Kontaktfirma</prop>
+        <prop mnemo="CONTACT_TYPE_ID">Kontakttyp</prop>
+        <prop mnemo="CONTACT_ROLE_ID">Kontaktrolle</prop>
+    </local>
+    <local scope="CONTACT_GROUP">
+        <prop mnemo="TITLE">Bezeichnung</prop>
+        <prop mnemo="DESCRIPTION" size="80,8">Beschreibung</prop>
+    </local>
+    <local scope="CONTACT_MAILINGV">
+        <prop mnemo="NAME">Name</prop>
+        <prop mnemo="FIRSTNAME">Vorname</prop>
+        <prop mnemo="EMAIL">E-Mail</prop>
+    </local>
+    <local scope="JOURNAL_CONTACT_V" alias="JOURNAL"></local>
+    <local scope="JOURNAL">
+ 		<prop mnemo="TITLE">Bezeichnung</prop>
+ 		<prop mnemo="DESCRIPTION" size="80,8">Beschreibung</prop>
+ 		<prop mnemo="CREATED">Datum</prop>
+ 		<prop mnemo="JOURNAL_TYPE_ID">Journaltyp</prop>
+ 		<prop mnemo="CREATOR_PERSON_ID">Erstellt</prop>
+    </local>
+    <local scope="contact">
+        <prop mnemo="searchContactContact">Kontakt:</prop>
+        <prop mnemo="searchContactJournal">Journal:</prop>
+        <prop mnemo="contactKindPerson">Person</prop>
+        <prop mnemo="contactKindFirm">Firma</prop>
+        <prop mnemo="addEditContactContact">Kontaktperson:</prop>
+        <prop mnemo="addEditContactFirm">Kontaktfirma:</prop>
+        <prop mnemo="addEditContactAddress">Adresse:</prop>
+
+        <prop mnemo="bcSearchContact">Kontakte suchen</prop>
+        <prop mnemo="bcAddContact">Kontaktperson hinzufügen</prop>
+        <prop mnemo="bcAddFirm">Kontaktfirma hinzufügen</prop>
+        <prop mnemo="bcAddContactGroup">Kontaktgruppe hinzufügen</prop>
+        <prop mnemo="bcEditContact">Kontaktperson bearbeiten</prop>
+        <prop mnemo="bcEditFirm">Kontaktfirma bearbeiten</prop>
+        <prop mnemo="bcAddJournal">Neuer Journaleintrag</prop>
+        <prop mnemo="bcEditContactGroup">Kontaktgruppe bearbeiten</prop>
+        <prop mnemo="bcEmptyContactGroup">Leere Kontaktgruppe</prop>
+        <prop mnemo="bcNoContactGroup">Keine Kontaktgruppe definiert</prop>
+        
+        <prop mnemo="ptSearchContact">Kontakte suchen</prop>
+        <prop mnemo="ptSearchContactList">Folgende Kontakte wurden gefunden:</prop>
+        
+        <prop mnemo="ctContactListSearchResult">Kontakte gemäss Selektion:</prop>
+        <prop mnemo="ctContactGroupList">Kontakte in Kontaktgruppe '#1':</prop>
+        <prop mnemo="ctFirmContactList">Kontaktpersonen in Firma '#1':</prop>
+        <prop mnemo="ctPersonContactGroups">Vorhandene Kontaktgruppen:</prop>
+        <prop mnemo="ctContactJournalList">Journaleinträge für Kontakt '#1':</prop>
+
+        <prop mnemo="cmEditContact">Kontakt bearbeiten</prop>
+        <prop mnemo="cmDeleteContact">Kontakt löschen</prop>
+        <prop mnemo="cmDeleteFromGroup">Aus Kontaktgruppe entfernen</prop>
+        <prop mnemo="cmDeleteFromSelection">Aus Selektion entfernen</prop>
+        <prop mnemo="cmNewJournal">Neuer Journaleintrag</prop>
+        <prop mnemo="cmListJournal">Journaleinträge</prop>
+        <prop mnemo="cmNewContactPerson">Neue Kontaktperson</prop>
+        <prop mnemo="cmListContactPersons">Kontaktpersonen</prop>
+        <prop mnemo="cmListContacts">Kontakte</prop>
+        <prop mnemo="cmSaveAsGroups">Als neue Kontaktgruppe</prop>
+        <prop mnemo="cmEditContactGroup">Kontaktgruppe bearbeiten</prop>
+        <prop mnemo="cmSerialLetter">Serienbrief/Etiketten</prop>
+        <prop mnemo="cmSerialEmail">Serien - E-Mail</prop>
+        <prop mnemo="cmCreateTasklist">Pendenzenliste erstellen</prop>
+        <prop mnemo="cmAddToGroup">Weitere Kontakte hinzufügen</prop>
+        <prop mnemo="cmAddToSelection">Weitere Kontakte hinzufügen</prop>
+
+        <prop mnemo="cmtContactPerson">Kontaktperson</prop>
+        <prop mnemo="cmtContactFirm">Kontaktfirma</prop>
+        <prop mnemo="cmtContactGroup">Kontaktgruppe</prop>
+        <prop mnemo="cmtAllContactGroups">Alle Kontaktgruppen</prop>
+        <prop mnemo="cmtSelectionContacts">Selektierte Kontakte</prop>
+        <prop mnemo="cmtGroupContacts">Kontakte in Gruppe</prop>
+        <prop mnemo="cmtFirmContacts">Kontakte in Firma</prop>
+        <prop mnemo="cmtDispatch">Versand</prop>
+        <prop mnemo="cmtTasklists">Pendenzenlisten</prop>
+
+        <prop mnemo="subNavTitle">Kontakte</prop>
+        <prop mnemo="subNavSearchContact">Kontakte suchen</prop>
+        <prop mnemo="subNavMyContactGroups">Kontaktgruppen</prop>
+        <prop mnemo="subNavNewContactGroup">Neue Kontaktgruppe</prop>
+        <prop mnemo="subNavNewContactPerson">Neue Kontaktperson</prop>
+        <prop mnemo="subNavNewContactCompany">Neue Kontaktfirma</prop>
+        
+        <prop mnemo="oeAssignContactGroup">Zuordnung zu den Abteilungen</prop>
+    </local>
+
+    <!-- alte Einträge -->
+    <local scope="CONTACTMAILINGV" alias="CONTACTPERSONMAILINGV"></local>
+    <local scope="CONTACTPERSONMAILINGV" alias="PERSON">
+        <prop mnemo="CONTACT_NAME" size="100">Kontakt</prop>
+        <prop mnemo="NAME" size="100">Name</prop>
+        <prop mnemo="ADR_4">Anschrift</prop>
+        <prop mnemo="ADR_5">PLZ/Ort</prop>
+    </local>
+</map>

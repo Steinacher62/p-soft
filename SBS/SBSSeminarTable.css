@@ -1,0 +1,160 @@
+﻿/*whole table format*/
+.SeminarTable {
+    border-collapse: collapse;
+}
+table.SeminarTable {
+    max-width:1200px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+    .SeminarTable td {
+        font-size: 12px;
+    }
+
+/*Title format*/
+.TitleRow {
+    background-color: #d31616;
+    text-align: center;
+}
+
+    .TitleRow td {
+        color: white;
+    }
+
+    /*Main Title format*/
+    .TitleRow:first-child, .TitleRow:first-child td {
+        height: 50px;
+        font-size: 24px;
+        font-weight: bolder;
+    }
+
+    /*Second Title format*/
+    .TitleRow:nth-child(2), .TitleRow:nth-child(2) td {
+        height: 20px;
+        font-size: 12px;
+        padding-bottom: 5px;
+    }
+
+
+/*Date Format*/
+td.DateCell {
+    text-align: center;
+    width: 180px;
+    font-size: 12px;
+    border: 10px solid white;
+    font-weight: bold;
+}
+
+/* Module Format*/
+.ModuleRow {
+    height: 70px;
+}
+
+td.ModuleCell {
+    min-width:150px;
+    max-width:210px;
+    background-color: #f0f0f0;
+    border: 10px solid white;
+    color: #d31616;
+    padding: 5px;
+    vertical-align: top;
+    font-weight:bold;
+}
+
+/*Folder Format*/
+.FolderRow {
+    height: 70px;
+}
+
+td.FolderCell.ClickableFolder.ActiveFolder {
+    background-color: #d31616;
+    color: white;
+}
+
+td.FolderCell.ClickableFolder:hover {
+    cursor: pointer;
+    color: white;
+     background-color: #d31616;
+}
+
+td.FolderCell.ClickableFolder {
+    background-color:  #f2f2f2;;
+   color:blue;
+}
+
+td.FolderCell {
+    background-color: #f8f8f8;
+    border: 10px solid white;
+    padding: 5px;
+    vertical-align: top;
+}
+
+
+
+/*Document Format*/
+
+.DocumentRow td {
+    background-color: #f0f0f0;
+    vertical-align: top;
+}
+
+.DocumentRow {
+    height: 80px;
+    border: 1px solid transparent;
+}
+
+.DocumentsList {
+    -moz-column-count: 3;
+    -moz-column-gap: 20px;
+    -webkit-column-count: 3;
+    -webkit-column-gap: 20px;
+    column-count: 3;
+    column-gap: 20px;
+    list-style-type: none;
+}
+
+/*avoid column break within list element*/
+.DocumentsList li{
+  overflow: hidden; /* Fix for firefox and IE 10-11  */
+-webkit-column-break-inside: avoid; /* Chrome, Safari, Opera */
+page-break-inside: avoid; /* Firefox */
+break-inside: avoid; /* IE 10+ */
+break-inside: avoid-column;
+}
+
+/*Documents*/
+.HiddenDocument {
+    display: none;
+}
+
+
+.DocumentListEntry a {
+    padding-left: 7px;
+    color: #d31616
+}
+.DocumentListEntry a:hover {
+    color: lightgray;
+}
+
+/*Description Box*/
+.Description.Active {
+    display:block;
+}
+
+.Description {
+    position: absolute;
+    border: 1px solid grey;
+    background-color: white;
+    padding: 3px;
+    display: none;
+    max-width: 200px;
+}
+
+.ClickableDescription:hover {
+    cursor: pointer;
+}
+
+.CopyrightCell{
+    text-align:right;
+}

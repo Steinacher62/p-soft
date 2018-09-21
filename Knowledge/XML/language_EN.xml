@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE map SYSTEM "../../XML/dtd/language.dtd" >
+<map>
+    <!-- ä &#228; ö &#246; ü &#252; Ä &#196; Ö &#214; Ü &#220; <b> &lt;b&gt; </b> &lt;/b&gt; -->
+    <local scope="ModuleNames">
+        <prop mnemo="knowledge">WISSEN</prop>
+    </local>
+    <local scope="tableName">
+ 		<prop mnemo="KNOWLEDGE_V">Wissen</prop>
+ 		<prop mnemo="KNOWLEDGE">Wissen</prop>
+ 		<prop mnemo="THEME">Thema</prop>
+    </local>
+    <local scope="knowledge">
+        <prop mnemo="knowledge">Wissen</prop>
+        <prop mnemo="miSearchKnowledge">Wissen suchen</prop>
+        <prop mnemo="miNewKnowledge">Neues globales Wissenselement</prop>
+        <prop mnemo="miPrintKnowledge">Wissen drucken</prop>
+        <prop mnemo="bcSearchKnowledge">Wissen suchen</prop>
+        <prop mnemo="bcPrintKnowledge">Print Knowledge</prop>
+        <prop mnemo="bcEditTheme">Thema bearbeiten</prop>
+        <prop mnemo="bcAddTheme">Thema hinzufügen</prop>
+        <prop mnemo="bcEditKnowledge">Wissenselement bearbeiten</prop>
+        <prop mnemo="bcAddKnowledge">Globales Wissenselement hinzufügen</prop>
+        <prop mnemo="ctContents">Inhaltsverzeichnis</prop>
+        <prop mnemo="ctKnowledge">Wissenselement</prop>
+        <prop mnemo="ctAssignedKnowledges">Verknüpftes Wissen</prop>
+        <prop mnemo="ctAdministration">Administration</prop>
+        <prop mnemo="clEditKnowledge">Wissenselement bearbeiten</prop>
+        <prop mnemo="clNewKnowledge">Mit neuem Wissenselement verknüpfen</prop>
+        <prop mnemo="clDeleteKnowledge">Wissenselement löschen</prop>
+        <prop mnemo="clAddTheme">Neues Thema</prop>
+        <prop mnemo="clAddDocument">Neues Dokument</prop>
+        <prop mnemo="clAddImage">Neues Bild</prop>
+        <prop mnemo="clInviteAuthors">Autoren einladen</prop>
+        <prop mnemo="stDocuments">Dokumente</prop>
+        <prop mnemo="stRegistry">Registratur</prop>
+        <prop mnemo="bcEditHistory">Bemerkung bearbeiten</prop>
+        <prop mnemo="bcAddHistory">Neue Version erstellen</prop>
+        <prop mnemo="ttGenerateWordDocument">Word Dokument erzeugen...</prop>
+        <prop mnemo="btPrintSelection">Print Selection</prop>
+        <prop mnemo="cbKnowledgeOnly">Nur Wissenelemente listen</prop>
+        <prop mnemo="popupCannotDeleteKnowledge">Warnung: Das Wissenelement kann nicht gelöscht werden</prop>
+        <prop mnemo="stSuggestionRanking">Bewertung des Vorschlags</prop>
+        <prop mnemo="ttAndOder">Titel mit Thementyp mit&#13;&#10;- 'und' oder,&#13;&#10;- 'oder'&#13;&#10;verkn&#252;pfen</prop>
+        <prop mnemo="columnKnowledgeTitle">Wissenelement Titel</prop>
+    </local>
+    <local scope="KNOWLEDGE_V" alias="KNOWLEDGE"></local>
+    <local scope="KNOWLEDGE">
+        <prop mnemo="TITLE_EN" size="80,1">Titel</prop>
+        <prop mnemo="DESCRIPTION_EN" size="100,25">Beschreibung</prop>
+        <prop mnemo="CREATED_EN">Erstellt am</prop>
+        <prop mnemo="CREATOR_PERSON_ID_EN">Erstellt durch</prop>
+        <prop mnemo="TRIGGER_UID">Quelle</prop>
+        <prop mnemo="THEMETYPE_ID_EN" size="80,1">Thementyp</prop>
+        <prop mnemo="TYPE" size="80,1">Typ</prop>
+        <prop mnemo="ISACTIVE" size="80,1">Bewertung</prop>
+        <prop mnemo="SUGGESTION_EXECUTION_ID" size="80,1">Vorschlag</prop>
+        <prop mnemo="SUGGESTION_STATI_ID" size="80,1">Bewertung</prop>
+        <enum name="types">
+            <prop mnemo="0">Default</prop>
+            <prop mnemo="1">Vorschlag</prop>
+        </enum>
+        <enum name="isActiveSuggestion">
+            <prop mnemo="0">Inaktive Vorschläge</prop>
+            <prop mnemo="1">Aktive Vorschläge</prop>
+        </enum>        
+    </local>
+    <local scope="THEME">
+        <prop mnemo="TITLE_DE" size="80,1">Wissenelement Titel</prop>
+        <prop mnemo="TITLE" size="80,1">Theme Titel</prop>
+        <prop mnemo="DESCRIPTION" size="100,25">Beschreibung</prop>
+        <prop mnemo="CREATED">Erstellt am</prop>
+        <prop mnemo="CREATOR_PERSON_ID">Erstellt durch</prop>
+        <prop mnemo="ORDNUMBER">Position</prop>
+    </local>
+</map>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE map SYSTEM "../../XML/dtd/language.dtd" >
+<map>
+    <!-- ä &#228; ö &#246; ü &#252; Ä &#196; Ö &#214; Ü &#220; <b> &lt;b&gt; </b> &lt;/b&gt; -->
+    <local scope="ModuleNames">
+        <prop mnemo="fbs">DESCRIPTION DE FONCTION</prop>
+    </local>
+    <local scope="fbs">
+        <prop mnemo="bcJobDescription">Description du emploi</prop>
+        <prop mnemo="bcEditJobDescription">Remanier la description d'emploi</prop>
+        <prop mnemo="bcDutyCatalog">Catalogue de tâche</prop>
+        <prop mnemo="ctDutyGroupTree">Groupes de tâches</prop>
+        <prop mnemo="ctDutyTree">Catalogue de tâche</prop>
+        <prop mnemo="ctCompetenceList">Tâches</prop>
+        <prop mnemo="ctCompetences">Compétences (dépendant du temps)</prop>
+        <prop mnemo="ctDCVList">Compétences (dépendant du temps) pour la tâche '#1':</prop>
+        <prop mnemo="ctDutyCatalogDutyDetail">Tâche</prop>
+        <prop mnemo="cmEditJobDescription">Remanier la description d'emploi</prop>
+        <prop mnemo="cmNewDutyCompetence">Nouvelle compétence (dépendant du temps)</prop>
+        <prop mnemo="cmtJobDescription">Description d'emploi</prop>
+        <prop mnemo="repJobDescription">Description d'emploi</prop>
+        <prop mnemo="repDuty">Tâche</prop>
+        <prop mnemo="repCompetences">Compétences</prop>
+        <prop mnemo="repCompetencesRules">Règlement de compétence</prop>
+        <prop mnemo="repJobOwner">Propriétaire de place</prop>
+        <prop mnemo="repDutyCatalog">Catalogue de tâche</prop>
+        <prop mnemo="repDutyGroupFree">Tâches libres</prop>
+        <prop mnemo="cmAddDutyCompetence">Nouvelle compétence du catalogue</prop>
+        <prop mnemo="cmAddDutyCompetenceFree">Nouvelle compétence libre</prop>
+        <prop mnemo="bcAddDutyCompetence">Nouvelle compétence du catalogue</prop>
+        <prop mnemo="bcAddDutyCompetenceFree">Nouvelle compétence libre</prop>
+        <prop mnemo="bcEditDutyCompetence">Remanier la compétence</prop>
+        <prop mnemo="ctCompetence">Tâche</prop>
+        <prop mnemo="cbShowValidOnly">Indiquer seulement des compétences valables</prop>
+        <prop mnemo="cmEditDutyFree">Remanier une tâche libre</prop>
+        <prop mnemo="bcEditDutyFree">Remanier une tâche libre</prop>
+        <prop mnemo="ctDuty">Tâche</prop>
+        <prop mnemo="functionCatalog">Catalogue de fonction</prop>
+        <prop mnemo="functionSearch">Chercher une fonction</prop>
+        <prop mnemo="functionDescription">Description de fonction</prop>
+        <prop mnemo="functionRating">Évaluation de fonction</prop>
+        <prop mnemo="functionValue:">Valeur de fonction:</prop>
+        <prop mnemo="salaryValue:">Salaire de base:</prop>
+        <prop mnemo="responsabilityMatrixTitle">Responsabilité</prop>
+        <prop mnemo="competenceMatrixTitle">Compétence</prop>
+        <prop mnemo="organisationUnitSelection">Organisationseinheit selektieren</prop>
+        <prop mnemo="staffmember">Mitarbeiter/-in</prop>
+        <prop mnemo="directchief">Direkte/r Vorgesetzte/r</prop>
+        <prop mnemo="nextchief">Nächst höhere/r Vorgesetzte/r</prop>
+        <prop mnemo="datevisa">Datum/Visum</prop>
+    </local>
+    <local scope="DUTY_VALIDITY" alias="DUTY_VALIDITY_V"></local>
+
+    <local scope="reportLayout">
+        <prop mnemo="JobDescriptionAllExcelHeader">Stellenbeschreibungen</prop>
+        <prop mnemo="JobDescriptionAllExcelOeTitle">Organisationseinheit</prop>
+        <prop mnemo="JobDescriptionAllExcelJobTitle">Stellenbezeichnung</prop>
+        <prop mnemo="JobDescriptionAllExcelPersonnelnumber">Personalnr.</prop>
+        <prop mnemo="JobDescriptionAllExcelName">Name</prop>
+        <prop mnemo="JobDescriptionAllExcelFirstname">Vorname</prop>
+        <prop mnemo="JobDescriptionAllExcelLastChange">Letzte Änderung</prop>
+    </local>
+
+    <local scope="DUTY_VALIDITY_V">
+ 		<prop mnemo="NUMBER">Numéro</prop>
+ 		<prop mnemo="TITLE_FR">Désignation</prop>
+    <prop mnemo="WEIGHTING">Gewichtung</prop>
+ 		<prop mnemo="DESCRIPTION_FR" size="80,8">Description</prop>
+	 	<prop mnemo="VALID_FROM">Valable de</prop>
+	 	<prop mnemo="VALID_TO">Valable à</prop>
+    </local>
+    <local scope="DUTY_COMPETENCE__DUTY_VALIDITY_V" alias="DUTY_COMPETENCE_VALIDITY"></local>
+    <local scope="DUTY_COMPETENCE_VALIDITY">
+        <prop mnemo="VALID_FROM">Valable de</prop>
+        <prop mnemo="VALID_TO">Valable à</prop>
+    </local>
+    <local scope="FUNCGROUPV">
+        <prop mnemo="PERSON_ID">Collaborateur</prop>
+    </local>
+</map>

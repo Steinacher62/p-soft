@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE map SYSTEM "../../XML/dtd/language.dtd" >
+<map>
+    <!-- ä &#228; ö &#246; ü &#252; Ä &#196; Ö &#214; Ü &#220; <b> &lt;b&gt; </b> &lt;/b&gt; -->
+    <local scope="ModuleNames">
+        <prop mnemo="tpc">SALARY</prop>
+    </local>
+    <local scope="tpc">
+        <prop mnemo="salaryChangePercentage">Salary change in %</prop>
+        <prop mnemo="salaryPercentageOfProposed">% vom Richtlohn</prop>
+        <prop mnemo="proposedSalaryDifference">Difference to the proposed salary</prop>
+        <prop mnemo="proposedSalaryPercentageDifference">Difference to the proposed salary in %</prop>
+        <prop mnemo="salaireBudgetAllocation">Budget for measures</prop>
+        <prop mnemo="primeBudgetAllocation">Budget for Award</prop>
+        <prop mnemo="salaireadjustment">Salary measures</prop>
+        <prop mnemo="primeadjustment">Award input</prop>
+        <prop mnemo="salaireApprovement">Salary approvement</prop>
+        <prop mnemo="primeApprovement">Award approvement</prop>
+        <prop mnemo="salaireBudgetCheck">Budget check for salary</prop>
+        <prop mnemo="primeBudgetCheck">Budget check for award</prop>
+        <prop mnemo="salaireoverview">Salary overview</prop>
+        <prop mnemo="primeoverview">Award overview</prop>
+        <prop mnemo="salaireExport">Export Salary</prop>
+        <prop mnemo="primeExport">Export Awards</prop>
+        <prop mnemo="salarySituation"> - Lohnsituation #1</prop>
+        <prop mnemo="salaireLink">Salary measures</prop>
+        <prop mnemo="primeLink">Awards</prop>
+        <prop mnemo="prime">Prime</prop>
+    </local>
+    <local scope="PERSON">
+        <prop mnemo="AGE">Age</prop>
+    </local>
+    <local scope="EMPLOYMENT">
+        <prop mnemo="EMPLOYMENTTYP">Employment type</prop>
+        <prop mnemo="EMPLOYMENTKIND">Emloyment kind</prop>
+        <prop mnemo="COSTCENTER_NUMBER">Cost center</prop>
+        <prop mnemo="COSTCENTER_DESCRIPTION">Cost center</prop>
+        <prop mnemo="SUPERIOR">Superior</prop>
+    </local>
+    <local scope="TPC_LOHNDATEN_V" alias="LOHN">
+        <prop mnemo="PNAME">Name</prop>
+        <prop mnemo="FIRSTNAME">First name</prop>
+        <prop mnemo="ENTRY">Entry date</prop>
+        <prop mnemo="AGE">Age</prop>
+        <prop mnemo="TITLE_DE">Employment</prop>
+        <prop mnemo="ENGAGEMENT">Engagement</prop>
+        <prop mnemo="EMPLOYMENTTYP">Employment type</prop>
+        <prop mnemo="EMPLOYMENTKIND">Emloyment kind</prop>
+        <prop mnemo="COSTCENTER_NUMBER">Cost center</prop>
+        <prop mnemo="COSTCENTER_DESCRIPTION">Cost center</prop>
+        <prop mnemo="SUPERIOR">Superior</prop>
+        <prop mnemo="FUNKTIONSWERT">Function value</prop>
+        <prop mnemo="FUNKTION_AB">In Function since</prop>
+        <prop mnemo="SALAIRE">Salary change</prop>
+        <prop mnemo="PRIME">Prime</prop>
+        <prop mnemo="ANFORDERUNGSZULAGE">Requirement extra pay</prop>
+        <prop mnemo="ISTLOHN">Istlohn</prop>
+        <prop mnemo="LOHNVORSCHLAG">Proposed salary</prop>
+    	<prop mnemo="NEUER_LOHN">Neuer Lohn</prop>
+    	<prop mnemo="KOMMENTAR">Comment</prop>
+    	<prop mnemo="KOMMENTARS">Comment Salary</prop>
+    	<prop mnemo="KOMMENTARP">Comment Prime</prop>
+    </local>
+    <local scope="TPC_LISTE_V" alias="PERSON">
+        <prop mnemo="TITLE_EN">Function</prop>
+        <prop mnemo="BUDGETTYP_ID">Budget</prop>
+        <prop mnemo="EMPLOYMENTTYP">Employment type</prop>
+        <prop mnemo="EMPLOYMENTKIND">Emloyment kind</prop>
+        <prop mnemo="COSTCENTER_NUMBER">Cost center</prop>
+        <prop mnemo="COSTCENTER_DESCRIPTION">Cost center</prop>
+        <prop mnemo="SUPERIOR">Superior</prop>
+    	<prop mnemo="ISTLOHN">Istlohn</prop>
+    	<prop mnemo="IST_TAGLOHN">Ist Taglohn</prop>
+    	<prop mnemo="NEUER_LOHN">Neuer Lohn</prop>
+    	<prop mnemo="RICHTLOHN">Richtlohn</prop>
+    	<prop mnemo="LOHNVORSCHLAG">Richtlohn</prop>
+    	<prop mnemo="LOHNVORSCHLAG_100">Richtlohn 100%</prop>
+    	<prop mnemo="ZUNAHME_PROZENT">Anp. %</prop>
+    	<prop mnemo="VARIANTE_ID">Variante</prop>
+        <prop mnemo="BEARBEITUNGSSTATUS">State</prop>
+        <prop mnemo="BETRAG">Lohnanpassung Jahr Fr</prop>
+        <prop mnemo="BETRAG_PRO_TAG">Lohnanpassung Tag Fr</prop>
+        <prop mnemo="BETRAG_PRO_STUNDE">Lohnanpassung Std Fr</prop>
+        <prop mnemo="ISTLOHN_PROZENT">Ist % vom Lohnvorschlag</prop>
+    	<prop mnemo="NEUER_LOHN_PRO_ISTLOHN">Neu von Istlohn</prop>
+    	<prop mnemo="NEUER_TAGLOHN">Neuer Taglohn</prop>
+    	<prop mnemo="NEUER_LOHN_PROZENT">Neu % vom Lohnvorschlag</prop>
+        <prop mnemo="KOMMENTAR">Comment</prop>
+        <prop mnemo="ENGAGEMENT">Engagement</prop>
+        <prop mnemo="VERGLEICH">Vergleichsstundenlohn</prop>
+        <prop mnemo="ABWEICHUNG">Difference</prop>
+        <prop mnemo="ABWEICHUNG_PROZENT">%</prop>
+    	<prop mnemo="KOMMENTARS">Comment</prop>
+    	<prop mnemo="KOMMENTARP">Comment</prop>
+        <prop mnemo="INFORMATIONS">Information</prop>
+        <prop mnemo="INFORMATIONP">Information</prop>
+        <prop mnemo="FUNCTION_EXTREF">Funktion</prop>
+    </local>
+    <local scope="SALAIRE" alias="TPC_LISTE_V">
+    </local>
+    <local scope="PRIME" alias="TPC_LISTE_V">
+    </local>
+    <local scope="OVERVIEW_SALAIRE" alias="TPC_LISTE_V">
+    </local>
+    <local scope="OVERVIEW_PRIME" alias="TPC_LISTE_V">
+    </local>
+</map>

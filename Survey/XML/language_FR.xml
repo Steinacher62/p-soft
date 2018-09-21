@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE map SYSTEM "../../XML/dtd/language.dtd" >
+<map>
+    <!-- ä &#228; ö &#246; ü &#252; Ä &#196; Ö &#214; Ü &#220; <b> &lt;b&gt; </b> &lt;/b&gt; -->
+    <local scope="ModuleNames">
+        <prop mnemo="survey">UMFRAGEN</prop>
+    </local>
+    <local scope="SURVEY">
+ 		<prop mnemo="TITLE_DE">Bezeichnung</prop>
+ 		<prop mnemo="DESCRIPTION_DE">Beschreibung</prop>
+	 	<prop mnemo="CREATED">Kreiert</prop>
+	 	<prop mnemo="VALID_FROM">Gültig ab</prop>
+	 	<prop mnemo="VALID_TO">Gültig bis</prop>
+	 	<prop mnemo="ISANONYMOUS">Anonym</prop>
+	 	<prop mnemo="MAXEXECUTIONS">Durchführungslimit</prop>
+	 	<prop mnemo="ISCORRECTABLE">Korrigierbar</prop>
+	 	<prop mnemo="ISPUBLIC">Öffentlich</prop>
+    </local>
+    <local scope="STEP">
+ 		<prop mnemo="TITLE_DE">Bezeichnung</prop>
+ 		<prop mnemo="DESCRIPTION_DE" size="50,5">Beschreibung</prop>
+    </local>
+    <local scope="QUESTION">
+ 		<prop mnemo="TITLE_DE">Bezeichnung</prop>
+ 		<prop mnemo="QUESTION_DE">Frage</prop>
+	 	<prop mnemo="TYP">Typ</prop>
+	 	<prop mnemo="ANSWERREQUIRED">Pflichtantwort</prop>
+	 	<prop mnemo="DATE_MIN">Datumsbereich ab</prop>
+	 	<prop mnemo="DATE_MAX">Datumsbereich bis</prop>
+	 	<prop mnemo="NUMBER_MIN">Zahlenbereich ab</prop>
+	 	<prop mnemo="NUMBER_MAX">Zahlenbereich bis</prop>
+	 	<prop mnemo="CHARS_MIN">Min. Anzahl Zeichen</prop>
+	 	<prop mnemo="CHARS_MAX">Max. Anzahl Zeichen</prop>
+	 	<prop mnemo="ISCORRECTABLE">Korrigierbar</prop>
+ 		<prop mnemo="RESOLUTION_TEXT_DE">Lösung</prop>
+	 	<prop mnemo="RESOLUTION_DATE">Lösung</prop>
+	 	<prop mnemo="RESOLUTION_NUMBER">Lösung</prop>
+	 	<prop mnemo="RESOLUTION_BOOLEAN">Lösung</prop>
+	 	<prop mnemo="RESOLUTION_COMMENT_DE">Lösungskommentar</prop>
+    </local>
+    <local scope="ANSWEROPTION">
+ 		<prop mnemo="LABEL_DE">Bezeichnung</prop>
+	 	<prop mnemo="VALUE_DE">Rückgabewert</prop>
+	 	<prop mnemo="ISRESOLUTION">Ist richtige Antwort</prop>
+    </local>
+    <local scope="EXECUTION">
+ 		<prop mnemo="TITLE">Bezeichnung</prop>
+ 		<prop mnemo="CREATED">Datum</prop>
+	 	<prop mnemo="PERSON_ID">Benutzer</prop>
+	 	<prop mnemo="SURVEY_ID">Umfrage</prop>
+	 	<prop mnemo="ISFINISHED">Status</prop>
+    </local>
+
+    <local scope="survey">
+	 	<prop mnemo="survey">Umfrage</prop>
+	 	<prop mnemo="step">Schritt</prop>
+	 	<prop mnemo="nextStep">Nächster Schritt &gt;&gt;</prop>
+	 	<prop mnemo="previousStep">&lt;&lt; Vorheriger Schritt</prop>
+	 	<prop mnemo="finish">Umfrage Abschliessen</prop>
+	 	<prop mnemo="noExecutionTitle">Unbekannt</prop>
+	 	<prop mnemo="subNavTitle">Umfragen</prop>
+	 	<prop mnemo="subNavSearchSurvey">Umfragen suchen</prop>
+	 	<prop mnemo="valAnswerRequired">Bitte beantworten Sie diese Frage!</prop>
+	 	<prop mnemo="valOutOfRange">Eingabe liegt ausserhalb des gültigen Bereichs.</prop>
+	 	<prop mnemo="valRangeTextMin">Der eingegebene Text muss mindestens #1 Zeichen enthalten.</prop>
+	 	<prop mnemo="valRangeTextMax">Der eingegebene Text darf maximal #1 Zeichen enthalten.</prop>
+	 	<prop mnemo="valRangeTextMinMax">Der eingegebene Text muss zwischen #1 und #2 Zeichen enthalten.</prop>
+	 	<prop mnemo="valRangeNumberMin">Die eingegebene Zahl muss grösser als #1 sein.</prop>
+	 	<prop mnemo="valRangeNumberMax">Die eingegebene Zahl darf nicht grösser als #1 sein.</prop>
+	 	<prop mnemo="valRangeNumberMinMax">Die eingegebene Zahl muss zwischen #1 und #2 sein.</prop>
+	 	<prop mnemo="valRangeDateMin">Das eingegebene Datum muss nach #1 sein.</prop>
+	 	<prop mnemo="valRangeDateMax">Das eingegebene Datum darf nicht nach #1 sein.</prop>
+	 	<prop mnemo="valRangeDateMinMax">Das eingegebene Datum muss zwischen #1 und #2 sein.</prop>
+	 	<prop mnemo="bcSearchSurvey">Umfragen suchen</prop>
+	 	<prop mnemo="ctSurveySearchresult">Folgende Umfragen wurden gefunden:</prop>
+	 	<prop mnemo="ctSurveySelection">Umfragen gemäss Selektion:</prop>
+	 	<prop mnemo="ctExecutableSurveys">Von #1 durchführbare Umfragen:</prop>
+	 	<prop mnemo="ctSurveyExecutions">Durchführungen der Umfrage #1:</prop>
+	 	<prop mnemo="ctExecutionSelection">Durchführungen gemäss Selektion:</prop>
+	 	<prop mnemo="cmExecuteSurvey">Umfrage durchführen</prop>
+	 	<prop mnemo="cmShowExecutions">Durchführungen anzeigen</prop>
+	 	<prop mnemo="cmtSelectedSurvey">Umfrage</prop>
+	 	<prop mnemo="cmtListedSurveys">Umfragen in Liste</prop>
+	 	<prop mnemo=""></prop>
+    </local>
+</map>

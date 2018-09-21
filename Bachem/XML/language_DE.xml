@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE map SYSTEM "../../XML/dtd/language.dtd" >
+<map>
+    <local scope="ModuleNames">
+        <prop mnemo="bachem">Bachem</prop>
+    </local>
+    <local scope="bachem">
+        <prop mnemo="Title">Stellenbeschreibung</prop>
+        <prop mnemo="JobDescription">Stellenbeschreibung</prop>
+        <prop mnemo="JobOwner">FunktionsinhaberIn</prop>
+        <prop mnemo="Engagement">Beschäftigungsgrad [%]</prop>
+        <prop mnemo="Function">Funktionsbezeichnung</prop>
+        <prop mnemo="OE">Bereich/Abteilung</prop>
+        <prop mnemo="LeaderFunction">Vorgesetzte Funktion
+(Name/Funktion)</prop>
+        <prop mnemo="SubOEs"> Unterstellte Bereiche</prop>
+        <prop mnemo="Overview">Stellenzweck</prop>
+        <prop mnemo="Competences">Kompetenzen</prop>
+        <prop mnemo="CompetencesRules">Regelung Verantwortlichkeit</prop>
+        <prop mnemo="DutyCatalog">Aufgabenkatalog</prop>
+        <prop mnemo="Duties">Aufgaben</prop>
+        <prop mnemo="Skills">Grundanforderungen</prop>
+        <prop mnemo="reportDate">Erstellungsdatum:</prop>
+        <prop mnemo="printDate">Druckdatum:</prop>
+        <prop mnemo="externDescription">Bezeichnung für ext.
+Kommunikation</prop>
+		<prop mnemo="substituted">Stellvertretung durch
+(Name/Funktion)</prop>
+		<prop mnemo="substitutes">optional Stellvertretung von
+(Name/Funktion)</prop>
+        <prop mnemo="remark"> </prop>
+        <prop mnemo="staffmember">Mitarbeiter/-in</prop>
+        <prop mnemo="directchief">Direkte/r Vorgesetzte/r</prop>
+        <prop mnemo="nextchief">Nächst höhere/r Vorgesetzte/r</prop>
+        <prop mnemo="humanresources">Human Resources</prop>
+        <prop mnemo="datevisa">Datum/Visum</prop>
+    </local>
+    <local scope="fbs">
+        <prop mnemo="bcJobDescription">Funktionsbeschreibung</prop>
+        <prop mnemo="bcEditJobDescription">Funktionsbeschreibung bearbeiten</prop>
+        <prop mnemo="cmEditJobDescription">Funktionsbeschreibung bearbeiten</prop>
+        <prop mnemo="cmtJobDescription">Funktionsbeschreibung</prop>
+        <prop mnemo="repJobDescription">Funktionsbeschreibung</prop>        
+    </local>
+</map>

@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE map SYSTEM "../../XML/dtd/language.dtd" >
+
+<map>
+  <!-- ä &#228; ö &#246; ü &#252; Ä &#196; Ö &#214; Ü &#220; <b> &lt;b&gt; </b> &lt;/b&gt; -->
+  <global>
+    <prop mnemo="back">En arrière</prop>
+    <prop mnemo="cancel">Annuler</prop>
+    <prop mnemo="next">Autre</prop>
+    <prop mnemo="apply">Exécuter</prop>
+    <prop mnemo="search">Rechercher</prop>
+    <prop mnemo="save">Enregistrer</prop>
+    <prop mnemo="finish">Finir</prop>
+    <prop mnemo="print">Imprimer</prop>
+    <prop mnemo="refresh">Réactualiser</prop>
+    <prop mnemo="yes">Oui</prop>
+    <prop mnemo="no">Non</prop>
+    <prop mnemo="new">Nouveau</prop>
+    <prop mnemo="edit">Modifier</prop>
+    <prop mnemo="delete">Effacer</prop>
+    <prop mnemo="deleteInput">Effacer l'entrée </prop>
+    <prop mnemo="show">Montrer</prop>
+    <prop mnemo="hideShow">Cacher/montrer</prop>
+    <prop mnemo="shelf">Bibliothèque</prop>
+    <prop mnemo="clipboard">Archive des documents</prop>
+    <prop mnemo="createClipboard">Créer archive des documents</prop>
+    <prop mnemo="vacant">vacant</prop>
+    <prop mnemo="choose">Choisir</prop>
+    <prop mnemo="loginTitle">Annonce p-soft </prop>
+    <prop mnemo="loginUsername">Utilisateur:</prop>
+    <prop mnemo="loginPassword">Mot de passe:</prop>
+    <prop mnemo="loginAdmin">S'identifier comme administrateur:</prop>
+    <prop mnemo="loginButton">S'identifier</prop>
+    <prop mnemo="loginFailed">Identification incorrecte!</prop>
+    <prop mnemo="loginNoPassword">Identification incorrecte! Le mot de passe manque</prop>
+    <prop mnemo="loginRedundant">Identification ambigüe (prenez contact avec l'administrateur p-soft )!</prop>
+    <prop mnemo="generatePDF">Générer PDF</prop>
+    <prop mnemo="url">URL</prop>
+    <prop mnemo="loadingData">Chargement des données...</prop>
+    <prop mnemo="loadingLetter">Générer lettre ...</prop>
+    <prop mnemo="searching">Recherche...</prop>
+    <prop mnemo="importing">Importer...</prop>
+    <prop mnemo="exporting">Exporter...</prop>
+    <prop mnemo="from">de</prop>
+    <prop mnemo="to">à</prop>
+    <prop mnemo="all">Tous</prop>
+    <prop mnemo="see">Voir</prop>
+    <prop mnemo="moduleNotAvailable">Module pas disponible</prop>
+    <prop mnemo="linkNotFound">Lien introuvable</prop>
+    <prop mnemo="importantLinks">Liens importants</prop>
+    <prop mnemo="actions">Actions</prop>
+    <prop mnemo="total">Total</prop>
+    <prop mnemo="administration">Administration</prop>
+    <prop mnemo="noEntriesFound">Pas d'entrées trouvées</prop>
+    <prop mnemo="and">Et</prop>
+    <prop mnemo="or">Ou</prop>
+    <prop mnemo="showReportPersonData">Données de base</prop>
+    <enum name="boolean">
+      <prop mnemo="0">Non</prop>
+      <prop mnemo="1">Oui</prop>
+    </enum>
+    <prop mnemo="changePassword">Changer de mot de passe</prop>
+    <prop mnemo="forgotPassword">Oublié le mot de passe?</prop>
+    <prop mnemo="userNameRequired">Requiert le nom d'utilisateur</prop>
+    <prop mnemo="passwordRequired">Requiert le mot de passe</prop>
+    <prop mnemo="newPasswordRequired">Requiert un nouveau mot de passe</prop>
+    <prop mnemo="confirmNewPasswordRequired">Requiert une confirmation de mot de passe</prop>
+    <prop mnemo="newPasswordCompare">Les nouveaux mots de passe ne sont pas identiques</prop>
+    <prop mnemo="checkUsername">Veuillez vérifier le nom d'utilisateur</prop>
+    <prop mnemo="checkPassword">Veuillez vérifier le mot de passe actuel</prop>
+    <prop mnemo="changePasswordSuccessful">Le mot de passe a été changé avec succès</prop>
+    <prop mnemo="newPasswordRecoveryMessage">Vous avez demandé un nouveau mot de passe pour  ApplicationName. &lt;br&gt; Le nouveau mot de passe est:  &lt;b&gt;newPassword&lt;/b&gt; &lt;br&gt;Veuillez changer le mot de passe lors de votre prochain login. &lt;br&gt;&lt;br&gt;Meilleures salutations. &lt;br&gt;ApplicationName Administrateur</prop>
+    <prop mnemo="passwordRecoverySuccessful">Un e-Mail avec le nouveau mot de passe a été envoyé avec succès</prop>
+    <prop mnemo="missEmail">Le mot de passe ne peut pas être changé car une adresse email n'est pas disponible.</prop>
+    <prop mnemo="usernameNeeded">Veuillez introduire votre nom d'utilisateur afin de recevoir un mot de passe.</prop>
+    <prop mnemo="currentPassword">Mot de passe actuel</prop>
+    <prop mnemo="newPassword">Nouveau mot de passe</prop>
+    <prop mnemo="confirmNewPassword">Confirmer le nouveau mot de passe</prop>
+    <prop mnemo="titleLogin">S'identifier</prop>
+    <prop mnemo="titleChangePassword">Changer le mot de passe</prop>
+    <prop mnemo="titlePasswordRecovery">Mot de passe oublié?</prop>
+    <prop mnemo="submit">Envoyer</prop>
+    <prop mnemo="newAccount">Créer un nouveau compte</prop>
+    <prop mnemo="yourAccessDataTitel">Vos données d'accès</prop>
+    <prop mnemo="yourAccessData">Bonjour &lt;br&gt;Merci beaucoup de votre inscription auprès de ApplicationName. &lt;br&gt; Voici vos données d'accès: &lt;br&gt;Nom d'utilisateur: &lt;b&gt;userName&lt;/b&gt;&lt;br&gt; Mot de passe: &lt;b&gt;password&lt;/b&gt; &lt;br&gt;Meilleures salutations &lt;br&gt;ApplicationName L'administrateur</prop>
+    <prop mnemo="salutationMale">Monsieur</prop>
+    <prop mnemo="salutationFemale">Madame</prop>
+  </global>
+  <local scope="tableName">
+    <prop mnemo="FOLDER">Dossier</prop>
+    <prop mnemo="DOCUMENT">Document</prop>
+    <prop mnemo="PERSON"></prop>
+    <prop mnemo="FIRM"></prop>
+  </local>
+  <local scope="PsoftPageLayout">
+    <prop mnemo="printButtonToolTip">Générer document PDF...</prop>
+    <prop mnemo="listButtonToolTip">Générer liste PDF....</prop>
+    <prop mnemo="authorisationsButtonToolTip">Administrer autorisations...</prop>
+    <prop mnemo="excelButtonToolTip">Générer document Excel...</prop>
+    <prop mnemo="registryEntriesButtonToolTip">Entrée d'enregistrements...</prop>
+    <prop mnemo="visioButtonToolTip">Créer un dession Visio...</prop>
+  </local>
+  <local scope="MESSAGES">
+    <prop mnemo="deleteConfirm">Effacer entrée?</prop>
+    <prop mnemo="unknownError">Erreur inconnue</prop>
+    <prop mnemo="invalidSelection">Sélection invalide!</prop>
+  </local>
+  <local scope="DOCUMENTV" alias="DOCUMENT"></local>
+  <local scope="DOCUMENT">
+    <prop mnemo="TITLE">Titre</prop>
+    <prop mnemo="DESCRIPTION" size="80,8">Description</prop>
+    <prop mnemo="AUTHOR">Auteur</prop>
+    <prop mnemo="FILENAME">Nom de document</prop>
+    <prop mnemo="XFILENAME">Nom de document interne</prop>
+    <prop mnemo="FOLDER_ID">Dossier</prop>
+    <prop mnemo="VERSION">Version</prop>
+    <prop mnemo="CREATED">Crée le</prop>
+    <prop mnemo="DOCUMENT_TYPE">Type de document</prop>
+    <prop mnemo="CHECKOUT_STATE">État du check-out</prop>
+    <prop mnemo="CHECKOUT_PERSON_ID">Check-out par</prop>
+    <prop mnemo="CHECKOUT_DATE">Check-out le</prop>
+    <prop mnemo="CHECKIN_PERSON_ID">Derniere modification par</prop>
+    <prop mnemo="CHECKIN_DATE">Derniere modification le</prop>
+    <prop mnemo="TARGET">Ouvrir une nouvelle fenêtre</prop>
+    <prop mnemo="TRIGGER_UID">Source</prop>
+    <prop mnemo="NUMOFDOCVERSIONS">Nombre de versions</prop>
+  </local>
+  <local scope="CONTRIBUTION" alias="DOCUMENT"></local>
+  <local scope="LINK" alias="DOCUMENT">
+    <prop mnemo="FILENAME" size="30,1">URL</prop>
+  </local>
+  <local scope="DOCUMENT_LINK" alias="DOCUMENT">
+    <prop mnemo="LINKED_DOCUMENT_ID">Document référencé</prop>
+  </local>
+  <local scope="DOCUMENT_HISTORY">
+    <prop mnemo="COMMENT">Remarque</prop>
+    <prop mnemo="PERSON_ID">Changé par</prop>
+    <prop mnemo="VDATE">Date</prop>
+    <prop mnemo="VERSION">Version</prop>
+    <prop mnemo="HFILENAME">Nom de document</prop>
+    <prop mnemo="FILENAME">Nom de document</prop>
+  </local>
+  <local scope="CLIPBOARDTEMPLATE_FOLDERV" alias="FOLDER">
+    <prop mnemo="TEMPLATE">Modèle</prop>
+  </local>
+  <local scope="FOLDER">
+    <prop mnemo="ORDNUMBER">Ordre</prop>
+    <prop mnemo="TITLE">Nom</prop>
+    <prop mnemo="DESCRIPTION" size="80,8">Description</prop>
+    <prop mnemo="CREATED">Crée le</prop>
+    <prop mnemo="TRIGGER_UID">Source</prop>
+    <prop mnemo="NUMOFDOCVERSIONS">Nombre de versions de document</prop>
+  </local>
+  <local scope="folder">
+    <enum name="documentVersions">
+      <prop mnemo="-2">Handicap</prop>
+      <prop mnemo="-1">Au choix</prop>
+      <prop mnemo="0">0</prop>
+      <prop mnemo="1">1</prop>
+      <prop mnemo="2">2</prop>
+      <prop mnemo="3">3</prop>
+      <prop mnemo="4">4</prop>
+      <prop mnemo="5">5</prop>
+      <prop mnemo="6">6</prop>
+      <prop mnemo="7">7</prop>
+      <prop mnemo="8">8</prop>
+      <prop mnemo="9">9</prop>
+      <prop mnemo="10">10</prop>
+    </enum>
+  </local>
+  <local scope="FOLDERDOCUMENTV" alias="DOCUMENT"></local>
+  <local scope="DOCUMENT_SEARCH" alias="DOCUMENT"></local>
+  <local scope="DOCUMENT_DIV_TYPES" alias="DOCUMENT"></local>
+  <local scope="document">
+    <prop mnemo="document">Document</prop>
+    <prop mnemo="newFolder">Nouveau dossier</prop>
+    <prop mnemo="newDocument">Nouveau document</prop>
+    <prop mnemo="newDocument_Link">Nouvelle référence de document</prop>
+    <prop mnemo="newLink">Nouvelle référence</prop>
+    <prop mnemo="newContribution">Nouvelle remarque</prop>
+    <prop mnemo="editFolder">Modifier dossier</prop>
+    <prop mnemo="editDocument">Modifier document</prop>
+    <prop mnemo="editLink">Modifier référence</prop>
+    <prop mnemo="editContribution">Modifier remarque</prop>
+    <prop mnemo="editDocument_Link">Modifier référence du document</prop>
+    <prop mnemo="search">Chercher document</prop>
+    <prop mnemo="searchResult">Les documents suivants ont été trouvés:</prop>
+    <prop mnemo="selection">Documents selon la sélection:</prop>
+    <prop mnemo="checkOut">Check-out</prop>
+    <prop mnemo="checkOutAndOpen">Check-out &amp; ouvrir</prop>
+    <prop mnemo="checkOutAndOpenToolTip">Check-out document et éditer</prop>
+    <prop mnemo="checkOutUndo">Annuler check-out</prop>
+    <prop mnemo="checkIn">Check-in</prop>
+    <prop mnemo="get">Sauvegarder</prop>
+    <prop mnemo="checkInConfirmMessage">Check-in document?</prop>
+    <prop mnemo="openAfterCheckout">Ouvrir document</prop>
+    <prop mnemo="contents">Contenu de document</prop>
+    <prop mnemo="history">Historique des versions</prop>
+    <prop mnemo="historyListTitle">Historique des versions</prop>
+    <prop mnemo="gettingShelf">Sauvegarde ...</prop>
+    <prop mnemo="gettingShelfFinished">Sauvegarde finie...</prop>
+    <prop mnemo="linkPrefix">Référence à </prop>
+    <prop mnemo="category">Catégories</prop>
+    <prop mnemo="ActiveXErrorTooltip">Cette fonction n'est pas utilisable sans ActiveX (réglage Internet).</prop>
+    <prop mnemo="copyJobdescription">Copier la description de fonction</prop>
+    <enum name="documentType">
+      <prop mnemo="0">Document</prop>
+      <prop mnemo="1">Référence</prop>
+      <prop mnemo="2">Remarque</prop>
+      <prop mnemo="3">Référence du document</prop>
+    </enum>
+    <enum name="documentCategory">
+      <prop mnemo="0">Dépôt général</prop>
+      <prop mnemo="1">Organisation</prop>
+      <prop mnemo="2">Collaborateur</prop>
+      <prop mnemo="3">Savoir</prop>
+      <prop mnemo="4">Commande en cours</prop>
+      <prop mnemo="5">Projet</prop>
+      <prop mnemo="6">Contact</prop>
+    </enum>
+    <enum name="documentVersions">
+      <prop mnemo="-2">Handicap</prop>
+      <prop mnemo="-1">Aux choix</prop>
+      <prop mnemo="0">0</prop>
+      <prop mnemo="1">1</prop>
+      <prop mnemo="2">2</prop>
+      <prop mnemo="3">3</prop>
+      <prop mnemo="4">4</prop>
+      <prop mnemo="5">5</prop>
+      <prop mnemo="6">6</prop>
+      <prop mnemo="7">7</prop>
+      <prop mnemo="8">8</prop>
+      <prop mnemo="9">9</prop>
+      <prop mnemo="10">10</prop>
+    </enum>
+  </local>
+  <local scope="administration">
+    <prop mnemo="setupPsoftIndexingService">Setup du service d'indexation p-soft</prop>
+    <prop mnemo="configureIndexingService">Configurer service d'indexation</prop>
+    <prop mnemo="createCatalog">Créer Catalogue d'indexation</prop>
+    <prop mnemo="removeCatalog">Supprimer Catalogue d'indexation</prop>
+    <prop mnemo="applicationrightsAdmin">Droits d'application</prop>
+    <prop mnemo="applicationrightsAdminTitle">Administrer les droits d'application </prop>
+    <prop mnemo="applicationrights">Droits d'application</prop>
+    <prop mnemo="applicationrightMembers">Propriétaire des droits</prop>
+    <prop mnemo="addapplicationrightHolder">Ajouter des propriétaire des droits ...</prop>
+    <prop mnemo="editPassword">Changer mot de passe</prop>
+  </local>
+  <local scope="navigation">
+    <prop mnemo="searchPerson">Chercher collaboratuers</prop>
+    <prop mnemo="listMeasures">Commande en cours</prop>
+    <prop mnemo="listProjects">Projet</prop>
+    <prop mnemo="addSubscription">Créer un abonnement</prop>
+    <prop mnemo="help">Aide</prop>
+    <prop mnemo="logout">Quitter</prop>
+    <prop mnemo="myMessage">Messages</prop>
+    <prop mnemo="mySubscription">Abonnements</prop>
+    <prop mnemo="home">Lieu de travail</prop>
+    <prop mnemo="documentSearch">Recherche des documents</prop>
+  </local>
+  <local scope="authorisation">
+    <prop mnemo="authorisationsTitle">Réglages d'autorisation - #1</prop>
+    <prop mnemo="accessors">Nom</prop>
+    <prop mnemo="authorisations">Autorisations</prop>
+    <prop mnemo="authorisationsButton">Autorisations...</prop>
+    <prop mnemo="addAccessor">Ajouter...</prop>
+    <prop mnemo="removeAccessor">Supprimer</prop>
+    <prop mnemo="inheritance">Assumer l'autorisation </prop>
+    <prop mnemo="read">Lire</prop>
+    <prop mnemo="insert">Rajouter</prop>
+    <prop mnemo="update">Remanier, écrire</prop>
+    <prop mnemo="delete">Supprimer</prop>
+    <prop mnemo="admin">Administrer</prop>
+    <prop mnemo="execute">Exécuter</prop>
+    <prop mnemo="selectAccessorTitle">Choisir des utilisateurs/groupe</prop>
+    <prop mnemo="addMember">Ajouter des membres...</prop>
+    <prop mnemo="addGroup">Nouveau groupe...</prop>
+    <prop mnemo="groupAdminTitle">Administration de groupe</prop>
+    <prop mnemo="groups">Groupe</prop>
+    <prop mnemo="groupMembers">Membres d'un groupe</prop>
+    <prop mnemo="newGroup">Créer un nouveau groupe</prop>
+    <prop mnemo="accessorCantBeDeleted">L'utilisateur/groupe ne peut pas être effacé, puisque des autorisations supérieures sont requises.</prop>
+  </local>
+  <local scope="ACCESSOR">
+    <prop mnemo="ID">ID</prop>
+    <prop mnemo="TITLE" size="100">Groupe</prop>
+    <prop mnemo="VISIBLE">Visible</prop>
+  </local>
+  <local scope="ACCESSOR_GROUP_ASSIGNMENT">
+    <prop mnemo="ID">ID</prop>
+    <prop mnemo="ACCESSOR_MEMBER_ID" size="100">Membre</prop>
+    <prop mnemo="ACCESSOR_GROUP_ID" size="100">Groupe</prop>
+  </local>
+  <local scope="home">
+    <prop mnemo="home">Lieu de travail</prop>
+    <prop mnemo="myEntry">Mon inscription</prop>
+    <prop mnemo="myProjects">Mes projets</prop>
+    <prop mnemo="myShelf">Ma Bibliothèque</prop>
+    <prop mnemo="myTasks">Commande en cours</prop>
+    <prop mnemo="mySurveys">Enquêtes</prop>
+    <prop mnemo="mySuggestions">Suggestions</prop>
+  </local>
+  <local scope="registry">
+    <prop mnemo="registryRelationTP">Lier l'entrée d'enregistrement avec 
+-'OU' ou 
+-'ET'</prop>
+    <prop mnemo="dialogTitle">Entrée d'enregistrement - #1</prop>
+  </local>
+  <local scope="dateSelector">
+    <prop mnemo="pageTitle">Choisir la date</prop>
+  </local>
+  <local scope="uidAssignment">
+    <prop mnemo="assignments">Liens</prop>
+    <prop mnemo="assignedTo">Lié avec</prop>
+    <prop mnemo="newAssignment">Nouveau liens(s)</prop>
+    <prop mnemo="manageAssignments">Administrer des liens</prop>
+    <prop mnemo="lblObjectTypes">Choisissez le type d'objets:</prop>
+    <prop mnemo="lblStructure">Structure correspondante</prop>
+    <prop mnemo="lblPersonal">Lien personnel</prop>
+    <prop mnemo="lblTyp">Type de lien</prop>
+    <prop mnemo="objPerson">Collaborateurs</prop>
+    <prop mnemo="objContact">Contacts</prop>
+    <prop mnemo="objTasklist">Liste des commandes en cours</prop>
+    <prop mnemo="objMeasure">Commandes en cours</prop>
+    <prop mnemo="objProject">Projets</prop>
+    <prop mnemo="objKnowledge">Savoir</prop>
+    <prop mnemo="objDocument">Documents</prop>
+    <prop mnemo="objMatrix">Matrices</prop>
+    <prop mnemo="objSlaves">Matrices détaillées</prop>
+    <prop mnemo="ptList"></prop>
+    <prop mnemo="ctManageAssignments">Liens</prop>
+    <enum name="types">
+      <prop mnemo="0">Indéfini</prop>
+      <prop mnemo="1">Causalité (cause -&gt; effet)</prop>
+      <prop mnemo="2">Chronologie (rapport temporel)</prop>
+      <prop mnemo="3">Généralisation (p.ex.: le loup est un carnassier)</prop>
+    </enum>
+    <enum name="typesShort">
+      <prop mnemo="0">Indéfini</prop>
+      <prop mnemo="1">Causalité</prop>
+      <prop mnemo="2">Chronologie</prop>
+      <prop mnemo="3">Généralisation</prop>
+    </enum>
+  </local>
+  <local scope="UID_ASSIGNMENT_V">
+    <prop mnemo="FROM_TABLENAME">Type d'objet du lien du commencement</prop>
+    <prop mnemo="TO_TABLENAME">Type de l'objet lié</prop>
+    <prop mnemo="FROM_NICENAME_DE">Commencement de lien</prop>
+    <prop mnemo="TO_NICENAME_DE">Objet lié</prop>
+    <prop mnemo="UID_STRUCTURE_TITLE_DE">Structure</prop>
+    <prop mnemo="TYP">Type de liens</prop>
+  </local>
+  <local scope="error">
+    <prop mnemo="inputErr_10">L'entrée a un format incorrect</prop>
+    <prop mnemo="inputErr_20">L'entrée est en dehors du secteur défini</prop>
+    <prop mnemo="inputErr_21">L'entrée est trop longue</prop>
+    <prop mnemo="inputErr_40">Une entrée est nécessaire</prop>
+    <prop mnemo="inputErr_50">L'entrée de confirmation ne correspond pas</prop>
+    <prop mnemo="lfErrorGeneric">Erreur générale</prop>
+    <prop mnemo="lfErrorDownloadFile">Le document ne peut pas être consulté</prop>
+    <prop mnemo="lfErrorFTPConnection">Aucun relation FTP n'a pu être établie</prop>
+    <prop mnemo="lfErrorFTPDirectory">Le répertoire FTP n'existe pas</prop>
+    <prop mnemo="lfErrorStartProcessNoHandle">L'application est déjà ouverte - svp archiver manuellement après la prochaine utilisation</prop>
+    <prop mnemo="lfErrorProcessAlreadyRunning">Le document est déjà ouvert</prop>
+    <prop mnemo="lfErrorStartProcess">Le document n'a pas pu être ouvert</prop>
+    <prop mnemo="lfErrorUploadFile">Le document n'a pas pu être sauvegardé sur le serveur</prop>
+    <prop mnemo="lfErrorCheckOutFailed">Une erreur s'est produite lors du check-out du document</prop>
+    <prop mnemo="lfErrorCheckInFailed">Le document a été stocké sur le serveur, mais une erreur se produit au check-in </prop>
+    <prop mnemo="lfErrorCheckOutUndoFailed">Erreur lors de l'annulation du check-out</prop>
+    <prop mnemo="confirmError">L'entrée n'a pas été confirmée correctement</prop>
+  </local>
+</map>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE map SYSTEM "../../XML/dtd/language.dtd" >
+<map>
+    <!-- ä &#228; ö &#246; ü &#252; Ä &#196; Ö &#214; Ü &#220; <b> &lt;b&gt; </b> &lt;/b&gt; -->
+    <local scope="ModuleNames">
+        <prop mnemo="lohn">LOHN</prop>
+    </local>
+    <local scope="lohn">
+        <prop mnemo="division">Division</prop>
+        <prop mnemo="budgetComp">Budget Equation</prop>
+        <prop mnemo="clear">Release</prop>
+        <prop mnemo="clearAll">Alle Freigeben</prop>
+        <prop mnemo="clearAllocationAll">Alle Verteilungen Freigeben</prop>
+        <prop mnemo="print">Drucken</prop>
+        <prop mnemo="previous">Vorheriges</prop>
+        <prop mnemo="history">Vorjahre</prop>
+        <prop mnemo="next">Nächstes</prop>
+        <prop mnemo="terminate">Terminate</prop>
+        <prop mnemo="terminatePrompt">Termination Prompt</prop>
+        <prop mnemo="admin">Stati administrieren</prop>
+        <prop mnemo="importExport">Import from and Export to OGS System</prop>
+        <prop mnemo="import">Start Import</prop>
+        <prop mnemo="dbNameLabel">OGS Database</prop>
+        <prop mnemo="budgetConfirmation">The changes were applied to all employees. Are you sure you want to proceed?</prop>
+        <prop mnemo="hours">hours</prop>
+        <prop mnemo="days">days</prop>
+        <prop mnemo="months">months</prop>
+        <prop mnemo="showAll">Show all</prop>
+        <prop mnemo="showAlladjustment">Alle anzeigen</prop>
+        <prop mnemo="showAlloverview">Alle ab dieser OE</prop>
+        <prop mnemo="exportExcel">Export Excel</prop>
+        <prop mnemo="budgetGroup">Budget allocation</prop>
+        <prop mnemo="editingGroup">Measures</prop>
+        <prop mnemo="genehmigungGroup">Approvement</prop>
+        <prop mnemo="budgetCheckGroup">Budget check</prop>
+        <prop mnemo="overviewGroup">Overview</prop>
+        <prop mnemo="administrationGroup">Administration</prop>
+        <prop mnemo="importExportLink">Import/Export</prop>
+        <prop mnemo="shortDay">D</prop>
+        <prop mnemo="subOE">Direkt unterstellte OE's</prop>
+        <prop mnemo="genehmigenTitle">Approve</prop>
+        <prop mnemo="resetTitle">Edit</prop>
+        <prop mnemo="differenzVerteilbar">Differenz verteilbar</prop>
+        <prop mnemo="differenzVerfuegbar">Differenz verfügbar</prop>
+        <prop mnemo="loadAllOK">Vollständiger Import der Daten erfolgreich abgeschlossen</prop>
+        <prop mnemo="loadAllError">Vollständiger Import der Daten fehlgeschlagen (siehe Log-file)</prop>
+        <prop mnemo="approveAll">Alles genehmigen</prop>
+        <prop mnemo="approve">Genehmigen</prop>
+        <prop mnemo="closeApprove">Abschliessen/Genehmigen</prop>
+        <prop mnemo="komponente">Lohnkomponente</prop>
+        <prop mnemo="with">Mit</prop>
+        <prop mnemo="without">Ohne</prop>
+        <enum name="genehmigenValue">
+            <prop mnemo="0"></prop>
+            <prop mnemo="1">approve</prop>
+            <prop mnemo="2">reset</prop>
+        </enum>
+        <enum name="resetValue">
+            <prop mnemo="0"></prop>
+            <prop mnemo="1">again</prop>
+        </enum>
+        <enum name="salaryType">
+            <prop mnemo="1">Annual wage</prop>
+            <prop mnemo="2">Monthly wage</prop>
+            <prop mnemo="3">Daily wage</prop>
+            <prop mnemo="4">Hourly wage</prop>
+        </enum>
+        <enum name="editingState">
+            <prop mnemo="0">pending</prop>
+            <prop mnemo="1">done</prop>
+            <prop mnemo="2">approved</prop>
+        </enum>
+        <enum name="clearingState">
+            <prop mnemo="0">disabled</prop>
+            <prop mnemo="1">Allocation enabled</prop>
+            <prop mnemo="2">enabled</prop>
+        </enum>
+    </local>
+    <local scope="KOMPONENTE">
+    	<prop mnemo="BEZEICHNUNG">Bezeichnung</prop>
+    	<prop mnemo="BUDGET">Gesamtbudget</prop>
+    	<prop mnemo="BUDGET_IN_PROZENT">Budget in %</prop>
+    	<prop mnemo="VARIANTE_ID">Variante</prop>
+    </local>
+    <local scope="BUDGET">
+    	<prop mnemo="BETRAG">Budget</prop>
+    	<prop mnemo="BETRAG_VERTEILBAR">Verteilbares Budget</prop>
+    	<prop mnemo="KOMPONENTE_ID">Komponente</prop>
+    	<prop mnemo="ORGENTITY_ID">OE</prop>
+    	<prop mnemo="BUDGETTYP_ID">Budgettyp</prop>
+    </local>
+    <local scope="LOHNKOMPONENTE">
+    	<prop mnemo="BETRAG">Anpassung pro Jahr in CHF</prop>
+        <prop mnemo="BEARBEITUNGSSTATUS">State</prop>
+    	<prop mnemo="KOMPONENTE_ID">Komponente</prop>
+    	<prop mnemo="LOHN_ID">Lohn</prop>
+    	<prop mnemo="BUDGET_ID">Budget</prop>
+    </local>
+    <local scope="LOHN">
+    	<prop mnemo="LOHNART">Lohnart</prop>
+    	<prop mnemo="ANZAHL_LOEHNE">Anzahl L&#246;hne</prop>
+    	<prop mnemo="ANZAHL_STUNDEN">Anzahl Stunden</prop>
+    	<prop mnemo="ANZAHL_TAGE">Anzahl Tage</prop>
+    	<prop mnemo="ISTLOHN">Istlohn pro Jahr</prop>
+    	<prop mnemo="NEUER_LOHN">Neuer Lohn pro Jahr</prop>
+    	<prop mnemo="RICHTLOHN">Richtlohn pro Jahr</prop>
+    	<prop mnemo="LOHNVORSCHLAG">Lohnvorschlag pro Jahr</prop>
+    	<prop mnemo="AUSSCHLUSS_LOHN">Ausschluss Lohn</prop>
+    	<prop mnemo="AUSSCHLUSS">Ausschluss Berechnung</prop>
+    	<prop mnemo="AUSSCHLUSS_BIS">Ausschluss bis</prop>
+    	<prop mnemo="BERECHNUNG_ERFOLGREICH">Berechnung erfolgreich</prop>
+    	<prop mnemo="GRUND">Fehler</prop>
+    	<prop mnemo="HERANFUEHRUNG">Heranf&#252;hrung ber&#252;cksichtigen</prop>
+        <prop mnemo="INFORMATION">Information</prop>
+        <prop mnemo="KOMMENTAR">Kommentar</prop>
+        <prop mnemo="KOMMENTARL">Kommentar Lohn</prop>
+    	<prop mnemo="VARIANTE_ID">Variante</prop>
+    	<prop mnemo="EMPLOYMENT_ID">Anstellung</prop>
+    </local>
+    <local scope="EMPLOYMENT_PERSON_OE_V" alias="PERSON">
+    	<prop mnemo="OE_TITLE_EN">Zust&#228;ndige OE</prop>
+    	<prop mnemo="TITLE_EN">Anstellung</prop>
+    	<prop mnemo="ENGAGEMENT">Besch&#228;ftigungsgrad</prop>
+    </local>
+    <local scope="EMPLOYMENT">
+    	<prop mnemo="ORGENTITY_ID">F&#252;r Lohn zust&#228;ndige OE</prop>
+    	<prop mnemo="BUDGETTYP_ID">Budgettyp</prop>
+    </local>
+    <local scope="DLA_ORGENTITY_V" alias="ORGENTITY">
+        <prop mnemo="FUNKTION_TITLE">Function</prop>
+        <prop mnemo="BEARBEITUNGSSTATUS">Status</prop>
+        <prop mnemo="FREIGABESTATUS">Clearing</prop>
+        <prop mnemo="ABWEICHUNG">Positive Abw.</prop>
+        <prop mnemo="VERTEILBAR">Verteilbar</prop>
+        <prop mnemo="VERFUEGBAR">Verfügbar</prop>
+        <prop mnemo="VERTEILT">Verteilt</prop>
+        <prop mnemo="DIFFERENZ">Differenz</prop>
+    	<prop mnemo="BUDGETTYP">Budget type</prop>
+        <prop mnemo="AUFWAND">Cost</prop>
+        <prop mnemo="PNAME">Chef</prop>
+   </local>
+    <local scope="BUDGET_V">
+        <prop mnemo="TITLE_EN">Division</prop>
+    	<prop mnemo="BETRAG">Budget</prop>
+    	<prop mnemo="BETRAG_VERTEILBAR">Distributable Budget</prop>
+    	<prop mnemo="KOMPONENTE">Component</prop>
+    	<prop mnemo="ORGENTITY_ID">Division</prop>
+    	<prop mnemo="BUDGETTYP">Budget type</prop>
+        <prop mnemo="BEARBEITUNGSSTATUS">Editing state</prop>
+        <prop mnemo="FREIGABESTATUS">Clearing state</prop>
+        <prop mnemo="AUFWAND">Cost</prop>
+        <prop mnemo="DIFFERENZ">Difference</prop>
+        <prop mnemo="KOMP_BEZEICHNUNG">Komponente</prop>
+    </local>
+</map>

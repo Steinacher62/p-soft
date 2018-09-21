@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE map SYSTEM "../../XML/dtd/language.dtd" >
+<map>
+    <!-- ä &#228; ö &#246; ü &#252; Ä &#196; Ö &#214; Ü &#220; <b> &lt;b&gt; </b> &lt;/b&gt; -->
+    <global>
+        <enum name="jobType">
+            <prop mnemo="0">Collaborateur</prop>
+            <prop mnemo="1">Directeur</prop>
+        </enum>
+    </global>
+    <local scope="ModuleNames">
+        <prop mnemo="organisation">ORGANISATION</prop>
+    </local>
+    <local scope="tableName">
+        <prop mnemo="ORGENTITY">Département</prop>
+    </local>
+    <local scope="organisation">
+        <prop mnemo="noHauptfunktionFound">Fonction principale non d&#233;termin&#233;e.</prop>
+        <prop mnemo="oe">Département</prop>
+    </local>
+    <local scope="PERSONOEV_WITH_OE_TITLE" alias="PERSONOEV"></local>
+    <local scope="PERSONOEV" alias="OEPERSONV"></local>
+    <local scope="OEPERSONV" alias="PERSON">
+        <prop mnemo="JOB_TYP">Emploi</prop>
+        <prop mnemo="OE_TITLE_FR">Département</prop>
+        <prop mnemo="WAGES_CORRETTION">Solllohnkorrektur</prop>
+    </local>
+    <local scope="MA" alias="PERSON"></local>
+    <local scope="PERSON">
+        <prop mnemo="DATEOFBIRTH">Date de naissance</prop>
+        <prop mnemo="EMAIL">Email</prop>
+        <prop mnemo="ENTRY">Entrée</prop>
+        <prop mnemo="FIRM_ID">Entreprise</prop>
+        <prop mnemo="CLIPBOARD_ID">Dépôt des documents</prop>
+        <prop mnemo="FIRSTNAME">Prénom</prop>
+        <prop mnemo="KNOWLEDGE">Expérience professionnelle</prop>
+        <prop mnemo="LEAVING">Départ</prop>
+        <prop mnemo="LOGIN">Nom de utilisateur</prop>
+        <prop mnemo="MARTIAL">État de civils</prop>
+        <prop mnemo="MNEMO">Abréviation</prop>
+        <prop mnemo="MOBILE">Mobile</prop>
+        <prop mnemo="PASSWORD">Mot de passe</prop>
+        <prop mnemo="PERSONNELNUMBER">Numéro personnel</prop>
+        <prop mnemo="PHONE">Téléphone</prop>
+        <prop mnemo="PHOTO">Photo</prop>
+        <prop mnemo="PNAME">Nom</prop>
+        <prop mnemo="SALUTATION_LETTER">Titre lettre</prop>
+        <prop mnemo="SALUTATION_ADDRESS">Titre adresse</prop>
+        <prop mnemo="SEX">Sexe</prop>
+        <prop mnemo="TITLE">Titre</prop>
+        <prop mnemo="COSTCENTER">Section de frais</prop>
+        <prop mnemo="EMPLOYMENT_REMARK">Caractéristique d'emploi</prop>
+      <prop mnemo="LAST_ENTRY">Letzter Eintritt</prop>
+      <prop mnemo="WAGES">Wages</prop>
+    </local>
+    <local scope="person">
+        <prop mnemo="personListOE">Collaborateurs dans même département:</prop>
+        <prop mnemo="personListOELeader">Directeurs dans même département:</prop>
+        <prop mnemo="personListSearchResult">Collaborateurs selon selection:</prop>
+        <prop mnemo="orgEntityRecursive">Inclure départements subordonnées</prop>
+        <prop mnemo="shelfTreeTitle">Dépôt structure</prop>
+        <prop mnemo="shelfListTitle">Dépôt documents</prop>
+        <prop mnemo="pageTitleSearchPerson">Chercher collaborateurs</prop>
+        <prop mnemo="pageTitleSearchListPerson">Personnes trouvés</prop>
+        <prop mnemo="pageTitlePreselectionListPerson">Personnes selon selection</prop>
+        <prop mnemo="oldPassword">Vieux mot de passe</prop>
+        <prop mnemo="newPassword">Nouveau mot de passe</prop>
+        <prop mnemo="newPasswordConfirm">Confimer le mot de passe</prop>
+        <prop mnemo="cmtSelectionPersons">Personnes choicies</prop>
+        <prop mnemo="cmAddToSelection">Ajouter personnes</prop>
+        <prop mnemo="cmDeleteFromSelection">Éliminer Personne</prop>
+        <prop mnemo="navigationTitle">Navigation</prop>
+        <prop mnemo="historyTitle">Verlaufsakte</prop>
+        <prop mnemo="jobHistory">Stellenverlauf</prop>
+        <prop mnemo="orgDisplayInactiveEmployee">Ancien collaborateurs indiquer</prop>
+      <enum name="sex">
+            <prop mnemo="0"></prop>
+            <prop mnemo="1">m</prop>
+            <prop mnemo="2">f</prop>
+        </enum>
+        <enum name="employmentRemark">
+          <prop mnemo="1">actif</prop>
+          <prop mnemo="2">pensionné</prop>
+          <prop mnemo="3">décédé</prop>
+          <prop mnemo="4">sorti</prop>
+          <prop mnemo="5">bus SGV</prop>
+          <prop mnemo="6">saisonnier</prop>
+        </enum>
+    </local>
+	<local scope="journal">
+		<prop mnemo="journal">Journal</prop>
+		<prop mnemo="journalAdd">Journaleinträge erstellen</prop>
+		<prop mnemo="journalView">Journaleinträge einsehen</prop>
+		<prop mnemo="personJournalList">Journaleinträge für '#1':</prop>
+		<prop mnemo="journalDetail">Journaleintrag Detailansicht</prop>
+	</local>
+    <local scope="address">
+        <enum name="country">
+            <prop mnemo="AF">Afghanistan</prop>
+            <prop mnemo="ZA">Afrique du Sud</prop>
+            <prop mnemo="AL">Albanie</prop>
+            <prop mnemo="DZ">Algérie</prop>
+            <prop mnemo="DE">Allemagne</prop>
+            <prop mnemo="AD">Andorre</prop>
+            <prop mnemo="AO">Angola</prop>
+            <prop mnemo="AI">Anguilla</prop>
+            <prop mnemo="AG">Antigua et Barbuda</prop>
+            <prop mnemo="AN">Antilles néerlandaises</prop>
+            <prop mnemo="SA">Arabie Saoudite</prop>
+            <prop mnemo="AR">Argentine</prop>
+            <prop mnemo="AM">Arménie</prop>
+            <prop mnemo="AW">Aruba</prop>
+            <prop mnemo="SH">Ascension, Sainte Hélène et Tristan da Cunha</prop>
+            <prop mnemo="AT">Autriche</prop>
+            <prop mnemo="AU">Australie</prop>
+            <prop mnemo="AZ">Azerbaïdjan</prop>
+            <prop mnemo="BS">Bahamas</prop>
+            <prop mnemo="BH">Bahrain</prop>
+            <prop mnemo="BD">Bangladesh</prop>
+            <prop mnemo="BB">Barbade</prop>
+            <prop mnemo="BY">Belarus</prop>
+            <prop mnemo="BE">Belgique</prop>
+            <prop mnemo="BZ">Belize</prop>
+            <prop mnemo="BJ">Bénin</prop>
+            <prop mnemo="BM">Bermudes</prop>
+            <prop mnemo="BT">Bhoutan</prop>
+            <prop mnemo="BO">Bolivie</prop>
+            <prop mnemo="BA">Bosnie-Herzégovine</prop>
+            <prop mnemo="BW">Botswana</prop>
+            <prop mnemo="BR">Brésil</prop>
+            <prop mnemo="BN">Brunéi</prop>
+            <prop mnemo="BG">Bulgarie</prop>
+            <prop mnemo="BF">Burkina Faso</prop>
+            <prop mnemo="BI">Burundi</prop>
+            <prop mnemo="KH">Cambodge</prop>
+            <prop mnemo="CM">Cameroun</prop>
+            <prop mnemo="CA">Canada</prop>
+            <prop mnemo="CV">Cap-Vert, Iles du</prop>
+            <prop mnemo="KY">Cayman</prop>
+            <prop mnemo="CF">Centrafrique</prop>
+            <prop mnemo="CL">Chili</prop>
+            <prop mnemo="CN">Chine, République populaire</prop>
+            <prop mnemo="TW">Chine, Taïwan</prop>
+            <prop mnemo="CX">Christmas, Ile</prop>
+            <prop mnemo="CY">Chypre</prop>
+            <prop mnemo="CC">Cocos (Keeling), Iles des</prop>
+            <prop mnemo="CO">Colombie</prop>
+            <prop mnemo="KM">Comores</prop>
+            <prop mnemo="CD">Congo (ex Zaïre), République démocratique</prop>
+            <prop mnemo="CG">Congo, République</prop>
+            <prop mnemo="CK">Cook, Iles</prop>
+            <prop mnemo="KP">Corée (Corée du Nord), République populaire démocratique</prop>
+            <prop mnemo="KR">Corée (Corée du Sud), République</prop>
+            <prop mnemo="CR">Costa Rica</prop>
+            <prop mnemo="CI">Côte d Ivoire</prop>
+            <prop mnemo="HR">Croatie</prop>
+            <prop mnemo="CU">Cuba</prop>
+            <prop mnemo="DK">Danemark</prop>
+            <prop mnemo="DJ">Djibouti</prop>
+            <prop mnemo="DM">Dominique, Ile</prop>
+            <prop mnemo="DO">Dominicaine, République</prop>
+            <prop mnemo="SV">El Salvador</prop>
+            <prop mnemo="EG">Egypte</prop>
+            <prop mnemo="AE">Emirats Arabes Unis</prop>
+            <prop mnemo="EC">Equateur</prop>
+            <prop mnemo="ER">Erythrée</prop>
+            <prop mnemo="ES">Espagne</prop>
+            <prop mnemo="EE">Estonie</prop>
+            <prop mnemo="US">Etats-Unis d Amérique</prop>
+            <prop mnemo="ET">Ethiopie</prop>
+            <prop mnemo="FK">Falkland</prop>
+            <prop mnemo="FO">Féroé, Iles</prop>
+            <prop mnemo="FJ">Fidji</prop>
+            <prop mnemo="FI">Finlande</prop>
+            <prop mnemo="FR">France</prop>
+            <prop mnemo="GA">Gabon</prop>
+            <prop mnemo="GM">Gambie</prop>
+            <prop mnemo="GE">Géorgie</prop>
+            <prop mnemo="GS">Géorgie du Sud et les Iles Sandwich du Sud</prop>
+            <prop mnemo="GH">Ghana</prop>
+            <prop mnemo="GI">Gibraltar</prop>
+            <prop mnemo="GR">Grèce</prop>
+            <prop mnemo="GD">Grenade</prop>
+            <prop mnemo="GL">Groenland</prop>
+            <prop mnemo="GP">Guadeloupe</prop>
+            <prop mnemo="GU">Guam</prop>
+            <prop mnemo="GT">Guatémala</prop>
+            <prop mnemo="GW">Guinée-Bissau</prop>
+            <prop mnemo="GQ">Guinée Equatoriale</prop>
+            <prop mnemo="GN">Guinée, République</prop>
+            <prop mnemo="GY">Guyane</prop>
+            <prop mnemo="GF">Guyane française</prop>
+            <prop mnemo="HT">Haïti</prop>
+            <prop mnemo="HN">Honduras</prop>
+            <prop mnemo="HK">Hong-Kong</prop>
+            <prop mnemo="HU">Hongrie</prop>
+            <prop mnemo="UM">Iles Mineures Éloignées des États-Unis</prop>
+            <prop mnemo="IN">Inde</prop>
+            <prop mnemo="ID">Indonésie</prop>
+            <prop mnemo="IR">Iran</prop>
+            <prop mnemo="IQ">Iraq</prop>
+            <prop mnemo="IE">Irlande</prop>
+            <prop mnemo="IS">Islande</prop>
+            <prop mnemo="IL">Israël</prop>
+            <prop mnemo="IT">Italie</prop>
+            <prop mnemo="JM">Jamaïque</prop>
+            <prop mnemo="JP">Japon</prop>
+            <prop mnemo="JO">Jordanie</prop>
+            <prop mnemo="KZ">Kazakhstan</prop>
+            <prop mnemo="KE">Kenya</prop>
+            <prop mnemo="KG">Kirghizistan</prop>
+            <prop mnemo="KI">Kiribati</prop>
+            <prop mnemo="XZ">Kosovo (Administration intérimaire des Nations Unies)</prop>
+            <prop mnemo="KW">Kuwait</prop>
+            <prop mnemo="LA">Laos</prop>
+            <prop mnemo="LS">Lesotho</prop>
+            <prop mnemo="LV">Lettonie</prop>
+            <prop mnemo="LB">Liban</prop>
+            <prop mnemo="LR">Libéria</prop>
+            <prop mnemo="LY">Libye</prop>
+            <prop mnemo="LI">Liechtenstein</prop>
+            <prop mnemo="LT">Lituanie</prop>
+            <prop mnemo="LU">Luxembourg</prop>
+            <prop mnemo="MO">Macao</prop>
+            <prop mnemo="MK">Macédoine</prop>
+            <prop mnemo="MG">Madagascar</prop>
+            <prop mnemo="MY">Malaisie</prop>
+            <prop mnemo="MW">Malawi</prop>
+            <prop mnemo="MV">Maldives</prop>
+            <prop mnemo="ML">Mali</prop>
+            <prop mnemo="MT">Malte</prop>
+            <prop mnemo="MP">Mariannes du Nord, Iles</prop>
+            <prop mnemo="MA">Maroc</prop>
+            <prop mnemo="MH">Marshall, Iles</prop>
+            <prop mnemo="MQ">Martinique</prop>
+            <prop mnemo="MU">Maurice, Ile</prop>
+            <prop mnemo="MR">Mauritanie</prop>
+            <prop mnemo="YT">Mayotte</prop>
+            <prop mnemo="MX">Mexique</prop>
+            <prop mnemo="MD">Moldova</prop>
+            <prop mnemo="MC">Monaco</prop>
+            <prop mnemo="MN">Mongolie</prop>
+            <prop mnemo="MS">Montserrat</prop>
+            <prop mnemo="MZ">Mozambique</prop>
+            <prop mnemo="MM">Myanmar</prop>
+            <prop mnemo="NA">Namibie</prop>
+            <prop mnemo="NR">Nauru</prop>
+            <prop mnemo="NP">Népal</prop>
+            <prop mnemo="NC">Nouvelle-Calédonie</prop>
+            <prop mnemo="NZ">Nouvelle-Zélande</prop>
+            <prop mnemo="NI">Nicaragua</prop>
+            <prop mnemo="NE">Niger</prop>
+            <prop mnemo="NG">Nigéria</prop>
+            <prop mnemo="NF">Norfolk, Ile</prop>
+            <prop mnemo="NO">Norvège</prop>
+            <prop mnemo="OM">Oman</prop>
+            <prop mnemo="UG">Ouganda</prop>
+            <prop mnemo="UZ">Ouzbékistan</prop>
+            <prop mnemo="PK">Pakistan</prop>
+            <prop mnemo="PW">Palau</prop>
+            <prop mnemo="PA">Panama</prop>
+            <prop mnemo="PG">Papouasie-Nouvelle-Guinée</prop>
+            <prop mnemo="PY">Paraguay</prop>
+            <prop mnemo="NL">Pays-Bas</prop>
+            <prop mnemo="PE">Pérou</prop>
+            <prop mnemo="PH">Philippines</prop>
+            <prop mnemo="PN">Pitcairn</prop>
+            <prop mnemo="PL">Pologne</prop>
+            <prop mnemo="PF">Polynésie française</prop>
+            <prop mnemo="PT">Portugal</prop>
+            <prop mnemo="PR">Porto Rico</prop>
+            <prop mnemo="QA">Qatar</prop>
+            <prop mnemo="RE">Réunion</prop>
+            <prop mnemo="RO">Roumanie</prop>
+            <prop mnemo="RU">Russie, Fédération de</prop>
+            <prop mnemo="RW">Rwanda</prop>
+            <prop mnemo="LC">Sainte Lucie</prop>
+            <prop mnemo="KN">St-Christophe (St.-Kitts) et Nevis</prop>
+            <prop mnemo="SM">St-Marin</prop>
+            <prop mnemo="PM">St-Pierre et Miquelon</prop>
+            <prop mnemo="ST">St-Thomas et Prince</prop>
+            <prop mnemo="VC">St-Vincent et Grenadines</prop>
+            <prop mnemo="SB">Salomon, Iles</prop>
+            <prop mnemo="WS">Samoa Occidental (Savaii, Upola)</prop>
+            <prop mnemo="AS">Samoa, partie américaine (Manua, Tutuila avec Pago Pago)</prop>
+            <prop mnemo="SN">Sénégal</prop>
+            <prop mnemo="CS">Serbie et Monténégro</prop>
+            <prop mnemo="SC">Seychelles</prop>
+            <prop mnemo="SL">Sierra Leone</prop>
+            <prop mnemo="SG">Singapour</prop>
+            <prop mnemo="SK">Slovaque, République</prop>
+            <prop mnemo="SI">Slovénie</prop>
+            <prop mnemo="SO">Somalie</prop>
+            <prop mnemo="SD">Soudan</prop>
+            <prop mnemo="LK">Sri Lanka</prop>
+            <prop mnemo="CH">Suisse</prop>
+            <prop mnemo="SE">Suéde</prop>
+            <prop mnemo="SR">Suriname</prop>
+            <prop mnemo="SZ">Swaziland</prop>
+            <prop mnemo="SY">Syrie</prop>
+            <prop mnemo="TJ">Tadjikistan</prop>
+            <prop mnemo="TZ">Tanzanie</prop>
+            <prop mnemo="TD">Tchad</prop>
+            <prop mnemo="CZ">Tchèque, République</prop>
+            <prop mnemo="TF">Terres Australes françaises</prop>
+            <prop mnemo="TH">Thaïlande</prop>
+            <prop mnemo="TL">Timor-Leste</prop>
+            <prop mnemo="TG">Togo</prop>
+            <prop mnemo="TK">Tokélaou</prop>
+            <prop mnemo="TO">Tonga</prop>
+            <prop mnemo="TT">Trinité et Tobago</prop>
+            <prop mnemo="TN">Tunisie</prop>
+            <prop mnemo="TM">Turkménistan</prop>
+            <prop mnemo="TC">Turks et Caïques</prop>
+            <prop mnemo="TR">Turquie</prop>
+            <prop mnemo="TV">Tuvalu</prop>
+            <prop mnemo="UA">Ukraine</prop>
+            <prop mnemo="UY">Uruguay</prop>
+            <prop mnemo="VU">Vanuatu</prop>
+            <prop mnemo="VA">Vatican</prop>
+            <prop mnemo="VE">Venezuela</prop>
+            <prop mnemo="VI">Vierges (Etats-Unis), Iles</prop>
+            <prop mnemo="VG">Vierges, Iles britanniques (Tortola)</prop>
+            <prop mnemo="VN">Viet Nam</prop>
+            <prop mnemo="WF">Wallis et Futuna</prop>
+            <prop mnemo="YE">Yémen</prop>
+            <prop mnemo="ZM">Zambie</prop>
+            <prop mnemo="ZW">Zimbabwe</prop>
+        </enum>
+    </local>
+    <local scope="FIRM">
+        <prop mnemo="TITLE">Nom</prop>
+        <prop mnemo="PURPOSE">But</prop>
+        <prop mnemo="EMAIL">Email</prop>
+        <prop mnemo="WEBSITE">Site web</prop>
+    </local>
+    <local scope="ADDRESS">
+        <prop mnemo="ADDRESS1">Ligne adresse 1</prop>
+        <prop mnemo="ADDRESS2">Ligne adresse 2</prop>
+        <prop mnemo="ADDRESS3">Ligne adresse 3</prop>
+        <prop mnemo="ZIP">Code postal</prop>
+        <prop mnemo="CITY">Localité</prop>
+        <prop mnemo="COUNTRY">Pays</prop>
+        <prop mnemo="PHONE">Téléphone</prop>
+        <prop mnemo="FAX">Fax</prop>
+        <prop mnemo="MOBILE">Natel</prop>
+        <prop mnemo="EMAIL_PRIVATE">Email</prop>
+    </local>
+    <local scope="JOB">
+        <prop mnemo="TITLE_FR">Position</prop>
+        <prop mnemo="FUNKTION_ID">Fonction</prop>
+        <prop mnemo="ORGENTITY_ID">Département</prop>
+        <prop mnemo="EMPLOYMENT_ID">Emploi</prop>
+        <prop mnemo="MNEMONIC_FR">Abréviation</prop>
+        <prop mnemo="ENGAGEMENT">Occupation</prop>
+        <prop mnemo="TYP">Type</prop>
+        <prop mnemo="DESCRIPTION_FR">Description</prop>
+    </local>
+    <local scope="FUNKTION">
+        <prop mnemo="TITLE_FR">Fonction</prop>
+        <prop mnemo="MNEMONIC_FR">Abréviation</prop>
+        <prop mnemo="DESCRIPTION_FR">Description</prop>
+    </local>
+    <local scope="FUNCGROUPV">
+        <prop mnemo="GTITLE_FR">Nom du groupe</prop>
+        <prop mnemo="FTITLE_FR">Nom de la fonction</prop>
+        <prop mnemo="FMNEMONIC_FR">Abréviation</prop>
+        <prop mnemo="FDFLT">Fonction default</prop>
+    </local>
+    <local scope="ORGENTITY" >
+		<prop mnemo="PARENT_ID">Prioritaire</prop>
+		<prop mnemo="ROOT_ID">Organisation</prop>
+		<prop mnemo="CLIPBOARD_ID" size="30">Archive</prop>
+		<prop mnemo="ORDNUMBER">Numéro d'ordre</prop>
+		<prop mnemo="TITLE" size="30">Unité d'organisation</prop>
+		<prop mnemo="TITLE_FR" size="30">Unité d'organisation</prop>
+		<prop mnemo="MNEMONIC">Abréviation</prop>
+		<prop mnemo="MNEMONIC_FR">Abréviation</prop>
+		<prop mnemo="DESCRIPTION" size="50,5">Description</prop>
+ 		<prop mnemo="DESCRIPTION_FR" size="50,5">Description</prop>
+		<prop mnemo="HAT_BUDGET">A un budget de salaire</prop>
+    </local>
+    <local scope="EMPLOYMENT" >
+		<prop mnemo="TITLE" size="30">Titre</prop>
+		<prop mnemo="TITLE_FR" size="30">Titre</prop>
+		<prop mnemo="PERSON_ID" size="30">Personne</prop>
+    </local>
+    <local scope="EMPLOYMENT_V"  alias="EMPLOYMENT">
+		<prop mnemo="ENGAGEMENT" size="5">Temps de travail</prop>
+    </local>
+	<local scope="PERSON_JOURNAL">
+ 		<prop mnemo="TITLE">Bezeichnung</prop>
+ 		<prop mnemo="DESCRIPTION" size="80,8">Beschreibung</prop>
+ 		<prop mnemo="CREATED">Datum</prop>
+ 		<prop mnemo="PERSON_JOURNAL_TYPE_ID">Journaltyp</prop>
+ 		<prop mnemo="CREATOR_PERSON_ID">Erstellt von</prop>
+ 		<prop mnemo="PERSON_ID">Betreffend</prop>
+    </local>
+  <local scope="JOB_DEVELOPMENT">
+    <prop mnemo="TITLE_FR">Stelle</prop>
+    <prop mnemo="FUNKTION_NAME_FR">Funktion</prop>
+    <prop mnemo="ORGENTITY_NAME_FR">Abteilung</prop>
+    <prop mnemo="EMPLOYMENT_NAME_FR">Anstellung</prop>
+    <prop mnemo="ENGAGEMENT">Temps de travail [%]</prop>
+    <prop mnemo="TYP">Typ</prop>
+    <prop mnemo="HAUPTFUNKTION">Hauptfunktion</prop>
+    <prop mnemo="FROM_DATE">Von</prop>
+    <prop mnemo="TO_DATE">Bis</prop>
+  </local>
+  <local scope="jobDevelopment">
+    <prop mnemo="jobDevelopmentList">Stellenverlauf für '#1':</prop>
+    <enum name="hauptfunktionEnum">
+      <prop mnemo="0">Nein</prop>
+      <prop mnemo="1">Ja</prop>
+    </enum>
+    <enum name="typ">
+      <prop mnemo="0">Mitarbeiter/in</prop>
+      <prop mnemo="1">Leiter/in</prop>
+    </enum>
+  </local>
+</map>

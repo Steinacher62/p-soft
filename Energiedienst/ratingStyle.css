@@ -1,0 +1,154 @@
+﻿
+body {
+}
+.HasMistake {
+    background-color:red;
+}
+
+#sumDiv table {
+    border: 2px solid #000000;
+    border-collapse: collapse;
+    float: right;
+}
+#sumDiv td {
+    border: 2px solid #000000;
+        width: 74px;
+        height:18px;
+}
+#sumDiv {
+    border-collapse: collapse;
+    height: 30px;
+    width: 100%;
+}
+
+#alertMsg {
+    color:red;
+}
+#infoTable td {
+    width :33%;
+    font-weight:bold;
+    font-size:12px;
+}
+#infoTable td:nth-child(3) {
+    text-align: right;
+}
+#infoTable td:nth-child(2) {
+    text-align: center;
+}
+
+#infoTable {
+    width: 100%;
+}
+
+#optionTable {
+    
+    table-layout:fixed
+}
+
+#optionTable td {
+  
+}
+#optionTable td:nth-child(3) {
+    text-align: left;
+}
+#optionTable td:nth-child(2) {
+    text-align: left;
+    width:100px
+}
+#optionTable td:nth-child(1) {
+    text-align: left;
+    width:100px
+}
+#ratingTitle {
+    font-size: 25px;
+    font-weight: bold;
+    height: 40px;
+    text-align: center;
+}
+
+textarea {
+    resize:vertical;
+    overflow:hidden;
+    height:100%;
+    vertical-align:top;
+    width:100%;
+    font-size:12px;
+}
+#objectiveTable {
+    border: 2px solid #000000;
+    border-collapse: collapse;
+}
+#objectiveTable td {
+    border: 2px solid #000000;
+    vertical-align:top;
+    width: 100%;
+}
+#objectiveTable:first-child {
+    font-weight: bold;
+}
+#objectiveTable tr td:nth-child(2) textarea {
+    width: 70px;
+}
+#objectiveTable tr td:nth-child(1) textarea {
+    width: 15px;
+}
+#objectiveTable tr td:nth-child(3) textarea {
+    width: 150px;
+}
+#objectiveTable tr td:nth-child(4) textarea {
+    width: 200px;
+}
+#objectiveTable tr td:nth-child(5) textarea {
+    width: 60px;
+}
+#objectiveTable tr td:nth-child(6) textarea {
+    width: 60px;
+}
+#objectiveTable tr td:nth-child(7) textarea {
+    width: 150px;
+}
+#objectiveTable tr td:nth-child(8) textarea {
+    width: 150px;
+}
+#objectiveTable tr td:nth-child(9) textarea {
+    width: 80px;
+}
+#objectiveTable tr td:nth-child(10) textarea {
+    width: 70px;
+}
+#objectiveTable tr td:nth-child(11) textarea {
+    width: 70px;
+}
+#objectiveTable tr td:nth-child(2) {
+    width: 70px;
+}
+#objectiveTable tr td:nth-child(1) {
+    width: 15px;
+}
+#objectiveTable tr td:nth-child(3) {
+    width: 150px;
+}
+#objectiveTable tr td:nth-child(4) {
+    width: 200px;
+}
+#objectiveTable tr td:nth-child(5) {
+    width: 60px;
+}
+#objectiveTable tr td:nth-child(6) {
+    width: 60px;
+}
+#objectiveTable tr td:nth-child(7) {
+    width: 150px;
+}
+#objectiveTable tr td:nth-child(8) {
+    width: 150px;
+}
+#objectiveTable tr td:nth-child(9) {
+    width: 80px;
+}
+#objectiveTable tr td:nth-child(10) {
+    width: 70px;
+}
+#objectiveTable tr td:nth-child(11) {
+    width: 70px;
+}

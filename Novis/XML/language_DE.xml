@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE map SYSTEM "../../XML/dtd/language.dtd" >
+<map>
+  <!-- ä &#228; ö &#246; ü &#252; Ä &#196; Ö &#214; Ü &#220; <b> &lt;b&gt; </b> &lt;/b&gt; -->
+  <local scope="ModuleNames">
+    <prop mnemo="novis">NOVIS</prop>
+  </local>
+  <local scope="novis">
+    <prop mnemo="bcCreateNovisReport">Report erstellen</prop>
+  </local>
+</map>

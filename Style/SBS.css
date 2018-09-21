@@ -1,0 +1,133 @@
+﻿
+#dataForms {
+    position: relative;
+    overflow: visible;
+    /*width: 490px;
+    height: 500px;*/
+    background-color:#ebeaea;
+    border: 2px solid #808080;
+
+}
+
+
+#dataForms .sbsHeader {
+    /*position: absolute;*/
+    top: -5px;
+    left: -16px;
+    width: 482px;
+    height: 79px;
+    /*background: url('images/header.png') 0 0 no-repeat;*/
+}
+
+#dataForms .sbsHeaderInner {
+    height: 63px;
+    margin: 4px;
+    line-height: 60px;
+    padding-left: 10px;
+    font-size: 30px;
+}
+
+#dataForms .sbsBorders {
+    border-top: 0 none;
+}
+
+#dataForms .sbsBlock {
+    display: block;
+}
+
+#dataForms .sbsFieldValue {
+    font-size: 1.5em;
+}
+
+    #dataForms .sbsInput {
+        min-height:40px;
+    }
+
+
+#dataForms .sbsHr {
+    width: 220px !important;
+        top: 390px;
+    height: 1px;
+}
+
+#dataForms .sbsFieldset {
+    
+    padding-left: 10px;
+}
+
+
+#dataForms .sbsCommandButtons {
+
+    width: auto;
+    
+}
+
+.RadDataForm .sbsPager > span {
+    float: left;
+}
+
+.size-custom {
+    max-width: 450px;
+}
+
+ .sbsLabel.sbsBlock {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+#dataForms .sbsRow .sbsFieldValue,
+#dataForms .rdfRow .sbsFieldValue {
+    display: block;
+    font-size: 14px;
+    margin-left: 8px;
+}
+
+ .sbsRow .sbsFieldValue:empty {
+    display:none;
+}
+
+ #ctl00_ContentPlaceHolder1_DataFormSeminar_ctl01_ViewUID,
+ #ctl00_ContentPlaceHolder1_DataFormSeminar_ctl02_EditUID {
+    display: none;
+}
+
+ .NoAuthorDozent #ctl00_ContentPlaceHolder1_DataFormSeminar_ctl01_ViewAuthor,
+ .NoAuthorDozent #ctl00_ContentPlaceHolder1_DataFormSeminar_ctl01_ViewAuthorText,
+ .NoAuthorDozent #ctl00_ContentPlaceHolder1_DataFormSeminar_ctl01_ViewDozent,
+ .NoAuthorDozent #ctl00_ContentPlaceHolder1_DataFormSeminar_ctl01_ViewDozentText,
+ .NoAuthorDozent #ctl00_ContentPlaceHolder1_DataFormSeminar_ctl02_EditAuthor,
+ .NoAuthorDozent #ctl00_ContentPlaceHolder1_DataFormSeminar_ctl02_EditAuthorTextBox_wrapper,
+ .NoAuthorDozent #ctl00_ContentPlaceHolder1_DataFormSeminar_ctl02_EditDozent,
+ .NoAuthorDozent #ctl00_ContentPlaceHolder1_DataFormSeminar_ctl02_EditDozentTextBox_wrapper
+  {
+    display: none;
+    visibility: hidden;
+}
+
+ .NoDatum #ctl00_ContentPlaceHolder1_DataFormSeminar_ctl01_ViewDatum,
+ .NoDatum #ctl00_ContentPlaceHolder1_DataFormSeminar_ctl01_ViewDatumText,
+ .NoDatum #ctl00_ContentPlaceHolder1_DataFormSeminar_ctl02_EditDatum,
+ .NoDatum #ctl00_ContentPlaceHolder1_DataFormSeminar_ctl02_EditDatumTextBox_wrapper,
+ .NoDatum #ctl00_ContentPlaceHolder1_DataFormSeminar_ctl01_ViewRelease,
+ .NoDatum #ctl00_ContentPlaceHolder1_DataFormSeminar_ctl01_ViewReleaseText,
+  .NoDatum #ctl00_ContentPlaceHolder1_DataFormSeminar_ctl02_EditRelease,
+ .NoDatum #ctl00_ContentPlaceHolder1_DataFormSeminar_ctl02_EditReleaseTextBox_wrapper
+ {
+    display: none;
+    visibility: hidden;
+}
+ .Root div
+ {
+    display: none;
+    visibility: hidden;
+}
+ .igdm_MenuItemVerticalHover{
+     background-image:none;
+     background-color:red;
+ }
+
+ div.RadGrid .rgPager .rgAdvPart     
+   {     
+    display:none;        
+   }      

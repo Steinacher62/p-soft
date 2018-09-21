@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE config SYSTEM "../dtd/config.dtd" >
+<config>
+    <language
+        LanguageCode = "fr"
+        RegionCode = "CH"
+    />
+    <db
+        Server = "(local)"
+        LanguageCode = "en"
+        RegionCode = "US"
+        Name = "Psoft_v3"
+        User = "PsoftuserDev"
+        Password = "Psoft"
+        DriverClass = "ch.psoft.db.MSSqlDriver"
+        MultiLanguage = "enable"
+    />    
+    <ftp
+        FtpDocumentServer = "localhost"
+        FtpDocumentSaveDirectory = "ftp_Psoft/save"
+        FtpDocumentTempDirectory = "ftp_Psoft/tmp"
+        FtpDocumentHistoryDirectory = "ftp_Psoft/history"
+        DocumentSaveDirectory = "E:\Entwicklung\pSoft_export\source_code\Dezentral_Martin\p-soft\ftp_psoft\save"
+        DocumentTempDirectory = "E:\Entwicklung\pSoft_export\source_code\Dezentral_Martin\p-soft\ftp_psoft\tmp"
+        DocumentHistoryDirectory = "E:\Entwicklung\pSoft_export\source_code\Dezentral_Martin\p-soft\ftp_psoft\history"
+        DocumentSaveURL = "/masterpage/ftp_Psoft/save"
+        DocumentHistoryURL = "/masterpage/ftp_Psoft/history"
+        IndexingCatalogName = "SEEK_Documents"
+		NumberOfDocumentVersions = "-1"
+    />
+    <www
+		BaseURL = "/Psoft_v3"
+		Domain = "visual2"
+		EMail = '"p-soft" &lt;info@p-soft.ch&gt;'
+    />
+    <organisation
+        ModuleVisible = "1"
+        ShortPhoneNumber = "0"
+        PersonPhotoDirectory = "\\PSOFTDEV1\photo"
+        OrganisationImageDirectory = "C:/Inetpub/wwwroot/Psoft_v3/Organisation/images"
+    />
+    <cms
+        CMSRootURL = "/Psoft_v3/CMSRoot"
+    />
+    <display
+        RowsPerListPage = "15"
+        MaxTreeCaptionLength = "30"
+        StartUpURL = ""
+        ShowPartnerLogos = "1"
+        HeaderLogo = ""
+        HeaderLogoURL = ""
+        ShowDocumentSearch = "1"
+        HighlightColor = "#f2b400"
+        ShowLanguageSelector = "1"
+        MaxBreadcrumbItems = "5"
+    />
+    <authentication
+        mode = "login"
+        anonymousAccount = "anonymous"
+        anonymousPassword = "PsoftAnonymous"
+    />
+    <modules>
+        <!-- Basis -->
+        <module name="report" enabled="1" assemblyName="module_dispatch" className="ch.appl.psoft.Report.ReportModule">
+            <param name="headerLogoImage">PsoftDogBlack.gif</param>
+            <param name="enableExcel">0</param>
+        </module>
+
+        <!-- Erweiterte Basis -->
+        <module name="tasklist" enabled="1" assemblyName="module_tasklist" className="ch.appl.psoft.Tasklist.TasklistModule">
+            <param name="criticalDays">4</param>
+        </module>
+
+        <!-- Applikationen -->
+
+        <!-- HR -->
+        <module name="fbs" enabled="1" assemblyName="module_fbs" className="ch.appl.psoft.FBS.FBSModule">
+            <param name="showNumTitleInReport">1</param>
+        </module>
+        <module name="fbw" enabled="1" assemblyName="module_fbw" className="ch.appl.psoft.FBW.FBWModule" />
+        <module name="lohn" enabled="1" assemblyName="module_lohn" className="ch.appl.psoft.Lohn.LohnModule">
+            <param name="dbName">C:/PsoftV3_D/Psoft/ch/PSOFT/Psoft/DLA/Data/RSR_LMYYYY.ogs</param>
+            <param name="budgetModus">1</param><!-- siehe LohnModule.BudgetModi -->
+            <param name="mitGenehmigungsverfahren">0</param><!-- 1 bedeutet ja -->
+        </module>
+
+        <!-- Kundenerweiterungen -->
+        <module name="rsr" enabled="1" assemblyName="module_rsr" className="ch.appl.psoft.RSR.RsrModule" />
+    </modules>
+</config>

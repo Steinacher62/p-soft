@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE map SYSTEM "../../XML/dtd/language.dtd" >
+<map>
+    <!-- ä &#228; ö &#246; ü &#252; Ä &#196; Ö &#214; Ü &#220; <b> &lt;b&gt; </b> &lt;/b&gt; -->
+    <local scope="reportLayout">
+        <prop mnemo="PhoneListFeller">Phone-Directory Feller AG Horgen</prop>
+        <prop mnemo="PhoneListFellerHeader">Phone-Directory Feller AG Horgen</prop>
+        <prop mnemo="PhoneListSchneider">Phone-Directory Schneider Electric (Switzerland) AG</prop>
+        <prop mnemo="PhoneListSchneiderHeader">Phone-Directory Schneider Electric (Switzerland) AG</prop>
+    </local>
+</map>

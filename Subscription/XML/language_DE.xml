@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE map SYSTEM "../../XML/dtd/language.dtd" >
+<map>
+    <!-- ä &#228; ö &#246; ü &#252; Ä &#196; Ö &#214; Ü &#220; <b> &lt;b&gt; </b> &lt;/b&gt; -->
+    <local scope="ModuleNames">
+        <prop mnemo="subscription">Abonnement</prop>
+    </local>
+    <local scope="navigation">
+    </local>
+    <!-- Subscription -->
+    <local scope="SUBSCRIPTION">
+        <prop mnemo="ID">ID</prop>
+ 		<prop mnemo="TITLE">Name</prop>
+ 		<prop mnemo="VALID_FROM">Gültig ab</prop>
+ 		<prop mnemo="VALID_TO">Gültig bis</prop>
+ 		<prop mnemo="PERSON_ID">Abonnent</prop>
+ 		<prop mnemo="EVENTS">Ereignisse</prop>
+ 		<prop mnemo="ACTIVE">Aktiv</prop>
+ 		<prop mnemo="EMAILENABLE">Nachricht per EMail</prop>
+ 		<prop mnemo="EMAIL">EMail</prop>
+ 		<prop mnemo="TRIGGER_ID">Trigger</prop>
+    </local>
+    <!-- News -->
+    <local scope="NEWS">
+ 		<prop mnemo="TITLE_DE">Bezeichnung</prop>
+ 		<prop mnemo="TITLE_FR">Bezeichnung</prop>
+ 		<prop mnemo="TITLE_IT">Bezeichnung</prop>
+ 		<prop mnemo="TITLE_EN">Bezeichnung</prop>
+ 		<prop mnemo="DESCRIPTION_DE" size="80,8">Beschreibung</prop>
+ 		<prop mnemo="DESCRIPTION_FR" size="80,8">Beschreibung</prop>
+ 		<prop mnemo="DESCRIPTION_IT" size="80,8">Beschreibung</prop>
+ 		<prop mnemo="DESCRIPTION_EN" size="80,8">Beschreibung</prop>
+ 		<prop mnemo="CREATED">Erstellt</prop>
+ 		<prop mnemo="VALID_FROM">Gültig ab</prop>
+ 		<prop mnemo="VALID_TO">Gültig bis</prop>
+ 		<prop mnemo="VISIBILITY">Sichtbar</prop>
+ 		<prop mnemo="URL">URL</prop>
+ 		<prop mnemo="TARGET">Target</prop>
+ 		<prop mnemo="URL_TEXT_DE">URL-Text</prop>
+ 		<prop mnemo="URL_TEXT_FR">URL-Text</prop>
+ 		<prop mnemo="URL_TEXT_IT">URL-Text</prop>
+ 		<prop mnemo="URL_TEXT_EN">URL-Text</prop>
+    </local>
+    <local scope="news">
+    	<prop mnemo="EDIT">Bearbeitet: </prop>
+    	<prop mnemo="DELETE">Gelöscht: </prop>
+    	<prop mnemo="NEW">Neu: </prop>
+    	<prop mnemo="NEWVERSION">Neue Version: </prop>    	
+    	<prop mnemo="NEWS">Meldungen</prop>
+    	<prop mnemo="SUBSCRIPTION">Abonnement</prop>
+    	<prop mnemo="DOCUMENT">Dokument</prop>
+    	<prop mnemo="FOLDER">Ordner</prop>
+    	<prop mnemo="CLIPBOARD">Ablage</prop>
+    	<prop mnemo="FORUM">Forum</prop>
+    	<prop mnemo="TOPIC">Beitrag</prop>
+    	<prop mnemo="LINK">Querverweis</prop>
+    	<prop mnemo="CONTRIBUTION">Anmerkung</prop>
+    	<prop mnemo="DOCUMENT_LINK">Verknüpfung</prop>
+    	<prop mnemo="TASKLIST">Pendenzenliste</prop>
+    	<prop mnemo="MEASURE">Pendenz</prop>
+    	<prop mnemo="KNOWLEDGE">Wissen</prop>    	
+    	<prop mnemo="by"> durch </prop>
+    	<prop mnemo="new">Meldung</prop>
+    	<prop mnemo="news">Meldungen</prop>
+    	<prop mnemo="subscription">Abonnement</prop>
+    	<prop mnemo="subscriptions">Abonnemente</prop>
+    	<prop mnemo="editNEWS">Meldung bearbeiten</prop>
+    	<prop mnemo="addNEWS">Neue Meldung</prop>
+    	<prop mnemo="editSUBSCRIPTION">Abonnement bearbeiten</prop>
+    	<prop mnemo="addSUBSCRIPTION">Neues Abonnement</prop>
+    	<prop mnemo="detailSUBSCRIPTION">Detail Abonnement</prop>
+ 		<prop mnemo="deleteNEWSConfirm">Meldung löschen?</prop>
+ 		<prop mnemo="deleteSUBSCRIPTIONConfirm">Abonnement löschen?</prop>
+ 		<prop mnemo="invalidSubscription">Ungültiges Abonnement</prop>
+ 		<prop mnemo="inactiveSubscription">Abonnement nicht aktiv</prop>
+ 		<prop mnemo="activeSubscription">Aktives Abonnement</prop>
+ 		<prop mnemo="emailSubject">Änderungsmeldung</prop>
+ 		<prop mnemo="emailComment">Der p-soft Benachrichtigungsdienst hat folgende für Sie relevante Änderung in einem der Inhalte festgestellt:</prop>
+    </local>
+    <local scope="error">
+        <prop mnemo="dispatchNotAviable">Die Email-Funktion steht nicht zur Verfügung.</prop>
+    </local>
+</map>

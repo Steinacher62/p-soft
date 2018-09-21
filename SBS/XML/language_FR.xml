@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE map SYSTEM "../../XML/dtd/language.dtd" >
+<map>
+  <!-- ä &#228; ö &#246; ü &#252; Ä &#196; Ö &#214; Ü &#220; <b> &lt;b&gt; </b> &lt;/b&gt; -->
+  <local scope="sbs">
+    <prop mnemo="sbs">Swiss Board School</prop>
+    <prop mnemo="addEditUser">Ajouter-Modifier Utilisateur</prop>
+    <prop mnemo="userManagement">Gestion des utilisateurs</prop>
+    <prop mnemo="seminarManagement">Gestion des séminaires</prop>
+    <prop mnemo="addEditSeminar">Ajouter-Modifier séminaire</prop>
+    <prop mnemo="startPage">Page de garde</prop>
+  </local>
+  <local scope="navigation">
+    <prop mnemo="addUser">Ajouter utilisateur</prop>
+  </local>
+</map>

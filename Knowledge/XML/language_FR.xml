@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE map SYSTEM "../../XML/dtd/language.dtd" >
+<map>
+  <!-- ä &#228; ö &#246; ü &#252; Ä &#196; Ö &#214; Ü &#220; <b> &lt;b&gt; </b> &lt;/b&gt; -->
+  <local scope="ModuleNames">
+    <prop mnemo="knowledge">WISSEN</prop>
+  </local>
+  <local scope="tableName">
+    <prop mnemo="KNOWLEDGE_V">Savoir</prop>
+    <prop mnemo="KNOWLEDGE">Savoir</prop>
+    <prop mnemo="THEME">Thème</prop>
+  </local>
+  <local scope="knowledge">
+    <prop mnemo="knowledge">Savoir</prop>
+    <prop mnemo="miSearchKnowledge">Recherche savoir</prop>
+    <prop mnemo="miNewKnowledge">Nouvel élément de savoir global</prop>
+    <prop mnemo="miPrintKnowledge">Imprimer savoir</prop>
+    <prop mnemo="bcSearchKnowledge">Rechercher savoir</prop>
+    <prop mnemo="bcPrintKnowledge">Imprimer savoir</prop>
+    <prop mnemo="bcEditTheme">Travailler thème</prop>
+    <prop mnemo="bcAddTheme">Ajouter thème</prop>
+    <prop mnemo="bcEditKnowledge">Travailler élément de savoir</prop>
+    <prop mnemo="bcAddKnowledge">Ajouter élément de savoir global</prop>
+    <prop mnemo="ctContents">Sommaire</prop>
+    <prop mnemo="ctKnowledge">Elément de savoir</prop>
+    <prop mnemo="ctAssignedKnowledges">Savoir relié</prop>
+    <prop mnemo="ctAdministration">Administration</prop>
+    <prop mnemo="clEditKnowledge">Travailler élément de savoir</prop>
+    <prop mnemo="clNewKnowledge">Relier à nouvel élément de savoir</prop>
+    <prop mnemo="clDeleteKnowledge">Effacer élément de savoir</prop>
+    <prop mnemo="clAddTheme">Nouveau thème</prop>
+    <prop mnemo="clAddDocument">Nouveau document</prop>
+    <prop mnemo="clAddImage">Nouvelle image </prop>
+    <prop mnemo="clInviteAuthors">Inviter auteurs</prop>
+    <prop mnemo="stDocuments">Documents</prop>
+    <prop mnemo="stRegistry">Enregistrement</prop>
+    <prop mnemo="bcEditHistory">Travailler remarque</prop>
+    <prop mnemo="bcAddHistory">Créer nouvelle version</prop>
+    <prop mnemo="ttGenerateWordDocument">Générer Document Word...</prop>
+    <prop mnemo="btPrintSelection">Imprimer</prop>
+    <prop mnemo="cbKnowledgeOnly">Lister uniquement les éléments de savoir</prop>
+    <prop mnemo="popupCannotDeleteKnowledge">Avertissement: cet élément de savoir ne peut pas être effacé</prop>
+    <prop mnemo="stSuggestionRanking">Evaluation de la proposition</prop>
+    <prop mnemo="ttAndOder">Relier le titre et le type de thème avec et ou alors></prop>
+    <prop mnemo="columnKnowledgeTitle">Titre élément de savoir</prop>
+    <prop mnemo="saveAndContinue">Enregistrer</prop>
+    <prop mnemo="saveAndContinueTooltip">Enregistrer en cache</prop>
+    <prop mnemo="saveAndQuit">Fermer</prop>
+    <prop mnemo="saveAndQuitTooltip">Enregistrer et fermer</prop>
+  </local>
+  <local scope="KNOWLEDGE_V" alias="KNOWLEDGE"></local>
+  <local scope="KNOWLEDGE">
+    <prop mnemo="TITLE_FR" size="80,1">Titre</prop>
+    <prop mnemo="DESCRIPTION_FR" size="100,25">Description</prop>
+    <prop mnemo="CREATED_FR">Créé le</prop>
+    <prop mnemo="CREATOR_PERSON_ID_FR">Créé par</prop>
+    <prop mnemo="TRIGGER_UID">Source</prop>
+    <prop mnemo="THEMETYPE_ID_FR" size="80,1">Type</prop>
+    <prop mnemo="TYPE" size="80,1">Type</prop>
+    <prop mnemo="ISACTIVE" size="80,1">Evaluation</prop>
+    <prop mnemo="SUGGESTION_EXECUTION_ID" size="80,1">Proposition</prop>
+    <prop mnemo="SUGGESTION_STATI_ID" size="80,1">Evaluation</prop>
+    <enum name="types">
+      <prop mnemo="0">Par défaut</prop>
+      <prop mnemo="1">Proposition</prop>
+    </enum>
+    <enum name="isActiveSuggestion">
+      <prop mnemo="0">Inactif</prop>
+      <prop mnemo="1">Actif</prop>
+    </enum>
+  </local>
+  <local scope="THEME">
+    <prop mnemo="TITLE_DE" size="80,1">Titre élément de savoir</prop>
+    <prop mnemo="TITLE" size="80,1">Titre du thème</prop>
+    <prop mnemo="DESCRIPTION" size="100,25">Description</prop>
+    <prop mnemo="CREATED">Créé le</prop>
+    <prop mnemo="CREATOR_PERSON_ID">Créé par</prop>
+    <prop mnemo="ORDNUMBER">Position</prop>
+    <prop mnemo="THEMETYPE_ID">Type</prop>
+  </local>
+</map>

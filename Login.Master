@@ -1,0 +1,46 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Login.master.cs" Inherits="ch.appl.psoft.Login" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title>.: p-soft :.</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+       
+        <div style="width:95%"> <%= AppLogo %></div>
+    </asp:ContentPlaceHolder>
+    <link href="Style/login.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server">
+             <Scripts>
+               <asp:ScriptReference Name="jquery" />
+          </Scripts>
+        </asp:ScriptManager>
+        <telerik:RadSkinManager ID="RadSkinManager" runat="server" ShowChooser="false" />
+        <telerik:RadFormDecorator ID="RadFormDecorator1" runat="server" DecoratedControls="All" DecorationZoneID="loginZone" ControlsToSkip="Zone"></telerik:RadFormDecorator>
+        <telerik:RadFormDecorator ID="RadFormDecorator2" runat="server" DecoratedControls="All" DecorationZoneID="ChangePasswordZone" ControlsToSkip="Zone"></telerik:RadFormDecorator>
+        <telerik:RadFormDecorator ID="RadFormDecorator3" runat="server" DecoratedControls="All" DecorationZoneID="PasswordRecoveryZone" ControlsToSkip="Zone"></telerik:RadFormDecorator>
+        <telerik:RadFormDecorator ID="RadFormDecorator4" runat="server" DecoratedControls="All" DecorationZoneID="addUserZone" ControlsToSkip="Zone"></telerik:RadFormDecorator>
+        <telerik:RadFormDecorator ID="RadFormDecorator5" runat="server" DecoratedControls="All" DecorationZoneID="productZone" ControlsToSkip="Zone"></telerik:RadFormDecorator>
+        <%--<div id="contentNoBorder" >--%>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        <%--</div>--%>
+         <telerik:RadAjaxManager runat="server" ID="AjaxManager1">
+        <AjaxSettings>
+            <telerik:AjaxSetting AjaxControlID="Configurator1">
+                <UpdatedControls>
+                    <telerik:AjaxUpdatedControl ControlID="Configurator1" />
+                    <telerik:AjaxUpdatedControl ControlID="RadFormDecorator1" />
+                    <telerik:AjaxUpdatedControl ControlID="Panel1" LoadingPanelID="RadAjaxLoadingPanel1" />
+                </UpdatedControls>
+            </telerik:AjaxSetting>
+        </AjaxSettings>
+    </telerik:RadAjaxManager>
+
+    <telerik:RadAjaxLoadingPanel ID="RadAjaxLoadingPanel1" runat="server">
+    </telerik:RadAjaxLoadingPanel>
+    </form>
+</body>
+</html>

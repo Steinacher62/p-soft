@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE config SYSTEM "../dtd/config.dtd" >
+<config>
+    <language
+        LanguageCode = "de"
+        RegionCode = "CH"
+    />
+    <db
+        Server = "(local)"
+        LanguageCode = "en"
+        RegionCode = "US"
+        Name = "Psoft_v3_tpc"
+        User = "PsoftuserDev"
+        Password = "Psoft"
+        DriverClass = "ch.psoft.db.MSSqlDriver"
+        MultiLanguage = "enable"
+    />
+    <ftp
+        FtpDocumentServer = "localhost"
+        FtpDocumentSaveDirectory = "ftp_Psoft/save"
+        FtpDocumentTempDirectory = "ftp_Psoft/tmp"
+        FtpDocumentHistoryDirectory = "ftp_Psoft/history"
+        DocumentSaveDirectory = "C:/Inetpub/wwwroot/Psoft_tpc/ftp_Psoft/save"
+        DocumentTempDirectory = "C:/Inetpub/wwwroot/Psoft_tpc/ftp_Psoft/tmp"
+        DocumentHistoryDirectory = "C:/Inetpub/wwwroot/Psoft_tpc/ftp_Psoft/history"
+        DocumentSaveURL = "/Psoft_tpc/ftp_Psoft/save"
+        DocumentHistoryURL = "/Psoft_tpc/ftp_Psoft/history"
+        IndexingCatalogName = "SEEK_Documents"
+        NumberOfDocumentVersions = "-1"
+    />
+    <www
+        BaseURL = "/Psoft_tpc"
+        Domain = "localhost"
+        EMail = '"p-soft" &lt;info@p-soft.ch&gt;'
+    />
+    <organisation
+        ModuleVisible = "1"
+        ShortPhoneNumber = "0"
+        PersonPhotoDirectory = "C:/Inetpub/wwwroot/Psoft_tpc/person/photo"
+        OrganisationImageDirectory = "C:/Inetpub/wwwroot/Psoft_tpc/Organisation/images"
+    />
+    <cms
+        CMSRootURL = "/Psoft_tpc/CMSRoot"
+    />
+    <display
+        RowsPerListPage = "15"
+        MaxTreeCaptionLength = "30"
+        StartUpURL = ""
+        ShowPartnerLogos = "1"
+        HeaderLogo = ""
+        HeaderLogoURL = ""
+        ShowDocumentSearch = "1"
+        HighlightColor = "#f2b400"
+        ShowLanguageSelector = "1"
+        MaxBreadcrumbItems = "5"
+    />
+    <authentication
+        mode = "login"
+        anonymousAccount = ""
+        anonymousPassword = ""
+    />
+    <modules>
+        <!-- Basis -->
+        <module name="report" enabled="1" assemblyName="module_dispatch" className="ch.appl.psoft.Report.ReportModule">
+            <param name="headerLogoImage">PsoftDogBlack.gif</param>
+            <param name="enableExcel">1</param>
+        </module>
+        <module name="dispatch" enabled="1" assemblyName="module_dispatch" className="ch.appl.psoft.Dispatch.DispatchModule">
+            <param name="eMailAddressFrom">"Andreas Delmenico" &lt;ade@PSOFT.ch&gt;</param>
+            <param name="testEmailAddress">"Andreas Delmenico" &lt;ade@PSOFT.ch&gt;</param>
+            <param name="smtpServer">smtp.PSOFT.ch</param>
+        </module>
+
+        <!-- Erweiterte Basis -->
+        <module name="tasklist" enabled="1" assemblyName="module_tasklist" className="ch.appl.psoft.Tasklist.TasklistModule">
+            <param name="criticalDays">4</param>
+        </module>
+
+        <!-- Applikationen -->
+        <module name="fbw" enabled="1" assemblyName="module_fbw" className="ch.appl.psoft.FBW.FBWModule" />
+        <module name="lohn" enabled="1" assemblyName="module_lohn" className="ch.appl.psoft.Lohn.LohnModule">
+            <param name="dbName">\\sfdrs.local\shares\TPCOGSData\Mandanten\tpcYYYY.ogs</param>
+            <param name="budgetModus">2</param><!-- siehe LohnModule.BudgetModi -->
+            <param name="mitGenehmigungsverfahren">1</param><!-- 1 bedeutet ja -->
+            <param name="salaireExportTemplate">salaireExportTemplate.xls</param>
+            <param name="primeExportTemplate">primeExportTemplate.xls</param>
+        </module>
+
+        <!-- Kundenerweiterungen -->
+        <module name="tpc" enabled="1" assemblyName="module_tpc" className="ch.appl.psoft.TPC.TPCModule"/>
+    </modules>
+</config>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE map SYSTEM "../../XML/dtd/language.dtd" >
+<map>
+    <!-- ä &#228; ö &#246; ü &#252; Ä &#196; Ö &#214; Ü &#220; <b> &lt;b&gt; </b> &lt;/b&gt; -->
+    
+    <local scope="ModuleNames">
+        <prop mnemo="payment">Bestellen</prop>
+      <prop mnemo="pay">Bezahlen</prop>
+    </local>    
+    <local scope="products">
+        <prop mnemo="s">L</prop>
+    </local>
+    
+</map>

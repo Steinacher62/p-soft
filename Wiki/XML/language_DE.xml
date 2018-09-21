@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE map SYSTEM "../../XML/dtd/language.dtd" >
+<map>
+    <!-- ä &#228; ö &#246; ü &#252; Ä &#196; Ö &#214; Ü &#220; <b> &lt;b&gt; </b> &lt;/b&gt; -->
+    <local scope="WIKI_IMAGE">
+ 		<prop mnemo="TITLE">Titel</prop>
+ 		<prop mnemo="DESCRIPTION">Beschreibung</prop>
+	 	<prop mnemo="FILENAME">Datei</prop>
+    </local>
+
+    <local scope="wiki">
+	 	<prop mnemo="bcAddImage">Bild hinzufügen</prop>
+	 	<prop mnemo="clAddImage">Bild hinzufügen</prop>
+	 	<prop mnemo="stAddImage">Bild hinzufügen</prop>
+	 	<prop mnemo="stImages">Vorhandene Bilder für #1</prop>
+    <prop mnemo="upload">Hochladen</prop>
+    <prop mnemo="imagelist">Vorhandene Bilder</prop>
+    <prop mnemo="delete_message">Wollen Sie das Bild wirklich l&#246;schen?</prop>
+    </local>
+    
+    <local scope="wikibox">
+		<prop mnemo="bold">Fettschrift</prop>
+		<prop mnemo="italic">Kursivschrift</prop>
+		<prop mnemo="headline">&#220;berschrift</prop>
+		<prop mnemo="hr">Horizontale Linie</prop>
+		<prop mnemo="image">Bild</prop>
+		<prop mnemo="extlink">Externer Link</prop>
+		<prop mnemo="extlinksample">www.Psoft4you.ch</prop>
+		<prop mnemo="objectlink">Objekt-Link</prop>
+    </local>
+</map>

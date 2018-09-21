@@ -1,0 +1,44 @@
+﻿#pdfContainer ,html ,form , body{
+    width:100%;
+    height:100%;
+     margin: 0;
+   
+}
+#prevButton {
+    background-image: url("../images/left_arrow-128.png");
+    height: 32px;
+    background-size:contain;
+    width: 32px;
+}
+
+#nextButton {
+    background-image: url("../images/right_arrow-128.png");
+    height: 32px;
+   background-size:contain;
+    width: 32px;
+}
+
+#closeButton{
+    position: fixed;
+    background-image: url("../images/close-64.png");
+    height: 32px;  
+    width: 32px;
+    background-size:contain;
+     z-index: 1000;
+}
+
+canvas{
+    margin-top:32px;
+}
+#frame{
+   display: block;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+#frameParent{
+     height:100%;
+    width:100%;
+    position:fixed;
+}

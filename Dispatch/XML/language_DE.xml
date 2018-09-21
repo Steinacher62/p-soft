@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE map SYSTEM "../../XML/dtd/language.dtd" >
+<map>
+    <!-- ä &#228; ö &#246; ü &#252; Ä &#196; Ö &#214; Ü &#220; <b> &lt;b&gt; </b> &lt;/b&gt; -->
+    <local scope="ModuleNames">
+        <prop mnemo="dispatch">VERSAND</prop>
+    </local>
+    <local scope="dispatch">
+        <prop mnemo="LabelTarget">Einträge:</prop>
+        <prop mnemo="selectTarget">Auswählen...</prop>
+        <prop mnemo="targetAll">Alle</prop>
+        <prop mnemo="targetSelection">Ausgewählte</prop>
+        <prop mnemo="LabelFrom">Von:</prop>
+        <prop mnemo="LabelTo">An:</prop>
+        <prop mnemo="LabelSubject">Betreff:</prop>
+        <prop mnemo="LabelTemplates">Vorlagen:</prop>
+        <prop mnemo="LabelMailTemplates">EMail-Vorlage:</prop>
+        <prop mnemo="LabelLetterTemplates">Briefvorlage:</prop>
+        <prop mnemo="LabelMailTemplate">E-Mail</prop>
+        <prop mnemo="radioUseSame">gleiche Vorlage wie E-Mail verwenden</prop>
+        <prop mnemo="LabelLetterTemplate">Serienbrief</prop>
+        <prop mnemo="LabelAttachmentTab">Selektierte Anlagen</prop>
+        <prop mnemo="LabelAttachments">Anlagen:</prop>
+        <prop mnemo="LabelTest">Test:</prop>
+        <prop mnemo="CBTestEmailAddress">Test - E-Mail an folgende Adresse schicken:</prop>
+        <prop mnemo="send">Verschicken!</prop>
+        <prop mnemo="generate">Generieren!</prop>
+        <prop mnemo="addAttachment">Hinzufügen...</prop>
+        <prop mnemo="addAttachmentTitle">Bitte wählen Sie eine Datei als Anlage aus</prop>
+        <prop mnemo="addTemplateTitle">Bitte wählen Sie eine Datei als Vorlage aus</prop>
+        <prop mnemo="addLetterTemplate">Neu...</prop>
+        <prop mnemo="addMailTemplate">Neu...</prop>
+        <prop mnemo="selectLetterTemplate">Auswählen...</prop>
+        <prop mnemo="selectMailTemplate">Auswählen...</prop>
+        <prop mnemo="noAttachments">keine</prop>
+        <prop mnemo="selectTemplate">Bitte wählen Sie die entsprechenden Vorlagen aus!</prop>
+        <prop mnemo="testDocTitleEmail">Test E-Mail</prop>
+        <prop mnemo="testDocTextEmail">Bitte überprüfen Sie, ob die gesendete E-Mail ihren Erwartungen entspricht.</prop>
+        <prop mnemo="testDocTitleCombined">Test Versand</prop>
+        <prop mnemo="testDocTextCombined">Bitte überprüfen Sie, ob die gesendete E-Mail und der generierte Serienbrief ihren Erwartungen entspricht.</prop>
+        <prop mnemo="testDocTitleLetter">Test Serienbrief</prop>
+        <prop mnemo="testDocTextLetter">Bitte überprüfen Sie, ob der generierte Serienbrief ihren Erwartungen entspricht.</prop>
+        <prop mnemo="mergeDocTitle">Generiertes Dokument</prop>
+        <prop mnemo="mergeDocText">Nachfolgend finden Sie das generierte Serienbriefdokument:</prop>
+        <prop mnemo="mailFinishedTitle">E-Mails verschickt</prop>
+        <prop mnemo="mailFinishedText">Die E-Mails wurden erfolgreich generiert und verschickt.</prop>
+        <prop mnemo="search">Suchen in Versandgeschichte</prop>
+        <prop mnemo="searchresult">Gefundene Versandeinträge</prop>
+        <prop mnemo="pageTitleSelectionListMailing">Versandeinträge gemäss Selektion</prop>
+        <prop mnemo="detailMailing">Detail des Versandeinträges</prop>
+        <prop mnemo="recipients">Empfänger</prop>
+        <prop mnemo="selectAll">Alle auswählen</prop>
+        <prop mnemo="autoGenDocDescription">Automatisch erzeugter Eintrag.</prop>
+    </local>
+    <local scope="error">
+        <prop mnemo="mergeFieldNotFound">Folgende Vorlagenfelder können nicht zugewiesen werden: </prop>
+    </local>
+</map>

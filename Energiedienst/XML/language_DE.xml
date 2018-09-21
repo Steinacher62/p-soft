@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE map SYSTEM "../../XML/dtd/language.dtd" >
+<map>
+    <!-- ä &#228; ö &#246; ü &#252; Ä &#196; Ö &#214; Ü &#220; <b> &lt;b&gt; </b> &lt;/b&gt; -->
+    <global>
+		<prop mnemo="reportLinks">Reports</prop>
+    </global>
+  <local scope="fbs">
+    <prop mnemo="bcJobDescription">Aufgabenbeschreibung</prop>
+    <prop mnemo="bcEditJobDescription">Aufgabenbeschreibung bearbeiten</prop>
+    <prop mnemo="bcDutyCatalog">Aufgabenkatalog</prop>
+    <prop mnemo="ctDutyGroupTree">Aufgabengruppen</prop>
+    <prop mnemo="ctDutyTree">Aufgabenkatalog</prop>
+    <prop mnemo="ctCompetenceList">Aufgaben</prop>
+    <prop mnemo="ctCompetences">Aufgaben (zeitabhängig)</prop>
+    <prop mnemo="ctDCVList">Aufgaben (zeitabhängig) für Aufgabe '#1':</prop>
+    <prop mnemo="ctDutyCatalogDutyDetail">Aufgabe</prop>
+    <prop mnemo="cmEditJobDescription">Aufgabenbeschreibung bearbeiten</prop>
+    <prop mnemo="cmNewDutyCompetence">Neue Aufgaben (zeitabhängig)</prop>
+    <prop mnemo="cmtJobDescription">Aufgabenbeschreibung</prop>
+    <prop mnemo="repJobDescription">Aufgabenbeschreibung</prop>
+    <prop mnemo="repDuty">Aufgabe</prop>
+    <prop mnemo="repCompetences">Aufgaben</prop>
+    <prop mnemo="repCompetencesRules">Aufgabenregelung</prop>
+    <prop mnemo="repJobOwner">StelleninhaberIn</prop>
+    <prop mnemo="repDutyCatalog">Aufgabenkatalog</prop>
+    <prop mnemo="repDutyGroupFree">Freie Aufgaben</prop>
+    <prop mnemo="cmAddDutyCompetence">Neue Aufgabe aus Katalog</prop>
+    <prop mnemo="cmAddDutyCompetenceFree">Neue Aufgabe frei</prop>
+    <prop mnemo="bcAddDutyCompetence">Neue Aufgabe aus Katalog</prop>
+    <prop mnemo="bcAddDutyCompetenceFree">Neue Aufgabe frei</prop>
+    <prop mnemo="bcEditDutyCompetence">Aufgaben bearbeiten</prop>
+    <prop mnemo="ctCompetence">Aufgabe</prop>
+    <prop mnemo="cbShowValidOnly">Nur gültige Aufgaben anzeigen</prop>
+    <prop mnemo="cmEditDutyFree">Freie Aufgabe bearbeiten</prop>
+    <prop mnemo="bcEditDutyFree">Freie Aufgabe bearbeiten</prop>
+    <prop mnemo="ctDuty">Aufgabe</prop>
+    <prop mnemo="functionCatalog">Funktionenkatalog</prop>
+    <prop mnemo="functionSearch">Funktion suchen</prop>
+    <prop mnemo="functionDescription">Funktionsbeschreibung</prop>
+    <prop mnemo="functionRating">Funktionsbewertung</prop>
+    <prop mnemo="functionValue:">Funktionswert:</prop>
+    <prop mnemo="salaryValue:">Basislohn:</prop>
+    <prop mnemo="responsabilityMatrixTitle">Verantwortlichkeitsmatrix generieren</prop>
+    <prop mnemo="competenceMatrixTitle">Aufgabenmatrix generieren</prop>
+    <prop mnemo="organisationUnitSelection">Organisationseinheit selektieren</prop>
+    <prop mnemo="staffmember">Mitarbeiter/-in</prop>
+    <prop mnemo="directchief">Direkte/r Vorgesetzte/r</prop>
+    <prop mnemo="nextchief">Nächst höhere/r Vorgesetzte/r</prop>
+    <prop mnemo="datevisa">Datum/Visum</prop>
+  </local>
+    <local scope="ModuleNames">
+        <prop mnemo="performance">Kompetenzbeurteilung</prop>
+    </local>    
+    <local scope="performance">
+        <prop mnemo="subnavTitle">Kompetenzbeurteilung</prop>
+        <prop mnemo="subnavSearch">Beurteilung suchen</prop>
+        <prop mnemo="subnavSearchPersonWithoutRating">Personen ohne Beurteilung suchen</prop>     
+        <prop mnemo="subnavReportAverageOEPerformance">Report Durchschnittliche Leistungsanteile</prop>
+        <prop mnemo="subnavReportPerformanceChange">Report Veränderung des Leistungsgrades</prop>     
+        <prop mnemo="performanceRating">Kompetenzbeurteilung</prop>
+        <prop mnemo="jobExpectation">Stellenerwartungen</prop>
+        <prop mnemo="jobExpectationdetail">Stellenerwartungen</prop>
+        <prop mnemo="jobExpectationadd">Stellenerwartung hinzufügen</prop>
+        <prop mnemo="jobExpectationedit">Stellenerwartung bearbeiten</prop>
+        <prop mnemo="performanceRatingLeader">Kompetenzbeurteilung</prop>
+        <prop mnemo="performanceRatingSelf">Selbstbeurteilung</prop>
+        <prop mnemo="addExpectation">Stellenerwartung hinzufügen</prop>
+        <prop mnemo="editExpectation">Stellenerwartung bearbeiten</prop>
+        <prop mnemo="newJobExpectation">Neue Stellenerwartung</prop>
+        <prop mnemo="jobExpectationList">Vorhandene Stellenerwartungen</prop>
+        <prop mnemo="newRating">Neue Beurteilung</prop>
+        <prop mnemo="newSelfRating">Neue Selbstbeurteilung</prop>
+        <prop mnemo="actualRating">Aktuelle Beurteilung</prop>
+        <prop mnemo="historyRating">Beurteilungs&#252;bersicht</prop>
+      <prop mnemo="historyRatingLeader">Kompetenzbeurteilungs&#252;bersicht</prop>
+      <prop mnemo="historyRatingSelf">SelbstBeurteilungs&#252;bersicht</prop>
+        <prop mnemo="employmentRatingList">Beurteilungs&#252;bersicht</prop>
+        <prop mnemo="employmentRatingHistoryList">Existierende Beurteilungen</prop>
+        <prop mnemo="executeRating">KriterienBeurteilung</prop>
+        <prop mnemo="reportRating">Reports</prop>
+        <prop mnemo="performanceRatingReport">Kompetenzenreport</prop>
+        <prop mnemo="detailJobExpectation">Detail Stellenerwartung</prop>
+        <prop mnemo="performanceRatingGlobalReport">Gesamtleistungsreport</prop>
+        <prop mnemo="reportPartPerformance">Komponente Kompetenzbeurteilung</prop>
+        <prop mnemo="reportPartSkills">Komponente Skills</prop>
+        <prop mnemo="reportPartMbo">Komponente MBO</prop>
+        <prop mnemo="bcSearchPerformanceRating">Kompetenzbeurteilung suchen</prop>
+        <prop mnemo="bcSearchPerformanceRatingPersonWithoutRating">Personen ohne Kompetenzbeurteilung suchen</prop>
+        <prop mnemo="ctPerformanceRatingSearchList">Gefundene Kompetenzbeurteilungen</prop>
+        <prop mnemo="ctPerformanceRatingSelfSearchList">Gefundene Selbstkompetenzbeurteilungen</prop>
+        <prop mnemo="ctPerformanceRatingSearchListPersonWithoutRating">Gefundene Personen ohne Kompetenzbeurteilung</prop>     
+        <prop mnemo="ctExpectationCopy">Wählen Sie die Stelle und die Stellenerwartungen, welche Sie kopieren möchten.</prop>     
+        <prop mnemo="reportAveragePerformance">Kompetenzbeurteilung</prop>
+        <prop mnemo="reportAveragePerformanceSelf">Kompetenzbeurteilung (SelbstBeurteilung)</prop>
+        <prop mnemo="reportAveragePerformances">Kompetenzbeurteilungen</prop>
+        <prop mnemo="reportPerformanceCriteria">Kompetenzbeurteilungsmerkmal</prop>     
+        <prop mnemo="reportDate">Datum</prop>
+        <prop mnemo="reportSign">Unterschrift</prop>
+        <prop mnemo="moreTasks">Aufgabenerweiterung</prop>
+        <prop mnemo="reportSupervisor">Vorgesetzter</prop>
+        <prop mnemo="reportClerk">Mitarbeiter</prop>
+        <prop mnemo="reportSupervisorRating">Kompetenzbeurteilung</prop>
+        <prop mnemo="reportClerkRating">Selbstbeurteilung</prop>
+        <prop mnemo="reportRatingDate">Datum Kompetenzbeurteilung</prop>
+        <prop mnemo="lessTasks">Weiterentwicklung</prop>
+        <prop mnemo="achievement">Erreichungsgrad</prop>
+        <prop mnemo="bcReportAveragePerformance">Report Durchschnittliche Leistungsanteile</prop>
+        <prop mnemo="reportAverageOEPerformance">Durchschnittliche Leistungsanteile</prop>
+        <prop mnemo="reportAverageOEPerformanceProportion">Durchschnittlicher Leistungsanteil</prop>
+        <prop mnemo="reportEmploymentPerson">Anstellung, Person</prop>
+        <prop mnemo="reportPerformanceProportion">Leistungsanteil</prop>
+        <prop mnemo="bcReportPerformanceChange">Report Veränderung des Leistungsgrades</prop>
+        <prop mnemo="reportPerformanceChange">Veränderung des Leistungsgrades</prop>
+        <prop mnemo="reportYear">Jahr</prop>
+        <prop mnemo="reportTotal">Total</prop>
+        <prop mnemo="reportRatingPeriods">Veränderung des Leistungsgrades von %1% bis und mit %2%</prop>
+        <prop mnemo="reportPerformanceRatingGlobal">GesamtKompetenzbeurteilung</prop>
+        <prop mnemo="bcGlobalPerformanceSelectDate">Stichtag der GesamtKompetenzbeurteilung</prop>
+        <prop mnemo="copyJobExpectations">Stellenerwartungen von anderer Stelle kopieren</prop>
+        <prop mnemo="bcCopyJobExpectations">Stellenerwartungen kopieren</prop>
+        <prop mnemo="jobExpectationSearchResultList">Folgende Stellenerwartungen wurden gefunden:</prop>
+        <prop mnemo="employmentRatingIsHistory">historisiert</prop>
+        <prop mnemo="department">Abteilung: </prop>
+        <prop mnemo="performanceRatingMoreOptionsTitle">Weitere Funktionen</prop>
+        <prop mnemo="performanceRatingHistory">Leistungsbeurteilung</prop>
+        <prop mnemo="performanceSelfRatingHistory">Selbstbeurteilung</prop>
+        <prop mnemo="departmentEmployeesList">Abteilungsmitarbeiter</prop>
+    </local>
+    <local scope="CRITERIA_FUNCTION_V">
+        <prop mnemo="FUNKTION_TITLE">Funktion</prop>
+        <prop mnemo="CRITERIA_TITLE">Kriterium</prop>
+        <prop mnemo="WEIGHT">Gewicht</prop>
+        <prop mnemo="CRITERIA_REF">Kriterium</prop>
+        <prop mnemo="FUNCTION_REF">Funktion</prop>
+    </local>
+    <local scope="JOB_EXPECTATION_V">
+        <prop mnemo="CRITERIA_REF">Kriterium</prop>
+        <prop mnemo="JOB_REF">Stelle</prop>
+        <prop mnemo="TITLE_DE" size="80,1">Titel</prop>
+        <prop mnemo="DESCRIPTION_DE" size="80,8">Beschreibung</prop>
+        <prop mnemo="JTITLE_DE">Stellentitel</prop>
+        <prop mnemo="CTITLE_DE">Kriterium</prop>
+        <prop mnemo="VALID_DATE">Datum</prop>
+    </local>
+    <local scope="JOB_EXPECTATION">
+        <prop mnemo="CRITERIA_REF">Kriterium</prop>
+        <prop mnemo="JOB_REF">Stellen</prop>
+        <prop mnemo="TITLE_DE" size="80,1">Titel</prop>
+        <prop mnemo="DESCRIPTION_DE" size="80,8">Beschreibung</prop>
+        <prop mnemo="VALID_DATE">Datum</prop>
+    </local>
+    <local scope="PERFORMANCERATINGOEV" alias="PERFORMANCERATING">
+        <prop mnemo="OE_ID">Abteilung</prop>
+    </local>
+    <local scope="PERFORMANCERATING">
+		<prop mnemo="RATING_DATE">Erstelldatum</prop>
+		<prop mnemo="IS_SELFRATING">SelbstBeurteilung</prop>
+		<prop mnemo="RATING_PERSON_REF">Durchf&#252;hrung</prop>
+		<prop mnemo="EMPLOYMENT_REF">Anstellung</prop>
+		<prop mnemo="EMPLOYMENT_TITLE_DE">Anstellung</prop>
+		<prop mnemo="JOB_TITLE_DE">Stelle</prop>
+		<prop mnemo="FUNCTION_TITLE_DE">Funktion</prop>
+    </local>
+    <local scope="PERFORMANCERATING_ARGUMENTS">
+		<prop mnemo="ARGUMENTS">Begründung</prop>
+        <prop mnemo="MEASURE">Massnahmen</prop>
+    </local>
+    <local scope="PERFORMANCERATING_ITEMS_V" alias="PERFORMANCERATING_ITEMS">
+		<prop mnemo="LEVEL_REF">Beurteilung</prop>
+		<prop mnemo="ARGUMENTS" size="80,5">Begründung</prop>
+        <prop mnemo="MEASURE" size="80,5">Massnahmen</prop>
+		<prop mnemo="DESCRIPTION_DE">Beschreibung</prop>
+    </local>
+    <local scope="PERFORMANCERATING_ITEMS">
+		<prop mnemo="CRITERIA_TITLE_DE">Kriterium</prop>
+		<prop mnemo="EXPECTATION_DESCRIPTION_DE">Erwartung</prop>
+		<prop mnemo="EXPECTATION_VALID_DATE">Datum</prop>
+		<prop mnemo="LEVEL_TITLE_DE">Beurteilung</prop>
+		<prop mnemo="LEVEL_DESCRIPTION_DE">Beschreibung</prop>
+		<prop mnemo="RELATIV_WEIGHT">Gewichtung</prop>
+    </local>
+    <local scope="PERFORMANCERATING_PERIOD_V">
+		<prop mnemo="PERIOD">Zeitperiode</prop>
+		<prop mnemo="PERIODII">Zeitperiode II</prop>
+    </local>
+    <!-- VIEWS -->
+    <local scope="REPORTVIEW">
+		<prop mnemo="RATING_DATE">Kompetenzbeurteilung</prop>
+        <prop mnemo="APPRAISALDATE">SkillsBeurteilung</prop>
+    </local>
+    <local scope="DATESELECTORVIEW">
+		<prop mnemo="RATING_DATE">Stichtag</prop>
+    </local>
+    <local scope="PERSONOEV_VIEW">
+		<prop mnemo="pname">Name</prop>
+		<prop mnemo="firstname">Vorname</prop>
+    </local>
+    <!-- REPORTS -->
+    <local scope="reportLayout">
+        <prop mnemo="PerformanceratingListSearchResult">Kompetenzbeurteilungen (aus Suchresultat)</prop>
+        <prop mnemo="PerformanceratingListSearchResultHeader">Kompetenzbeurteilungen gemäss Selektion</prop>
+        <prop mnemo="PerformanceratingListColumnAnstellung">Anstellung</prop>
+        <prop mnemo="PerformanceratingListColumnRatingDate">Erstelldatum</prop>
+        <prop mnemo="PerformanceratingListColumnIsSelfrating">Selbst</prop>
+        <prop mnemo="PerformanceratingListColumnResponsible">Durchf&#252;hrung</prop>
+        <prop mnemo="PerformanceratingListColumnOrgentityTitle">Abteilung</prop>
+        
+        <prop mnemo="PersonWithoutPerformanceratingListSearchResult">Personen ohne Kompetenzbeurteilung (aus Suchresultat)</prop>
+        <prop mnemo="PersonWithoutPerformanceratingListSearchResultHeader">Personen ohne Kompetenzbeurteilung gemäss Selektion ($1 - $2)</prop>
+        <prop mnemo="PersonWithoutPerformanceratingListColumnSurname">Name</prop>
+        <prop mnemo="PersonWithoutPerformanceratingListColumnFirstname">Vorname</prop>
+        <prop mnemo="PersonWithoutPerformanceratingListColumnPhone">Telefon</prop>
+        <prop mnemo="PersonWithoutPerformanceratingListColumnMobile">Mobile</prop>
+        <prop mnemo="PersonWithoutPerformanceratingListColumnMnemo">Kürzel</prop>
+        <prop mnemo="PersonWithoutPerformanceratingListColumnOrgentity">Abteilung</prop>
+        
+        <prop mnemo="JobExpectationAllExcelHeader">Stellenerwartungen</prop>
+        <prop mnemo="JobExpectationAllExcelOeTitle">Organisationseinheit</prop>
+        <prop mnemo="JobExpectationAllExcelJobTitle">Stellenbezeichnung</prop>
+        <prop mnemo="JobExpectationAllExcelPersonnelnumber">Personalnr.</prop>
+        <prop mnemo="JobExpectationAllExcelName">Name</prop>
+        <prop mnemo="JobExpectationAllExcelFirstname">Vorname</prop>
+        <prop mnemo="JobExpectationAllExcelLastChange">Letzte Änderung</prop>
+    </local>
+    <!-- Expectation -->
+    <local scope="expectation">
+        <prop mnemo="ConfirmCopy">Warnung: Änderung wird für untenstehende Personen übernommen. Änderung durchführen?</prop>
+    </local>
+
+  <local scope="TRAINING_ADVANCEMENT">
+    <prop mnemo="TITLE_DE">Thema / Ziel</prop>
+    <prop mnemo="DESCRIPTION_DE" size="80,8">Weiterbildung</prop>
+    <prop mnemo="COMMENT" size="80,8">Weitere Maßnahmen</prop>
+    <prop mnemo="DONE_DATE">Erledigt am</prop>
+    <prop mnemo="TOBEDONE_DATE">Erledigen bis</prop>
+    <prop mnemo="TOBEDONE_DATE1">Maßnahmen erledigen bis</prop>
+    <prop mnemo="COST_EXTERNAL">Kosten Extern</prop>
+    <prop mnemo="COST_INTERNAL">Kosten Intern</prop>
+    <prop mnemo="LOCATION">Kursort</prop>
+    <prop mnemo="INSTRUCTOR">Kursleiter</prop>
+    <prop mnemo="CREATED">Erstellt am</prop>
+    <prop mnemo="TRAINING_DEMAND_ID">Ausbildungsbedarf</prop>
+    <prop mnemo="RESPONSIBLE_PERSON_ID">Verantwortlich</prop>
+    <prop mnemo="STATE">Status</prop>
+    <prop mnemo="PERSON_ID">Mitarbeiter</prop>
+    <prop mnemo="CONTROLLING_DE" size="80,8">Anmerkungen</prop>
+    <prop mnemo="COST_PARTICIPATION">Kostenbeteiligung</prop>
+    <prop mnemo="OBLIGATION">Verpflichtung bis</prop>
+    <prop mnemo="VIEWED_FLAG">Eingesehen und besprochen</prop>
+  </local>
+  <local scope="training">
+    <prop mnemo="subnavTitle">Personalentwicklungsbedarf</prop>
+    <prop mnemo="subnavSearch">Personalentwicklungsbedarf suchen</prop>
+    <prop mnemo="bcAdvancement">Personalentwicklungsbedarf</prop>
+    <prop mnemo="bcEditAdvancement">Personalentwicklungsbedarf bearbeiten</prop>
+    <prop mnemo="bcAddAdvancement">Neuer Personalentwicklungsbedarf</prop>
+    <prop mnemo="bcSearchAdvancement">Personalentwicklungsbedarf suchen</prop>
+    <prop mnemo="bcTrainingCatalog">Personalentwicklungsbedarfskatalog</prop>
+    <prop mnemo="ctTrainingGroupTree">Katalog</prop>
+    <prop mnemo="ctAdvancementList">Personalentwicklungsbedarf für '#1':</prop>
+    <prop mnemo="ctAdvancementDetail">Massnahme</prop>
+    <prop mnemo="ctTrainingDetail">Personalentwicklungsbedarf</prop>
+    <prop mnemo="ctAdvancementSearchList">Gefundene Personalentwicklungsbedarfe</prop>
+    <prop mnemo="ctTrainingCatalogTrainingDetail">Ausbildung</prop>
+    <prop mnemo="ctTrainingCatalogGroupDetail">Personalentwicklungsbedarfskategorie</prop>
+    <prop mnemo="cmAdvancment">Personalentwicklungsbedarf</prop>
+    <prop mnemo="cmEditAdvancment">Personalentwicklungsbedarf bearbeiten</prop>
+    <prop mnemo="cmAddAdvancement">Neuer Personalentwicklungsbedarf</prop>
+    <prop mnemo="cmDeleteAdvancement">Personalentwicklungsbedarf löschen</prop>
+    <prop mnemo="cmtTraining">Personalentwicklung</prop>
+    <prop mnemo="flagAdvancementInheritTree">Personalentwicklungsbedarf aus Katalog</prop>
+    <prop mnemo="flagShowDoneAdvancement">erledigte Personalentwicklungsbedarfe anzeigen</prop>
+    <prop mnemo="lblSummaryTitle">Kosten</prop>
+    <prop mnemo="lblCostCurrancy">Fr.</prop>
+    <prop mnemo="lblCostIntern">Int.</prop>
+    <prop mnemo="lblCostExtern">Ext.</prop>
+    <prop mnemo="repPersonTraining">Ausbildung</prop>
+    <prop mnemo="repAdvancement">Personalentwicklungsbedarf</prop>
+    <prop mnemo="repStandaloneAdvancement">Freie Gruppe</prop>
+    <prop mnemo="repTrainingCatalog">Personalentwicklungsbedarfskatalog</prop>
+    <prop mnemo="repControlling">Personalentwicklungsbedarfskontrolle</prop>
+    <enum name="state">
+      <prop mnemo="0">Offen</prop>
+      <prop mnemo="1">Erledigt</prop>
+    </enum>
+  </local>
+
+  <local scope="OBJECTIVE_OE" alias="OBJECTIVE"></local>
+  <local scope="OBJECTIVEV" alias="OBJECTIVE"></local>
+  <local scope="OBJECTIVE">
+    <prop mnemo="ID">ID</prop>
+    <prop mnemo="PARENT_ID">Übergeordnetes Ziel</prop>
+    <prop mnemo="SECUNDARY_OBJECTIVE_ID">Abhängigkeit</prop>
+    <prop mnemo="JOB_ID" >Stelle</prop>
+    <prop mnemo="ORGANISATION_ID" >Unternehmung</prop>
+    <prop mnemo="ORGENTITY_ID" >Abteilung</prop>
+    <prop mnemo="TASKLIST_ID">Pendenzen</prop>
+    <prop mnemo="TASKLIST" size="50,5">Pendenzen</prop>
+    <prop mnemo="PERSON_ID">Verantwortlicher</prop>
+    <prop mnemo="PROJECT_ID" size="10">Projekt</prop>
+    <prop mnemo="NUMBER" size="10">Nummer</prop>
+    <prop mnemo="TITLE" size="50">Ziel</prop>
+    <prop mnemo="DESCRIPTION" size="50,5">Beschreibung</prop>
+    <prop mnemo="DEGREEOFREACHING" size="10">Erreicht</prop>
+    <prop mnemo="DATEOFREACHING">Termin</prop>
+    <prop mnemo="TYP">Zielart</prop>
+    <prop mnemo="BSC">Balanced Scorecard</prop>
+    <prop mnemo="MEASUREMENT">Messgrösse</prop>
+    <prop mnemo="CURRENTVALUE">IST-Wert</prop>
+    <prop mnemo="KIND">Art</prop>
+    <prop mnemo="STARTDATE">Start</prop>
+    <prop mnemo="STATE">Status</prop>
+    <prop mnemo="CHEF_ID">Verantwortlicher</prop>
+    <prop mnemo="MEASUREMENT_TYPE_ID">Messeinheit</prop>
+    <prop mnemo="CRITICALDAYS">Anzahl kritischer Tage</prop>
+    <prop mnemo="CRITICALVALUE">Kritischer Wert</prop>
+    <prop mnemo="TARGETVALUE">SOLL-Wert</prop>
+    <prop mnemo="CURRENTDATE">IST-Datum</prop>
+    <prop mnemo="ARGUMENT_ID">Argument</prop>
+    <prop mnemo="ARGUMENT" size="50,5">Beschreibung</prop>
+    <prop mnemo="VALUEIMPLICIT">IST-Wert berechnen</prop>
+    <prop mnemo="OBJECTIVE_TURN_ID">Zielrunde</prop>
+    <prop mnemo="ACTIONNEED" size="50,5">Massnahmen</prop>
+    <prop mnemo="MEASUREKRIT" size="50">Messkriterien</prop>
+    <prop mnemo="RATING_DATE">Datum Bewertung</prop>
+    <prop mnemo="RATING">Bewertung</prop>
+    <prop mnemo="RATING_WEIGHT">Anteil</prop>
+    <prop mnemo="MEMO" size="50,5">Bemerkungen</prop>
+  </local>
+  <local scope="mbo">
+    <prop mnemo="copyJob">Zu untergeordneter Stelle kopieren</prop>
+    <prop mnemo="copyOE">Zu untergeordneter Abteilung kopieren</prop>
+    <prop mnemo="copyPerson">Zu Mitarbeiter kopieren</prop>
+    <prop mnemo="newObjective">Neues Ziel</prop>
+    <prop mnemo="addObjective">Neues Ziel</prop>
+    <prop mnemo="addOEObjective">Neues Abteilungsziel</prop>
+    <prop mnemo="addJobObjective">Neues Stellenziel</prop>
+    <prop mnemo="addPersonObjective">Neues pers. Ziel</prop>
+    <prop mnemo="addProjectObjective">Neues Projektziel</prop>
+    <prop mnemo="editObjective">Ziel bearbeiten</prop>
+    <prop mnemo="deleteObjective">Ziel l&#246;schen</prop>
+    <prop mnemo="assignObjective">Ziel zufügen</prop>
+    <prop mnemo="detailObjective">Detail Ziel</prop>
+    <prop mnemo="copyObjective">Ziel kopieren</prop>
+    <prop mnemo="copyObjectiveFrom">Ziele auf diese Person kopieren</prop>
+    <prop mnemo="copyObjectiveTo">Ziel auf Mitarbeitende einer Abteilung kopieren</prop>
+    <prop mnemo="myObjectives">Meine Ziele</prop>
+    <prop mnemo="objectives">Ziele</prop>
+    <prop mnemo="objective">Ziel</prop>
+    <prop mnemo="objectiveTree">Zielbaum</prop>
+    <prop mnemo="supervisorObjectives">Leiterziele</prop>
+    <prop mnemo="personalObjectives">Persönliche Ziele</prop>
+    <prop mnemo="projectObjectives">Projektziele</prop>
+    <prop mnemo="nodeObjectives">Stellenziele</prop>
+    <prop mnemo="nodeObjective">Stellenziel</prop>
+    <prop mnemo="masterObjectives">Übergeordnete Ziele</prop>
+    <prop mnemo="slaveObjectives">Untergeordnete Ziele</prop>
+    <prop mnemo="siblingObjectives">Abhängigkeiten</prop>
+    <prop mnemo="showTree">Zielverfolgung</prop>
+    <prop mnemo="node">Stelle</prop>
+    <prop mnemo="project">Projekt</prop>
+    <prop mnemo="job">Stelle</prop>
+    <prop mnemo="organisation">Organisation</prop>
+    <prop mnemo="objectiveTrace">Zielverfolgung</prop>
+    <prop mnemo="objectiveSearch">Ziele suchen</prop>
+    <prop mnemo="tasklist">Pendenzen</prop>
+    <prop mnemo="showTasklist">Pendenzen zeigen</prop>
+    <prop mnemo="persObjective">Persönliches Ziel</prop>
+    <prop mnemo="persObjectives">Persönliche Ziele</prop>
+    <prop mnemo="oeObjective">Abteilungsziel</prop>
+    <prop mnemo="orgObjective">Unternehmensziel</prop>
+    <prop mnemo="empObjective">Stellenziel</prop>
+    <prop mnemo="projObjective">Projektziel</prop>
+    <prop mnemo="semaphore">Ampel</prop>
+    <prop mnemo="red">Ziel nicht erreicht</prop>
+    <prop mnemo="orange">Ziel noch nicht erreicht. Zeit wird knapp</prop>
+    <prop mnemo="green">Ziel noch nicht erreicht. Noch Zeit</prop>
+    <prop mnemo="gray">Ziel erreicht</prop>
+    <prop mnemo="mainOrganisation">Aufbauorganisation</prop>
+    <prop mnemo="argument">Argument</prop>
+    <prop mnemo="respPerson">Verantwortlich</prop>
+    <prop mnemo="rating">Bewertung</prop>
+    <prop mnemo="ratingDate">Bewertungsdatum</prop>
+    <prop mnemo="tasklistValidation">Bewertungsrunde gestartet</prop>
+    <prop mnemo="tasklistCritical">Zielerreichung kritisch</prop>
+    <prop mnemo="tasklistDRAFTED">Zielformulierung noch im Entwurf</prop>
+    <prop mnemo="tasklistRELEASED">Ziel freigegeben</prop>
+    <prop mnemo="personReportTP">PDF Dokument der persönlichen Ziele erstellen</prop>
+    <prop mnemo="archiveObjectives">Archivierte Ziele</prop>
+    <prop mnemo="selectedObjectives">Ausgewählte Ziele</prop>
+    <prop mnemo="linkOE">An Abteilung zuweisen</prop>
+    <prop mnemo="linkObjective">Zuweisen</prop>
+    <prop mnemo="replaceObjective">Ziel ersetzen</prop>
+    <prop mnemo="traceObjective">Ziel verfolgen</prop>
+    <prop mnemo="repObjectiveRating">Zielerreichung</prop>
+    <prop mnemo="wrongRatingValue"> Falsche Eingabe</prop>
+    <prop mnemo="errorRatingWeightSum">Die Summe der Anteile muss 100% sein</prop>
+    <prop mnemo="errorRatingVal">Der Wert in den rot markierten Felder muss zwischen 0% und 100% liegen</prop>
+    <prop mnemo="reportstellenbez">Stellenbezeichnung</prop>
+    <prop mnemo="reportpname">Nachname</prop>
+    <prop mnemo="reportfirstname">Vorname</prop>
+    <prop mnemo="reportcreatedate">Erstellungsdatum</prop>
+    <prop mnemo="reportstartdate">Startdatum</prop>
+    <prop mnemo="reportdateofreaching">Enddatum</prop>
+    <prop mnemo="reportyear">Gültig für das Jahr</prop>
+    <prop mnemo="reportobjective">Zielsetzung</prop>
+    <prop mnemo="reportactionneed">Massnahmen</prop>
+    <prop mnemo="reportmeasurekrit">Messkriterium</prop>
+    <prop mnemo="reportweight">Zielanteil</prop>
+    <prop mnemo="reportrating">Erfüllungsgrad</prop>
+    <prop mnemo="reportratingtot">Erfüllungsgrad Total</prop>
+    <prop mnemo="reportysalary">Jahreslohn</prop>
+    <prop mnemo="reportmboorg">MbO Anteil Unternehmen</prop>
+    <prop mnemo="reportjobweight">MbO Anteil Stelle</prop>
+    <prop mnemo="reportmboweight">MbO Anteil</prop>
+    <prop mnemo="reportdate">Datum</prop>
+    <prop mnemo="reportsign">Visum</prop>
+    <prop mnemo="reportchef">Vorgesetzter</prop>
+    <prop mnemo="reportemployee">Mitarbeiter</prop>
+    <prop mnemo="reportmemo">Bemerkungen</prop>
+    <prop mnemo="description">Beschreibung</prop>
+    <prop mnemo="selectOE">OE wählen</prop>
+    <enum name="typ">
+      <!--  <prop mnemo="0">Undefiniertes Ziel</prop> -->
+      <prop mnemo="1">Unternehmensziel</prop>
+      <prop mnemo="2">Bereichsziel</prop>
+      <prop mnemo="3">Abteilungsziel</prop>
+      <prop mnemo="4">Gruppenziel</prop>
+      <prop mnemo="5">Persönliches Ziel</prop>
+    </enum>
+    <enum name="typ2">
+      <!--  <prop mnemo="0">Undefiniertes Ziel</prop> -->
+      <prop mnemo="1">Unternehmensziel</prop>
+      <prop mnemo="2">Bereichsziel</prop>
+      <prop mnemo="3">Abteilungsziel</prop>
+      <prop mnemo="4">Gruppenziel</prop>
+      <prop mnemo="5">Persönliches Ziel</prop>
+    </enum>
+    <enum name="typ3">
+      <!--  <prop mnemo="0">Undefiniertes Ziel</prop> -->
+      <prop mnemo="1">Unternehmensziel</prop>
+      <prop mnemo="2">Bereichsziel</prop>
+      <prop mnemo="3">Abteilungsziel</prop>
+      <prop mnemo="4">Gruppenziel</prop>
+      <prop mnemo="5">Persönliches Ziel</prop>
+    </enum>
+    <enum name="typ4">
+      <!--  <prop mnemo="0">Undefiniertes Ziel</prop>
+            <prop mnemo="1">Unternehmensziel</prop>  -->
+      <prop mnemo="2">Bereichsziel</prop>
+      <prop mnemo="3">Abteilungsziel</prop>
+      <prop mnemo="4">Gruppenziel</prop>
+      <prop mnemo="5">Persönliches Ziel</prop>
+    </enum>
+    <enum name="state">
+      <prop mnemo="0">Entwurf</prop>
+      <prop mnemo="1">Freigegeben</prop>
+      <prop mnemo="2">Vorbehalt</prop>
+      <prop mnemo="3">Akzeptiert</prop>
+      <prop mnemo="4">Zurückgewiesen</prop>
+      <prop mnemo="5">Inaktiv</prop>
+      <prop mnemo="6">Löschen</prop>
+    </enum>
+    <enum name="state2">
+      <prop mnemo="0">Entwurf</prop>
+      <prop mnemo="1">Freigegeben</prop>
+    </enum>
+    <enum name="state3">
+      <prop mnemo="3">Akzeptiert</prop>
+    </enum>
+    <enum name="stateAction">
+      <prop mnemo="0">Entwurf</prop>
+      <prop mnemo="1">Freigeben</prop>
+      <prop mnemo="2">Unter Vorbehalt akzeptieren</prop>
+      <prop mnemo="3">Akzeptieren</prop>
+      <prop mnemo="4">Zurückweisen</prop>
+      <prop mnemo="5">Inaktivieren</prop>
+      <prop mnemo="6">Löschen</prop>
+    </enum>
+  </local>
+  <local scope="OBJECTIVE_PERSON_RATING">
+    <prop mnemo="RATING">Bewertung</prop>
+    <prop mnemo="RATING_WEIGHT">Anteil</prop>
+    <prop mnemo="RATING_DATE">Datum</prop>
+  </local>
+</map>

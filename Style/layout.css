@@ -1,0 +1,282 @@
+/* Rahmen um Body */
+/*#top, #bottom, #left, #right {
+	background: #a5ebff;
+	position: fixed;
+	}
+	#left, #right {
+		top: 0; bottom: 0;
+		width: 15px;
+		}
+		#left { left: 0; }
+		#right { right: 0; }
+		
+	#top, #bottom {
+		left: 0; right: 0;
+		height: 15px;
+		}
+		#top { top: 0; }
+		#bottom { bottom: 0; }*/
+		
+/*html 
+{
+	margin:10px;
+	border:solid 1px Black;
+	--height:100%;--
+}*/
+
+body {
+	background-color: #ffffff;
+	font-size: 0.8em;
+	font-family: Open Sans, Verdana, Arial, SunSans-Regular, Sans-Serif;
+	/*color:#564b47;*/
+	margin: 0;
+}
+/*a {color: #DB7093;}
+a:visited {color:#DB7093;}
+a:hover {color: #000000;}
+a:active { color:#000000;}*/
+
+
+h1 {
+	font-size: 2em; 
+	font-weight: normal;
+ }
+
+h2 {
+	font-size: 1.7em;
+	font-weight: normal;
+}
+
+img.download {vertical-align:middle;}
+
+/* ----------container zentriert das layout-------------- */
+#container {
+	/*width: 70em;*/
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	/*position: relative;*/
+	/*background-color: #564b47;*/
+}
+
+/* ----------banner for logo-------------- */
+#banner {
+	/*margin: 10px 10px 0px 10px;*/
+	margin: 0;
+	/*margin-bottom: -3px;*/
+	/*margin-top: -4px;*/
+	/*padding: 10px 10px 0px 10px;*/
+	/*border-style: solid;
+	border-color: Black;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-left-width: 1px;
+	border-bottom-width: 0px;*/
+	background-repeat: no-repeat;
+	background-position: left top;
+	/*background-color: #EBD3E0;*/
+}
+
+/* ----------logo as in config-------------- */
+#logo {
+	margin: 0;
+	text-align: right;
+	vertical-align: top;
+	float: left;
+	right: 10px;
+	position: absolute;
+	top: 6px;
+	height: 60px;
+}
+
+#banner p{
+	margin-left: 20em;
+	padding: 25px;
+}
+#mainnavi {
+	/*margin: 0;*/
+	/*margin-bottom: -4px;*/
+	/*height: 20px;*/
+	padding: 0;
+	/*background-color: #868789; */
+	/*background-color: #E0A3B7;*/
+    background-image: linear-gradient(#748ea3,#6b849d 50%,#597791 50%,#748ea3);
+}
+
+#mainnavi p{
+	margin-left: 20em;
+	padding: 0 25px;
+}
+
+/* ----------breadcrumb menu-------------- */
+#breadcrumb {
+	margin: 0;
+	padding: 0;
+	/*background-color: #E0A3B7;*/
+}
+
+/* -----------------Inhalt--------------------- */
+#content {
+	float: left;
+	/*width: 50em;*/
+	/*min-height:600px;*/
+    width:100%;
+    height:100% !important;
+	/*height: 100%;*/
+	
+	/*min-height:1000px;*/
+	/*height:auto !important;*/
+	/*height:1000px;*/
+	
+	display: inline-block;
+	visibility: visible;
+	/*overflow: auto;*/
+	/*background-color: #ffffff;*/
+	padding-top: 5px;
+	padding-left: 5px;
+	/*margin: 0;*/
+	/*margin-top: 5px;*/
+	margin-left: 2px;
+	/*margin-right: 10px;*/
+	border-style: solid;
+	border-color: #D6D3CE;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 1px;
+}
+
+#contentNoBorder {
+	float: left;
+	padding-top: 5px;
+	padding-left: 5px;
+	margin-left: 2px;
+}
+
+/* line left of content */
+#leftLine {
+	width: 1px;
+	/*height: 100%;
+	min-height: 100%;*/
+	background-color: Black;
+	float: left;
+	border-color: Black;
+	/*border-left-width: 2px;*/
+}
+
+p, pre {
+	padding: 0 20px 15px 25px;
+	margin:0;
+}
+pre, code { font-size: 1.2em;}
+
+h1 {
+	padding: 15px 25px;
+	margin:0;
+}
+h2 {
+	padding: 5px 25px;
+	margin:0;
+}
+
+.gross {
+	width: 5.71em;
+	height: 1.07em;}
+
+/* --------------left navigavtion------------- */
+#left {
+	float: left;
+	width: 149px;
+	/*margin: 0;*/
+	padding: 0;
+	min-height: 600px;
+	/*padding:15px 0 0 0;*/
+	/*color:#D6D3CE;*/
+    background-color:#f5f5f5;
+}
+/* hack to hide white line in IE */
+#leftLogo {
+	float: left;
+	width: 149px;
+	margin-top: -4px;
+	/*margin-left: 10px;
+	border-style: solid;
+	border-color: Black;
+	border-left-width: 1px;
+	border-bottom-width: 0px;
+	border-right-width: 0px;
+	border-top-width: 0px;*/
+	padding: 0;
+	min-height: 600px;
+}
+#left ul{
+	list-style-type: none ;
+	padding: 0 0 0 25px;
+	margin: 0;
+}
+#left ul.borderbottom{
+	border-bottom:1px solid #ffffff;
+	padding: 0 0 10px 25px;
+}
+
+#left li a {
+	font-size: 1.3em;
+	text-decoration:none; 
+}
+#left  li li a { font-size: 1em; }
+#left li{
+	margin: 0;
+	padding: 0 0 4px 0;
+}
+#left li li{
+	margin: 0;
+	padding: 0 0 3px 0;
+}
+#left li a.selected {
+	margin: 0;
+	padding: 0 0 0 25px;
+	color:#ffffff;
+}
+
+#left li li a.selected {
+	margin: 0;
+	padding: 0;
+}
+
+
+/* -----------footer--------------------------- */
+#footer {
+	/*clear: left;*/
+	clear: both;
+	position: fixed;
+	bottom: 0px;
+	background-color: #ffffff;
+	padding: 0;
+	margin: 0;
+
+	/*margin-left: 20em;*/
+}
+
+/* vertical text for crystal reports */
+.verticaltext 
+{
+writing-mode:tb-rl;
+font:Verdana;
+font-size:10;
+vertical-align:top;
+}
+
+
+
+/* custom css test for webdatagrid */
+.withBorder
+{
+    border-style: solid !important;
+    border-color: Black !important;
+    border-width: 1px !important;
+}
+
+.orange
+{
+    background-color: Orange !important;
+}

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE map SYSTEM "../../XML/dtd/language.dtd" >
+<map>
+    <!-- ä &#228; ö &#246; ü &#252; Ä &#196; Ö &#214; Ü &#220; <b> &lt;b&gt; </b> &lt;/b&gt; -->
+  <local scope="morph">
+    <prop mnemo="bcSearchMatrix">Karte suchen</prop>
+    <prop mnemo="bcSearchSlave">Detail Karte suchen</prop>
+    <prop mnemo="bcMatrixList">Liste Karten</prop>
+    <prop mnemo="bcSlaveList">Liste detail Karte</prop>
+    <prop mnemo="myProducts">Meine Karten</prop>
+  </local>
+  <local scope="matrix">
+    <prop mnemo="newMap">Neue Karte erstellen</prop>
+    <prop mnemo="copyMap">Karte kopieren</prop>
+    <prop mnemo="deleteMap">Karte löschen</prop>
+    <prop mnemo="printMap">Karte drucken</prop>
+    <prop mnemo="changeMap">Andere Karte öffnen (Ctrl + M)</prop>
+    <prop mnemo="insertSokratesFollowing">Nachfolgend Zelle einfügen</prop>
+    <prop mnemo="insertSokratesPrevious">Vorhergehend Zelle einfügen</prop>
+    <prop mnemo="removeCell">Zelle löschen</prop>
+    <prop mnemo="joinFollowingSokrateselement">Mit unterer Zelle verbinden</prop>
+    <prop mnemo="separateSokrateselement">Zelle auftrennen</prop>
+    <prop mnemo="deleteCellConfirm">Wollen Sie die Zelle wirklich löschen?</prop>
+    <prop mnemo="deleteRowConfirm">Wollen Sie die Zeile wirklich löschen?</prop>
+  </local>
+</map>

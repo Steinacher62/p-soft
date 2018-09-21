@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE map SYSTEM "../../XML/dtd/language.dtd" >
+<map>
+    <!-- ä &#228; ö &#246; ü &#252; Ä &#196; Ö &#214; Ü &#220; <b> &lt;b&gt; </b> &lt;/b&gt; -->
+    <local scope="ModuleNames">
+        <prop mnemo="FBW">ÉVALUATION DE FONCTION</prop>
+    </local>
+    <local scope="fbw">
+        <prop mnemo="bcFBWCatalog">Catalogue d'évaluation</prop>
+        <prop mnemo="bcFunctionRating">Évaluation de fonction</prop>
+
+        <prop mnemo="ctCriteriaTree">Catalogue</prop>
+        <prop mnemo="ctArgumentDetail">Argument</prop>
+        <prop mnemo="ctAnforderungList">Liste des exigences assignées:</prop>
+        <prop mnemo="ctAnforderungen">Exigences</prop>
+
+        <prop mnemo="ptFunctionRating">Évaluation de fonction (#1)</prop>
+
+        <prop mnemo="cmCriterias">D'autres critères</prop>
+
+        <prop mnemo="cmtCriterias">Catalogue d'évaluation</prop>
+        <prop mnemo="cmtFunctionRating">Évaluation de fonction</prop>
+
+        <prop mnemo="repFunctionRating">Évaluation de fonction - #1</prop>
+        <prop mnemo="repRating">Évaluation</prop>
+    </local>
+
+    <local scope="reportLayout">
+        <prop mnemo="JobRatingAllExcelHeader">Stellenbewertungen</prop>
+        <prop mnemo="JobRatingAllExcelOeTitle">Organisationseinheit</prop>
+        <prop mnemo="JobRatingAllExcelJobTitle">Stellenbezeichnung</prop>
+        <prop mnemo="JobRatingAllExcelPersonnelnumber">Personalnr.</prop>
+        <prop mnemo="JobRatingAllExcelName">Name</prop>
+        <prop mnemo="JobRatingAllExcelFirstname">Vorname</prop>
+        <prop mnemo="JobRatingAllExcelFunktionswert">Funktionswert</prop>
+    </local>
+
+    <local scope="ANFORDERUNGDETAILV" alias="FBW_ARGUMENT">
+        <prop mnemo="BEZEICHNUNG">Exigences</prop>
+        <prop mnemo="FBW_ARGUMENT_KATALOG_ID">Catalogue</prop>
+        <prop mnemo="STUFE_PUNKTEZAHL">Valeur</prop>
+    	<prop mnemo="STUFE_KRITERIUMRANG">Classification place</prop>
+    	<prop mnemo="STUFE_BEZEICHNUNG">Classification</prop>
+    	<prop mnemo="FBW_STUFE_VORSCHLAG">Proposition de classification</prop>
+        <prop mnemo="KRITERIUM_LABEL">Critère</prop>
+        <prop mnemo="KORREKTUR">Adaptation</prop>
+    </local>
+    <local scope="FBW_ARGUMENT">
+        <prop mnemo="BEZEICHNUNG">Désignation</prop>
+        <prop mnemo="BESCHREIBUNG">Description</prop>
+        <prop mnemo="ERLAEUTERUNG">Exemples</prop>
+        <prop mnemo="FBW_REGEL_ID">Règle étendue</prop>
+        <prop mnemo="FBW_STUFE_ID">Niveau</prop>
+    </local>
+    <local scope="FUNKTIONSBEWERTUNGFUNKTIONV" alias="FUNKTIONSBEWERTUNG">
+        <prop mnemo="FBW_REVISION">Révision de l'évaluation</prop>
+    </local>
+    <local scope="FUNKTIONSBEWERTUNG">
+        <prop mnemo="FUNKTIONSWERT">Valeur de fonction</prop>
+        <prop mnemo="GUELTIG_AB">Valable de</prop>
+        <prop mnemo="GUELTIG_BIS">Valable à</prop>
+    </local>
+    <local scope="FBW_KOMMENTAR">
+        <prop mnemo="TEXT">Commentaire</prop>
+        <prop mnemo="KRITERIUMRANG">Classification</prop>
+        <prop mnemo="PUNKTEZAHL">Points</prop>
+    </local>
+    <local scope="FBWKOMMENTARV">
+        <prop mnemo="TEXT">Commentaire</prop>
+        <prop mnemo="BEZEICHNUNG">Classification</prop>
+        <prop mnemo="PUNKTEZAHL">Points</prop>
+    </local>
+    <local scope="ARGUMENTDESCRIPTIONV">
+    	<prop mnemo="BEZEICHNUNG">Désignation</prop>
+        <prop mnemo="BESCHREIBUNG">Description</prop>
+        <prop mnemo="ERLAEUTERUNG">Exemples</prop>
+    	<prop mnemo="STUFE_PUNKTEZAHL">Valeur</prop>
+    	<prop mnemo="STUFE_KRITERIUMRANG">Classification place</prop>
+    	<prop mnemo="STUFE_BEZEICHNUNG">Classification</prop>
+    	<prop mnemo="FBW_STUFE_VORSCHLAG">Proposition de classification</prop>
+    	<prop mnemo="FBW_REGEL_ID">Règle étendue</prop>
+    </local>
+    <local scope="FUNCGROUPV">
+    	<prop mnemo="FBW_REVISION">Révision de l'évaluation</prop>
+    	<prop mnemo="FUNKTION_TYP_ID">Type</prop>
+    </local>
+</map>

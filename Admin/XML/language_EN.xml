@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE map SYSTEM "../../XML/dtd/language.dtd" >
+<map>
+    <!-- ä &#228; ö &#246; ü &#252; Ä &#196; Ö &#214; Ü &#220; <b> &lt;b&gt; </b> &lt;/b&gt; -->
+    <local scope="application">
+        <prop mnemo="Organisation">Organisation</prop>
+        <prop mnemo="Organisation/OE">Organisation/division</prop>
+        <prop mnemo="SearchOrganisation">Search organisation/division</prop>
+        <prop mnemo="Function">Function</prop>
+        <prop mnemo="SearchFunction">Search function</prop>
+        <prop mnemo="Chart">Organigram</prop>
+        <prop mnemo="SearchChart">Search organigram</prop>
+        <prop mnemo="OrgMenu">Organisation-menu decentral</prop>
+        <prop mnemo="ChartAlignment">Organigram alignment</prop>
+        <prop mnemo="SearchChartAlignment">Search organigramm alignment</prop>
+        <prop mnemo="ChartText">Text layout</prop>
+        <prop mnemo="SearchChartText">Search text layout</prop>
+        <prop mnemo="ChartNode">Division layout</prop>
+        <prop mnemo="SearchChartNode">Search division layout</prop>
+        <prop mnemo="TaskList">Task-list</prop>
+        <prop mnemo="SearchTaskList">Search task-list</prop>
+        <prop mnemo="ChartPiktoLayout">Link-pictogram</prop>
+        <prop mnemo="SearchChartPiktoLayout">Search Link-pictogram</prop>
+        <prop mnemo="Employment">Employment</prop>
+        <prop mnemo="SearchEmployment">Search Employment</prop>
+    </local>   
+    <local scope="tableName">
+ 		<prop mnemo="ORGANISATION">Organisation</prop>
+ 		<prop mnemo="ORGENTITY">Division</prop>
+ 		<prop mnemo="JOB">Job</prop>
+ 		<prop mnemo="EMPLOYMENT">Employment</prop>
+ 		<prop mnemo="CHART">Organigram</prop>
+ 		<prop mnemo="MENUGROUP">Menu-group</prop>
+ 		<prop mnemo="MENUITEM">Menu-entry</prop>
+    </local>
+    <!-- Organisation -->
+    <local scope="ORGANISATION" >
+        <prop mnemo="VERSION_ID">Version</prop>
+        <prop mnemo="TITLE" size="30">Organisation</prop>
+        <prop mnemo="TITLE_EN" size="30">Organisation</prop>
+        <prop mnemo="PUBLIC_ENABLE">Public</prop>
+       	<prop mnemo="MAINORGANISATION">Main-organisation</prop>  	
+    	<prop mnemo="HAUPTFUNKTION_VERWENDEN">Use main function</prop>
+    	<prop mnemo="HAUPTFUNKTION_AUTOMATISCH">Main function definition</prop>
+    </local>
+    <local scope="organisation">
+        <prop mnemo="firm">Company</prop>
+        <prop mnemo="person">Person</prop>
+        <prop mnemo="organisation">Organisation</prop>
+        <prop mnemo="OE">Division</prop>
+        <prop mnemo="org/OE">Organisation/Division</prop>
+        <prop mnemo="oeMnemonic">Mnemonic of division</prop>
+       	<prop mnemo="organigram">Organigram</prop>
+       	<prop mnemo="layout">Layout</prop>
+       	<prop mnemo="alignment">Alignment</prop>
+       	<prop mnemo="noOEselect">Please select organisation/division</prop>
+       	<prop mnemo="deleteOEConfirm">Delete organisation/division?</prop>
+       	<prop mnemo="deleteOrgConfirm">Delete organisation?</prop>
+      	<prop mnemo="deleteJobConfirm">Delete job?</prop>
+      	<prop mnemo="deleteEmploymentConfirm">Delete employment?</prop>
+      	<prop mnemo="onlyOneEmployment">Only one employment for organisation and person!</prop>
+      	<prop mnemo="updatePersConfirm">Update person?</prop>
+      	<prop mnemo="correctEngagementConfirm">Activity rate will be corrected for not exceeding 100%. Update job?</prop>
+      	<prop mnemo="engagementTotalToHigh">The activity rate of the employment is not to exceed 100%.</prop>
+       	<prop mnemo="wrongParent">Wrong parent division</prop>
+       	<prop mnemo="job">Job</prop>
+       	<prop mnemo="employment">Employment</prop>
+       	<prop mnemo="newOE">New division</prop>
+		<prop mnemo="newJob">New job</prop>
+		<prop mnemo="anyOrg">Any organisation</prop>
+		<prop mnemo="noDefaultFunction">No default function defined!</prop>
+		<prop mnemo="copy...">Copy organisation...</prop>
+		<prop mnemo="dependencyEmployment">Assigned employment(s)</prop>
+		<prop mnemo="dependencySubOE">Subordinate division(s)</prop>
+		<prop mnemo="dependencyJob">Assigned job(s)</prop>
+		<prop mnemo="confirmYesNoJobToDate">Ist die Gültigkeit der Stelle bis am #1 korrekt?</prop>
+		<prop mnemo="confirmOkJobToDate">Die Stelle wird bis am #1 berücksichtigt</prop>
+        <enum name="hauptfunktionAutomatisch">
+            <prop mnemo="0">from job</prop>
+            <prop mnemo="1">biggest Engagement</prop>
+            <prop mnemo="2">biggest function value</prop>
+        </enum>
+    </local>
+    <!-- Organisation Entity -->
+    <local scope="ORGENTITY" >
+		<prop mnemo="PARENT_ID">Parent</prop>
+		<prop mnemo="ROOT_ID">Organisation</prop>
+		<prop mnemo="CLIPBOARD_ID" size="30">Clipboard</prop>
+		<prop mnemo="ORDNUMBER">Order</prop>
+		<prop mnemo="TITLE" size="30">Division</prop>
+		<prop mnemo="TITLE_EN" size="30">Division</prop>
+		<prop mnemo="MNEMONIC">Mnemonic</prop>
+		<prop mnemo="MNEMONIC_EN">Mnemonic</prop>
+		<prop mnemo="DESCRIPTION" size="50,5">Description</prop>
+ 		<prop mnemo="DESCRIPTION_EN" size="50,5">Description</prop>
+		<prop mnemo="HAT_BUDGET">Has salary budget</prop>
+    </local>
+    <!-- Job -->
+    <local scope="JOB" >
+		<prop mnemo="TITLE" size="30">Title</prop>
+		<prop mnemo="TITLE_EN" size="30">Title</prop>
+		<prop mnemo="ORGENTITY_ID" size="30">Division</prop>
+		<prop mnemo="FUNKTION_ID" size="50">Function</prop>
+		<prop mnemo="EMPLOYMENT_ID">Employment</prop>
+		<prop mnemo="MNEMONIC">Mnemonic</prop>
+		<prop mnemo="MNEMONIC_EN">Mnemonic</prop>
+		<prop mnemo="ENGAGEMENT" size="5">Engagement</prop>
+		<prop mnemo="DESCRIPTION" size="50,5">Description</prop>
+		<prop mnemo="DESCRIPTION_EN" size="50,5">Description</prop>
+ 		<prop mnemo="TYP">Type</prop>
+ 		<prop mnemo="VACANT"></prop>
+    	<prop mnemo="HAUPTFUNKTION">Main function</prop>
+    	<prop mnemo="PROXY_PERSON_ID">Substitute</prop>
+   	    <prop mnemo="FROM_DATE">From</prop>
+		<prop mnemo="TO_DATE">To</prop>    	
+    </local>
+    <!-- Employment -->
+    <local scope="EMPLOYMENT" >
+		<prop mnemo="TITLE" size="30">Title</prop>
+		<prop mnemo="TITLE_EN" size="30">Title</prop>
+		<prop mnemo="PERSON_ID" size="30">Person</prop>
+    </local>
+    <!-- Employment View -->
+    <local scope="EMPLOYMENT_V"  alias="EMPLOYMENT">
+		<prop mnemo="ENGAGEMENT" size="5">Engagement</prop>
+    </local>
+    <!-- Employment -->
+    <local scope="employment" >
+		<prop mnemo="employment" size="30">Employment</prop>
+    </local>
+    <!-- JobPersonView -->
+    <local scope="JOBPERSONV" >
+		<prop mnemo="TITLE">Job/Person</prop>
+		<prop mnemo="TITLE_EN">Job/Person</prop>
+		<prop mnemo="ORGENTITY_ID">Division</prop>
+    </local>
+    <!-- JobPersonView -->
+    <local scope="JOB_EMP_PERSON_V" >
+		<prop mnemo="PNAME">Personname</prop>
+		<prop mnemo="FIRSTNAME">Firstname</prop>
+		<prop mnemo="EMP_TITLE_EN">Employment</prop>
+		<prop mnemo="JOB_TITLE_EN">Job</prop>
+		<prop mnemo="JOBTYP">Jobtype</prop>
+    </local>
+   	<local scope="job" >
+        <enum name="typ">
+            <prop mnemo="0">Employee</prop>
+            <prop mnemo="1">Leader</prop>
+         </enum>
+   	</local>
+    <!-- ChartAlignment -->
+    <local scope="CHARTALIGNMENT" >
+        <prop mnemo="TITLE" size="30">Title</prop>
+        <prop mnemo="TITLE_EN" size="30">Title</prop>
+        <prop mnemo="ALIGNTYPE">Alignment type</prop>
+       	<prop mnemo="IMAGE">Image</prop>  	
+    </local>
+    <local scope="chartalignment">
+        <prop mnemo="chartalignment">Organigram alignment</prop>
+        <prop mnemo="chartalignmentsearch">Search organigramm alignment</prop>
+        <prop mnemo="deleteConfirm">Delete organigram alignment?</prop>
+    </local>
+    
+    <!-- Chart -->
+    <local scope="CHART" >
+        <prop mnemo="TITLE" size="30">Title</prop>
+        <prop mnemo="TITLE_EN" size="30">Title</prop>
+        <prop mnemo="CHARTLAYOUT_ID" size="30">Layout</prop>
+        <prop mnemo="CHARTALIGNMENT_ID" size="30">Alignment</prop>
+        <prop mnemo="TEXTLAYOUT_ID" size="30">Text layout</prop>
+        <prop mnemo="ORGANISATION_ID" size="30">Organisation</prop>
+        <prop mnemo="PRINTABLE_FILE_EN" size="30">Printable document</prop>
+        <prop mnemo="BACKGROUND_IMAGE" size="30">Background image</prop>
+    </local>
+    <local scope="chart">
+        <prop mnemo="chart">Organigram</prop>
+        <prop mnemo="newchart">New organigram</prop>
+        <prop mnemo="chartdetail">Detail organigramm</prop>
+        <prop mnemo="chartsearch">Organigram</prop>
+        <prop mnemo="deleteOEConfirm">Delete organigramm #1?</prop>
+    </local>
+    
+    <!-- ChartNode -->
+    <local scope="CHARTNODE" >
+        <prop mnemo="CHART_ID" size="30">Organigram</prop>
+        <prop mnemo="LAYOUT_ID" size="30">Layout</prop>
+        <prop mnemo="CHILDLAYOUT_ID" size="30">Layout of subordinate divisions</prop>
+        <prop mnemo="CHARTALIGNMENT_ID" size="30">Alignment</prop>
+        <prop mnemo="ORGENTITY_ID" size="30">Division</prop>
+        <prop mnemo="TEXTLAYOUT_ID" size="30">Text layout</prop>
+        <prop mnemo="TYP">Type</prop>
+        <prop mnemo="SHOWEMPLOYEES">Show employees</prop>
+        <prop mnemo="ORDNUMBER">Order</prop>
+        <prop mnemo="VERTICAL_ALIGN_OFFSET" size="5">Offset of vertical line</prop>
+        <prop mnemo="GAP_HORIZONTAL" size="5">Horizontal gap</prop>
+        <prop mnemo="GAP_VERTICAL" size="5">Vertical gap</prop>
+    </local>
+    <local scope="chartnode">
+        <prop mnemo="chartnode">Organigram division</prop>
+        <prop mnemo="deleteOEConfirm">Delete organigram division #1?</prop>
+        <prop mnemo="deletenodemenu">Delete</prop>
+        <prop mnemo="fehlendenode">Add missing divisions</prop>
+        <prop mnemo="deletenodesmenu">Delete whole branch</prop>
+        <prop mnemo="tabTexts">Texts</prop>
+        <prop mnemo="tabPiktos">Pictograms</prop>
+        <enum name="typ">
+            <prop mnemo="0">Division</prop>
+            <prop mnemo="1">Assistent</prop>
+         </enum>
+    </local>    
+    
+    <!-- ChartText -->
+    <local scope="CHARTPIKTO" alias="CHARTTEXT" />
+    <local scope="CHARTTEXT" >
+        <prop mnemo="TEXT">Text</prop>
+        <prop mnemo="TEXT_EN">Text</prop>
+        <prop mnemo="LINK">Link</prop>
+        <prop mnemo="TARGETFRAME">Open in new window</prop>
+        <prop mnemo="ORDNUMBER">Order</prop>
+        <prop mnemo="LAYOUT_ID">Layout</prop>
+        <prop mnemo="CHARTNODE_ID">Organigram division</prop>
+        <prop mnemo="CHARTPIKTOLAYOUT_ID">Pictogram</prop>
+    </local>
+    <local scope="charttext">
+        <prop mnemo="charttext">Text</prop>
+        <prop mnemo="chartpikto">Pictogram</prop>
+        <prop mnemo="deleteTextConfirm">Delete text ?</prop>
+        <prop mnemo="deletePiktoConfirm">Delete link-pictogram ?</prop>
+        <prop mnemo="newmenu">New</prop>
+        <prop mnemo="editmenu">Edit</prop>
+        <prop mnemo="deletemenu">Delete</prop>
+        <prop mnemo="freiertext">Free-text</prop>
+        <prop mnemo="leiterabteilung">Leader of division</prop>
+        <prop mnemo="nameabteilung">Name of division</prop>
+        <prop mnemo="mnemoabteilung">Mnemo of division</prop>
+        <prop mnemo="keinlink">No link</prop>
+        <prop mnemo="listepersonen">List employees of division</prop>
+        <prop mnemo="linkorganigramm">Link to organigram</prop>
+        <prop mnemo="freilink">Free link</prop>
+        <prop mnemo="copytexttree">Copy to subordinate division</prop>
+        <prop mnemo="kontakte">Contacts of division</prop>
+        <prop mnemo="projekte">Projects of division</prop>
+        <prop mnemo="pendenzenlisten">Task list of division</prop>
+        <prop mnemo="dokumentenablage">Clipboard of division</prop>
+    </local>
+
+
+    <!-- ChartNodeLayout -->
+    <local scope="CHARTNODELAYOUT" >
+        <prop mnemo="TITLE" size="30">Title</prop>
+        <prop mnemo="TITLE_EN" size="30">Title</prop>
+        <prop mnemo="IMAGE">Image</prop>
+        <prop mnemo="NODEWIDTH" size="5">Width</prop>
+        <prop mnemo="NODEHEIGHT" size="5">Height</prop>
+        <prop mnemo="LINEWIDTH" size="5">Line-width</prop>
+        <prop mnemo="LINECOLOR">Line-color</prop>
+        <prop mnemo="BACKGROUNDCOLOR">Background-color</prop>
+        <prop mnemo="PADDING_TOP" size="5">Text-space top</prop>
+        <prop mnemo="PADDING_LEFT" size="5">Text-space left</prop>
+        <prop mnemo="PADDING_RIGHT" size="5">Text-space right</prop>
+    </local>
+    <local scope="chartnodelayout">
+        <prop mnemo="chartnodelayout">Division layout</prop>
+        <prop mnemo="deleteConfirm">Delete division layout?</prop>
+        <prop mnemo="chooseLineColor">Choose line-color</prop>
+        <prop mnemo="chooseBackgroundColor">Choose background-color</prop>
+    </local>
+
+
+    <!-- ChartTextLayout -->
+    <local scope="CHARTTEXTLAYOUT" >
+        <prop mnemo="TITLE" size="30">Title</prop>
+        <prop mnemo="TITLE_EN" size="30">Title</prop>
+        <prop mnemo="FONTFAMILY">Font</prop>
+        <prop mnemo="FONTSIZE">Font-size</prop>
+        <prop mnemo="FONTSTYLE">Font-style</prop>
+        <prop mnemo="FONTCOLOR">Font-color</prop>
+        <prop mnemo="HORIZONTAL_ALIGN">Alignment</prop>
+    </local>
+    <local scope="charttextlayout">
+        <prop mnemo="charttextlayout">Text-layout</prop>
+        <prop mnemo="sampletext">This is an example-text...</prop>        
+        <prop mnemo="choosefont">Select font</prop>     
+        <prop mnemo="choosefontlbl"></prop>   
+        <prop mnemo="previewtextlbl">Preview text</prop>
+        <prop mnemo="bold">Bold</prop>
+        <prop mnemo="italic">Italic</prop>
+        <prop mnemo="deleteConfirm">Delete text-layout?</prop>
+        <enum name="horizontalAlign">
+            <prop mnemo="0">Left-aligned</prop>
+            <prop mnemo="1">Centered</prop>
+            <prop mnemo="2">Right-aligned</prop>
+        </enum>
+    </local>
+
+
+    <!-- ChartPikto Layout -->
+    <local scope="CHARTPIKTOLAYOUT" >
+        <prop mnemo="TITLE" size="30">Title</prop>
+        <prop mnemo="TITLE_EN" size="30">Title</prop>
+        <prop mnemo="IMAGE">Image</prop>
+        <prop mnemo="WIDTH" size="5">Width</prop>
+        <prop mnemo="HEIGHT" size="5">Height</prop>
+        <prop mnemo="LINEWIDTH" size="5">Line-width</prop>
+        <prop mnemo="LINECOLOR">Line-color</prop>
+        <prop mnemo="BACKGROUNDCOLOR">Background-color</prop>
+    </local>
+    <local scope="chartpiktolayout">
+        <prop mnemo="chartpiktolayout">Link-pictogram</prop>
+        <prop mnemo="deleteConfirm">Delete link-pictogramm?</prop>
+        <prop mnemo="chooseLineColor">Choose line-color</prop>
+        <prop mnemo="chooseBackgroundColor">Choose background-color</prop>
+    </local>
+
+
+    <!-- Organisation - Menu -->
+    <local scope="MENUGROUP" >
+        <prop mnemo="TITLE" size="30">Title</prop>
+        <prop mnemo="TITLE_EN" size="30">Title</prop>
+        <prop mnemo="ORDNUMBER">Order</prop>
+        <prop mnemo="MNEMO">Mnemonic</prop>
+    </local>
+    <local scope="MENUITEM" >
+        <prop mnemo="TITLE" size="30">Title</prop>
+        <prop mnemo="TITLE_EN" size="30">Title</prop>
+        <prop mnemo="ORDNUMBER">Order</prop>
+        <prop mnemo="LINK" size="50,1">Link</prop>
+        <prop mnemo="TARGET">Target frame</prop>
+        <prop mnemo="ISSTARTPAGE">As start-page</prop>
+    </local>
+    <local scope="orgMenu">
+        <prop mnemo="orgMenu">Organisation-menu decentral</prop>
+        <prop mnemo="menuGroup">Menu-group</prop>
+        <prop mnemo="menuItem">Menu-entry</prop>
+        <prop mnemo="newMenuItem">New menu-entry</prop>
+        <prop mnemo="newMenuGroup">New menu-group</prop>
+        <prop mnemo="deleteMenuGroupConfirm">Delete menu-group?</prop>
+        <prop mnemo="deleteMenuItemConfirm">Delete menu-entry?</prop>
+       	<prop mnemo="wrongParent">Wrong parent menu-group</prop>
+    </local>
+    <!-- Funktion -->
+    <local scope="FUNKTION" >
+        <prop mnemo="TITLE" size="30">Title</prop>
+        <prop mnemo="TITLE_EN" size="30">Title</prop>
+        <prop mnemo="FUNKTION_GROUP_ID" size="30">Group</prop>
+        <prop mnemo="MNEMONIC">Mnemonic</prop>
+        <prop mnemo="MNEMONIC_EN">Mnemonic</prop>
+        <prop mnemo="DFLT">Default function</prop>
+ 		<prop mnemo="DESCRIPTION" size="50,5">Description</prop>
+ 		<prop mnemo="DESCRIPTION_EN" size="50,5">Description</prop>
+    </local>
+    <local scope="FUNCGROUPV" >
+        <prop mnemo="FTITLE">Function-name</prop>
+        <prop mnemo="FTITLE_EN">Function-name</prop>
+       	<prop mnemo="GTITLE">Group-name</prop>
+       	<prop mnemo="GTITLE_EN">Group-name</prop>
+        <prop mnemo="FMNEMONIC">Mnemonic</prop>
+        <prop mnemo="FMNEMONIC_EN">Mnemonic</prop>
+    </local>
+    <local scope="FUNCGROUPTREEV" alias="FUNKTION">
+    </local>
+    <local scope="function" >
+        <prop mnemo="function">Function</prop>
+        <prop mnemo="group">Function-group</prop>
+        <prop mnemo="newFunction">New function</prop>
+        <prop mnemo="newGroup">New function-group</prop>
+        <prop mnemo="deleteFunctionConfirm">Delete function?</prop>
+       	<prop mnemo="deleteFunctionGroupConfirm">Delete function-group?</prop>
+    </local>
+    <!-- Funktionsgruppe -->
+    <local scope="FUNKTION_GROUP" >
+        <prop mnemo="PARENT_ID" size="30">Parent</prop>
+        <prop mnemo="TITLE" size="30">Title</prop>
+       	<prop mnemo="TITLE_EN" size="30">Title</prop>
+        <prop mnemo="ORDNUMBER">Order</prop>
+ 		<prop mnemo="DESCRIPTION" size="50,5">Description</prop>
+		<prop mnemo="DESCRIPTION_EN" size="50,5">Description</prop>
+     </local>
+
+    <local scope="export">
+		<prop mnemo="organisation">Persons, function, organisations &amp; organigrams</prop>
+    </local>
+    
+    <local scope="error">
+       	<prop mnemo="functionGroupException">No function-group selected!</prop>  
+    </local>
+</map>

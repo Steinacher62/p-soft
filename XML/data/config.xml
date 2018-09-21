@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE config SYSTEM "../dtd/config.dtd" >
+<config>
+	<language
+			LanguageCode = "de"
+			RegionCode = "ch"
+		/>
+	<db
+		 Server = "PSOFTDEV3\MSSQLSERVER2012"
+		 LanguageCode = "en"
+		 RegionCode = "US"
+		 Name = "frauenfeld"
+		 User = "seekuser"
+		 Password = "seek12345*"
+		 Port ="1433"
+		 DriverClass = "ch.psoft.db.MSSqlDriver"
+		 MultiLanguage = "enable"
+		/>
+	<ftp
+			FtpDocumentServer = "localhost"
+			FtpDocumentSaveDirectory = "ftp_psoft/save"
+			FtpDocumentTempDirectory = "ftp_psoft/tmp"
+			FtpDocumentHistoryDirectory = "ftp_psoft/history"
+			DocumentSaveDirectory = "C:\Entwicklung\pSoft_export\source_code\Dezentral_Martin\p-soft\ftp_psoft\save"
+			DocumentTempDirectory = "C:\Entwicklung\pSoft_export\source_code\Dezentral_Martin\p-soft\ftp_psoft\tmp"
+			DocumentHistoryDirectory = "C:\Entwicklung\pSoft_export\source_code\Dezentral_Martin\p-soft\ftp_psoft\history"
+			DocumentSaveURL = "/psoftmaster/ftp_psoft/save"
+			DocumentHistoryURL = "/psoftmaster/ftp_psoft/history"
+			IndexingCatalogName = "SEEK_Documents"
+			NumberOfDocumentVersions = "2"
+			FtpUser = ""
+			FtpPassword = ""
+		/>
+	<www
+			BaseURL = ""
+			Domain = "localhost"
+			EMail = '"p-soft" &lt;info@p-soft.ch&gt;'
+		/>
+	<organisation
+			ModuleVisible = "1"
+			ShortPhoneNumber = "0"
+			PersonPhotoDirectory = "C:\Entwicklung\pSoft_export\source_code\Dezentral_Martin\p-soft\Person\photo"
+			OrganisationImageDirectory = "C:\Entwicklung\pSoft_export\source_code\Dezentral_Martin\p-soft\Organisation\images"
+			LogoImageDirectory="C:\Entwicklung\pSoft_export\source_code\Dezentral_Martin\p-soft\images"
+			showMainJobOnly = "1"
+			showEngagement = "1"
+			showReportPersonData = "1"
+			enableVisio = "1"
+			showVageField = "1"
+			showJournalOnlyCreator="0"
+			shopActive="0"
+			
+		/>
+
+	<!--
+		StartUpURL = "/sbs/sbsstartpage.aspx"
+		StartUpURL = "myPage"
+		StartUpURL = "/Morph/MyMaps.aspx"
+		-->
+	<display
+				RowsPerListPage = "15"
+				MaxTreeCaptionLength = "30"
+				StartUpURL = "myPage"
+				ShowPartnerLogos = "0"
+				HeaderLogo = "/images/LogoMigros.jpg"
+				HeaderLogoURL = ""
+				ShowDocumentSearch = "1"
+				HighlightColor = "#f2b400"
+				ShowLanguageSelector = "1"
+				MaxBreadcrumbItems = "5"
+				ShowNews = "1"
+				AvailableLanguages = "de fr en"
+				ShowHelpFile ="1"
+				SelectFontSize="1"
+				ApplicationName="p-soft"
+				ShowPasswordrecovery="1"
+				ShowPasswordChange="1"
+				ShowNewAccount="1"
+				BackgroundStartpage="/images/zurRose.JPG"
+				ShowAdmin="1"
+		/>
+	<!-- authentication
+						mode: - login          :normales login mittels Loginseite 
+									- anonymous      :automatisches login mit anonymous-Benutzer (anonymousAccount/anonymousPassword)
+									- windows        :login via windows-authentication
+									- windowsConfirm :login via windows-authentication, aber mit Passwortbestätigung
+									
+				 Achtung: für authentication-mode windows und windowsConfirm muss in \Basics\Web.config der Eintrag identify.impersonate=true gesetzt werden!
+		 -->
+	<authentication
+			mode = "login"
+			anonymousAccount = ""
+			anonymousPassword = ""
+		/>
+	<cms
+			CMSRootURL = "/psoftmaster/CMSRoot"
+		/>
+	<commonsettings>
+		<param name="stylesheetdir">/XML/stylesheets/</param>
+		<param name="tmpdir">/tmp/</param>
+	</commonsettings>
+	<modules>
+		<!-- Administration -->
+		<module name="administration" enabled="1" assemblyName="module_admin" className="ch.appl.psoft.admin.AdminModule">
+		</module>
+		
+		<!-- Basis -->
+		<module name="report" enabled="1" assemblyName="module_dispatch" className="ch.appl.psoft.Report.ReportModule">
+			<!-- logo must be bmp or png-->
+			<param name="headerLogoImage">habasit_logo.jpg</param>
+			<param name="enableExcel">0</param>
+			<param name="debugXML">1</param>
+			<!-- Lohnsimulation -->
+			<param name="abwProzent">1</param>
+			<!-- bei Lohnsimulation mehrere Auswahlfelder für "fixe Lohnänderung" anzeigen? -->
+			<param name="anzMonatsloehne">13</param>
+			<!-- Anzahl Monatslöhne -->
+			<param name="korr1">Korrektur Erfahrung</param>
+			<!-- Texte für Korrekturfaktoren -->
+			<param name="korr2">Kompetenzzulage</param>
+			<param name="korr3">Reserve</param>
+			<param name="korr4">Reserve</param>
+			<param name="fix">Fixieren</param>
+			<param name ="elimination">Ausschliessen</param>
+			<param name="maxErfahrung">15</param>
+			<param name="tarifLohn">0</param>
+			<param name="glaetten">0</param>
+			<param name="inclObjectives">0</param>
+			<param name="minSolllohn">0</param>
+			<!-- Lohnsimulation Ende -->
+			<param name="ExLohnsimURl">/ExLohnvergleich</param>
+			<param name="ExLohnsimPath">C:\Entwicklung\pSoft_export\source_code\Dezentral_Martin\p-soft\ExLohnvergleich\</param>
+		</module>
+		<module name="dispatch" enabled="1" assemblyName="module_dispatch" className="ch.appl.psoft.Dispatch.DispatchModule">
+			<param name="eMailAddressFrom">"p-soft" &lt;MartinSteinacher@p-soft.ch&gt;</param>
+			<param name="UserName">MartinSteinacher@p-soft.ch</param>
+			<param name="passwordFrom">Nitram1962*</param>
+			<param name="testEmailAddress">"Martin Steinacher" &lt;MartinSteinacher@p-soft.ch&gt;</param>
+			<param name="smtpServer">smtp.P-SOFT.ch</param>
+		</module>
+
+
+		<!-- Applikationen -->
+
+		<!-- Wissen -->
+		<module name="morph" enabled="0" assemblyName="module_morph" className="ch.appl.psoft.Morph.MorphModule">
+			<param name="permissionMultiuser">0</param>
+		</module>
+		<module name="knowledge" enabled="0" className="ch.appl.psoft.Knowledge.KnowledgeModule">
+			<param name="simpleKnowledge">1</param>
+		</module>
+		<module name="wiki" enabled="0" className="ch.appl.psoft.Wiki.WikiModule"/>
+
+		<!-- Umfrage -->
+		<module name="survey" enabled="0" assemblyName="module_survey" className="ch.appl.psoft.Survey.SurveyModule">
+			<param name="showSearchSurveyMenu">1</param>
+		</module>
+		<!-- Vorschlagswesen -->
+		<module name="suggestion" enabled="0" assemblyName="module_suggestion" className="ch.appl.psoft.Suggestion.SuggestionModule">
+			<param name="showSearchSuggestinMenu">1</param>
+		</module>
+
+		<!-- HR -->
+
+		<module name="skills" enabled="0" assemblyName="module_skills" className="ch.appl.psoft.Skills.SkillsModule">
+			<param name="showNumTitleInReport">0</param>
+		</module>
+		<module name="mbo" enabled="1" assemblyName="module_mbo" className="ch.appl.psoft.MbO.MBOModule">
+			<param name="standardMeasuramentTyp">Erreichungsgrad</param>
+			   <param name="maxRatingVal">120</param>
+		</module>
+		<!-- Funktionsbeschreibung -->
+		<module name="fbs" enabled="1" assemblyName="module_fbs" className="ch.appl.psoft.FBS.FBSModule">
+			<param name="showNumTitleInReport">0</param>
+		</module>
+		<!-- Funktionsbewertung -->
+		<module name="fbw" enabled="1" assemblyName="module_fbw" className="ch.appl.psoft.FBW.FBWModule" />
+		<!-- Leistungsbewertung -->
+		<module name="performance" enabled="1" assemblyName="module_performance" className="ch.appl.psoft.Performance.PerformanceModule" >
+			<!-- normaler Report   
+			<param name="averagePerformanceReportClass">ch.appl.psoft.Performance.AveragePerformanceReport</param>-->
+			<!-- Habasit Report -->
+			<param name="averagePerformanceReportClass">ch.appl.psoft.Habasit.AveragePerformanceReport</param>
+			<!--Rectangle Report 
+								<param name="averagePerformanceReportClass">ch.appl.psoft.Performance.AveragePerformanceReportRectangle</param> -->
+								
+			<param name="RectangleRatingLow">50</param>
+			<param name="RectangleRatingHigh">150</param>
+			<param name="showPyramidWeight">1</param>
+			<param name="showPyramidFooter">1</param>
+			<param name="showLine">1</param>
+			<param name="performanceRatingBase">35</param>
+			<param name="showPerformanceLevelsOnReport">1</param>
+			<param name="showPerformanceRatingSelf">no</param>
+			<param name="globalPerformanceReportClass">ch.appl.psoft.Performance.GlobalPerformanceReport</param>
+			<param name="showGlobalPerformanceReport">0</param>
+			<param name="showMeasure">1</param>
+			<param name="logoOrientation">right</param>
+			<param name="copyJobexpectation">0</param>
+			<param name="hideOwnPerformanceratingByLockdate">1</param>
+			<param name="ShowSign2Up">0</param>
+			<param name="showGlobalComment">0</param>
+
+		</module>
+		<module name="p-soft"  enabled="0" assemblyName="module_p-soft" className="ch.appl.psoft.p-soft.p-softModule" />
+		<module name="payment"  enabled="0" assemblyName="module_payment" className="ch.appl.psoft.Payment.PaymentModule" />
+		<module name="training" enabled="1" assemblyName="module_training" className="ch.appl.psoft.Training.TrainingModule" />
+		<!-- Kundenspezifische Erweiterungen -->
+		<module name="habasit"  enabled="0" assemblyName="module_habasit" className="ch.appl.psoft.Habasit.HabasitModule" />
+		<module name="energiedienst"  enabled="0" assemblyName="module_energiedienst" className="ch.appl.psoft.Energiedienst.EnergiedienstModule" />
+		<module name="laufenburg"  enabled="0" assemblyName="module_laufenburg" className="ch.appl.psoft.Laufenburg.LaufenburgModule" />
+		<module name="frauenfeld"  enabled="1" assemblyName="module_frauenfeld" className="ch.appl.psoft.Frauenfeld.FrauenfeldModule" />
+		<module name="kreuzlingen"  enabled="0" assemblyName="module_kreuzlingen" className="ch.appl.psoft.Kreuzlingen.KreuzlingenModule" />
+		<module name="foampartner"  enabled="0" assemblyName="module_foampartner" className="ch.appl.psoft.FoamPartner.FoampartnerModule" />
+		<module name="spz"  enabled="0" assemblyName="module_spz" className="ch.appl.psoft.Spz.SPZModule" />
+		<module name="ahb"  enabled="0" assemblyName="module_ahb" className="ch.appl.psoft.Ahb.AhbModule" />
+		<module name="walker"  enabled="0" assemblyName="module_walker" className="ch.appl.psoft.Walker.WalkerModule" />
+		<module name="feller"  enabled="0" assemblyName="module_feller" className="ch.appl.psoft.Feller.FellerModule" />
+		<module name="bachem"  enabled="0" assemblyName="module_bachem" className="ch.appl.psoft.Bachem.BachemModule" />
+		<module name="RPB" enabled="0" assemblyName="module_rpb" className="ch.appl.psoft.RPB.RPBModule" />
+		<module name="RSR" enabled="0" assemblyName="module_rsr" className="ch.appl.psoft.RSR.RsrModule" />
+		<module name="wohlen" enabled="0"
+							 assemblyName="module_wohlen" className="ch.appl.psoft.Wohlen.WohlenModule" />
+		<!-- Lohnmodul direkt aktiviert wegen Übersetzungen / 14.07.09 / mkr -->
+		<module name="Lohn" enabled="1" assemblyName="module_lohn" className="ch.appl.psoft.Lohn.LohnModule" />
+		<module name="gfk" enabled="0" assemblyName="module_gfk" className="ch.appl.psoft.GFK.GFKModule" >
+			<param name="GFKDataSourcePath">E:\Entwicklung\pSoft_export\source_code\Dezentral_Martin\p-soft\GFK\XMLData</param>
+		</module>
+		<module name="novis" enabled="0" assemblyName="module_novis" className="ch.appl.psoft.Novis.NovisModule" />
+		<module name="SBS" enabled="0" assemblyName="module_sbs" className="ch.appl.psoft.Sbs.SbsModule" >
+			<param name="SeminarsPath">C:\Entwicklung\pSoft_export\source_code\Dezentral_Martin\p-soft\Seminars</param>
+			<param name="SeminarsURl">/Seminars</param>
+
+		</module>
+		<module name="mks" enabled="0" assemblyName="module_mks" className="ch.appl.psoft.MKS.MKSModule" />
+		<module name="kaiser"  enabled="0" assemblyName="module_kaiser" className="ch.appl.psoft.Kaiser.KaiserModule" />
+	</modules>
+</config>

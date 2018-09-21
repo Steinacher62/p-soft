@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- version 1.2 13 08 2002 -->
+<!-- supports watermark element -->
+<!-- supports newspaper table format -->
+<!-- supports next-page element -->
+<!-- version 1.3 19 08 2002 -->
+<!-- supports better boxes element -->
+
+<!ENTITY % all.elements "
+	( table | block | cell | row )*">
+<!ENTITY % condition.elements "
+	if? | ifnot? ">
+<!ENTITY % block.level.elements "
+	table | block | new-page | page-header | page-footer | define-sequence | show-image | style | graphic 
+	| watermark | next-page ">
+<!ENTITY % elements.in.most.containers "
+	auto-sequence-get |
+	auto-sequence-inc |
+	auto-sequence-get-name | 
+	br |
+	foreach |
+	forward-reference |
+	if | 
+	ifnot | 
+	info | 
+	link | 
+	merge |
+	page-number |
+	restore |
+	set |
+	sequence-get |
+	space |
+	xref 
+">
+<!ENTITY % common.attributes "
+	class CDATA #IMPLIED
+     auto-pad CDATA #IMPLIED">
+<!ENTITY % font.attributes "
+	decoration CDATA #IMPLIED
+	font-name CDATA #IMPLIED
+ 	font-size CDATA #IMPLIED
+	fs CDATA #IMPLIED
+	kern ( true | false ) #IMPLIED
+  	leading CDATA #IMPLIED
+	rise CDATA #IMPLIED
+    underline-color CDATA #IMPLIED
+    strikethrough-color CDATA #IMPLIED
+  	text-color CDATA #IMPLIED">
+<!ENTITY % align.attributes "
+	align (center | left | middle | right | justify| justified ) #IMPLIED
+  	vertical-align (bottom | middle | center | none | top) #IMPLIED">
+<!ENTITY % table.attributes "
+	widths CDATA #IMPLIED
+	layout CDATA #IMPLIED">
+<!ENTITY % block.level.attributes " 
+	absolute-x CDATA  #IMPLIED
+	absolute-y CDATA  #IMPLIED
+    ax CDATA #IMPLIED
+    ay CDATA #IMPLIED
+    comment CDATA #IMPLIED
+	force-space-before CDATA #IMPLIED
+  	indent-left CDATA #IMPLIED
+  	indent-right CDATA #IMPLIED
+  	keep-spaces CDATA #IMPLIED
+  	keep-together CDATA #IMPLIED
+  	relative-to CDATA #IMPLIED
+  	relative-name CDATA #IMPLIED
+  	rx CDATA #IMPLIED
+  	ry CDATA #IMPLIED
+  	space-after CDATA #IMPLIED
+ 	space-before CDATA #IMPLIED
+  	space-required CDATA #IMPLIED
+	keep-with-next CDATA #IMPLIED
+	width CDATA #IMPLIED
+	block-align CDATA #IMPLIED
+">
+<!ENTITY % intable.attributes "
+  background-gray CDATA #IMPLIED
+  border-width-all CDATA #IMPLIED
+  border-width-top CDATA #IMPLIED
+  border-width-bottom CDATA #IMPLIED
+  border-width-left CDATA #IMPLIED
+  border-width-right CDATA #IMPLIED
+  border-width-inner CDATA #IMPLIED
+  border-width-outer CDATA #IMPLIED
+  border-color-all CDATA #IMPLIED
+  border-color-top CDATA #IMPLIED
+  border-color-bottom CDATA #IMPLIED
+  border-color-left CDATA #IMPLIED
+  border-color-right CDATA #IMPLIED
+  border-color-inner CDATA #IMPLIED
+  border-color-outer CDATA #IMPLIED
+  fill-color CDATA #IMPLIED
+  padding-all CDATA #IMPLIED
+  padding-left CDATA #IMPLIED
+  padding-right CDATA #IMPLIED
+  padding-top CDATA #IMPLIED
+  padding-bottom CDATA #IMPLIED
+  padding-inner CDATA #IMPLIED
+  padding-outer CDATA #IMPLIED
+">
+<!ELEMENT block (#PCDATA | %elements.in.most.containers;)*>
+<!ATTLIST block
+	%common.attributes; 
+	%font.attributes; 
+	%block.level.attributes; 
+	%align.attributes; 
+>
+<!ELEMENT cell (#PCDATA | %elements.in.most.containers; | show-image | table | graphic )*>
+<!ATTLIST cell
+	%common.attributes; 
+	%font.attributes; 
+	%align.attributes; 
+	%intable.attributes; 
+>
+<!ELEMENT define-sequence EMPTY>
+<!ATTLIST define-sequence
+	name CDATA #REQUIRED
+	format (alpha | numeric | roman | roman-lower) #REQUIRED
+	suffix CDATA #IMPLIED
+	prefix CDATA #IMPLIED
+>
+<!ELEMENT document (%elements.in.most.containers; | %block.level.elements; | fonts | images)+>
+<!ATTLIST document
+	%common.attributes; 
+	%font.attributes; 
+	%align.attributes; 
+	%intable.attributes; 
+	info-title CDATA #IMPLIED
+	info-author CDATA #IMPLIED
+	info-subject CDATA #IMPLIED
+	margin-left CDATA #IMPLIED
+	margin-right CDATA #IMPLIED
+	margin-top CDATA #IMPLIED
+	margin-bottom CDATA #IMPLIED
+	orientation (landscape) #IMPLIED
+	page-size CDATA #IMPLIED
+	user-password CDATA #IMPLIED
+	owner-password CDATA #IMPLIED
+	deny-print CDATA #IMPLIED
+	deny-modify CDATA #IMPLIED
+	deny-extract CDATA #IMPLIED
+>
+<!ELEMENT next-page EMPTY>
+<!ATTLIST next-page
+	margin-left CDATA #IMPLIED
+	margin-right CDATA #IMPLIED
+	margin-top CDATA #IMPLIED
+	margin-bottom CDATA #IMPLIED
+	orientation (landscape) #IMPLIED
+	page-size CDATA #IMPLIED
+>
+<!ELEMENT font EMPTY>
+<!ATTLIST font
+	type (truetype) #REQUIRED
+	font-name CDATA #REQUIRED
+	font-file CDATA #REQUIRED
+	unicode (true | false) #IMPLIED
+	embed (true | false) #IMPLIED
+    html-name CDATA #IMPLIED
+    html-bold CDATA #IMPLIED
+    html-italic CDATA #IMPLIED
+>
+<!ELEMENT fonts (font?, if?, ifnot?)*>
+<!ELEMENT forward-reference EMPTY>
+<!ATTLIST forward-reference
+	name CDATA #REQUIRED
+>
+<!ELEMENT graphic (boxes)>
+<!ELEMENT header (row)>
+<!ATTLIST header
+	%common.attributes; 
+	%font.attributes; 
+	%align.attributes; 
+	%intable.attributes; 
+	%table.attributes; 
+>
+<!ELEMENT if (#PCDATA | row | cell | %elements.in.most.containers; | %block.level.elements;  | image | images | font | fonts  )*>
+<!ATTLIST if
+	condition CDATA #IMPLIED
+	method CDATA #IMPLIED
+>
+<!ELEMENT ifnot (#PCDATA | row | cell | %elements.in.most.containers; | %block.level.elements; | image | images | font | fonts )*>
+<!ATTLIST ifnot
+	condition CDATA #IMPLIED
+	method CDATA #IMPLIED
+>
+<!ELEMENT image ( %condition.elements;  )>
+<!ATTLIST image
+	file-name CDATA #REQUIRED
+	image-name CDATA #REQUIRED
+	image-type (jpg | jpeg | png) #IMPLIED
+>
+<!ELEMENT images (image?, ifnot?, if?, merge?)*>
+<!ELEMENT info EMPTY>
+<!ATTLIST info
+	field (date | version) #REQUIRED
+	flags CDATA #IMPLIED
+>
+<!ELEMENT link (#PCDATA)>
+<!ATTLIST link
+	url CDATA #REQUIRED
+	url-show-border CDATA #IMPLIED
+>
+<!ELEMENT merge EMPTY>
+<!ATTLIST merge
+	source-element-name CDATA #IMPLIED
+	method CDATA #IMPLIED
+>
+<!ELEMENT page-footer (row)*>
+<!ATTLIST page-footer
+	%common.attributes; 
+	%font.attributes; 
+	%align.attributes; 
+	%intable.attributes; 
+	%block.level.attributes; 
+	%table.attributes;
+>
+<!ELEMENT page-header (row)*>
+<!ATTLIST page-header
+	%common.attributes; 
+	%font.attributes; 
+	%align.attributes; 
+	%intable.attributes; 
+	%block.level.attributes; 
+	%table.attributes;
+>
+<!ELEMENT page-number EMPTY>
+<!ELEMENT restore EMPTY>
+<!ELEMENT row (if | ifnot | foreach | cell )*>
+<!ATTLIST row
+	%common.attributes; 
+	%font.attributes; 
+	%align.attributes; 
+	%intable.attributes; 
+>
+<!ELEMENT sequence-get EMPTY>
+<!ATTLIST sequence-get
+	name CDATA #REQUIRED
+>
+<!ELEMENT set EMPTY>
+<!ATTLIST set
+	%font.attributes; 
+>
+<!ELEMENT show-image EMPTY>
+<!ATTLIST show-image
+	%block.level.attributes; 
+	%common.attributes; 
+	%align.attributes; 
+	image-name CDATA #REQUIRED
+	scale-height CDATA #IMPLIED
+	scale-width CDATA #IMPLIED
+	priority CDATA #IMPLIED
+>
+<!ELEMENT style EMPTY>
+<!ATTLIST style
+	%align.attributes; 
+	%block.level.attributes; 
+	%common.attributes; 
+	%font.attributes; 
+	%intable.attributes; 
+	%table.attributes; 
+	name CDATA #IMPLIED
+>
+<!ELEMENT table (header | row | merge | if | ifnot | foreach)*>
+<!ATTLIST table
+	%align.attributes; 
+	%block.level.attributes; 
+	%common.attributes; 
+	%intable.attributes; 
+	%font.attributes; 
+	%table.attributes; 
+>
+<!ELEMENT auto-sequence-get EMPTY>
+<!ATTLIST auto-sequence-get
+	level (1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10) #REQUIRED
+>
+<!ELEMENT new-page EMPTY>
+<!ATTLIST new-page
+	next-page-number CDATA #IMPLIED
+>
+<!ELEMENT xref (#PCDATA) >
+<!ATTLIST xref
+	uid CDATA #REQUIRED
+	text CDATA #IMPLIED
+>
+<!ELEMENT auto-sequence-get-name EMPTY>
+<!ATTLIST auto-sequence-get-name
+	level (1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10) #REQUIRED
+	outline (true | false) #IMPLIED
+	uid CDATA #IMPLIED
+>
+<!ELEMENT auto-sequence-inc EMPTY>
+<!ATTLIST auto-sequence-inc
+	level (1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10) #REQUIRED
+	name CDATA #REQUIRED
+>
+<!ELEMENT boxes (#PCDATA | br)*>
+<!ATTLIST boxes
+	%common.attributes; 
+	%font.attributes; 
+	box-width CDATA #REQUIRED
+	box-height CDATA #REQUIRED
+	number CDATA #REQUIRED
+	line-width CDATA #REQUIRED
+	line-color CDATA #IMPLIED
+	number-down CDATA #IMPLIED
+>
+<!ELEMENT br EMPTY>
+<!ELEMENT foreach (%block.level.elements; | if | ifnot )* >
+<!ATTLIST foreach
+	list CDATA #REQUIRED
+	iterator CDATA #REQUIRED
+>
+<!ELEMENT space EMPTY>
+<!ELEMENT watermark (row)*>
+<!ATTLIST watermark 
+	%common.attributes; 
+	%font.attributes; 
+	%align.attributes; 
+	%intable.attributes; 
+	%block.level.attributes; 
+>

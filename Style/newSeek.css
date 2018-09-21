@@ -1,0 +1,37 @@
+@media all
+{
+    * { 	
+        font-size: 12px;
+    }
+    
+
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    div {
+        border-style: none;
+    }
+
+    table { 
+        width: auto; 
+        border-collapse: collapse;
+        border: 0;
+        border-width: 0px;
+    }
+
+    th,td { 
+        font-weight: 700;
+    }
+    
+    thead,th { 
+        background-color: #bde0ef; 
+        color: #374979;
+    }
+    
+    .colorPanel {
+        Width: 100%; 
+        Height: 100%;
+    }
+}

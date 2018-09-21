@@ -1,0 +1,610 @@
+﻿/*MAIN TABLE-----------------------------------*/
+#content  a:link {
+    color: Blue;
+    font-family: Open Sans, Verdana;
+    font-size: 11px;
+}
+
+
+td {
+    color: Black;
+    font-family: Open Sans, Verdana;
+    font-size: 11px;
+}
+
+#ContentPlaceHolder1__pl__cl__detail_MainTable {
+    table-layout: fixed;
+    border-spacing: 5px;
+    border-collapse: separate;
+    border: 0px solid gray;
+    border-bottom-style: groove;
+}
+
+#ContentPlaceHolder1__pl__cl__detail_AbbruchButton {
+    position: fixed;
+    top: 80%;
+    left: 10%;
+    width: 120px;
+    height: 20px;
+    background-color: #d8c0c0;
+   // border-radius: 4px;
+    border-color: #33302b;
+    border-width: 2px;
+    border-style: solid;
+    text-align: center;
+    color: #1d1c34;
+    font-weight: bold;
+    z-index: 9001;
+}
+
+.RemoveWirkungspaket {
+    float: right;
+    height: 14px;
+    width: 14px;
+    vertical-align: middle;
+    margin-top: 1px;
+}
+
+.MainCell {
+    border-collapse: separate;
+    border: none;
+    width: 145px;
+    height: 80px;
+    padding: 0px;
+    //border-radius: 8px;
+    /* schatten für IE. nicht schön!
+
+border-radius: 8px;
+ filter:
+progid:DXImageTransform.Microsoft.DropShadow(color=#969696, offx=1, offy=1)
+progid:DXImageTransform.Microsoft.DropShadow(color=#C2C2C2, offx=1, offy=1)
+progid:DXImageTransform.Microsoft.DropShadow(color=#EFEFEF, offx=1, offy=1);
+filter: progid:DXImageTransform.Microsoft.Shadow(color='#969696', Direction=135, Strength=3); */
+}
+
+    .MainCell a {
+    position:relative;
+    }
+
+
+/*TitleRows----------*/
+
+.TitleRow1 {
+    border-bottom: 1px solid #BDC3BD;
+    height: 100px;
+
+}
+
+    .TitleRow1 td {
+        color:grey;
+    }
+
+.TitleRow2 {
+    border: 1px solid #BDC3BD;
+    height: 100px;
+    background-color: #D2D2D2; // #CBCACC;
+    box-shadow: 3px 3px 3px #888;
+    -moz-box-shadow: 3px 3px 3px #888;
+    -webkit-box-shadow: 3px 3px 2px #888;
+}
+.TitleRow2>tr>td {
+    
+}
+/*Title Cell Tables */
+.TitleCellTable {
+    text-wrap:normal;
+    table-layout: auto;
+    width: 100%;
+    height: 100px;
+    vertical-align: top;
+    position: relative;
+}
+
+.TitleSupportRow {
+    visibility: hidden;
+}
+
+    .TitleSupportRow > td {
+        width: 145px;
+    }
+
+.TitleCellTableHeader > td {
+    height: 19px;
+    border-bottom: 1px solid #BDC3BD;
+    font-weight: bold;
+}
+
+#sokratesLogo {
+    max-height: 100px;
+    max-width: 300px;
+    z-index: 1;
+    position: absolute;
+    right: 0px;    
+    top: 0;
+}
+
+#ContentPlaceHolder1__pl__cl__detail_TitleCell1_2 > table {
+    min-width: 420px;
+    max-width: 600px;
+}
+
+
+.WirkungspaketCell {
+    width: 50%;
+}
+
+    .WirkungspaketCell > input:nth-child(1) {
+        height: 14px;
+        width: 10px;
+        margin-right: 3px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size:cover;
+         vertical-align: middle;
+    }
+
+
+    .WirkungspaketCell > input:nth-child(4) {
+        max-width: 200px;
+    }
+
+
+/*Title Cell Tables Cells */
+
+#ContentPlaceHolder1__pl__cl__detail_TitleRowCell1 {
+    font-size: 25px;
+    color: Gray;
+    /*   font-weight:bold;  */
+    height: 40px;
+}
+
+#ContentPlaceHolder1__pl__cl__detail_TitleRowCell6 {
+    font-size: 18px;
+    color: Gray;
+    height: 35px;
+}
+
+#ContentPlaceHolder1__pl__cl__detail_Legend1_0, #ContentPlaceHolder1__pl__cl__detail_Legend1_1,
+#ContentPlaceHolder1__pl__cl__detail_Legend2_0, #ContentPlaceHolder1__pl__cl__detail_Legend2_1,
+#ContentPlaceHolder1__pl__cl__detail_Legend3_0, #ContentPlaceHolder1__pl__cl__detail_Legend3_1,
+#ContentPlaceHolder1__pl__cl__detail_Legend4_0, #ContentPlaceHolder1__pl__cl__detail_Legend4_1,
+#ContentPlaceHolder1__pl__cl__detail_DescriptionCell1 {
+    width: 144px;
+}
+#ContentPlaceHolder1__pl__cl__detail_DescriptionCell1 {
+    white-space: pre-wrap;
+}
+
+#ContentPlaceHolder1__pl__cl__detail_TitleCell1_1 input {
+    width:265px;
+}
+#ContentPlaceHolder1__pl__cl__detail_TitleCell1_1 td {
+    width:290px;
+    max-width:290px;
+}
+
+/*CELL TABLE----------------------------------*/
+.CellTable {
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 145px;
+    height: 80px;
+    border-style: none;
+    box-shadow: 3px 3px 3px #888;
+    -moz-box-shadow: 3px 3px 3px #888;
+    -webkit-box-shadow: 3px 3px 2px #888;
+   // border-radius: 8px;
+    border-collapse: separate;
+    border-spacing: 0px;
+}
+
+.MainRow {
+    white-space: nowrap;
+}
+
+.SupportRow > td {
+    height: 22px;
+    border-top: 1px solid #ADADAD; //#FFFFFF;
+}
+
+.SupportColumn {
+    width: 15px;
+    white-space: normal;
+}
+
+.TextRow > .SupportColumn {
+  //  border-radius: 0px 8px 0px 0px;
+}
+
+.SupportRow > .SupportColumn {
+   // border-radius: 0px 0px 8px 0px;
+}
+
+.TextRow > .TextColumn {
+   // border-radius: 8px 0px 0px 0px;
+}
+
+.SupportRow > .TextColumn {
+   // border-radius: 0px 0px 0px 8px;
+}
+
+
+.WirkungselementBorder .TextRow > .TextColumn {
+  //  border-top-left-radius: 4px;
+}
+
+.WirkungselementBorder .TextRow > .SupportColumn {
+  //  border-top-right-radius: 4px;
+}
+
+.WirkungselementBorder .SupportRow > .TextColumn {
+   // border-bottom-left-radius: 4px;
+}
+
+.WirkungselementBorder .SupportRow > .SupportColumn {
+  //  border-bottom-right-radius: 4px;
+}
+
+
+.WirkungselementBorder > .CellTable {
+    border-color: red;
+    border-width: 3px;
+    border-style: solid;
+   // border-radius: 8px;
+   // -moz-border-radius: 8px;
+    -moz-border-color: red;
+    -moz-border-width: 3px;
+    -moz-border-style: solid;
+}
+
+.SelectionDiv {
+    height: 100%;
+    position: absolute;
+    width: 145px;
+    z-index: 2;
+    background-image: url("../Images/morph/spacer.gif");
+    background-repeat: repeat;
+   
+}
+
+
+.TextColumn {
+    width: 120px;
+    white-space: pre-wrap;
+}
+
+
+/*color*/
+
+.Color0 {
+    /*  background-image:url("../Images/morph/Color0.png");*/
+}
+
+.Color1 {
+    /*background-image:url("../Images/morph/Color1.png");*/
+}
+
+.Color2 {
+    /*background-image:url("../images/morph/Color2.png");*/
+}
+
+.Color3 {
+    /*background-image:url("../images/morph/Color3.png");*/
+}
+
+.Color4 {
+    /*background-image:url("../images/morph/Color4.png");*/
+}
+
+.Color5 {
+    /*background-image:url("../images/morph/Color5.png");*/
+}
+
+.Color6 {
+    /*background-image:url("../images/morph/Color6.png");*/
+}
+
+.Color7 {
+    /*background-image:url("../images/morph/Color7.png");*/
+}
+
+
+
+table.SupportColorDefault {
+    background-color:#F8F6F8;
+}
+
+.MainCell:nth-child(-n+2) td , .MainCell:nth-child(-n+2) textarea{
+     font-weight: bold;
+}
+
+table.SupportColorFirstColumn {
+   
+    background-color: #D2D2D2; // #CBCACC;;
+}
+
+
+
+
+
+
+
+td > span {
+    width: 10px;
+    height: 10px;
+    border: 1px solid black;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 4px;
+}
+
+
+/*Title*/
+
+#ContentPlaceHolder1__pl_titleLabel {
+    visibility: hidden;
+}
+
+/*colormenu*/
+
+#ContentPlaceHolder1__pl__cl__detail_colorMenu {
+    z-index: 100;
+    background-color: #FBFBFB;
+    border-style: solid;
+    border-width: 2px;
+    position: absolute;
+    display: inline;
+    min-width: 200px;
+    white-space: nowrap;
+}
+
+#ContentPlaceHolder1__pl__cl__detail_printMenu {
+    z-index: 100;
+    background-color: #FBFBFB;
+    border-style: solid;
+    border-width: 2px;
+    position: absolute;
+    display: inline;
+    min-width: 200px;
+    white-space: nowrap;
+    
+}
+#selectOrientation {
+    width : 100%;
+}
+
+#ContentPlaceHolder1__pl__cl__detail_printMenu td {
+    font-weight:bold;
+    margin-top:5px;
+    margin-bottom:5px;
+}
+#ContentPlaceHolder1__pl__cl__detail_printMenu input {
+    width: 90px;
+}
+#ContentPlaceHolder1__pl__cl__detail_cancelPrintButton{
+    margin-left:20px;
+}
+.ColorMenuButton {
+    min-width: 200px;
+    cursor: pointer;
+}
+
+    .ColorMenuButton:hover {
+        background-color: lightblue;
+    }
+
+#ContentPlaceHolder1__pl__cl__detail_colorMenu .ColorMenuButtonText {
+    width: auto;
+    height: auto;
+    border: none;
+    color: blue;
+    cursor: pointer;
+}
+
+
+
+
+.ColorButton > img {
+    width: 100%;
+    position: relative;
+}
+
+.WsButtonDel > img {
+    width: 100%;
+ 
+}
+
+.WsButtonAdd > img {
+    width: 100%;
+}
+
+.WsButtonDelInvisible > img {
+    display: none;
+}
+
+.WsButtonAddInvisible > img {
+    display:none;
+}
+
+.WsButtonDelVisible > img {
+    display: inline;
+}
+
+.WsButtonAddVisible > img {
+    display:inline;
+}
+
+
+.ActiveWP {
+    border: 2px solid #0071bc;
+    background-color: #338dc9;
+    cursor:pointer;
+    
+}
+
+
+#ContentPlaceHolder1__pl__cl__detail_plusMenu {
+    z-index: 100;
+    background-color: #FBFBFB;
+    border-style: solid;
+    border-width: 2px;
+    position: absolute;
+    display: inline;
+    margin-top: 18px;
+    width: 310px;
+    white-space: nowrap;
+}
+
+.PlusButton img {
+    width: 13px;
+    opacity: 0.8;
+    margin-top: 2px;
+    margin-left: 1px;
+    margin-bottom: 2px;
+}
+
+.MinusButton img {
+    width: 13px;
+    opacity: 0.8;
+    margin-left: 1px;
+}
+
+#content a.PlusMenuButton, #content a.MinusMenuButton{
+    font-size:15px;
+    padding-left:3px;
+    padding-right:3px;
+}
+
+#ContentPlaceHolder1__pl__cl__detail_plusMenu select {
+    vertical-align: bottom;
+    width:100%;
+}
+#ContentPlaceHolder1__pl__cl__detail_AddKnowledge a.PlusMenuButton {
+    color: black;
+}
+#ContentPlaceHolder1__pl__cl__detail_AddSubmatrix a.PlusMenuButton {
+    color:black;
+}
+#ContentPlaceHolder1__pl__cl__detail_minusMenu {
+    z-index: 100;
+    background-color: #FBFBFB;
+    border-style: solid;
+    border-width: 2px;
+    position: absolute;
+    display: inline;
+    margin-top: 18px;
+    min-width: 200px;
+    white-space: nowrap;
+}
+
+
+
+    #ContentPlaceHolder1__pl__cl__detail_plusMenu a,
+    #ContentPlaceHolder1__pl__cl__detail_minusMenu a {
+        color: Blue;
+    }
+
+    #ContentPlaceHolder1__pl__cl__detail_plusMenu td:hover,
+    #ContentPlaceHolder1__pl__cl__detail_minusMenu td:hover{
+        background-color: lightblue;
+        cursor:pointer;
+    }
+
+    #ContentPlaceHolder1__pl__cl__detail_plusMenu td,
+    #ContentPlaceHolder1__pl__cl__detail_minusMenu td{
+        min-width: 200px;
+    }
+
+#ContentPlaceHolder1__pl__cl__detail_plusMenu #ContentPlaceHolder1__pl__cl__detail_AddSubmatrix:hover,
+#ContentPlaceHolder1__pl__cl__detail_plusMenu #ContentPlaceHolder1__pl__cl__detail_AddKnowledge:hover {
+    background-color: transparent;
+    cursor:default;
+}
+
+#ContentPlaceHolder1__pl__cl__detail_AddSubmatrix a,
+#ContentPlaceHolder1__pl__cl__detail_AddKnowledge a {
+    cursor: default;
+}
+
+#ContentPlaceHolder1__pl__cl__detail_mainMenu {
+    z-index: 100;
+    background-color: #FBFBFB;
+    border-style: solid;
+    border-width: 2px;
+    position: absolute;
+    display: inline;
+    white-space: nowrap;
+}
+
+#SelectMap {
+    padding-left: 6px;
+}
+
+#ContentPlaceHolder1__pl__cl__detail_mainMenu > a {
+    font-size: 14px;
+    padding-bottom: 6px;
+    padding-top: 6px;
+    padding-left: 6px;
+    line-height: 30px;
+    color: Blue;
+}
+
+#ContentPlaceHolder1__pl__cl__detail_TitleRowCell0 img {
+    width: 45px;
+    opacity: 0.8;
+}
+
+    #ContentPlaceHolder1__pl__cl__detail_TitleRowCell0 img:hover {
+        opacity: 1;
+    }
+
+#ContentPlaceHolder1__pl__cl__detail_TitleCell0_0 table {
+    width: 100%;
+    height: 100px;
+}
+
+.shortcut {
+    float: right;
+    font-size: 12px;
+    padding-left: 6px;
+    padding-right: 2px;
+}
+
+.Input {
+    font: inherit;
+    width: 94%;
+    overflow:hidden;
+}
+
+/*inputbox*/
+.InputBox {
+    width: inherit;
+    overflow: hidden;
+    font-size: inherit;
+    font-family: inherit;
+    resize: none;
+    width: 100%;
+    
+}
+
+svg {
+    position: absolute;
+}
+
+body.wait *, body.wait
+{
+    cursor: progress !important;
+}
+
+.RowCellDetail.over {
+    opacity: 0.4;
+}
+
+.RowCell0.over {
+    opacity:0.4;
+}
+
+.RowCell1.over {
+    opacity: 0.4;
+}
+

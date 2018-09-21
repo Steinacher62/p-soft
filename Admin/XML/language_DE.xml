@@ -1,0 +1,1132 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE map SYSTEM "../../XML/dtd/language.dtd" >
+<map>
+  <!-- ä &#228; ö &#246; ü &#252; Ä &#196; Ö &#214; Ü &#220; <b> &lt;b&gt; </b> &lt;/b&gt; -->
+  <local scope="application">
+    <prop mnemo="administration">Administration</prop>
+    <prop mnemo="Permission">Berechtigungen</prop>
+    <prop mnemo="ApplicationPermissions">Applikationsrechte</prop>
+    <prop mnemo="AccessorGroups">Berechtigungsgruppen</prop>
+    <prop mnemo="Organisation">Organisation</prop>
+    <prop mnemo="Organisation/OE">Organisation/Abteilung</prop>
+    <prop mnemo="SearchOrganisation">Organisation/Abteilung suchen</prop>
+    <prop mnemo="Function">Funktion</prop>
+    <prop mnemo="SearchFunction">Funktion suchen</prop>
+    <prop mnemo="Chart">Organigramm</prop>
+    <prop mnemo="SearchChart">Organigramm suchen</prop>
+    <prop mnemo="Menus">Menüs</prop>
+    <prop mnemo="OrgMenu">Organisationsmenü</prop>
+    <prop mnemo="HelpMenu">Hilfe</prop>
+    <prop mnemo="KnowledgeMenu">Wissensmenü</prop>
+    <prop mnemo="ChartAlignment">Organigramm Anordnung</prop>
+    <prop mnemo="SearchChartAlignment">Organigramm Anordnung suchen</prop>
+    <prop mnemo="ChartText">Text-Layout</prop>
+    <prop mnemo="SearchChartText">Text-Layout suchen</prop>
+    <prop mnemo="ChartNode">Abteilungs-Layout</prop>
+    <prop mnemo="SearchChartNode">Abteilungs Layout suchen</prop>
+    <prop mnemo="TaskList">Pendenzenliste</prop>
+    <prop mnemo="SearchTaskList">Pendenzenliste suchen</prop>
+    <prop mnemo="ChartPiktoLayout">Link-Piktogramm</prop>
+    <prop mnemo="SearchChartPiktoLayout">Link-Piktogramm suchen</prop>
+    <prop mnemo="Employment">Stelle</prop>
+    <prop mnemo="SearchEmployment">Stelle suchen</prop>
+    <prop mnemo="Shortcut">Verknüpfung</prop>
+    <prop mnemo="ShortcutTyp">Verknüpfungstyp</prop>
+    <prop mnemo="Alias">Alias</prop>
+    <prop mnemo="OrgCharts">Organigramme</prop>
+    <prop mnemo="OrgChart">Organigramm</prop>
+    <prop mnemo="OrgentityLayout">Abteilungslayout</prop>
+    <prop mnemo="TextLayout">Textlayout</prop>
+    <prop mnemo="LinkPictogramm">Link-Piktogramm</prop>
+    <prop mnemo="training">Ausbildung</prop>
+    <prop mnemo="trainingCatalog">Ausbildungskatalog</prop>
+    <prop mnemo="trainingDemand">Ausbildungsbedarf</prop>
+    <prop mnemo="mbo">MbO</prop>
+    <prop mnemo="objectiveRound">Zielrunde</prop>
+    <prop mnemo="mboAdministration">MbO Administration</prop>
+    <prop mnemo="wage">Lohn</prop>
+    <prop mnemo="wageVariant">Variante Parameter</prop>
+    <prop mnemo="wageList">Lohnliste</prop>
+    <prop mnemo="wageCorrection">Solllohnkorrekturen</prop>
+  </local>
+  <local scope="tableName">
+    <prop mnemo="ORGANISATION">Organisation</prop>
+    <prop mnemo="ORGENTITY">Abteilung</prop>
+    <prop mnemo="JOB">Stelle</prop>
+    <prop mnemo="EMPLOYMENT">Anstellung</prop>
+    <prop mnemo="CHART">Organigramm</prop>
+    <prop mnemo="MENUGROUP">Menu-Gruppe</prop>
+    <prop mnemo="MENUITEM">Menu-Eintrag</prop>
+  </local>
+  <!-- Organisation -->
+  <local scope="ORGANISATION" >
+    <prop mnemo="VERSION_ID">Version</prop>
+    <prop mnemo="TITLE" size="30">Organisation</prop>
+    <prop mnemo="TITLE_DE" size="30">Organisation</prop>
+    <prop mnemo="PUBLIC_ENABLE">Publizieren</prop>
+    <prop mnemo="MAINORGANISATION">Aufbauorganisation</prop>
+    <prop mnemo="HAUPTFUNKTION_VERWENDEN">Hauptfunktion verwenden</prop>
+    <prop mnemo="HAUPTFUNKTION_AUTOMATISCH">Bestimmung der Hauptfunktion</prop>
+  </local>
+  <local scope="organisation">
+    <prop mnemo="firm">Firma</prop>
+    <prop mnemo="person">Person</prop>
+    <prop mnemo="organisation">Organisation</prop>
+    <prop mnemo="OE">Abteilung</prop>
+    <prop mnemo="org/OE">Organisation/Abteilung</prop>
+    <prop mnemo="oeMnemonic">Abteilungskürzel</prop>
+    <prop mnemo="organigram">Organigramm</prop>
+    <prop mnemo="layout">Layout</prop>
+    <prop mnemo="alignment">Anordnung</prop>
+    <prop mnemo="noOEselect">Keine Organisation/Abteilung gewählt</prop>
+    <prop mnemo="deleteOEConfirm">Organisation/Abteilung löschen ?</prop>
+    <prop mnemo="deleteOrgConfirm">Organisation löschen ?</prop>
+    <prop mnemo="deleteJobConfirm">Stelle löschen ?</prop>
+    <prop mnemo="deleteEmploymentConfirm">Anstellung löschen ?</prop>
+    <prop mnemo="onlyOneEmployment">Keine Anstellung zugef&#252;gt! Nur eine pro Organisation und Person!</prop>
+    <prop mnemo="updatePersConfirm">Möchten Sie der Stelle wirklich einen anderen Mitarbeiter zuweisen?</prop>
+    <prop mnemo="correctEngagementConfirm">Der Besch&#228;ftigungsgrad der Stelle wird korrigiert, damit das Total 100% nicht &#252;bersteigt. Soll die Zuweisung trotzdem vollzogen werden?</prop>
+    <prop mnemo="engagementTotalToHigh">Der Besch&#228;ftigungsgrad der Anstellung darf 100% nicht &#252;bersteigen.</prop>
+    <prop mnemo="wrongParent">Falsche übergeordnete Organisation</prop>
+    <prop mnemo="job">Stelle</prop>
+    <prop mnemo="employment">Anstellung</prop>
+    <prop mnemo="newOE">Neue Abteilung</prop>
+    <prop mnemo="newJob">Neue Stelle</prop>
+    <prop mnemo="anyOrg">Beliebige Organisation</prop>
+    <prop mnemo="noDefaultFunction">Keine default Funktion definiert!</prop>
+    <prop mnemo="copy...">Organisation kopieren...</prop>
+    <prop mnemo="dependencyEmployment">Zugewiesene Anstellung(en)</prop>
+    <prop mnemo="dependencySubOE">Untergeordnete Abteilung(en)</prop>
+    <prop mnemo="dependencyJob">Zugewiesene Stelle(n)</prop>
+    <prop mnemo="confirmYesNoJobToDate">Soll die Stelle beim Speichern mit Gültigkeitsdatum #1 historisiert werden?</prop>
+    <prop mnemo="confirmOkJobToDate">Die Stelle wird beim Speichern mit Gültigkeitsdatum von heute #1 historisiert.</prop>
+    <enum name="hauptfunktionAutomatisch">
+      <prop mnemo="0">Gem&#228;ss Stellendaten</prop>
+      <prop mnemo="1">gr&#246;sster Besch&#228;ftigungsgrad</prop>
+      <prop mnemo="2">gr&#246;sster Funktionswert</prop>
+    </enum>
+    <enum name="shortcutTyp">
+      <prop mnemo="0">Report</prop>
+      <prop mnemo="1">Organigramm</prop>
+      <prop mnemo="2">Karte</prop>
+      <prop mnemo="3">Dokumentablage</prop>
+      <prop mnemo="4">Wissenselement</prop>
+    </enum>
+  </local>
+  <!-- Organisation Entity -->
+  <local scope="ORGENTITY" >
+    <prop mnemo="PARENT_ID">Übergeordnet</prop>
+    <prop mnemo="ROOT_ID">Organisation</prop>
+    <prop mnemo="CLIPBOARD_ID" size="30">Ablage</prop>
+    <prop mnemo="ORDNUMBER">Ordnungsnummer</prop>
+    <prop mnemo="TITLE" size="30">Abteilung</prop>
+    <prop mnemo="TITLE_DE" size="30">Abteilung</prop>
+    <prop mnemo="MNEMONIC">Kürzel</prop>
+    <prop mnemo="MNEMONIC_DE">Kürzel</prop>
+    <prop mnemo="DESCRIPTION" size="50,5">Beschreibung</prop>
+    <prop mnemo="DESCRIPTION_DE" size="50,5">Beschreibung</prop>
+    <prop mnemo="HAT_BUDGET">Hat Lohnbudget</prop>
+  </local>
+  <!-- Job -->
+  <local scope="JOB" >
+    <prop mnemo="TITLE" size="30">Titel</prop>
+    <prop mnemo="TITLE_DE" size="30">Titel</prop>
+    <prop mnemo="ORGENTITY_ID" size="30">OE</prop>
+    <prop mnemo="FUNKTION_ID" size="50">Funktion</prop>
+    <prop mnemo="EMPLOYMENT_ID">Anstellung</prop>
+    <prop mnemo="MNEMONIC">Kürzel</prop>
+    <prop mnemo="MNEMONIC_DE">Kürzel</prop>
+    <prop mnemo="ENGAGEMENT" size="5">Beschäftigung</prop>
+    <prop mnemo="DESCRIPTION" size="50,5">Beschreibung</prop>
+    <prop mnemo="DESCRIPTION_DE" size="50,5">Beschreibung</prop>
+    <prop mnemo="TYP">Typ</prop>
+    <prop mnemo="VACANT"></prop>
+    <prop mnemo="HAUPTFUNKTION">Hauptfunktion</prop>
+    <prop mnemo="PROXY_PERSON_ID">Stellvertretung</prop>
+    <prop mnemo="FROM_DATE">Von</prop>
+    <prop mnemo="TO_DATE">Bis</prop>
+  </local>
+  <!-- Employment -->
+  <local scope="EMPLOYMENT" >
+    <prop mnemo="TITLE" size="30">Titel</prop>
+    <prop mnemo="TITLE_DE" size="30">Titel</prop>
+    <prop mnemo="PERSON_ID" size="30">Person</prop>
+    <prop mnemo="VACANT">vakant</prop>
+  </local>
+  <!-- Employment View -->
+  <local scope="EMPLOYMENT_V"  alias="EMPLOYMENT">
+    <prop mnemo="ENGAGEMENT" size="5">Beschäftigung</prop>
+  </local>
+  <!-- Employment -->
+  <local scope="employment" >
+    <prop mnemo="employment" size="30">Stelle</prop>
+  </local>
+  <!-- JobPersonView -->
+  <local scope="JOBPERSONV" >
+    <prop mnemo="TITLE">Stelle/Person</prop>
+    <prop mnemo="TITLE_DE">Stelle/Person</prop>
+    <prop mnemo="ORGENTITY_ID">Abteilung</prop>
+  </local>
+  <!-- JobPersonView -->
+  <local scope="JOB_EMP_PERSON_V" >
+    <prop mnemo="PNAME">Personennamen</prop>
+    <prop mnemo="FIRSTNAME">Vorname</prop>
+    <prop mnemo="EMP_TITLE_DE">Anstellung</prop>
+    <prop mnemo="JOB_TITLE_DE">Stelle</prop>
+    <prop mnemo="JOBTYP">Stellentyp</prop>
+  </local>
+  <local scope="job" >
+    <enum name="typ">
+      <prop mnemo="0">Mitarbeiter/in</prop>
+      <prop mnemo="1">Leiter/in</prop>
+    </enum>
+  </local>
+  <!-- ChartAlignment -->
+  <local scope="CHARTALIGNMENT" >
+    <prop mnemo="TITLE" size="30">Name</prop>
+    <prop mnemo="TITLE_DE" size="30">Name</prop>
+    <prop mnemo="ALIGNTYPE">Anordnungstyp</prop>
+    <prop mnemo="IMAGE">Bild</prop>
+  </local>
+  <local scope="chartalignment">
+    <prop mnemo="chartalignment">Organigramm-Anordnung</prop>
+    <prop mnemo="chartalignmentsearch">Organigramm-Anordnung</prop>
+    <prop mnemo="deleteConfirm">Wollen Sie die Organigramm-Anordnung wirklich löschen?</prop>
+  </local>
+
+  <!-- Chart -->
+  <local scope="CHART" >
+    <prop mnemo="TITLE" size="30">Name</prop>
+    <prop mnemo="TITLE_DE" size="30">Name</prop>
+    <prop mnemo="CHARTLAYOUT_ID" size="30">Layout</prop>
+    <prop mnemo="CHARTALIGNMENT_ID" size="30">Anordnung</prop>
+    <prop mnemo="TEXTLAYOUT_ID" size="30">Text Layout</prop>
+    <prop mnemo="ORGANISATION_ID" size="30">Organisation</prop>
+    <prop mnemo="PRINTABLE_FILE_DE" size="30">Druckbares Dokument</prop>
+    <prop mnemo="BACKGROUND_IMAGE" size="30">Hintergrundbild</prop>
+  </local>
+  <local scope="chart">
+    <prop mnemo="chart">Organigramm</prop>
+    <prop mnemo="charts">Organigramme</prop>
+    <prop mnemo="newchart">Neues Organigramm</prop>
+    <prop mnemo="chartdetail">Detail Organigramm</prop>
+    <prop mnemo="chartsearch">Organigramm</prop>
+    <prop mnemo="deleteOEConfirm">Organigramm #1 löschen ?</prop>
+    <prop mnemo="title">Titel</prop>
+    <prop mnemo="organisation">Organisation</prop>
+    <prop mnemo="layout">Layout</prop>
+    <prop mnemo="textLayout">Text Layout</prop>
+    <prop mnemo="aligen">Ausrichtung</prop>
+    <prop mnemo="name">Name</prop>
+    <prop mnemo="chartOrgentity">Organigramm Abteilung</prop>
+    <prop mnemo="orgentity">Abteilung</prop>
+    <prop mnemo="laoutSubOrgentities">Layout untergeordnet</prop>
+    <prop mnemo="orgentity">Abteilung</prop>
+    <prop mnemo="typ">Typ</prop>
+    <prop mnemo="showPerson">Angestellte Anzeigen</prop>
+    <prop mnemo="offsetVertical">Offset der vertikalen Linie</prop>
+    <prop mnemo="spaceHorizontal">Horizontaler Abstand</prop>
+    <prop mnemo="spaceVertical">Vertikaler Abstand</prop>
+    <prop mnemo="newChart">Neues Organigramm</prop>
+    <prop mnemo="organisation">Organisation</prop>
+    <prop mnemo="deleteChartConfirm">Wollen Sie das Organigramm löschen?</prop>
+    <prop mnemo="deleteLinkConfirm">Wollen Sie die Verlinkung löschen?</prop>
+    <prop mnemo="deletePiktoConfirm">Wollen Sie das Piktogramm löschen?</prop>
+    <prop mnemo="orgentityLayout">Abteilungs-Layout</prop>
+    <prop mnemo="textLayout">Text-Layout</prop>
+    <prop mnemo="textLayouts">Text-Layouts</prop>
+    <prop mnemo="orgentyLayouts">Abteolungs-Layouts</prop>
+    <prop mnemo="orgentyLayout">Abteilungs-Layout</prop>
+  </local>
+
+  <!-- ChartNode -->
+  <local scope="CHARTNODE" >
+    <prop mnemo="CHART_ID" size="30">Organigramm</prop>
+    <prop mnemo="LAYOUT_ID" size="30">Layout</prop>
+    <prop mnemo="CHILDLAYOUT_ID" size="30">Layout der untergeordneten Abteilungen</prop>
+    <prop mnemo="CHARTALIGNMENT_ID" size="30">Anordnung</prop>
+    <prop mnemo="ORGENTITY_ID" size="30">Abteilung</prop>
+    <prop mnemo="TEXTLAYOUT_ID" size="30">Text Layout</prop>
+    <prop mnemo="TYP">Typ</prop>
+    <prop mnemo="SHOWEMPLOYEES">Angestellte anzeigen</prop>
+    <prop mnemo="ORDNUMBER">Reihenfolge</prop>
+    <prop mnemo="VERTICAL_ALIGN_OFFSET" size="5">Offset der vertikalen Linie</prop>
+    <prop mnemo="GAP_HORIZONTAL" size="5">Horizontaler Abstand</prop>
+    <prop mnemo="GAP_VERTICAL" size="5">Vertikaler Abstand</prop>
+  </local>
+  <local scope="chartnode">
+    <prop mnemo="chartnode">Organigramm Abteilung</prop>
+    <prop mnemo="deleteOEConfirm">Organigramm Abteilung #1 löschen ?</prop>
+    <prop mnemo="deletenodemenu">Löschen</prop>
+    <prop mnemo="deleteSubOe">Untergeordnete löschen</prop>
+    <prop mnemo="deletenodesmenu">Ganzer Ast Löschen</prop>
+    <prop mnemo="tabTexts">Texte</prop>
+    <prop mnemo="tabPiktos">Piktogramme</prop>
+    <prop mnemo="moveNodeBefore">Nach forne Verschieben</prop>
+    <prop mnemo="moveNodeAfter">Nach hinten Verschieben</prop>
+    <prop mnemo="insertMissigItem">Fehlende Abteilungen einfügen</prop>
+    <prop mnemo="deleteChartNodeConfirm">Wollen Sie die Abteilung im Organigramm löschen?</prop>
+    <prop mnemo="newLink">Neuer Link</prop>
+    <prop mnemo="editLink">Link bearbeiten</prop>
+    <prop mnemo="deleteLink">Link löschen</prop>
+    <prop mnemo="copyLink">Link auf untergeordnete Ateilungen kopieren</prop>
+    <prop mnemo="newPikto">Neues Piktogramm</prop>
+    <prop mnemo="editPikto">Piktogramm bearbeiten</prop>
+    <prop mnemo="deletePikto">Piktogramm löschen</prop>
+    <prop mnemo="copyPikto">Piktogrammauf untergeordnete Ateilungen kopieren</prop>
+    <prop mnemo="moveUp">Nach oben verschieben</prop>
+    <prop mnemo="moveDown">Nach unten verschieben</prop>
+    <prop mnemo="links">Verknüpfungen</prop>
+    <prop mnemo="text">Text</prop>
+    <prop mnemo="link">Verknüpfung</prop>
+    <prop mnemo="noLink">Keine Verknüpfung</prop>
+    <prop mnemo="leader">Leiter der Abteilung</prop>
+    <prop mnemo="personOrgentityList">Liste der Mitaebeitenden der Abteilung</prop>
+    <prop mnemo="clipboardOrgentity">Dokumentenablage der Abteilung</prop>
+    <prop mnemo="chartLink">Verknüpfung auf Organigramm</prop>
+    <prop mnemo="nameOrgentity">Name der Abteilung</prop>
+    <prop mnemo="openInNewWindow">In neuem Fenster öffnen</prop>
+    <prop mnemo="layout">Layout</prop>
+    <prop mnemo="chart">Organigramm</prop>
+    <prop mnemo="organisation">Organisation</prop>
+    <prop mnemo="orgentityLink">Verknüpfung der Abteilung:</prop>
+    <prop mnemo="linksPikto">Verknüpfung Piktogramm</prop>
+    <prop mnemo="piktogramm">Piktogramm</prop>
+    <prop mnemo="piktoLink">Piktogramm der Abteilung:</prop>
+    <prop mnemo="freeText">Freier Text</prop>
+    
+    <enum name="typ">
+      <prop mnemo="0">Abteilung</prop>
+      <prop mnemo="1">Assistent</prop>
+    </enum>
+  </local>
+
+  <!-- ChartText -->
+  <local scope="CHARTPIKTO" alias="CHARTTEXT" />
+  <local scope="CHARTTEXT" >
+    <prop mnemo="TEXT">Text</prop>
+    <prop mnemo="TEXT_DE">Text</prop>
+    <prop mnemo="LINK">Verknüpfung</prop>
+    <prop mnemo="TARGETFRAME">In neuem Fenster öffnen</prop>
+    <prop mnemo="ORDNUMBER">Reihenfolge</prop>
+    <prop mnemo="LAYOUT_ID">Layout</prop>
+    <prop mnemo="CHARTNODE_ID">Organigramm Abteilung</prop>
+    <prop mnemo="CHARTPIKTOLAYOUT_ID">Piktogramm</prop>
+  </local>
+  <local scope="charttext">
+    <prop mnemo="charttext">Text</prop>
+    <prop mnemo="chartpikto">Piktogramm</prop>
+    <prop mnemo="deleteTextConfirm">Text löschen ?</prop>
+    <prop mnemo="deletePiktoConfirm">Link-Piktogramm löschen ?</prop>
+    <prop mnemo="newmenu">Neu</prop>
+    <prop mnemo="editmenu">Bearbeiten</prop>
+    <prop mnemo="deletemenu">Löschen</prop>
+    <prop mnemo="freiertext">Freitext</prop>
+    <prop mnemo="leiterabteilung">Leiter der Abteilung</prop>
+    <prop mnemo="nameabteilung">Name der Abteilung</prop>
+    <prop mnemo="mnemoabteilung">Kürzel der Abteilung</prop>
+    <prop mnemo="keinlink">Keine Verknüpfung</prop>
+    <prop mnemo="listepersonen">Liste der Mitarbeiter der Abteilung</prop>
+    <prop mnemo="linkorganigramm">Verknüpfung auf Organigramm</prop>
+    <prop mnemo="freilink">Freie Verknüpfung</prop>
+    <prop mnemo="copytexttree">Auf untergeordnete Abteilungen kopieren</prop>
+    <prop mnemo="kontakte">Kontakte der Abteilung</prop>
+    <prop mnemo="projekte">Projekte der Abteilung</prop>
+    <prop mnemo="pendenzenlisten">Pendenzenlisten der Abteilung</prop>
+    <prop mnemo="dokumentenablage">Dokumentenablage der Abteilung</prop>
+    <prop mnemo="deleteTextLayoutConfirm">Wollen Sie das Textlayout löschen?</prop>
+  </local>
+
+
+  <!-- ChartNodeLayout -->
+  <local scope="CHARTNODELAYOUT" >
+    <prop mnemo="TITLE" size="30">Name</prop>
+    <prop mnemo="IMAGE">Bild</prop>
+    <prop mnemo="NODEWIDTH" size="5">Breite</prop>
+    <prop mnemo="NODEHEIGHT" size="5">Höhe</prop>
+    <prop mnemo="LINEWIDTH" size="5">Linienbreite</prop>
+    <prop mnemo="LINECOLOR">Linienfarbe</prop>
+    <prop mnemo="BACKGROUNDCOLOR">Hintergrundfarbe</prop>
+    <prop mnemo="PADDING_TOP" size="5">Textabstand oben</prop>
+    <prop mnemo="PADDING_LEFT" size="5">Textabstand links</prop>
+    <prop mnemo="PADDING_RIGHT" size="5">Textabstand rechts</prop>
+    <prop mnemo="ORGENTITY_LAYOUT_EDIT">Abteilungs-Layout bearbeiten</prop>
+  </local>
+  <local scope="chartnodelayout">
+    <prop mnemo="chartnodelayout">Abteilungs-Layout</prop>
+    <prop mnemo="deleteConfirm">Wollen Sie das Abteilungs-Layout wirklich löschen?</prop>
+    <prop mnemo="chooseLineColor">Linienfarbe wählen</prop>
+    <prop mnemo="chooseBackgroundColor">Hintergrundfarbe wählen</prop>
+  </local>
+
+
+  <!-- ChartTextLayout -->
+  <local scope="CHARTTEXTLAYOUT" >
+    <prop mnemo="EDITTEXTLAYOUT">Text-Layout bearbeiten</prop>
+    <prop mnemo="TITLE" size="30">Name</prop>
+    <prop mnemo="FONTFAMILY">Schriftart</prop>
+    <prop mnemo="FONTSIZE">Schriftgrösse</prop>
+    <prop mnemo="FONTSTYLE">Schriftschnitt</prop>
+    <prop mnemo="FONTCOLOR">Schriftfarbe</prop>
+    <prop mnemo="HORIZONTAL_ALIGN">Ausrichtung</prop>
+    <prop mnemo="BOLD">Fett</prop>    <prop mnemo="ITALIC">Kursiv</prop>
+    <prop mnemo="PREVIEW">Textvorschau</prop>
+
+    <prop mnemo="EXAMPLETEXT">Dies ist ein Beispieltext...</prop>
+  </local>
+  <local scope="charttextlayout">
+    <prop mnemo="charttextlayout">Text-Layout</prop>
+    <prop mnemo="sampletext">Das ist ein Beispieltext...</prop>
+    <prop mnemo="choosefont">Schriftart wählen</prop>
+    <prop mnemo="choosefontlbl"></prop>
+    <prop mnemo="previewtextlbl">Textvorschau</prop>
+    <prop mnemo="bold">Fett</prop>
+    <prop mnemo="italic">Kursiv</prop>
+    <prop mnemo="deleteConfirm">Wollen Sie das Text-Layout wirklich löschen?</prop>
+    <enum name="horizontalAlign">
+      <prop mnemo="0">Linksbündig</prop>
+      <prop mnemo="1">Zentriert</prop>
+      <prop mnemo="2">Rechtsbündig</prop>
+    </enum>
+    <enum name="fontsize">
+      <prop mnemo="8">8</prop>
+      <prop mnemo="9">9</prop>
+      <prop mnemo="10">10</prop>
+      <prop mnemo="11">11</prop>
+      <prop mnemo="12">12</prop>
+    </enum>
+  </local>
+
+
+  <!-- ChartPikto Layout -->
+  <local scope="CHARTPIKTOLAYOUT" >
+    <prop mnemo="TITLE" size="30">Name</prop>
+    <prop mnemo="TITLE_DE" size="30">Name</prop>
+    <prop mnemo="IMAGE">Bild</prop>
+    <prop mnemo="WIDTH" size="5">Breite</prop>
+    <prop mnemo="HEIGHT" size="5">Höhe</prop>
+    <prop mnemo="LINEWIDTH" size="5">Linienbreite</prop>
+    <prop mnemo="LINECOLOR">Linienfarbe</prop>
+    <prop mnemo="BACKGROUNDCOLOR">Hintergrundfarbe</prop>
+  </local>
+  <local scope="chartpiktolayout">
+    <prop mnemo="chartpiktolayout">Link-Piktogramm</prop>
+    <prop mnemo="deleteConfirm">Wollen Sie das Link-Piktogramm wirklich löschen?</prop>
+    <prop mnemo="chooseLineColor">Linienfarbe wählen</prop>
+    <prop mnemo="chooseBackgroundColor">Hintergrundfarbe wählen</prop>
+  </local>
+
+  <local scope="training">
+    <prop mnemo="trainingCatalog">Ausbildungskatalog</prop>
+    <prop mnemo="training">Ausbildung</prop>
+    <prop mnemo="trainings">Ausbildungen</prop>
+    <prop mnemo="title">Bezeichnung</prop>
+    <prop mnemo="place">Kursort</prop>
+    <prop mnemo="trainer">Kursleiter</prop>
+    <prop mnemo="addTraining">Ausbildung hinzufügen</prop>
+    <prop mnemo="addTrainingCategory">Ausbildungskategorie hinzufügen</prop>
+    <prop mnemo="delete">Löschen</prop>
+    <prop mnemo="description">Beschreibung</prop>
+    <prop mnemo="validFrom">Gültig ab</prop>
+    <prop mnemo="validTo">Gültig bis</prop>
+    <prop mnemo="costExtern">Externe Kosten</prop>
+    <prop mnemo="costIntern">Interne Kosten</prop>
+    <prop mnemo="place">Kursort</prop>
+    <prop mnemo="numParticipant">Anzahl Teilnehmer</prop>
+    <prop mnemo="trainer">Kursleiter</prop>
+    <prop mnemo="trainingGroup">Ausbildungskategorie</prop>
+    <prop mnemo="newTrainig">Neue Ausbildungsmassnahme</prop>
+    <prop mnemo="deleteTrainigConfirm">Wollen Sie die Daten wirklich löschen?</prop>
+    <prop mnemo="newGroup">Neue Ausbildungskategorie</prop>
+    <prop mnemo="demandTraining">Ausbildungsbedarf</prop>
+    <prop mnemo="ordNumber">Reihenfolge</prop>
+    <prop mnemo="mnemo">Kürzel</prop>
+    <prop mnemo="deleteDemandConfirm">Wollen Sie den Ausbildungsbedarf löschen?</prop>
+    <prop mnemo=""></prop>
+    <prop mnemo=""></prop>
+    <prop mnemo=""></prop>
+  </local>
+
+  <!-- Organisation - Menu -->
+  <local scope="MENUGROUP" >
+    <prop mnemo="GROUP" size="30">Menu-Gruppe</prop>
+    <prop mnemo="TITLE" size="30">Name</prop>
+    <prop mnemo="TITLE_DE" size="30">Name</prop>
+    <prop mnemo="ORDNUMBER">Reihenfolge</prop>
+    <prop mnemo="MNEMO">Kürzel</prop>
+  </local>
+  <local scope="MENUITEM" >
+    <prop mnemo="ITEM" size="30">Menu-Eintrag</prop>
+    <prop mnemo="TITLE" size="30">Name</prop>
+    <prop mnemo="TITLE_DE" size="30">Name</prop>
+    <prop mnemo="ORDNUMBER">Reihenfolge</prop>
+    <prop mnemo="LINK" size="50,1">Verknüpfung</prop>
+    <prop mnemo="TARGET">Zielframe</prop>
+    <prop mnemo="ISSTARTPAGE">Als Startseite</prop>
+  </local>
+  <local scope="orgMenu">
+    <prop mnemo="orgMenu">Organisationsmenu</prop>
+    <prop mnemo="knowledgeMenu">Menu Wissen</prop>
+    <prop mnemo="menuGroup">Menu-Gruppe</prop>
+    <prop mnemo="menuItem">Menu-Eintrag</prop>
+    <prop mnemo="newMenuItem">Neuer Menu-Eintrag</prop>
+    <prop mnemo="newMenuGroup">Neue Menu-Gruppe</prop>
+    <prop mnemo="deleteMenuGroupConfirm">Wollen Sie die Menugruppe inklusive aller untergeodneter Menüs wirklich löschen?</prop>
+    <prop mnemo="deleteMenuItemConfirm">Wollen Sie den Menu-Eintrag wirklich löschen?</prop>
+    <prop mnemo="wrongParent">Falsche übergeordnete Menu-Gruppe</prop>
+  </local>
+  <!-- Funktion -->
+  <local scope="FUNKTION" >
+    <prop mnemo="TITLE" size="30">Name</prop>
+    <prop mnemo="TITLE_DE" size="30">Name</prop>
+    <prop mnemo="FUNKTION_GROUP_ID" size="30">Gruppe</prop>
+    <prop mnemo="MNEMONIC">Kürzel</prop>
+    <prop mnemo="MNEMONIC_DE">Kürzel</prop>
+    <prop mnemo="DFLT">Default Funktion</prop>
+    <prop mnemo="DESCRIPTION" size="50,5">Beschreibung</prop>
+    <prop mnemo="DESCRIPTION_DE" size="50,5">Beschreibung</prop>
+  </local>
+  <local scope="FUNCGROUPV" >
+    <prop mnemo="FTITLE">Funktionsname</prop>
+    <prop mnemo="FTITLE_DE">Funktionsname</prop>
+    <prop mnemo="GTITLE">Gruppennamen</prop>
+    <prop mnemo="GTITLE_DE">Gruppennamen</prop>
+    <prop mnemo="FMNEMONIC">Kürzel</prop>
+    <prop mnemo="FMNEMONIC_DE">Kürzel</prop>
+  </local>
+  <local scope="FUNCGROUPTREEV" alias="FUNKTION">
+  </local>
+  <local scope="function" >
+    <prop mnemo="name">Name</prop>
+    <prop mnemo="nameShort">Kürzel</prop>
+    <prop mnemo="default">Default Funktion</prop>
+    <prop mnemo="typ">Funktionstyp</prop>
+    <prop mnemo="description">Beschreibung</prop>
+    <prop mnemo="functionCatalog">Funktionskatalog</prop>
+    <prop mnemo="function">Funktion</prop>
+    <prop mnemo="functions">Funktionen</prop>
+    <prop mnemo="group">Funktionsgruppe</prop>
+    <prop mnemo="parent">Übergeordnet</prop>
+    <prop mnemo="newFunction">Neue Funktion</prop>
+    <prop mnemo="newGroup">Neue Funktionsgruppe</prop>
+    <prop mnemo="deleteFunctionConfirm">Funktion löschen ?</prop>
+    <prop mnemo="deleteFunctionGroupConfirm">Funktionsgruppe löschen ?</prop>
+    <prop mnemo="fbwRevision">Revision der Bewertung</prop>
+    <prop mnemo="BonusPart">Bonusanteil</prop>
+    <prop mnemo="DeleteFunctionConfirm">Wollen Sie die Funktion wirklich löschen?</prop>
+    <prop mnemo="DeleteFunctiongroupConfirm">Wollen Sie die Funktionsgruppe inkl. aller zugeordneten Funktionen wirklich löschen?</prop>
+  </local>
+  <local scope="functionDescription">
+    <prop mnemo="function">Funktion</prop>
+    <prop mnemo="name">Funktionsbeschreibung</prop>
+    <prop mnemo="dutyCatalog">Aufgabenkatalog</prop>
+    <prop mnemo="competenceLevel">Kompetenzgrade</prop>
+    <prop mnemo="duty">Aufgabe</prop>
+    <prop mnemo="dutyGroup">Aufgabegruppe</prop>
+    <prop mnemo="number">Nummer</prop>
+    <prop mnemo="title">Bezeichnung</prop>
+    <prop mnemo="description">Beschreibung</prop>
+    <prop mnemo="DeleteFunctionDescriptionConfirm">Wollen Sie die Funktionsbescheibung wirklich löschen?</prop>
+    <prop mnemo="from">Gültig ab</prop>
+    <prop mnemo="to">Gültig bis</prop>
+    <prop mnemo="deleteDutyGroupConfirm">Wollen Sie die Funktionsgruppe mit allen enthaltenen Aufgaben wirklich löschen?</prop>
+    <prop mnemo="deleteDutyConfirm">Wollen Sie die Aufgabe und deren Abhängigkeiten in Funktionsbeschreibungen wirklich löschen?</prop>
+    <prop mnemo="competences">Kompetenzen</prop>
+    <prop mnemo="functionsWithSelectedDuty">Funktionen mit selektierter Aufgabe:</prop>
+  </local>
+  <local scope="competences">
+    <prop mnemo="competencLevels">Kompetenzgrade</prop>
+    <prop mnemo="competencLevel">Kompetenzgrad</prop>
+    <prop mnemo="label">Bezeichnung</prop>
+    <prop mnemo="labelShort">Kürzel</prop>
+    <prop mnemo="level">Reihenfolge</prop>
+    <prop mnemo="description">Beschreibumg</prop>
+    <prop mnemo="DeleteCompetenceLevelConfirm">Wollen Sie den Kompetenzgrad inkl. aller Abhängigen Kompetenzen in den Funktionsbeschreibungen löschen?</prop>
+  </local>
+  <local scope ="functionRating">
+    <prop mnemo="name">Funktionsbewertung</prop>
+    <prop mnemo="catalogOptions">Katalogoptionen</prop>
+    <prop mnemo="functionTyps">Funktionstypen</prop>
+    <prop mnemo="selectFunctionFirstAdd">Eine Funktionsbewertung kann dem selektierten Element nicht hinzugefügt werden. Selektieren Sie zuerst eine Funktion.</prop>
+    <prop mnemo="selectFunctionFirstDelete">Es ist keine Funktionsbewertung selektiert welche gelöscht werden kann!</prop>
+    <prop mnemo="deleteRatingConfirm">Wollen Sie die selektierte Funktionsbewertung wirklich löschen?</prop>
+    <prop mnemo="functionArgumnetReferences">Funktionen mit mit der selektierten Anforderung</prop>
+    <prop mnemo="descriptionExamples">Beschreibung und Beispiele</prop>
+    <prop mnemo="title">Bezeichnung</prop>
+    <prop mnemo="value">Wert</prop>
+    <prop mnemo="description">Beschreibung</prop>
+    <prop mnemo="examples">Beispiele</prop>
+    <prop mnemo="selectRatingBevorCopy">Funktionsbewertung kann nicht kopiert werden. Bitte selektierten Sie die zu kopierende Funktionsbewertung zuerst.</prop>
+    <prop mnemo="functionTyp">Funktionstyp</prop>
+    <prop mnemo="functionTypes">Funktionstypen</prop>
+    <prop mnemo="catalogOptions">Katalogoptionen</prop>
+    <prop mnemo="catalogOption">Katalogoption</prop>
+    <prop mnemo="averageTyp">Mittelungsart</prop>
+    <prop mnemo="maxValue">Wertmaximum</prop>
+    <enum name="averageTypFlag">
+      <prop mnemo="1">höchster Punktwert</prop>
+      <prop mnemo="2">höchste Einstufung</prop>
+      <prop mnemo="3">durchschnittliche Einstufung</prop>
+    </enum>
+  </local>
+  <local scope ="performanceRating">
+    <prop mnemo="name">Leistungsbewertung</prop>
+    <prop mnemo="title">Titel</prop>
+    <prop mnemo="description">Beschreibung</prop>
+    <prop mnemo="defaultJobExpectation"> Standard Stellenerwartungen</prop>
+    <prop mnemo="ratingCriterias">Bewertungskriterien</prop>
+    <prop mnemo="ratingLevels">Bewertungsstufen</prop>
+    <prop mnemo="ratingLevel">Bewertungsstufe</prop>
+    <prop mnemo="weight">Relatives Gewicht</prop>
+    <prop mnemo="valid">Gültig</prop>
+    <prop mnemo="functionCriterias">Funktionskriterien</prop>
+    <prop mnemo="lockdate">Sperrdatum</prop>
+    <prop mnemo="date">Datum</prop>
+    <prop mnemo="deleteRatingLevelConfirm">Wollen Sie die Bewertungsstufe wirklich löschen?</prop>
+    <prop mnemo="defaultJobdescription">Stellenerwartungen Standard</prop>
+    <prop mnemo="ratingItem">Bewertungsmerkmal</prop>
+    <prop mnemo="ratingItems">Bewertungsmerkmale</prop>
+    <prop mnemo="expectation">Erwartung</prop>
+    <prop mnemo="criteria">Bewertungskriterium</prop>
+    <prop mnemo="criterias">Bewertungskriterien</prop>
+    <prop mnemo="functionRatingItems">Funktionsbewertungskriterien</prop>
+    <prop mnemo="functionRatingItemsCriterias">Verknüpfung Bewertungskriterium mit Funktionsbewertungskriterium</prop>
+    <prop mnemo="linkToFunctionRatingItem">Verknüpfung Funktionsbewertungsmerkmal</prop>
+    <prop mnemo="functionCriterias">Funktionskriterien</prop>
+    <prop mnemo="takeWeightingFromFunctionrating">Gewichtung von Funktionsbewertung übernehmen</prop>
+    <prop mnemo="weightigPerformanceCriterias">Gewichtung der Leistungsbewertungsmerkmale</prop>
+    <prop mnemo="totalFunctionCriteriasWrong">Gewichtung kann nicht gespeichert werden. Summe muss 100% entsprechen.</prop>
+    <enum name="validity">
+      <prop mnemo="0"></prop>
+      <prop mnemo="1">Nein</prop>
+      <prop mnemo="2">Ja</prop>
+    </enum>
+  </local>
+
+  <local scope ="mbo">
+    <prop mnemo="objectitveRound">Zielrunde</prop>
+    <prop mnemo="objectitveRounds">Zielrunden</prop>
+    <prop mnemo="title">Bezeichnung</prop>
+    <prop mnemo="description">Beschreibung</prop>
+    <prop mnemo="from">Start</prop>
+    <prop mnemo="to">Ende</prop>
+    <prop mnemo="deleteRoundConfirm">Wollen Sie die Zielrunde löschen?</prop>
+    <prop mnemo="configuration">Konfiguration</prop>
+    <prop mnemo="objectiveRound">Zielrunde</prop>
+    <prop mnemo="objectiveFilter">Zielfilter</prop>
+    <prop mnemo="evaluationFrom">Beurteilung von</prop>
+    <prop mnemo="evaluationTo">Beurteilung bis</prop>
+    <prop mnemo="allObjectives">Alle Ziele</prop>
+    <prop mnemo="persObjectives">Persönliche Ziele</prop>
+    <enum name="objectiveFilters">
+      <prop mnemo="0">Persönliche Ziele</prop>
+      <prop mnemo="1">Alle Ziele</prop>
+    </enum>
+  </local>
+
+
+  <local scope="ADDRESS" >
+    <prop mnemo="NAME" size="30">Adresse</prop>
+    <prop mnemo="ADDRESS1" size="30">Adresse</prop>
+    <prop mnemo="ADDRESS2" size="30">Adresszusatz</prop>
+    <prop mnemo="ADDRESS3" size="30">Adresszusatz</prop>
+    <prop mnemo="ZIP">PLZ</prop>
+    <prop mnemo="CITY">Ort</prop>
+    <prop mnemo="COUNTRY">Land</prop>
+    <prop mnemo="PHONE">Telefon</prop>
+    <prop mnemo="FAX">Fax</prop>
+    <prop mnemo="MOBILE">Mobil</prop>
+    <prop mnemo="EMAIL_PRIVATE" size="30">EMail</prop>
+    <enum name="COUNTRYLIST">
+      <prop mnemo="CH">Schweiz</prop>
+      <prop mnemo="AF">Afghanistan</prop>
+      <prop mnemo="EG">Ägypten</prop>
+      <prop mnemo="AL">Albanien</prop>
+      <prop mnemo="DZ">Algerien</prop>
+      <prop mnemo="VI">Amerikanische Jungferninseln</prop>
+      <prop mnemo="UM">Amerikanische Überseeinseln, kleinere</prop>
+      <prop mnemo="AD">Andorra</prop>
+      <prop mnemo="AO">Angola</prop>
+      <prop mnemo="AI">Anguilla</prop>
+      <prop mnemo="AG">Antigua und Barbuda</prop>
+      <prop mnemo="GQ">Äquatorial-Guinea</prop>
+      <prop mnemo="AR">Argentinien</prop>
+      <prop mnemo="AM">Armenien</prop>
+      <prop mnemo="AW">Aruba</prop>
+      <prop mnemo="SH">Ascension</prop>
+      <prop mnemo="AZ">Aserbaidschan</prop>
+      <prop mnemo="ET">Äthiopien</prop>
+      <prop mnemo="AU">Australien</prop>
+      <prop mnemo="BS">Bahamas</prop>
+      <prop mnemo="BH">Bahrain</prop>
+      <prop mnemo="BD">Bangladesh</prop>
+      <prop mnemo="BB">Barbados</prop>
+      <prop mnemo="BY">Belarus</prop>
+      <prop mnemo="BE">Belgien</prop>
+      <prop mnemo="BZ">Belize</prop>
+      <prop mnemo="BJ">Benin</prop>
+      <prop mnemo="BM">Bermuda</prop>
+      <prop mnemo="BT">Bhutan</prop>
+      <prop mnemo="BO">Bolivien</prop>
+      <prop mnemo="BA">Bosnien-Herzegowina</prop>
+      <prop mnemo="BW">Botswana</prop>
+      <prop mnemo="BR">Brasilien</prop>
+      <prop mnemo="BN">Brunei Darussalam</prop>
+      <prop mnemo="BG">Bulgarien</prop>
+      <prop mnemo="BF">Burkina Faso</prop>
+      <prop mnemo="BI">Burundi</prop>
+      <prop mnemo="KY">Cayman</prop>
+      <prop mnemo="CL">Chile</prop>
+      <prop mnemo="TW">China, Taiwan</prop>
+      <prop mnemo="CN">China, Volksrepublik</prop>
+      <prop mnemo="CK">Cookinseln</prop>
+      <prop mnemo="CR">Costa Rica</prop>
+      <prop mnemo="CI">Côte d'Ivoire</prop>
+      <prop mnemo="DK">Dänemark</prop>
+      <prop mnemo="DE">Deutschland</prop>
+      <prop mnemo="DJ">Djibouti</prop>
+      <prop mnemo="DM">Dominica</prop>
+      <prop mnemo="DO">Dominikanische Republik</prop>
+      <prop mnemo="EC">Ekuador</prop>
+      <prop mnemo="SV">El Salvador</prop>
+      <prop mnemo="ER">Eritrea</prop>
+      <prop mnemo="EE">Estland</prop>
+      <prop mnemo="FK">Falkland</prop>
+      <prop mnemo="FO">Färöer</prop>
+      <prop mnemo="FJ">Fidschi</prop>
+      <prop mnemo="FI">Finnland</prop>
+      <prop mnemo="FR">Frankreich</prop>
+      <prop mnemo="GF">Französisch-Guayana</prop>
+      <prop mnemo="PF">Französisch-Polynesien</prop>
+      <prop mnemo="TF">Französische Südgebiete</prop>
+      <prop mnemo="GA">Gabun</prop>
+      <prop mnemo="GM">Gambia</prop>
+      <prop mnemo="GE">Georgien</prop>
+      <prop mnemo="GH">Ghana</prop>
+      <prop mnemo="GI">Gibraltar</prop>
+      <prop mnemo="GD">Grenada</prop>
+      <prop mnemo="GR">Griechenland</prop>
+      <prop mnemo="GL">Grönland</prop>
+      <prop mnemo="GB">Grossbritannien</prop>
+      <prop mnemo="GP">Guadeloupe</prop>
+      <prop mnemo="GU">Guam</prop>
+      <prop mnemo="GT">Guatemala</prop>
+      <prop mnemo="GB">Guernsey</prop>
+      <prop mnemo="GN">Guinea, Republik</prop>
+      <prop mnemo="GW">Guinea-Bissau</prop>
+      <prop mnemo="GY">Guyana</prop>
+      <prop mnemo="HT">Haiti</prop>
+      <prop mnemo="HN">Honduras</prop>
+      <prop mnemo="HK">Hongkong</prop>
+      <prop mnemo="IN">Indien</prop>
+      <prop mnemo="ID">Indonesien</prop>
+      <prop mnemo="IQ">Irak</prop>
+      <prop mnemo="IR">Iran</prop>
+      <prop mnemo="IE">Irland</prop>
+      <prop mnemo="IS">Island</prop>
+      <prop mnemo="IL">Israel</prop>
+      <prop mnemo="IT">Italien</prop>
+      <prop mnemo="JM">Jamaika</prop>
+      <prop mnemo="JP">Japan</prop>
+      <prop mnemo="YE">Jemen</prop>
+      <prop mnemo="GB">Jersey</prop>
+      <prop mnemo="JO">Jordanien</prop>
+      <prop mnemo="KH">Kambodscha</prop>
+      <prop mnemo="CM">Kamerun</prop>
+      <prop mnemo="CA">Kanada</prop>
+      <prop mnemo="CV">Kapverdische Inseln</prop>
+      <prop mnemo="KZ">Kasachstan</prop>
+      <prop mnemo="KE">Kenia</prop>
+      <prop mnemo="KG">Kirgisistan</prop>
+      <prop mnemo="KI">Kiribati</prop>
+      <prop mnemo="CC">Kokos-Inseln</prop>
+      <prop mnemo="CO">Kolumbien</prop>
+      <prop mnemo="KM">Komoren</prop>
+      <prop mnemo="CG">Kongo, Republik</prop>
+      <prop mnemo="CD">Kongo, Demokratische Republik (ex-Zaire)</prop>
+      <prop mnemo="KP">Korea, Demo. Volksrepublik (Nordkorea)</prop>
+      <prop mnemo="KR">Korea, Republik (Südkorea)</prop>
+      <prop mnemo="XZ">Kosovo (Interim. Verw. der UNO)</prop>
+      <prop mnemo="HR">Kroatien</prop>
+      <prop mnemo="CU">Kuba</prop>
+      <prop mnemo="KW">Kuwait</prop>
+      <prop mnemo="LA">Laos</prop>
+      <prop mnemo="LS">Lesotho</prop>
+      <prop mnemo="LV">Lettland</prop>
+      <prop mnemo="LB">Libanon</prop>
+      <prop mnemo="LR">Liberia</prop>
+      <prop mnemo="LY">Libyen</prop>
+      <prop mnemo="LI">Liechtenstein</prop>
+      <prop mnemo="LT">Litauen</prop>
+      <prop mnemo="LU">Luxemburg</prop>
+      <prop mnemo="MO">Macao</prop>
+      <prop mnemo="MG">Madagaskar</prop>
+      <prop mnemo="MW">Malawi</prop>
+      <prop mnemo="MY">Malaysia</prop>
+      <prop mnemo="MV">Malediven</prop>
+      <prop mnemo="ML">Mali</prop>
+      <prop mnemo="MT">Malta</prop>
+      <prop mnemo="GB">Man, Insel</prop>
+      <prop mnemo="MA">Marokko</prop>
+      <prop mnemo="MP">Marianen, nördliche</prop>
+      <prop mnemo="MH">Marshallinseln</prop>
+      <prop mnemo="MQ">Martinique</prop>
+      <prop mnemo="MR">Mauretanien</prop>
+      <prop mnemo="MU">Mauritius</prop>
+      <prop mnemo="YT">Mayotte</prop>
+      <prop mnemo="MK">Mazedonien (ehemalige jugoslawische Republik)</prop>
+      <prop mnemo="MX">Mexiko</prop>
+      <prop mnemo="MD">Moldova</prop>
+      <prop mnemo="MC">Monaco</prop>
+      <prop mnemo="MN">Mongolei</prop>
+      <prop mnemo="MS">Montserrat</prop>
+      <prop mnemo="MZ">Mosambik</prop>
+      <prop mnemo="MM">Myanmar (Union)</prop>
+      <prop mnemo="NA">Namibia</prop>
+      <prop mnemo="NR">Nauru</prop>
+      <prop mnemo="NP">Nepal</prop>
+      <prop mnemo="NC">Neukaledonien</prop>
+      <prop mnemo="NZ">Neuseeland</prop>
+      <prop mnemo="NI">Nikaragua</prop>
+      <prop mnemo="NL">Niederlande</prop>
+      <prop mnemo="AN">Niederländische Antillen</prop>
+      <prop mnemo="NE">Niger</prop>
+      <prop mnemo="NG">Nigeria</prop>
+      <prop mnemo="NF">Norfolk</prop>
+      <prop mnemo="NO">Norwegen</prop>
+      <prop mnemo="OM">Oman</prop>
+      <prop mnemo="AT">Österreich</prop>
+      <prop mnemo="PK">Pakistan</prop>
+      <prop mnemo="PW">Palau</prop>
+      <prop mnemo="PA">Panama</prop>
+      <prop mnemo="PG">Papua-Neuguinea</prop>
+      <prop mnemo="PY">Paraguay</prop>
+      <prop mnemo="PE">Peru</prop>
+      <prop mnemo="PH">Philippinen</prop>
+      <prop mnemo="PN">Pitcairn</prop>
+      <prop mnemo="PL">Polen</prop>
+      <prop mnemo="PT">Portugal</prop>
+      <prop mnemo="PR">Puerto Rico</prop>
+      <prop mnemo="QA">Qatar</prop>
+      <prop mnemo="RE">Réunion</prop>
+      <prop mnemo="RW">Rwanda</prop>
+      <prop mnemo="RO">Rumänien</prop>
+      <prop mnemo="RU">Russische Föderation</prop>
+      <prop mnemo="SB">Salomon-Inseln</prop>
+      <prop mnemo="ZM">Sambia</prop>
+      <prop mnemo="AS">Samoa (amerikanischer Teil)</prop>
+      <prop mnemo="SM">San Marino</prop>
+      <prop mnemo="SA">Saudi-Arabien</prop>
+      <prop mnemo="SE">Schweden</prop>
+      <prop mnemo="SN">Senegal</prop>
+      <prop mnemo="CS">Serbien und Montenegro</prop>
+      <prop mnemo="SC">Seychellen</prop>
+      <prop mnemo="SL">Sierra Leone</prop>
+      <prop mnemo="SG">Singapur</prop>
+      <prop mnemo="SK">Slowakische Republik</prop>
+      <prop mnemo="SI">Slowenien</prop>
+      <prop mnemo="SO">Somalia</prop>
+      <prop mnemo="ES">Spanien</prop>
+      <prop mnemo="LK">Sri Lanka</prop>
+      <prop mnemo="KN">St. Christoph und Nevis</prop>
+      <prop mnemo="SH">St. Helena</prop>
+      <prop mnemo="LC">St. Lucia</prop>
+      <prop mnemo="PM">St. Pierre und Miquelon</prop>
+      <prop mnemo="ST">St. Thomas und Principe</prop>
+      <prop mnemo="VC">St. Vincent und die Grenadinen</prop>
+      <prop mnemo="ZA">Südafrika</prop>
+      <prop mnemo="SD">Sudan</prop>
+      <prop mnemo="GS">Südgeorgien und die südlichen Sandwichinseln</prop>
+      <prop mnemo="SR">Suriname</prop>
+      <prop mnemo="SZ">Swasiland</prop>
+      <prop mnemo="SY">Syrien</prop>
+      <prop mnemo="TJ">Tadschikistan</prop>
+      <prop mnemo="TZ">Tansania</prop>
+      <prop mnemo="TH">Thailand</prop>
+      <prop mnemo="TL">Timor-Leste</prop>
+      <prop mnemo="TG">Togo</prop>
+      <prop mnemo="TK">Tokelau</prop>
+      <prop mnemo="TO">Tonga</prop>
+      <prop mnemo="TT">Trinidad und Tobago</prop>
+      <prop mnemo="SH">Tristan da Cunha</prop>
+      <prop mnemo="TD">Tschad</prop>
+      <prop mnemo="CZ">Tschechische Republik</prop>
+      <prop mnemo="TN">Tunesien</prop>
+      <prop mnemo="TR">Türkei</prop>
+      <prop mnemo="TM">Turkmenistan</prop>
+      <prop mnemo="TC">Turks und Caicos</prop>
+      <prop mnemo="TV">Tuvalu</prop>
+      <prop mnemo="UG">Uganda</prop>
+      <prop mnemo="UA">Ukraine</prop>
+      <prop mnemo="HU">Ungarn</prop>
+      <prop mnemo="UY">Uruguay</prop>
+      <prop mnemo="UZ">Usbekistan</prop>
+      <prop mnemo="VU">Vanuatu</prop>
+      <prop mnemo="VA">Vatikan</prop>
+      <prop mnemo="VE">Venezuela</prop>
+      <prop mnemo="AE">Vereinigte Arabische Emirate</prop>
+      <prop mnemo="US">Vereinigte Staaten von Amerika</prop>
+      <prop mnemo="VN">Vietnam</prop>
+      <prop mnemo="VG">Virginische Inseln (brit. Teil)</prop>
+      <prop mnemo="WF">Wallis und Futuna</prop>
+      <prop mnemo="CX">Weihnachtsinsel</prop>
+      <prop mnemo="WS">West Samoa (Savaii, Upola)</prop>
+      <prop mnemo="CF">Zentralafrika</prop>
+      <prop mnemo="CY">Zypern</prop>
+      <prop mnemo="ZW">Zimbabwe</prop>
+    </enum>
+  </local>
+
+  <!-- Funktionsgruppe -->
+  <local scope="FUNKTION_GROUP" >
+    <prop mnemo="PARENT_ID" size="30">Übergeordnet</prop>
+    <prop mnemo="TITLE" size="30">Name</prop>
+    <prop mnemo="TITLE_DE" size="30">Name</prop>
+    <prop mnemo="ORDNUMBER">Ordnungsnummer</prop>
+    <prop mnemo="DESCRIPTION" size="50,5">Beschreibung</prop>
+    <prop mnemo="DESCRIPTION_DE" size="50,5">Beschreibung</prop>
+  </local>
+
+  <local scope="export">
+    <prop mnemo="organisation">Personen, Funktionen, Organisation &amp; Organigramme</prop>
+  </local>
+
+  <local scope="authorisations">
+    <prop mnemo="group">Gruppe</prop>
+    <prop mnemo="authorisations">Berechtigungen</prop>
+    <prop mnemo="applicationRights">Applikationsrechte</prop>
+    <prop mnemo="accessor">Berechtigter</prop>
+    <prop mnemo="accessors">Berechtigte(r)</prop>
+    <prop mnemo="addAccessorGroup">Berechtigungsgruppe erstellen</prop>
+    <prop mnemo="accessorGroup">Berechtigungsgruppe</prop>
+    <prop mnemo="addAccessor">Berechtigter hinzufügen</prop>
+    <prop mnemo="dropAccessor">Berechtigter enfernen</prop>
+    <prop mnemo="removeAccessorConfirm">Möchten Sie '#1' wirklich entfernen?</prop>
+    <prop mnemo="deleteAccessorConfirm">Möchten Sie '#1' wirklich löschen?</prop>
+    <prop mnemo="accessorCanNotBeRemoved">'#1' kann nicht entfernt werden, da '#1' übergeordnete Berechtigungen übernimmt.</prop>
+    <prop mnemo="noAccessorSelected">Bitte wählen Sie einen Berechtigten/Gruppe!</prop>
+    <prop mnemo="noAccessorGroupSelected">Personen können keine Mitglieder haben. Bitte wählen Sie eine Berechtigungsgruppe!</prop>
+    <prop mnemo="isMemberOrCircularReference">Berechtigter ist bereits Mitglied oder das Hinzufügen der Berechtigungsgruppe würde eine zirkuläre Referenz erzeugen.</prop>
+    <prop mnemo="inheritFromSuperior">Vererbbare Berechtigungen übernehmen</prop>
+    <prop mnemo="applicationRight">Applikationsrecht</prop>
+    <prop mnemo="tabMembers">Gruppenmitglieder</prop>
+    <prop mnemo="tabMemberOf">Mitglied von</prop>
+    <prop mnemo="authRead">Lesen</prop>
+    <prop mnemo="authInsert">Einfügen</prop>
+    <prop mnemo="authUpdate">Bearbeiten, schreiben</prop>
+    <prop mnemo="authDelete">Löschen</prop>
+    <prop mnemo="authAdmin">Administrieren</prop>
+    <prop mnemo="authExecute">Ausführen</prop>
+    <prop mnemo="usersGroups">Benutzer / Gruppe</prop>
+    <prop mnemo="permissions">Berechtigungen</prop>
+    <prop mnemo="isEditable">Editierbar</prop>
+    <prop mnemo="deleteGroupConfirm">Wollen sie die Berechtigungsgruppe löschen?</prop>
+    <prop mnemo="typ">Typ</prop>
+    <enum name="accessorTyps">
+      <prop mnemo="0"></prop>
+      <prop mnemo="1">Gruppe</prop>
+      <prop mnemo="2">Person</prop>
+      <prop mnemo="3">Organisationseinheit</prop>
+    </enum>
+    <enum name="editable">
+      <prop mnemo="0"></prop>
+      <prop mnemo="1">Ja</prop>
+      <prop mnemo="2">Nein</prop>
+    </enum>
+  </local>
+
+  <!-- Lohn -->
+  <local scope="wage">
+    <prop mnemo="wage">Lohn</prop>
+    <prop mnemo="variant">Variante</prop>
+    <prop mnemo="variants">Varianten</prop>
+    <prop mnemo="title">Bezeichnung</prop>
+    <prop mnemo="active">Aktiv</prop>
+    <prop mnemo="fixPointValue">Fixierter Punktewert</prop>
+    <prop mnemo="exclusionFrom">Ausschluss bei Eintritt ab</prop>
+    <prop mnemo="exclusionTo">Ausschluss bei Austritt bis</prop>
+    <prop mnemo=""></prop>
+    <prop mnemo=""></prop>
+  </local>
+
+  <!-- Skills -->
+  <local scope="skills">
+    <prop mnemo="name">Skills</prop>
+    <prop mnemo="skill">Skill</prop>
+    <prop mnemo="number">Nummer</prop>
+    <prop mnemo="title">Titel</prop>
+    <prop mnemo="description">Beschreibung</prop>
+    <prop mnemo="from">Gültig ab</prop>
+    <prop mnemo="to">Gültig bis</prop>
+    <prop mnemo="skillGroup">Skillgruppe</prop>
+    <prop mnemo="deleteSkillGroupConfirm">Soll die Skillgruppe iklusive aller untergeordneten Elemente gelöscht werden?</prop>
+    <prop mnemo="deleteSkillConfirm">Soll der Skill wirklich gelöscht werden?</prop>
+    <prop mnemo=""></prop>
+    <prop mnemo=""></prop>
+    <prop mnemo=""></prop>
+    <prop mnemo=""></prop>
+  </local>
+  
+  <!-- Error -->
+  <local scope="error">
+    <prop mnemo="error">Fehler</prop>
+    <prop mnemo="personAddFailed">Person konnte nicht gespeichert werden!</prop>
+    <prop mnemo="personReadFailed">Personendaten konnten nicht gelesen werden!</prop>
+    <prop mnemo="orgentityReadFailed">Organisationsdaten konnten nicht gelesen werden!</prop>
+    <prop mnemo="saveOrgentityFailed">Abteilungsdaten konnten nicht gespeichert werden!</prop>
+    <prop mnemo="deleteOrgentityFailed">Abteilung konnte nicht gelöscht werden!</prop>
+    <prop mnemo="readJobFailed">Sellendaten konnten nicht gelesen werden!</prop>
+    <prop mnemo="proxysetVacantFailed">Stellvertretung konnte nicht gelöscht werden!</prop>
+    <prop mnemo="setJobOwnerFailed">Stellenzuordnung konnte nicht gespeichert werden!</prop>
+    <prop mnemo="saveJobFailed">Stellendaten konnten nicht gespeichert werden!</prop>
+    <prop mnemo="deleteJobFailed">Stelle konnte nicht gelöscht werden!</prop>
+    <prop mnemo="getJobsFailed">Stellen zur Person konnten nicht abgerufen werden!</prop>
+    <prop mnemo="getPersonFromJobFailed">Person zur Stelle konnte nicht gelesen werden!</prop>
+    <prop mnemo="SubstituteSetVacantFailed">Stellvertretung konnte nicht gelöscht werden!</prop>
+    <prop mnemo="personDeleteFailed">Person konnte nicht gelöscht werden!</prop>
+    <prop mnemo="setSubstituteeFailed">Stellvertretung konnte nicht gespeichert werden!</prop>
+    <prop mnemo="readClipboardFailed">Dokumentenablage konnte nicht gelesen werden!</prop>
+    <prop mnemo="saveClipboardFailed">Dokumentenablage konnte nicht gespeichert werden!</prop>
+    <prop mnemo="newClipboardFolderFailed">Neuer Ordner konnte nicht erstellt werden!</prop>
+    <prop mnemo="deleteFolderFailed">Ordner konnte nicht gelöscht werden!</prop>
+    <prop mnemo="deleteFolderFailed">Ordner konnte nicht gelöscht werden!</prop>
+    <prop mnemo="addOrgentityFailed">Abteilung konnte nicht hinzugefügt werden!</prop>
+    <prop mnemo="readEmploymentFailed">Anstellung kann nicht gelesen werden!</prop>
+    <prop mnemo="writeEmploymentFailed">Anstellung konnte nicht gespeicherrt werden</prop>
+    <prop mnemo="readPermissionsFailed">Berechtigungen konnten nicht gelesen werden!</prop>
+    <prop mnemo="savePermissionsFailed">Berechtigungen konnten nicht gespeichert werden!</prop>
+    <prop mnemo="readAccessorsFailed">Benutzer konnten nicht gelesen werden!</prop>
+    <prop mnemo="addAccessorsToGroupFailed">Berechtigter konnte der Gruppe nicht hinzugefügt werden!</prop>
+    <prop mnemo="deleteAccessorsFromGroupFailed">Berechtigter konnte nicht entfernt werden!</prop>
+    <prop mnemo="deleteAccessorsGroupFailed">Berechtigungsgruppe konnte nicht gelöscht werden!</prop>
+    <prop mnemo="renameAccessorgroupFailed">Berechtigungsgruppe konnte nicht umbenannt werden!</prop>
+    <prop mnemo="readFunctionTreeFailed">Funktionenkatalog konnte nicht gelesen werden!</prop>
+    <prop mnemo="readFunctionListFailed">Funktionenliste konnte nicht gelesen werden!</prop>
+    <prop mnemo="readFunctionOrGroupFailed">Details zu Funktion oder Gruppe konnte nicht gelesen werden!</prop>
+    <prop mnemo="saveFunctionGroupFailed">Funktionsgruppe konnte nicht gespeichert werden!</prop>
+    <prop mnemo="saveFunctionFailed">Funktion konnte nicht gespeichert werden!</prop>
+    <prop mnemo="DeleteFunctionGroupFailed">Funktionsgruppe konnte nicht gelöscht werden!</prop>
+    <prop mnemo="DeleteFunctionFailed">Funktion konnte nicht gelöscht werden!</prop>
+    <prop mnemo="FunctionJobReferencesError">Die Funktion kann nicht gelöscht werden da diese mit Stellen verknüpft ist.</prop>
+    <prop mnemo="FunctionGroupJobReferencesError">Die Funktionsgruppe kann nicht gelöscht werden da diese weitere Funktionsgruppen oder Funktionen welche mit Stellen verknüpft sind enthält.</prop>
+    <prop mnemo="moveTreeElementFailet">Das Element kann nicht an diesen Ort verschoben werden!</prop>
+    <prop mnemo="readMenuGroupFailed">Menügruppe konnte nicht gelesen werden!</prop>
+    <prop mnemo="readMenuItemFailed">Menüintrag konnte nicht gelesen werden!</prop>
+    <prop mnemo="saveMenuGroupFailed">Menügruppe konnte nicht gespeichert werden!</prop>
+    <prop mnemo="saveMenuItemFailed">Menüintrag konnte nicht gespeichert werden!</prop>
+    <prop mnemo="deleteMenuItemFailed">Menüintrag konnte nicht gelöscht werden!</prop>
+    <prop mnemo="lodSearchListFailed">Linkliste konnte nicht geladen werden!</prop>
+    <prop mnemo="nodeDropingError">Verknüpfung kann nicht mit dem selektierten Element verbunden werden!</prop>
+    <prop mnemo="readAddessFailed">Adresse konnte nicht gelesen werden!</prop>
+    <prop mnemo="saveAddessFailed">Adresse konnte nicht gespeichert werden!</prop>
+    <prop mnemo="deleteAddessFailed">Adresse konnte nicht gespeichert werden!</prop>
+    <prop mnemo="readDutyGroupFailed">Aufgabengruppe konnte nicht gelesen werden!</prop>
+    <prop mnemo="readDutyFailed">Aufgabe konnte nicht gelesen werden!</prop>
+    <prop mnemo="saveDutyGroupFailed">Aufgabengruppe konnte nicht gespeichert werden!</prop>
+    <prop mnemo="saveDutyFailed">Aufgabe konnte nicht gespeichert werden!</prop>
+    <prop mnemo="deleteDutyGroupFailed">Aufgabengruppe konnte nicht gelöscht werden!</prop>
+    <prop mnemo="deleteDutyFailed">Aufgabe konnte nicht gelöscht werden!</prop>
+    <prop mnemo="moveDutyFailed">Aufgabe konnte nicht verschoben werden!</prop>
+    <prop mnemo="moveDutyGroupFailed">Aufgabengruppe konnte nicht verschoben werden!</prop>
+    <prop mnemo ="saveFunctionDescriptionFailed">Funktionsbeschreibung konnte nicht gespeichert werden!</prop>
+    <prop mnemo="readDataFailed">Daten konnte nicht gelesen werden!</prop>
+    <prop mnemo="addDutyFunctionsdescriptionFailed">Aufgabe konnte der Funktionsbeschreibung nicht hnzugefügt werden!</prop>
+    <prop mnemo="readCompetencesFailed">Kompetenzen konnten nicht gelesen werden!</prop>
+    <prop mnemo="saveCompetencesFailed">Kompetenzen konnten nicht gespeicherrt werden!</prop>
+    <prop mnemo="nodeDropingFunctiondescriptionError">Funktionsbeschreibung kann nicht zu diesem Element kopiert werden!</prop>
+    <prop mnemo ="copyFunctionsdescriptionFailed">Funktionsbeschreibung konnte nicht kopiert werden!</prop>
+    <prop mnemo="deleteCompetenceLevelFailed">Kompetenzgrad konnte nicht gelöscht werden!</prop>
+    <prop mnemo="readFunctionRatingFailed">Funktionsbewertung konnte nicht gelesen werden!</prop>
+    <prop mnemo="deleteFunctionRatingFailed">Funktionsbewertung konnte nicht gelöscht werden!</prop>
+    <prop mnemo="addFunctionRatingFailed">Funktionsbewertung konnte nicht hinzugefügt werden!</prop>
+    <prop mnemo="addRatingArgumentFailed">Mekmel konnte der Funktionsbewertung nicht hinzugefügt werden!</prop>
+    <prop mnemo="removeRatingArgumentFailed">Merkmal konnte nicht gelöscht werden!</prop>
+    <prop mnemo="saveArgumentDetailFailed">Beschreibung und Beispiele konnten nicht gespeichert werden!</prop>
+    <prop mnemo="copyFunctionRatingFailed">Funktionsbewertung konnte nicht kopiert werden!</prop>
+    <prop mnemo="functionTypReadFailed">Funktionstyp konnte nicht gelesen werden!</prop>
+    <prop mnemo="functionTypSaveFailed">Funktionstyp konnte nicht gespeichert werden!</prop>
+    <prop mnemo="functionTypDeleteFailed">Funktionstyp konnte nicht gelöscht werden!</prop>
+    <prop mnemo="functionOptionReadFailed">Katalogoptionen konnten nicht gelesen werden!</prop>
+    <prop mnemo="functionOptionSaveFailed">Katalogoptionen konnten nicht gespeichert werden!</prop>
+    <prop mnemo="readLockdatFailed">Sperrdatum konnte nicht gelesen werden!</prop>
+    <prop mnemo="saveLockdatFailed">Sperrdatum konnte nicht gespeichert werden!</prop>
+    <prop mnemo="ratingLevelsReadFailed">Bewertungsstufen konnten nicht gelesen werden!</prop>
+    <prop mnemo="ratingLevelsSaveFailed">Bewertungsstufe konnten nicht gespeichert werden!</prop>
+    <prop mnemo="ratingLevelDeleteFailed">Bewertungsstufe konnten nicht gelöscht werden!</prop>
+    <prop mnemo="ratingItemsReadFailed">Leistungsbewertungsmerkmlae konnten nicht gelesen werden!</prop>
+    <prop mnemo="jobExpectationReadFailed">Stellenerwartung konnte nicht gelesen werden!</prop>
+    <prop mnemo="jobExpectationDefaultSaveFailed">Stellenerwrtung konnte nicht gespeichert werden!</prop>
+    <prop mnemo="performanceratigItemReadFailed">Leistungsbewertungsmerkmal konnte nicht gelesen werden!</prop>
+    <prop mnemo="performanceratigItemSaveFailed">Leistungsbewertungsmerkmal konnte nicht gespeichert werden!</prop>
+    <prop mnemo="functionWaigthingReadFailed">Gewichtungen konnten nicht gelesen werden!</prop>
+    <prop mnemo="functionWaigthingSaveFailed">Gewichtung konnte nicht gespeichert werden!</prop>
+    <prop mnemo="chartListReadFailed">Organigramme konnten nicht gelesen werden!</prop>
+    <prop mnemo="chartDetailsReadFailed">Details Organigramm konnten nicht gelesen werden!</prop>
+    <prop mnemo="chartDetailsSaveFailed">Details Organigramm konnten nicht gespeichert werden!</prop>
+    <prop mnemo="chartNodeDeleteFailed">Abteilung konnte nicht entfernt werden!</prop>
+    <prop mnemo="chartDeleteFailed">Organigramm konne nicht gelöscht werden!</prop>
+    <prop mnemo="chartMoveNodeFailed">Abteilung konnte nicht verschoben werden!</prop>
+    <prop mnemo="chartSaveNodeLinkFailed">Link konnte nicht gespeichert werden!</prop>
+    <prop mnemo="chartReadNodeLinkFailed">Link konnte nicht gelesen werden!</prop>
+    <prop mnemo="chartDeleteNodeLinkFailed">Verlinkung konnte nicht gelöscht werden!</prop>
+    <prop mnemo="chartLinkCopyFailed">Verknüpfung konnte nicht kopiert werden!</prop>
+    <prop mnemo="textlayoutReadFailed">Textlayouts konnten nicht gelesen werden!</prop>
+    <prop mnemo="textLayoutDeleteFailed">Textlayout konnte nicht gelöscht werdden!</prop>
+    <prop mnemo="orgentitylayoutReadFailed">Abteilungslayout konnte nicht gelesen werden!</prop>
+    <prop mnemo="nodeLayoutSaveFailed">Abteilungslayout konnte nicht gespeichert werden!</prop>
+    <prop mnemo="nodeLayoutDeleteFailed">Abteilungslayout konnte nicht gelöscht werden!</prop>
+    <prop mnemo="trainingListReadFailed">Ausbildungen konnten nicht gelesen werden!</prop>
+    <prop mnemo="trainingDetailReadFailed">Ausbidung konnte nicht gelesen werden!</prop>
+    <prop mnemo="trainingDetailSaveFailed">Ausbildung konnte nicht gespeichert werden!</prop>
+    <prop mnemo="trainingDetailGroupSaveFailed">Ausbildungskategoriekonnte nicht gespeichert werden!</prop>
+    <prop mnemo ="dataDeleteFailed">Daten konnten nicht gelöscht werden</prop>
+    <prop mnemo ="trainingDemandReadFailed">Ausbildungsbedarf konnte nicht gelesen werden!</prop>
+    <prop mnemo="demandDetailSaveFailed">Ausbildungsbedarf konnte nicht gespeichert werden!</prop>
+    <prop mnemo="trainingDemandDeleteFailed">Ausbildungsbedarf konnte nicht gelöscht werden!</prop>
+    <prop mnemo ="wageVariantReadFailed">Variante konnte nicht gelesen wederden!</prop>
+    <prop mnemo="wageVariantDetailSaveFailed">Variante konnte nicht gespeichert werden!</prop>
+    <prop mnemo="mboRoundReadFailed">Zielrunden konnten nicht gelesen werden!</prop>
+    <prop mnemo="roundDetailSaveFailed">Zielrunde konnte nicht gespeichert werden!</prop>
+    <prop mnemo ="roundDeleteFailed">Zielrunde konnte nicht gelöscht werden!</prop>
+    <prop mnemo="mboConfigurationReadFailed">Konfiguration konnte nicht gelesen werden!</prop>
+    <prop mnemo="mboConfigurationSaveFailed">Konfiguration konnte nicht gespeichert werden!</prop>
+    <prop mnemo="personelnumberDouble">Person kann nicht gespeichert werde da die Personalnummer #1 bereits für #2 verwendet wird!</prop>
+    <prop mnemo="moveOrgentityFailed">Abteilung konnte nicht verschoben werden!</prop>
+    <prop mnemo="readSkillGroupFailed">Skillgruppe konnte nicht gelesen werden</prop>
+    <prop mnemo="readSkillFailed">Skill konnte nicht gelesen werden</prop>
+    <prop mnemo="saveSkillFailed">Skill konnte nicht gespeichert werden</prop>
+    <prop mnemo="saveSkillGroupFailed">Skillgruppe konnte nicht gespeichert werden</prop>
+    <prop mnemo="deleteSkillGroupFailed">Skillgruppe konnte nicht gelöscht werden</prop>
+    <prop mnemo="readSkillListFailed">Skillliste konnte nicht gelesen werden</prop>
+    <prop mnemo="saveSkillGroupFailed">Skillgruppe konnte nicht gespeichert werden</prop>
+    <prop mnemo="moveSkillGroupFailed">Skillgruppe konnte nicht verschoben werden</prop>
+    <prop mnemo="moveSkillFailed">Skill konnte nicht verschoben werden</prop>
+    <prop mnemo="deleteSkillFailed">Skill konnte nicht gelöscht werden</prop>
+    <prop mnemo=""></prop
+    <prop mnemo=""></prop>
+  
+  </local>
+
+  <local scope="module">
+    <prop mnemo="">Kompetenzen</prop>
+    <prop mnemo="mbo">Ziele</prop>
+    <prop mnemo="fbs">Funktionsbeschreibung</prop>
+    <prop mnemo="training">Ausbildung</prop>
+    <prop mnemo="fbw">Funktionsbewertung</prop>
+    <prop mnemo="performance">Leistungsbewertung</prop>
+    <prop mnemo="jobexpectation">Stellenerwartung</prop>
+    <prop mnemo="lohn">Lohn</prop>
+    <prop mnemo="moduladministration">Administration Berechtigung</prop>
+    <prop mnemo="modulskills">Modul Kompetenzen</prop>
+    <prop mnemo="modulmbo">Modul MbO</prop>
+    <prop mnemo="modulfbs">Modul Funktionsbeschreibung</prop>
+    <prop mnemo="modultraining">Modul Ausbildung</prop>
+    <prop mnemo="modulfbw">Modul Funktionsbewertung</prop>
+    <prop mnemo="modulperformance">Modul Leistungsbewertung</prop>
+    <prop mnemo="modullohn">Modul Lohn</prop>
+    <prop mnemo="Generally">Allgemein</prop>
+
+  </local>
+
+
+</map>

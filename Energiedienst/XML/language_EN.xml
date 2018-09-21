@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE map SYSTEM "../../XML/dtd/language.dtd" >
+<map>
+    <!-- ä &#228; ö &#246; ü &#252; Ä &#196; Ö &#214; Ü &#220; <b> &lt;b&gt; </b> &lt;/b&gt; -->
+    <global>
+		<prop mnemo="reportLinks">Reports</prop>
+    </global>
+    <local scope="ModuleNames">
+        <prop mnemo="performance">PERFORMANCE RATING</prop>
+    </local>    
+    <local scope="performance">
+        <prop mnemo="subnavTitle">Performance rating</prop>
+        <prop mnemo="subnavSearch">Search rating</prop>
+        <prop mnemo="subnavSearchPersonWithoutRating">Search persons without rating</prop>     
+        <prop mnemo="subnavReportAverageOEPerformance">Report average performance</prop>
+        <prop mnemo="subnavReportPerformanceChange">Report Veränderung des Leistungsgrades</prop>     
+        <prop mnemo="performanceRating">Performance rating</prop>
+        <prop mnemo="jobExpectation">Job expectation</prop>
+        <prop mnemo="jobExpectationdetail">Job expectations</prop>
+        <prop mnemo="jobExpectationadd">Add job expectation</prop>
+        <prop mnemo="jobExpectationedit">Edit job expectation</prop>
+        <prop mnemo="performanceRatingLeader">Performance rating</prop>
+        <prop mnemo="performanceRatingSelf">Selbstbewertung</prop>
+        <prop mnemo="addExpectation">Add job expectation</prop>
+        <prop mnemo="editExpectation">Edit job expectation</prop>
+        <prop mnemo="newJobExpectation">New job expectation</prop>
+        <prop mnemo="jobExpectationList">Existing job expectations</prop>
+        <prop mnemo="newRating">New rating</prop>
+        <prop mnemo="newSelfRating">New self-rating</prop>
+      <prop mnemo="actualRating">Actual rating</prop>
+        <prop mnemo="historyRating">Rating overview</prop>
+      <prop mnemo="historyRatingLeader">Leistungsbewertungs&#252;bersicht</prop>
+      <prop mnemo="historyRatingSelf">Selbstbewertungs&#252;bersicht</prop>
+        <prop mnemo="employmentRatingList">Rating overview</prop>
+        <prop mnemo="employmentRatingHistoryList">Existing ratings</prop>
+        <prop mnemo="executeRating">Criteria rating</prop>
+        <prop mnemo="reportRating">Reports</prop>
+        <prop mnemo="performanceRatingReport">Performance report</prop>
+        <prop mnemo="detailJobExpectation">Detail job expectation</prop>
+        <prop mnemo="performanceRatingGlobalReport">Overall performance report</prop>
+        <prop mnemo="reportPartPerformance">Component performance rating</prop>
+        <prop mnemo="reportPartSkills">Component Skills</prop>
+        <prop mnemo="reportPartMbo">Component MBO</prop>
+        <prop mnemo="bcSearchPerformanceRating">Search performance rating</prop>
+        <prop mnemo="bcSearchPerformanceRatingPersonWithoutRating">Search persons without performance rating</prop>
+        <prop mnemo="ctPerformanceRatingSearchList">Located performance ratings</prop>
+      <prop mnemo="ctPerformanceRatingSelfSearchList">Gefundene Selbstbewertungen</prop>
+      <prop mnemo="ctPerformanceRatingSearchListPersonWithoutRating">Located persons without performance rating</prop>     
+        <prop mnemo="ctExpectationCopy">Wählen Sie die Stelle und die Stellenerwartungen, welche Sie kopieren möchten.</prop>     
+        <prop mnemo="reportAveragePerformance">Performance rating</prop>
+      <prop mnemo="reportAveragePerformanceSelf">Leistungsbewertung (Selbstbewertung)</prop>
+      <prop mnemo="reportAveragePerformances">Performance ratings</prop>
+        <prop mnemo="reportPerformanceCriteria">Performance rating criteria</prop>     
+        <prop mnemo="reportDate">Date</prop>
+        <prop mnemo="reportSign">Signature</prop>
+        <prop mnemo="moreTasks">Job enlargement</prop>
+        <prop mnemo="reportSupervisor">Supervisor</prop>
+        <prop mnemo="reportClerk">Employee</prop>
+        <prop mnemo="reportSupervisorRating">Performance rating</prop>
+        <prop mnemo="reportClerkRating">Selbstbewertung</prop>
+        <prop mnemo="reportRatingDate">Date of performance rating</prop>
+        <prop mnemo="lessTasks">Enhancement</prop>
+        <prop mnemo="achievement">Erreichungsgrad</prop>
+        <prop mnemo="bcReportAveragePerformance">Report Durchschnittliche Leistungsanteile</prop>
+        <prop mnemo="reportAverageOEPerformance">Durchschnittliche Leistungsanteile</prop>
+        <prop mnemo="reportAverageOEPerformanceProportion">Durchschnittlicher Leistungsanteil</prop>
+        <prop mnemo="reportEmploymentPerson">Anstellung, Person</prop>
+        <prop mnemo="reportPerformanceProportion">Leistungsanteil</prop>
+        <prop mnemo="bcReportPerformanceChange">Report Veränderung des Leistungsgrades</prop>
+        <prop mnemo="reportPerformanceChange">Veränderung des Leistungsgrades</prop>
+        <prop mnemo="reportYear">Year</prop>
+        <prop mnemo="reportTotal">Total</prop>
+        <prop mnemo="reportRatingPeriods">Veränderung des Leistungsgrades von %1% bis und mit %2%</prop>
+        <prop mnemo="reportPerformanceRatingGlobal">Overall performance rating</prop>
+        <prop mnemo="bcGlobalPerformanceSelectDate">Deadline overall performance rating</prop>
+        <prop mnemo="copyJobExpectations">Copy job expectation from another job</prop>
+        <prop mnemo="bcCopyJobExpectations">Copy job expectations</prop>
+        <prop mnemo="jobExpectationSearchResultList">Located job expectations:</prop>
+        <prop mnemo="employmentRatingIsHistory">historised</prop>
+        <prop mnemo="department">department: </prop>
+      <prop mnemo="performanceRatingMoreOptionsTitle">Other Options</prop>
+      <prop mnemo="performanceRatingHistory">Leistungsbeurteilung</prop>
+      <prop mnemo="performanceSelfRatingHistory">Selbstbeurteilung</prop>
+      <prop mnemo="departmentEmployeesList">Abteilungsmitarbeiter</prop>
+    </local>
+    <local scope="CRITERIA_FUNCTION_V">
+        <prop mnemo="FUNKTION_TITLE_EN">Function</prop>
+        <prop mnemo="CRITERIA_TITLE_EN">Criteria</prop>
+        <prop mnemo="WEIGHT">Weight</prop>
+        <prop mnemo="CRITERIA_REF">Criteria</prop>
+        <prop mnemo="FUNCTION_REF">Function</prop>
+    </local>
+    <local scope="JOB_EXPECTATION_V">
+        <prop mnemo="CRITERIA_REF">Criteria</prop>
+        <prop mnemo="JOB_REF">Job</prop>
+        <prop mnemo="TITLE_EN" size="80,8">Title</prop>
+        <prop mnemo="DESCRIPTION_EN" size="80,8">Description</prop>
+        <prop mnemo="JTITLE_EN">Job title</prop>
+        <prop mnemo="CTITLE_EN">Criteria</prop>
+        <prop mnemo="VALID_DATE">Date</prop>
+    </local>
+    <local scope="JOB_EXPECTATION">
+        <prop mnemo="CRITERIA_REF">Criteria</prop>
+        <prop mnemo="JOB_REF">Job</prop>
+        <prop mnemo="TITLE_EN" size="80,8">Title</prop>
+        <prop mnemo="DESCRIPTION_EN" size="80,8">Description</prop>
+        <prop mnemo="VALID_DATE">Date</prop>
+    </local>
+    <local scope="PERFORMANCERATINGOEV" alias="PERFORMANCERATING">
+        <prop mnemo="OE_ID">Division</prop>
+    </local>
+    <local scope="PERFORMANCERATING">
+		<prop mnemo="RATING_DATE">Create date</prop>
+		<prop mnemo="IS_SELFRATING">Selbstbewertung</prop>
+		<prop mnemo="RATING_PERSON_REF">Processing</prop>
+		<prop mnemo="EMPLOYMENT_REF">Employment</prop>
+		<prop mnemo="EMPLOYMENT_TITLE_EN">Employment</prop>
+		<prop mnemo="JOB_TITLE_EN">Job</prop>
+		<prop mnemo="FUNCTION_TITLE_EN">Function</prop>
+		
+    </local>
+    <local scope="PERFORMANCERATING_ARGUMENTS">
+		<prop mnemo="ARGUMENTS">Statement</prop>
+        <prop mnemo="MEASURE">Massnahmen</prop>
+    </local>
+    <local scope="PERFORMANCERATING_ITEMS_V" alias="PERFORMANCERATING_ITEMS">
+		<prop mnemo="LEVEL_REF">Rating</prop>
+		<prop mnemo="ARGUMENTS" size="80,5">Statement</prop>
+        <prop mnemo="MEASURE" size="80,5">Massnahmen</prop>
+		<prop mnemo="DESCRIPTION_EN">Description</prop>
+    </local>
+    <local scope="PERFORMANCERATING_ITEMS">
+		<prop mnemo="CRITERIA_TITLE_EN">Criteria</prop>
+		<prop mnemo="EXPECTATION_DESCRIPTION_EN">Expectation</prop>
+		<prop mnemo="EXPECTATION_VALID_DATE">Date</prop>
+		<prop mnemo="LEVEL_TITLE_EN">Rating</prop>
+		<prop mnemo="LEVEL_DESCRIPTION_EN">Description</prop>
+		<prop mnemo="RELATIV_WEIGHT">Weight</prop>
+    </local>
+    <local scope="PERFORMANCERATING_PERIOD_V">
+		<prop mnemo="PERIOD">Time period</prop>
+		<prop mnemo="PERIODII">Time period II</prop>
+    </local>
+    <!-- VIEWS -->
+    <local scope="REPORTVIEW">
+		<prop mnemo="RATING_DATE">Performance rating</prop>
+        <prop mnemo="APPRAISALDATE">Skills rating</prop>
+    </local>
+    <local scope="DATESELECTORVIEW">
+		<prop mnemo="RATING_DATE">Deadline</prop>
+    </local>
+    <local scope="PERSONOEV_VIEW">
+		<prop mnemo="pname">Lastname</prop>
+		<prop mnemo="firstname">Firstname</prop>
+    </local>
+    <!-- REPORTS -->
+    <local scope="reportLayout">
+        <prop mnemo="PerformanceratingListSearchResult">Leistungsbewertungen (aus Suchresultat)</prop>
+        <prop mnemo="PerformanceratingListSearchResultHeader">Leistungsbewertungen gemäss Selektion</prop>
+        <prop mnemo="PerformanceratingListColumnAnstellung">Employment</prop>
+        <prop mnemo="PerformanceratingListColumnRatingDate">Create date</prop>
+        <prop mnemo="PerformanceratingListColumnIsSelfrating">Selbst</prop>
+        <prop mnemo="PerformanceratingListColumnResponsible">Execution</prop>
+        <prop mnemo="PerformanceratingListColumnOrgentityTitle">Division</prop>
+        
+        <prop mnemo="PersonWithoutPerformanceratingListSearchResult">Personen ohne Leistungsbewertung (aus Suchresultat)</prop>
+        <prop mnemo="PersonWithoutPerformanceratingListSearchResultHeader">Personen ohne Leistungsbewertung gemäss Selektion ($1 - $2)</prop>
+        <prop mnemo="PersonWithoutPerformanceratingListColumnSurname">Lastname</prop>
+        <prop mnemo="PersonWithoutPerformanceratingListColumnFirstname">Firstname</prop>
+        <prop mnemo="PersonWithoutPerformanceratingListColumnPhone">Phone</prop>
+        <prop mnemo="PersonWithoutPerformanceratingListColumnMobile">Mobile</prop>
+        <prop mnemo="PersonWithoutPerformanceratingListColumnMnemo">Mnemonic</prop>
+        <prop mnemo="PersonWithoutPerformanceratingListColumnOrgentity">Division</prop>
+        
+        <prop mnemo="JobExpectationAllExcelHeader">Stellenerwartungen</prop>
+        <prop mnemo="JobExpectationAllExcelOeTitle">Organisationseinheit</prop>
+        <prop mnemo="JobExpectationAllExcelJobTitle">Stellenbezeichnung</prop>
+        <prop mnemo="JobExpectationAllExcelPersonnelnumber">Personalnr.</prop>
+        <prop mnemo="JobExpectationAllExcelName">Name</prop>
+        <prop mnemo="JobExpectationAllExcelFirstname">Vorname</prop>
+        <prop mnemo="JobExpectationAllExcelLastChange">Letzte Änderung</prop>
+    </local>
+    <!-- Expectation -->
+    <local scope="expectation">
+      <prop mnemo="ConfirmCopy">Warnung: Änderung wird für untenstehende Personen übernommen. Änderung durchführen?</prop>
+    </local>
+</map>

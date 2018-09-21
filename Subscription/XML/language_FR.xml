@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE map SYSTEM "../../XML/dtd/language.dtd" >
+<map>
+    <!-- ä &#228; ö &#246; ü &#252; Ä &#196; Ö &#214; Ü &#220; <b> &lt;b&gt; </b> &lt;/b&gt; -->
+    <local scope="ModuleNames">
+        <prop mnemo="subscription">Abonnement</prop>
+    </local>
+    <local scope="navigation">
+    </local>
+    <!-- Subscription -->
+    <local scope="SUBSCRIPTION">
+        <prop mnemo="ID">ID</prop>
+ 		<prop mnemo="TITLE">Nome</prop>
+ 		<prop mnemo="VALID_FROM">Valable de</prop>
+ 		<prop mnemo="VALID_TO">Valable à</prop>
+ 		<prop mnemo="PERSON_ID">L'abonné</prop>
+ 		<prop mnemo="EVENTS">Événements</prop>
+ 		<prop mnemo="ACTIVE">Activement</prop>
+ 		<prop mnemo="EMAILENABLE">Information par EMail</prop>
+ 		<prop mnemo="EMAIL">EMail</prop>
+ 		<prop mnemo="TRIGGER_ID">Déclencheur</prop>
+    </local>
+    <!-- News -->
+    <local scope="NEWS">
+ 		<prop mnemo="TITLE_FR">Titre</prop>
+ 		<prop mnemo="DESCRIPTION_FR" size="80,8">Description</prop>
+ 		<prop mnemo="CREATED">Crée</prop>
+ 		<prop mnemo="VALID_FROM">Valable de</prop>
+ 		<prop mnemo="VALID_TO">Valable à</prop>
+ 		<prop mnemo="VISIBILITY">Visible</prop>
+ 		<prop mnemo="URL">URL</prop>
+ 		<prop mnemo="TARGET">But</prop>
+ 		<prop mnemo="URL_TEXT_FR">URL-texte</prop>
+    </local>
+    <local scope="news">
+    	<prop mnemo="EDIT">Remanie: </prop>
+    	<prop mnemo="DELETE">Supprimé: </prop>
+    	<prop mnemo="NEW">Nouveau: </prop>
+    	<prop mnemo="NEWS">Messages</prop>
+    	<prop mnemo="SUBSCRIPTION">Abonnement</prop>
+    	<prop mnemo="DOCUMENT">Document</prop>
+    	<prop mnemo="FOLDER">Dossier</prop>
+    	<prop mnemo="CLIPBOARD">Fichier</prop>
+    	<prop mnemo="FORUM">Forum</prop>
+    	<prop mnemo="TOPIC">Contribution</prop>
+    	<prop mnemo="LINK">Renvoi</prop>
+    	<prop mnemo="CONTRIBUTION">Remarque</prop>
+    	<prop mnemo="DOCUMENT_LINK">Lien de document</prop>
+    	<prop mnemo="TASKLIST">Liste des commandes en cours</prop>
+    	<prop mnemo="MEASURE">Commande en cours</prop>
+    	<prop mnemo="KNOWLEDGE">Savoir</prop>
+    	<prop mnemo="by">Par</prop>
+    	<prop mnemo="new">Message</prop>
+    	<prop mnemo="news">Message</prop>
+    	<prop mnemo="subscription">Abonnement</prop>
+    	<prop mnemo="subscriptions">Abonnements</prop>
+    	<prop mnemo="editNEWS">Remanier l'message</prop>
+    	<prop mnemo="addNEWS">Nouveau message</prop>
+    	<prop mnemo="editSUBSCRIPTION">Remanier l'abonnement</prop>
+    	<prop mnemo="addSUBSCRIPTION">Nouvel abonnement</prop>
+    	<prop mnemo="detailSUBSCRIPTION">Détail d'abonnement</prop>
+ 		<prop mnemo="deleteNEWSConfirm">Supprimer le message?</prop>
+ 		<prop mnemo="deleteSUBSCRIPTIONConfirm">Supprimer l'abonnement?</prop>
+ 		<prop mnemo="invalidSubscription">Abonnement invalide</prop>
+ 		<prop mnemo="inactiveSubscription">Abonnement pas activement</prop>
+ 		<prop mnemo="activeSubscription">Abonnement actif</prop>
+ 		<prop mnemo="emailSubject">Message de modification</prop>
+ 		<prop mnemo="emailComment">Le service d'information de p-soft a constaté la modification pertinente suivante pour vous dans un des contenus:</prop>
+    </local>
+    <local scope="error">
+        <prop mnemo="dispatchNotAviable">La fonction d'émail n'est pas disponible</prop>
+    </local>
+</map>

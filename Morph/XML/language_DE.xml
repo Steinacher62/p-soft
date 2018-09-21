@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE map SYSTEM "../../XML/dtd/language.dtd" >
+<map>
+  <!-- ä &#228; ö &#246; ü &#252; Ä &#196; Ö &#214; Ü &#220; <b> &lt;b&gt; </b> &lt;/b&gt; -->
+  <local scope="ModuleNames">
+    <prop mnemo="morph">MORPHOLOGIE</prop>
+  </local>
+  <local scope="morph">
+    <prop mnemo="ctMatrix">Matrix</prop>
+    <prop mnemo="ptSelected">Auswahl: #1</prop>
+    <prop mnemo="ptRemark">Bemerkung: #1</prop>
+    <prop mnemo="bcSearchMatrix">Sokrates map suchen</prop>
+    <prop mnemo="bcSearchSlave">Detail Sokrates map suchen</prop>
+    <prop mnemo="bcMatrixList">Liste Sokrates maps</prop>
+    <prop mnemo="bcSlaveList">Liste detail Sokrates maps</prop>
+    <prop mnemo="myProducts">Meine Karten</prop>
+  </local>
+  <local scope="matrix">
+    <prop mnemo="TITLE">Titel</prop>
+    <prop mnemo="DESCRIPTION">Beschreibung</prop>
+    <prop mnemo="subtitle">Kundennummer</prop>
+    <prop mnemo="causeContainer">Wirkungspakete</prop>
+    <prop mnemo="editMode">Edit Mode aktivieren (Ctrl + E)</prop>
+    <prop mnemo="newMap">Neue Sokrateskarte erstellen</prop>
+    <prop mnemo="copyMap">Sokrateskarte kopieren</prop>
+    <prop mnemo="deleteMap">Sokrateskarte löschen</prop>
+    <prop mnemo="permissions">Berechtigungen</prop>
+    <prop mnemo="printMap">Sokrateskarte drucken</prop>
+    <prop mnemo="changeMap">Andere Sokrateskarte öffnen (Ctrl + M)</prop>
+    <prop mnemo="importExcel">Daten aus Excel Datei importieren...</prop>
+    <prop mnemo="maxMap">Karte maximieren (Ctrl + G)</prop>
+    <prop mnemo="reduceMap">Karte verkleinern</prop>
+    <prop mnemo="responsible">Verantwortlich:</prop>
+    <prop mnemo="date">Datum:</prop>
+    <prop mnemo="lastChange">Letzte Änderung:</prop>
+    <prop mnemo="revision">Revision:</prop>
+    <prop mnemo="cancel">Abbrechen</prop>
+    <prop mnemo="print">Drucken</prop>
+    <prop mnemo="horizontal">Horizontal</prop>
+    <prop mnemo="vertical">Vertikal</prop>
+    <prop mnemo="orientation">Ausrichtung</prop>
+    <prop mnemo="insertSokratesFollowing">Nachfolgend Sokrateselement einfügen</prop>
+    <prop mnemo="insertSokratesPrevious">Vorhergehend Sokrateselement einfügen</prop>
+    <prop mnemo="createLocalKnowledge">Lokales Wissenselement erstellen</prop>
+    <prop mnemo="addSubmatrix">Subkarte hinzufügen</prop>
+    <prop mnemo="knowledgeLink">Wissenselement verlinken</prop>
+    <prop mnemo="submapLink">Submap verlinken</prop>
+    <prop mnemo="addCauseElement">Wirkungselement hinzufügen</prop>
+    <prop mnemo="removeCell">Sokrateselement löschen</prop>
+    <prop mnemo="removeKnowledge">Wissenselement entfernen</prop>
+    <prop mnemo="removeSubmatrix">Submap entfernen</prop>
+    <prop mnemo="removeCauseElement">Wirkungselement entfernen</prop>
+    <prop mnemo="insertRowFollowing">Zeile unterhalb einfügen</prop>
+    <prop mnemo="insertRowPrevious">Zeile oberhalb einfügen</prop>
+    <prop mnemo="joinFollowingSokrateselement">Mit unterem Sokrateselement verbinden</prop>
+    <prop mnemo="addtitleColumn2">Zweite Titelspalte erstellen</prop>
+    <prop mnemo="removeRow">Zeile entfernen</prop>
+    <prop mnemo="separateSokrateselement">Sokrateselement auftrennen</prop>
+    <prop mnemo="removeTitleColumn2">Zweite Titelspalte entfernen</prop>
+    <prop mnemo="editKnowledgeLink">Wissenselement bearbeiten</prop>
+    <prop mnemo="resetColor">Einfärbung zurücksetzen</prop>
+    <prop mnemo="deleteCellConfirm">Wollen Sie das Sokrateselement wirklich löschen?</prop>
+    <prop mnemo="deleteRowConfirm">Wollen Sie die Sokrateszeile wirklich löschen?</prop>
+    
+  </local>
+  <local scope="SLAVE">
+    <prop mnemo="title">Titel</prop>
+    <prop mnemo="description">Beschreibung</prop>
+  </local>
+</map>

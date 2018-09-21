@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE map SYSTEM "../../XML/dtd/language.dtd" >
+<map>
+  <!-- ä &#228; ö &#246; ü &#252; Ä &#196; Ö &#214; Ü &#220; <b> &lt;b&gt; </b> &lt;/b&gt; -->
+  <local scope="SelectOEParam">
+    <prop mnemo="Title">Auswahl für Bericht "Bonus"</prop>
+    <prop mnemo="chkSubOEs">auch untergeordnete OEs auflisten</prop>
+    <prop mnemo="BonusFactor">Bonusfaktor</prop>
+    <prop mnemo="Orgentity">Abteilung</prop>
+    <prop mnemo="showReport">Report anzeigen</prop>
+  </local>
+  <local scope="SelectNameOE">
+    <prop mnemo="Title">Auswahl für Bericht "Leistungsbewertung"</prop>
+    <prop mnemo="OR">oder</prop>
+    <prop mnemo="OE">Organisation</prop>
+    <prop mnemo="SubOEs">auch untergeordnete OEs auflisten</prop>
+    <prop mnemo="Person">Person</prop>
+    <prop mnemo="showReport">Report anzeigen</prop>
+    <prop mnemo="NotFound">keine Person ausgewählt oder keine Personen in gewählter OE vorhanden!</prop>
+  </local>
+</map>

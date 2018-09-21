@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE map SYSTEM "../../XML/dtd/language.dtd" >
+<map>
+    <!-- ä &#228; ö &#246; ü &#252; Ä &#196; Ö &#214; Ü &#220; <b> &lt;b&gt; </b> &lt;/b&gt; -->
+    <local scope="ModuleNames">
+        <prop mnemo="fbs">STELLENBESCHREIBUNG</prop>
+    </local>
+    <local scope="fbs">
+        <prop mnemo="bcJobDescription">Stellenbeschreibung</prop>
+        <prop mnemo="bcEditJobDescription">Stellenbeschreibung bearbeiten</prop>
+        <prop mnemo="bcDutyCatalog">Aufgabenkatalog</prop>
+        <prop mnemo="ctDutyGroupTree">Aufgabengruppen</prop>
+        <prop mnemo="ctDutyTree">Aufgabenkatalog</prop>
+        <prop mnemo="ctCompetenceList">Aufgaben</prop>
+        <prop mnemo="ctCompetences">Aufgaben (zeitabhängig)</prop>
+        <prop mnemo="ctDCVList">Aufgaben (zeitabhängig) für Aufgabe '#1':</prop>
+        <prop mnemo="ctDutyCatalogDutyDetail">Aufgabe</prop>
+        <prop mnemo="cmEditJobDescription">Stellenbeschreibung bearbeiten</prop>
+        <prop mnemo="cmNewDutyCompetence">Neue Aufgaben (zeitabhängig)</prop>
+        <prop mnemo="cmtJobDescription">Stellenbeschreibung</prop>
+        <prop mnemo="repJobDescription">Stellenbeschreibung</prop>
+        <prop mnemo="repDuty">Aufgabe</prop>
+        <prop mnemo="repCompetences">Aufgaben</prop>
+        <prop mnemo="repCompetencesRules">Aufgabenregelung</prop>
+        <prop mnemo="repJobOwner">StelleninhaberIn</prop>
+        <prop mnemo="repDutyCatalog">Aufgabenkatalog</prop>
+        <prop mnemo="repDutyGroupFree">Freie Aufgaben</prop>
+        <prop mnemo="cmAddDutyCompetence">Neue Aufgabe aus Katalog</prop>
+        <prop mnemo="cmAddDutyCompetenceFree">Neue Aufgabe frei</prop>
+        <prop mnemo="bcAddDutyCompetence">Neue Aufgabe aus Katalog</prop>
+        <prop mnemo="bcAddDutyCompetenceFree">Neue Aufgabe frei</prop>
+        <prop mnemo="bcEditDutyCompetence">Aufgaben bearbeiten</prop>
+        <prop mnemo="ctCompetence">Aufgabe</prop>
+        <prop mnemo="cbShowValidOnly">Nur gültige Aufgaben anzeigen</prop>
+        <prop mnemo="cmEditDutyFree">Freie Aufgabe bearbeiten</prop>
+        <prop mnemo="bcEditDutyFree">Freie Aufgabe bearbeiten</prop>
+        <prop mnemo="ctDuty">Aufgabe</prop>
+        <prop mnemo="functionCatalog">Funktionenkatalog</prop>
+        <prop mnemo="functionSearch">Funktion suchen</prop>
+        <prop mnemo="functionDescription">Funktionsbeschreibung</prop>
+        <prop mnemo="functionRating">Funktionsbewertung</prop>
+        <prop mnemo="functionValue:">Funktionswert:</prop>
+        <prop mnemo="salaryValue:">Basislohn:</prop>
+        <prop mnemo="responsabilityMatrixTitle">Verantwortlichkeitsmatrix generieren</prop>
+        <prop mnemo="competenceMatrixTitle">Aufgabenmatrix generieren</prop>
+        <prop mnemo="organisationUnitSelection">Organisationseinheit selektieren</prop>
+        <prop mnemo="staffmember">Mitarbeiter/-in</prop>
+        <prop mnemo="directchief">Direkte/r Vorgesetzte/r</prop>
+        <prop mnemo="nextchief">Nächst höhere/r Vorgesetzte/r</prop>
+        <prop mnemo="datevisa">Datum/Visum</prop>
+    </local>
+
+    <local scope="reportLayout">
+        <prop mnemo="JobDescriptionAllExcelHeader">Stellenbeschreibungen</prop>
+        <prop mnemo="JobDescriptionAllExcelOeTitle">Organisationseinheit</prop>
+        <prop mnemo="JobDescriptionAllExcelJobTitle">Stellenbezeichnung</prop>
+        <prop mnemo="JobDescriptionAllExcelPersonnelnumber">Personalnr.</prop>
+        <prop mnemo="JobDescriptionAllExcelName">Name</prop>
+        <prop mnemo="JobDescriptionAllExcelFirstname">Vorname</prop>
+        <prop mnemo="JobDescriptionAllExcelLastChange">Letzte Änderung</prop>
+    </local>
+
+    <local scope="DUTY_VALIDITY" alias="DUTY_VALIDITY_V"></local>
+    <local scope="DUTY_VALIDITY_V">
+ 		<prop mnemo="NUMBER">Nummer</prop>
+ 		<prop mnemo="TITLE_DE">Bezeichnung</prop>
+    <prop mnemo="WEIGHTING">Gewichtung</prop>
+ 		<prop mnemo="DESCRIPTION_DE" size="80,8">Beschreibung</prop>
+	 	<prop mnemo="VALID_FROM">Gültig ab</prop>
+	 	<prop mnemo="VALID_TO">Gültig bis</prop>
+      <prop mnemo="WEIGHTING" size="7,1">Gewichtung</prop>
+    </local>
+    <local scope="DUTY_COMPETENCE__DUTY_VALIDITY_V" alias="DUTY_COMPETENCE_VALIDITY"></local>
+    <local scope="DUTY_COMPETENCE_VALIDITY">
+        <prop mnemo="VALID_FROM">Gültig ab</prop>
+        <prop mnemo="VALID_TO">Gültig bis</prop>
+      <prop mnemo="WEIGHTING" size="7,1">Gewichtung</prop>
+    </local>
+    <local scope="FUNCGROUPV">
+        <prop mnemo="PERSON_ID">Mitarbeiter</prop>
+    </local>
+</map>

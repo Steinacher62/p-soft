@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE map SYSTEM "../../XML/dtd/language.dtd" >
+<map>
+    <!-- ä &#228; ö &#246; ü &#252; Ä &#196; Ö &#214; Ü &#220; <b> &lt;b&gt; </b> &lt;/b&gt; -->
+    <local scope="ModuleNames">
+        <prop mnemo="training">AUSBILDUNG</prop>
+    </local>
+    <local scope="training">
+        <prop mnemo="subnavTitle">Ausbildung</prop>
+        <prop mnemo="subnavSearch">Massnahme suchen</prop>
+        <prop mnemo="bcAdvancement">Ausbildungsmassnahmen</prop>
+        <prop mnemo="bcEditAdvancement">Ausbildungsmassnahmen bearbeiten</prop>
+        <prop mnemo="bcAddAdvancement">Neue Ausbildungsmassnahme</prop>
+        <prop mnemo="bcSearchAdvancement">Ausbildungsmassnahmen suchen</prop>
+        <prop mnemo="bcTrainingCatalog">Ausbildungskatalog</prop>
+        <prop mnemo="ctTrainingGroupTree">Katalog</prop>
+        <prop mnemo="ctAdvancementList">Ausbildungsmassnahmen für '#1':</prop>
+        <prop mnemo="ctAdvancementDetail">Massnahme</prop>
+        <prop mnemo="ctTrainingDetail">Ausbildung</prop>
+        <prop mnemo="ctAdvancementSearchList">Gefundene Ausbildungsmassnahmen</prop>
+        <prop mnemo="ctTrainingCatalogTrainingDetail">Ausbildung</prop>
+        <prop mnemo="ctTrainingCatalogGroupDetail">Ausbildungskategorie</prop>
+        <prop mnemo="cmAdvancment">Ausbildungsmassnahmen</prop>
+        <prop mnemo="cmEditAdvancment">Ausbildungsmassnahme bearbeiten</prop>
+        <prop mnemo="cmAddAdvancement">Neue Ausbildungsmassnahme</prop>
+        <prop mnemo="cmDeleteAdvancement">Ausbildungsmassnahme löschen</prop>
+        <prop mnemo="cmtTraining">Ausbildung</prop>
+        <prop mnemo="flagAdvancementInheritTree">Ausbildungsmassnahme aus Ausbildungskatalog</prop>
+        <prop mnemo="flagShowDoneAdvancement">erledigte Ausbildungsmassnahmen anzeigen</prop>
+        <prop mnemo="lblSummaryTitle">Kosten</prop>
+        <prop mnemo="lblCostCurrancy">Fr.</prop>
+        <prop mnemo="lblCostIntern">Int.</prop>
+        <prop mnemo="lblCostExtern">Ext.</prop>
+        <prop mnemo="repPersonTraining">Ausbildung</prop>
+        <prop mnemo="repAdvancement">Ausbildungsmassnahme</prop>
+        <prop mnemo="repStandaloneAdvancement">Freie Gruppe</prop>
+        <prop mnemo="repTrainingCatalog">Ausbildungskatalog</prop>
+        <prop mnemo="repControlling">Ausbildungskontrolle</prop>
+        <enum name="state">
+            <prop mnemo="0">Offen</prop>
+            <prop mnemo="1">Erledigt</prop>
+        </enum>
+    </local>
+    <local scope="TRAINING" alias="TRAININGADVANCEMENTTRAININGV"></local>
+    <local scope="TRAININGADVANCEMENTTRAININGV" alias="TRAINING_ADVANCEMENT">
+        <prop mnemo="VALID_FROM">Gültig ab</prop>
+        <prop mnemo="VALID_TO">Gülitig bis</prop>
+        <prop mnemo="PARTICIPANT_NUMBER">Teilnehmerzahl</prop>
+    </local>
+    <local scope="TRAINING_ADVANCEMENT">
+        <prop mnemo="TRAINING">Ausbildungsmassnahme</prop>
+        <prop mnemo="TITLE_DE">Bezeichnung</prop>
+        <prop mnemo="DESCRIPTION_DE" size="80,8">Beschreibung</prop>
+        <prop mnemo="DONE_DATE">Erledigt am</prop>
+        <prop mnemo="TOBEDONE_DATE">Erledigen bis</prop>
+        <prop mnemo="COST_EXTERNAL">Kosten Extern</prop>
+        <prop mnemo="COST_INTERNAL">Kosten Intern</prop>
+        <prop mnemo="LOCATION">Kursort</prop>
+        <prop mnemo="INSTRUCTOR">Kursleiter</prop>
+        <prop mnemo="CREATED">Erstellt am</prop>
+        <prop mnemo="TRAINING_DEMAND_ID">Ausbildungsbedarf</prop>
+        <prop mnemo="RESPONSIBLE_PERSON_ID">Verantwortlich</prop>
+        <prop mnemo="STATE">Status</prop>
+        <prop mnemo="PERSON_ID">Mitarbeiter</prop>
+        <prop mnemo="CONTROLLING_DE" size="80,8">Ausbildungskontrolle</prop>
+        <prop mnemo="COST_PARTICIPATION">Kostenbeteiligung</prop>
+        <prop mnemo="OBLIGATION">Verpflichtung bis</prop>
+    </local>
+</map>
